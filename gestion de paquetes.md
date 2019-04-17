@@ -1,5 +1,5 @@
 
-#Instalación de paquetes
+# Instalación de paquetes
 ## 1. Noción de paquete
 En Linux no es habitual disponer de software proporcionado con un programa de instalación interactivo (install.exe). Con Linux es muy habitual disponer de herramientas, actualizaciones, etc. en forma de paquetes (packages). 
 Un paquete es un archivo que contiene un software a instalar y unas reglas. Suele tener una extensión .rpm, .deb, en función del tipo de paquete. Cada tipo de distribución puede funcionar con un tipo de paquetes diferentes. Los paquetes son incompatibles entre sí, pero se pueden convertir.
@@ -10,11 +10,11 @@ Listar paquetes instalados: dpkg -l
 Borrar paquetes: dpkg -r
 Ejemplo: instalación de google chrome
 Descarga del paquete: 
-wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 Instalación del paquete
-dpkg -i google-chrome-stable_current_amd64.deb
+    dpkg -i google-chrome-stable_current_amd64.deb
 Borrar el paquete descargado (si queremos)
-rm google-chrome-stable_current_amd64.deb
+    rm google-chrome-stable_current_amd64.deb
 ## 3. Programa de gestión de paquetes avanzada APT y YUM
 Tanto dpkg como rpm detectan dependencias de paquetes para autorizar o no la instalación, pero no las resuelven. Si una dependencia de un paquete que no está, se deben instalar previamente.
 YUM o APT son gesto

@@ -23,22 +23,34 @@ Borrar el paquete descargado (si queremos)
     
 ## 3. Programa de gestión de paquetes avanzada APT y YUM
 Tanto dpkg como rpm detectan dependencias de paquetes para autorizar o no la instalación, pero no las resuelven. Si una dependencia de un paquete que no está, se deben instalar previamente.
-YUM o APT son gesto
-res de paquetes. Descargan los paquetes de un repositorio y gestionan las dependencias automáticamente. Las herramientas DPKG o RPM no resuelven las dependencias, si hay alguna detienen la instalación e informan de las dependencias que no están cubiertas.
-YUM se utiliza en distribuciones Red Hat, Fedora, etc y gestiona paquetes .rpm
-APT se utiliza en sistemas Debian y derivados y gestiona paquetes .deb
+
+YUM o APT son gestores de paquetes. Descargan los paquetes de un repositorio y gestionan las dependencias automáticamente. Las herramientas DPKG o RPM no resuelven las dependencias, si hay alguna detienen la instalación e informan de las dependencias que no están cubiertas.
+
+* YUM se utiliza en distribuciones Red Hat, Fedora, etc y gestiona paquetes .rpm
+* APT se utiliza en sistemas Debian y derivados y gestiona paquetes .deb
+
 ## 4. Repositorios
 En lugar de especificar un paquete, se encarga de los repositorios de paquetes situados en diferentes sitios, como pueden ser:
-En un CD, DVD, 
-En un directorio local
-En internet (HTTP, FTP)
+* En un CD, DVD, 
+* En un directorio local
+* En internet (HTTP, FTP)
+
 Un repositorio contiene un conjunto de paquetes. Cuando se instala un paquete desde un repositorio, se instalan también sus dependencias.
-Para mostrar la lista de repositorios: cat /etc/apt/sources.list
-Para modificar el repositorio: nano /etc/apt/sources.list
+
+Para mostrar la lista de repositorios: 
+
+    cat /etc/apt/sources.list
+
+Para modificar el repositorio: 
+
+    nano /etc/apt/sources.list
+
 Cómo conocer la versión de SO
-lsb_release -a
+
+    lsb_release -a
+    
 ## 5. Prácticas con el gestor APT
-Para buscar un paquete: apt-cache search nombre
+Para buscar un paquete: `apt-cache search nombre`
 Actualizar lista de paquetes: apt update
 Mostrar que paquetes se pueden actualizar: apt list --upgradable
 Simulación de actualización: apt upgrade (cancelar al final)

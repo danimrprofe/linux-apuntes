@@ -50,17 +50,17 @@ Cómo conocer la versión de SO
     lsb_release -a
     
 ## 5. Prácticas con el gestor APT
-Para buscar un paquete: `apt-cache search nombre`
-Actualizar lista de paquetes: apt update
-Mostrar que paquetes se pueden actualizar: apt list --upgradable
-Simulación de actualización: apt upgrade (cancelar al final)
-Buscar si un paquete està instalado o no: apt list –installed
-Mostrar información de un paquete: apt-cache show apache2
-Volver a mirar si està instalado: apt list –installed | grep Apache
-Comprobar que ha abierto el Puerto 80: sudo netstat -ntpa
-Desinstalar apache2: apt remove apache2
-Desinstalar borrando archivos de configuración: apt purge
-Borrar paquetes no necesarios: sudo apt autoremove
+* Para buscar un paquete: `apt-cache search nombre`
+* Actualizar lista de paquetes: `apt update`
+* Mostrar que paquetes se pueden actualizar: `apt list --upgradable`
+* Simulación de actualización: `apt upgrade (cancelar al final)`
+* Buscar si un paquete està instalado o no: `apt list –installed`
+* Mostrar información de un paquete: `apt-cache show apache2`
+* Volver a mirar si està instalado: `apt list –installed | grep Apache`
+* Comprobar que ha abierto el Puerto 80: `sudo netstat -ntpa`
+* Desinstalar apache2: `apt remove apache2`
+* Desinstalar borrando archivos de configuración: `apt purge`
+* Borrar paquetes no necesarios: `sudo apt autoremove`
 ## 6. Cliente gráfico synaptic
 Synaptic es un front-end o interfaz gráfica que llama a las funciones de APT.
 ## 7. Aptitude

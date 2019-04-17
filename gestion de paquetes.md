@@ -10,11 +10,17 @@ Listar paquetes instalados: dpkg -l
 Borrar paquetes: dpkg -r
 Ejemplo: instalación de google chrome
 Descarga del paquete: 
+
     wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    
 Instalación del paquete
+
     dpkg -i google-chrome-stable_current_amd64.deb
+    
 Borrar el paquete descargado (si queremos)
+
     rm google-chrome-stable_current_amd64.deb
+    
 ## 3. Programa de gestión de paquetes avanzada APT y YUM
 Tanto dpkg como rpm detectan dependencias de paquetes para autorizar o no la instalación, pero no las resuelven. Si una dependencia de un paquete que no está, se deben instalar previamente.
 YUM o APT son gesto

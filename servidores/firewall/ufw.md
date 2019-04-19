@@ -5,22 +5,7 @@ Las direcciones IP diferencian una máquina en concreto (una interfaz de un orde
 Cada programa reserva uno o más puertos para utilizarlos él, y se conecta a otros programas de otros ordenadores  a través del puerto en el que ellos estén esuchando.
 
 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Primeros-pasos0.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image1.png "image_tooltip")
-
-
-**Ejemplo**
-
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Primeros-pasos1.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image1.png "image_tooltip")
-
-
 
 **Tipos de puertos**
 
@@ -31,12 +16,7 @@ Cada programa reserva uno o más puertos para utilizarlos él, y se conecta a ot
 *   Puertos inferiores a 1024. Están reservados para servicios muy definidos, como telnet, SMTP, P0P3.
 *   Estas asignaciones son fijas y no pueden ser utilizadas por otros servicios. A menudo estos puertos son llamados «puertos bien conocidos».
 
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Primeros-pasos2.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Primeros-pasos2.png "image_tooltip")
+![alt_text](images/image2.png "image_tooltip")
 
 
 Los puertos más utilizados por los diferentes protocolos son:

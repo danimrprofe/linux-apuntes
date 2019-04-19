@@ -25,24 +25,21 @@ El nombre de dominio no tiene por qué llevar ftp delante, pero es el subdominio
 
 Instalar el servidor FTP, realizando previamente un update para actualizar la información desde los repositorios. Necesitaremos permisos de administrador para ello:
 
-```console foo@bar:~$ Sudo apt update ```
-hola
-```console
-foo@bar:~$ Sudo apt install vsftpd
-```
+    foo@bar:~$ sudo apt update
+    foo@bar:~$ sudo apt install vsftpd
 
 ## Comprobar creación de usuario y grupo FTP {#comprobar-creación-de-usuario-y-grupo-ftp}
 
 Comprobar que se han creado un usuario y un grupo ftp. Para ello consultar los dos archivos y buscar el grupo y usuario creados: 
 
-    cat /etc/passwd  
-    cat /etc/group
+    foo@bar:~$ cat /etc/passwd  
+    foo@bar:~$ cat /etc/group
 
 ## Apertura de conexión {#apertura-de-conexión}
 
 Comprobar que el servidor está iniciado y puerto de escucha. Podemos comprobar que el demonio vsftpd está escuchando en todas las interfaces de red en el puerto 21
 
-    sudo netstat -plunt | grep ftp
+    foo@bar:~$ sudo netstat -plunt | grep ftp
 
 El 21 es el puerto FTP para enviar y recibir comandos. Cuando se inicie la transferencia de archivos, veremos que se abre también otro puerto para transferir los datos.
 
@@ -57,7 +54,6 @@ Comprobar que se crea la carpeta /srv/ftp. Por defecto, los archivos a servir me
 Comprobar la creación y contenido del archivo /etc/vsftpd.conf, así como la configuración que trae por defecto.
 
 
-
 <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Configuraci-n-FTP1.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
@@ -66,7 +62,7 @@ Comprobar la creación y contenido del archivo /etc/vsftpd.conf, así como la co
 
 Siempre es recomendable crear una copia de seguridad del archivo /etc/vsftpd.conf, por lo que guardaremos la copia con la extensión .bak (cualquier extensión es válida). 
 
-**sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.bak**
+    foo@bar:~$ sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.bak
 
 En el caso de que nuestro archivo de configuración quede inservible, tendremos una copia para restablecerlo.
 
@@ -75,12 +71,9 @@ En el caso de que nuestro archivo de configuración quede inservible, tendremos 
 
 Vsftpd permite la conexión de diferentes tipos de usuarios:
 
-
-
 *   Usuarios **anónimos **(que ya hemos utilizado para hacer pruebas)
 *   Usuarios **locales **con cuenta en el sistema (/etc/passwd). Son los usuarios normales creados en nuestro servidor.
 *   Usuarios **virtuales**. Los usuarios virtuales son usuarios que no existen en el sistema (no figuran en /etc/passwd ni tienen un directorio home, ni se pueden loguear) pero sí pueden acceder a través del servidor FTP.
-
 
 # 2. Conexión con usuario anónimo {#2-conexión-con-usuario-anónimo}
 
@@ -91,33 +84,25 @@ Si se activa el acceso anónimo el directorio por defecto está en: /srv/ftp. Po
 
 Crearemos archivos de texto para hacer pruebas en /srv/ftp. Cambia los nombres por tus preferencias personales.
 
-
-
 *   plato.txt (lasaña.txt si es tu plato preferido)
 *   pelicula.txt
 *   grupodemusica.txt
 
 Podemos crear todos los documentos con **sudo touch **si los queremos crear vacíos. 
 
-
 ## Conectar al servidor
 
 Iniciar sesión en desktop y conectar al servidor FTP abriendo un terminal y utilizando el cliente FTP por comandos, o bien desde la máquina anfitrión Windows, si tenemos conectividad IP:
-
-
 
 *   ftp IPdelServidor
 *   ftp [ftp.dmoreno.smx2.org](ftp://ftp.dmoreno.smx2.org) (si disponemos de servidor DNS configurado)
 
 Por defecto existe un usuario anónimo creado en el servidor que puede ser utilizado para conectarse a él. Las credenciales son:
 
-
-
 *   name: anonymous
 *   password: (vacío)
 
 Si todo es correcto nos dará un Login successful (código 230). Veremos que no nos deja, de momento.
-
 
 ## Permitir acceso anónimo  {#permitir-acceso-anónimo}
 
@@ -144,30 +129,26 @@ Con ls y cd nos vamos moviendo por las carpetas remotas.
 
 Utilizando el comando **get **de ftp podemos probar a descargar un archivo del servidor. El archivo que le pasemos como argumento se descargara en la carpeta local en la que nos encontremos del cliente. Por ejemplo:
 
-**get pelicula.mp4**
+    FTP> get pelicula.mp4
 
 Conéctate y descárgate un archivo del servidor de un compañero
 
 También podemos descargar varios archivos al mismo tiempo con la orden **mget** archivo especificado una expresión regular. Por ejemplo: *.pdf, descargará todos los archivos con extensión pdf.
 
-
 ## Subir archivos
 
 Intenta subir un archivo que tengas en una carpeta del cliente al servidor, utilizando:
 
-**put archivo.doc**
+    FTP> put archivo.doc
 
 Los usuarios anónimos no tienen permisos para subir archivos. Para ello deberemos cambiar varias directivas:
-
-
 
 1. La directiva principal es **anon_upload_enable.** Si queremos que el usuario anónimo pueda subir archivos, lo cambiamos a **YES**.
 2. También necesitaremos poder escribir en la carpeta, por lo que debemos cambiar **WRITE_ENABLE=YES.**
 3. Crearemos una carpeta dentro de **/srv/ftp** llamada **uploads **que utilizaremos para poder subir archivos.
 4. A esta carpeta uploads le haremos
-    1. **sudo chown ftp:ftp /srv/ftp/uploads**
-    2. **sudo chmod 757 /srv/ftp/uploads**
-
+    1. Cambio de propietario: ```sudo chown ftp:ftp /srv/ftp/uploads```
+    2. Cambio de permisos: ```sudo chmod 757 /srv/ftp/uploads```
 
 ## Enjaulado de usuarios {#enjaulado-de-usuarios}
 
@@ -190,24 +171,19 @@ Ojo: el usuario no verá nada fuera de su carpeta, y para él la carpeta base se
 Vemos que no nos permite cambiar de directorio. Salimos de la consola FTP con el comando **bye**. También se puede utilizar el comando **quit**.
 
 
-
 <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Configuraci-n-FTP4.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/Configuraci-n-FTP4.png "image_tooltip")
 
 
-
 # 3. Usuarios locales {#3-usuarios-locales}
-
 
 ## Crear usuarios locales {#crear-usuarios-locales}
 
 Para esta práctica vamos a crear varios usuarios locales para poder utilizarlos en el servidor FTP. Cada usuario tendrá su propia carpeta en home. 
 
 Crearemos contenido para 2 de los usuarios:
-
-
 
 *   Profesor
 *   Alumno
@@ -299,17 +275,17 @@ Dentro del mismo servidor, podemos cambiar de usuario con la orden **user**, sin
 
 Podemos consultar el archivo de log para comprobar cuáles han sido los últimos acontecimientos. En principio el log se guarda en **/var/log/vsftpd.log**. Lo podemos visualizar:
 
-**sudo cat /var/log/vsftpd.log**
+    foo@bar:~$ sudo cat /var/log/vsftpd.log
 
 Vemos que ha ido registrando todas las acciones que hemos realizado hasta el momento. Igualmente a al hacerse el archivo más grande es recomendable filtrar con grep o utilizar tail para visualizar solamente una parte del log.
 
 Si queremos tener más detalle en el log, podemos configurar en /etc/vsftpd.conf:
 
-
-
-*   log_ftp_protocol=YES
-*   xferlog_enable=YES
-*   xferlog_std_format=NO 
+```
+log_ftp_protocol=YES
+xferlog_enable=YES
+xferlog_std_format=NO 
+```
 
 Monitoriza tu log con tail -f /var/log/vsftpd.log y mientras se está ejecutando, pide conectarse a un compañero a tu servidor para ver lo que hace en tiempo real
 
@@ -318,15 +294,13 @@ Monitoriza tu log con tail -f /var/log/vsftpd.log y mientras se está ejecutando
 
 Intentamos subir con ambos usuarios un archivo al servidor utilizando el comando **PUT**. Veremos que no nos deja.
 
-FTP> put hola.txt
+    FTP> put hola.txt
 
 El archivo tiene que existir en la carpeta local en la que estamos en ese momento.
 
 Intentar ver contenido fuera de su carpeta: por ejemplo **/home.** Veremos que este usuario no está enjaulado, y por tanto puede ver cualquier contenido de cualquier carpeta.
 
 Modificar el archivo de configuración del servidor FTP, y:
-
-
 
 1. Permitir que los usuarios locales puedan subir archivos al servidor mediante el parámetro: **write_enable=YES**
 2. Es probable que también sea necesario agregar la directiva **allow_writeable_chroot=YES** para poder subir archivos.
@@ -364,7 +338,7 @@ Activar el mensaje de directorio (**.message**). En este caso, nos servirá para
 
 Configurar un mensaje en el home de los dos usuarios (1 y 2) que diga: 
 
-_“Este es el servidor de XXX. Bienvenido”_
+    “Este es el servidor de XXX. Bienvenido”
 
 Con el siguiente comando redirigimos un texto hacia un archivo en concreto para crearlo y escribir en él lo que le digamos. Nos ahorramos tener que crear el archivo con un editor, escribir y salir de él.
 
@@ -379,8 +353,7 @@ También podemos hacer que aparezca un mensaje de bienvenida al conectar por FTP
 
 Podemos modificarlo por lo que queramos. Por ejemplo:
 
-_ftpd_banner= “Bienvenido al servidor FTP de XXX.”_
-
+    ftpd_banner= “Bienvenido al servidor FTP de XXX.”
 
 ### Comprobación {#comprobación}
 
@@ -413,25 +386,21 @@ Configura que solo se puedan conectar 2 clientes como máximo y solo 1 por IP. C
 
 Enjaula a los usuarios locales dentro de su propio directorio personal, esta opción mejora la seguridad. 
 
-
-
 *   Si el parámetro  es  **chroot_local_user=YES** se enjaula a todos los usuarios locales por defecto
 *   Si el parámetro  es  **chroot_local_user=NO** no se enjaula a ningún usuario local por defecto
 
-
 ### Lista {#lista}
 
-Se permite especificar una lista con los usuarios locales a los cuales se les enjaula mediante la directiva **chroot_list_enable=YES**.
+Se permite especificar una lista con los usuarios locales a los cuales se les enjaula mediante la directiva:   
+   
+    chroot_list_enable=YES
 
 Especifica la ruta en donde se encuentra el archivo con la lista de usuarios enjaulados o no enjaulados. Se define por la directiva **chroot_list_file=/etc/vsftpd.chroot_list. **El significado cambia en función de la directiva anterior:
-
-
 
 *   Si **chroot_local_user=NO**, entonces, indica la lista de usuarios enjaulados.
 *   Si **chroot_local_user=YES**, indicaría la lista de usuarios no enjaulados. 
 
 Enjaula a algún compañero
-
 
 ## Limitar velocidad a los usuarios  {#limitar-velocidad-a-los-usuarios}
 
@@ -439,11 +408,11 @@ Un usuario puede descargar archivos a la velocidad máxima que permita la conexi
 
 La siguiente directiva permite establecer el límite de la velocidad máxima transferencia de datos para los usuarios locales. En este caso 10 MB/seg.
 
-**local_max_rate=10485760**
+    local_max_rate=10485760
 
 También podemos limitar  la velocidad. En este caos, los usuarios anónimos usarán un ancho de banda de 1 MB/seg:  
 
-**anon_max_rate=1048576**
+    anon_max_rate=1048576
 
 Probar a generar un archivo grande en el servidor y descargarlo desde el cliente para comprobar la velocidad que descarga que se obtiene. Para generar archivos de un tamaño: truncate -s 200MB prueba200 (generará un archivo de 200 MB). 
 
@@ -451,16 +420,15 @@ De mientras el compañero está descargando, visualiza con netstat -plunt | grep
 
 El compañero descarga de dos formas: desde el navegador primero y por consola después.
 
-
 ## Limitar acceso a determinados usuarios {#limitar-acceso-a-determinados-usuarios}
 
 Podemos denegar acceso al servidor a usuarios determinados, indicados en un archivo de configuración. Para habilitar esta opción: 
 
-**userlist_enable=YES**
+    userlist_enable=YES
 
 La ruta del archivo con la lista de usuarios a los que se les deniega el acceso se especifica con el siguiente parámetro:
 
-**userlist_file=/etc/vsftpd.user_list**
+    userlist_file=/etc/vsftpd.user_list
 
 Deberemos crear este archivo y escribir en él los usuarios a los que queremos denegar el acceso. Una estrategia sería colocar los usuarios en este archivo y comentar o descomentar según sea necesario.
 
@@ -469,15 +437,13 @@ Deberemos crear este archivo y escribir en él los usuarios a los que queremos d
 
 Por defecto no se mostrarán los archivos que comiencen por un punto .Para mostrar los archivos ocultos y las carpetas . y .., podemos utilizar la siguiente opción, que resulta útil para no sobrescribir archivos ocultos.
 
-**force_dot_files = YES**
-
+    force_dot_files = YES
 
 ## Mostrar información de los archivos {#mostrar-información-de-los-archivos}
 
 También puede resultar interesante esconder la información acerca del propietario de los archivos:
 
-**hide_ids = YES**
-
+    hide_ids = YES
 
 # 5. Configuración separada para cada usuario local {#5-configuración-separada-para-cada-usuario-local}
 
@@ -496,23 +462,21 @@ Por ejemplo, si queremos limitar a pepe, podríamos hacer lo siguiente:
 **echo "local_max_rate 1024" > /etc/vsftpd/usuarios/pepe**
 
 Un ejemplo de configuración podría ser:
-
+```
 local_root=/srv/ftp/pepe \
 dirlist_enable=YES \
 download_enable=YES \
 write_enable=YES
-
+```
 De este modo, la carpeta raíz para pepe sería **/srv/ftp/pepe **(que tendríamos que crear). Para el resto de usuarios, se aplicaría la configuración de /etc/vsftpd. Por lo tanto, ellos tendrían como raíz su home.
 
 Crea un archivo de configuración para cada uno de tus compañeros de mesa y aplicarles diferentes opciones a cada uno. 
-
 
 # 6. Crear cuotas (no hacer nada a partir de aquí)
 
 Los usuarios tienen por defecto espacio limitado en el servidor. Si esto no se controla, puede llegar un momento que un usuario ocupe todo el espacio libre del disco. Podemos limitar el espacio para un usuario concreto utilizando el paquete quota. Para instalarlo, ejecutando: 
 
-**apt install quota**
-
+    apt install quota
 
 ## Agregar directiva a la partición  {#agregar-directiva-a-la-partición}
 
@@ -522,49 +486,45 @@ En /etc/fstab agregamos la directiva a la partición en donde queremos limitar l
 
 Añadirnos usrquota, grpquota, a la partición en la que queramos activar las cuotas de disco. Hacemos una copia de la línea (CTRL+K --- CTRL+U) que vamos a editar, por si acaso, y la ponemos con comentarios. 
 
-/dev/hda1   /     ext3    **usrquota,grpquota**,errors=remount-ro 0       1
+    /dev/hda1   /     ext3    **usrquota,grpquota**,errors=remount-ro 0       1
 
 Reiniciar el sistema operativo
 
+## Comprobación 
 
-## Comprobación {#comprobación}
+### Chequeo del sistema de cuotas 
 
-
-### Chequeo del sistema de cuotas {#chequeo-del-sistema-de-cuotas}
-
-Podremos chequear las cuotas en nuestro sistema con:  quotacheck -augmv
-
-
+Podremos chequear las cuotas en nuestro sistema con:  
+    
+    quotacheck -augmv
 
 <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Configuraci-n-FTP5.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
 ![alt_text](images/Configuraci-n-FTP5.png "image_tooltip")
-
-
 
 ### Comprobación de cuotas de usuarios {#comprobación-de-cuotas-de-usuarios}
 
 Para listar las cuotas de los usuarios podemos utilizar quota -u idusuario
 
-Para ver un informe de todas las cuotas: **repquota -a**
+Para ver un informe de todas las cuotas: 
+    
+    repquota -a
 
 Crear un usuario nuevo.
 
-Reiniciar el sistema operativo y observar que en nuestro directorio de conexión se ha creado el fichero aquota.user
-
+Reiniciar el sistema operativo y observar que en nuestro directorio de conexión se ha creado el fichero ```aquota.user```
 
 ## Limitar la cuota de cada usuario 
 
-Escribiendo el comando: **edquota "nombre de usuario"**.
+Escribiendo el comando: 
 
+    edquota "nombre de usuario"
 
 # 7. Modos activo y pasivo (No hacer)
 
 Utilizar cliente ftp para establecer conexión anónima con [ftp.rediris.es](ftp://ftp.rediris.es).
 
 Ejecutar el comando ls. Comprobar si deja o no
-
 
 ## Utilizar el modo pasivo {#utilizar-el-modo-pasivo}
 
@@ -577,19 +537,15 @@ Ejecutar LS de nuevo
 
 Es recomendable utilizar este sistema para conectar desde Internet al servidor, puesto que las contraseñas, por ejemplo, se envían en texto plano. Para utilizar VSFTPD con encriptación (más seguro), se necesita modificar la configuración:
 
-_ssl_enable=YES_
-
-_allow_anon_ssl=NO_
-
-_force_local_data_ssl=YES_
-
-_force_local_logins_ssl=YES_
-
-_ssl_tlsv1=YES_
-
-_ssl_sslv2=NO_
-
-_ssl_sslv3=NO_
+```
+ssl_enable=YES
+allow_anon_ssl=NO
+force_local_data_ssl=YES
+force_local_logins_ssl=YES
+ssl_tlsv1=YES
+ssl_sslv2=NO
+ssl_sslv3=NO
+```
 
 FTP utiliza el puerto 21 si no se especifica otra cosa. Para el protocolo **FTPS**, el puerto utilizado por defecto es el 990. Si se quiere cambiar, modificar: **listen_port=990**
 
@@ -597,17 +553,18 @@ Si tenemos instalado openssl no hace falta en principio crear ningún certificad
 
 Para probarlo necesitaremos, desde la consola de comandos ejecutar el mismo comando, pero cambiando ftp por ftps en la URL
 
-**ftp [ftps://IPdelServidor](https://IP)**
+ftp [ftps://IPdelServidor](https://IP)**
 
 
 # 9. Usuarios virtuales (NO HACER)
 
 Instalar la librería PAM que nos ayudará a crear usuarios virtuales:
 
-**sudo apt install vsftpd libpam-pwdfile**
+    sudo apt install vsftpd libpam-pwdfile
 
 Agregar las siguientes líneas al archivo de configuración si no existen actualmente.
 
+```
 listen=YES \
 anonymous_enable=NO \
 local_enable=YES \
@@ -621,43 +578,42 @@ local_root=/var/www/$USER \
 chroot_local_user=YES \
 hide_ids=YES \
 guest_username=vsftpd
+```
 
 Registramos los usuarios con htpasswd, con lo que se asume que Apache está ejecutándose en el servidor.
 
 Creamos una carpeta para poner los archivos de configuración dentro
 
-sudo mkdir /etc/vsftpd
+    sudo mkdir /etc/vsftpd
 
 Creamos el primer usuario:
 
-sudo htpasswd -cd /etc/vsftpd/ftpd.passwd director
+    sudo htpasswd -cd /etc/vsftpd/ftpd.passwd director
 
 Para los siguientes usuarios:
 
-sudo htpasswd -d /etc/vsftpd/ftpd.passwd user2
+    sudo htpasswd -d /etc/vsftpd/ftpd.passwd user2
 
 Hacer un backup de la configuración original de PAM
 
-sudo mv /etc/pam.d/vsftpd /etc/pam.d/vsftpd.bak
+    sudo mv /etc/pam.d/vsftpd /etc/pam.d/vsftpd.bak
 
 Crear uno nuevo:
 
-sudo vim /etc/pam.d/vsftpd
+    sudo vim /etc/pam.d/vsftpd
 
 Copiar solo estas dos lineas:
 
-auth required pam_pwdfile.so pwdfile /etc/vsftpd/ftpd.passwd \
-account required pam_permit.so
+    auth required pam_pwdfile.so pwdfile /etc/vsftpd/ftpd.passwd \
+    account required pam_permit.so
 
 Crear un usuario local sin acceso a shell
 
-sudo useradd --home /home/vsftpd --gid nogroup -m --shell /bin/false vsftpd
+    sudo useradd --home /home/vsftpd --gid nogroup -m --shell /bin/false vsftpd
 
 Reiniciar el servidor
 
 Crear carpetas
-
-
 
 *   Carpeta raíz: /var/www/user1 con permisos 555
     *   Subcarpeta /var/www/user1/www con permisos 755
@@ -665,18 +621,15 @@ Crear carpetas
 
 Revisar que en vsftpd.conf tenemos chroot_local_user=YES para que el usuario no pueda ver nada fuera de esta carpeta.
 
-mkdir /var/www/user1 \
-chmod -w /var/www/user1 \
-mkdir /var/www/user1/www \
-chmod -R 755 /var/www/user1/www \
-chown -R vsftpd:nogroup /var/www/user1
-
+    mkdir /var/www/user1 \
+    chmod -w /var/www/user1 \
+    mkdir /var/www/user1/www \
+    chmod -R 755 /var/www/user1/www \
+    chown -R vsftpd:nogroup /var/www/user1
 
 # 10. Clientes de ftp
 
 Existen múltiples clientes para conectar por FTP. Entre ellos:
-
-
 
 *   WinSCP
 *   gFTP

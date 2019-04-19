@@ -1,3 +1,18 @@
+## Relaciones de confianza
+
+Una relación de confianza es una relación establecida entre dos dominios. Permite a los usuarios de un dominio ser reconocidos por los controladores de Dominio de otro dominio.
+
+Estas relaciones permiten 
+* A los usuarios acceder a los recursos de otro dominio
+* A los administradores definir los permisos y derechos de usuario para los usuarios del otro dominio.
+Permite establecer comunicación entre varios controladores de dominio, con el fin de poder administrar desde un solo punto de la red a todos los usuarios y recursos que tengas.
+
+En una red que consista en dos o más dominios, cada dominio actúa como una red por separado con su propia base de datos de cuentas.
+
+Puede pasar que un usuario de un dominio necesite utilizar algunos o todos los recursos del otro dominio. 
+
+La solución usual para la configuración de niveles de acceso de usuario entre dominios es lo que se llama relación de confianza.
+
 # Tipos de relaciones de confianza
 
 Windows Server soporta varios tipos de relaciones de confianza. Los diferentes tipos de relaciones se diferencian en función de 3 rasgos característicos:

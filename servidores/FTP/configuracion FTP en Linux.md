@@ -1,15 +1,9 @@
-[TOC]
 
-
-
-# 1. Instalación y configuración por defecto del servidor vsftpd {#1-instalación-y-configuración-por-defecto-del-servidor-vsftpd}
-
+# 1. Instalación y configuración por defecto del servidor vsftpd 
 
 ## Tipos de conexiones FTP
 
 Se puede conectar a un servidor FTP de 3 formas diferentes:
-
-
 
 *   Desde una terminal de Linux o Windows mediante comandos
 *   Desde un cliente FTP como FileZilla o gFTP.

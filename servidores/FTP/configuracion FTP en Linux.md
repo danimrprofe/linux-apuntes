@@ -25,9 +25,7 @@ El nombre de dominio no tiene por qué llevar ftp delante, pero es el subdominio
 
 Instalar el servidor FTP, realizando previamente un update para actualizar la información desde los repositorios. Necesitaremos permisos de administrador para ello:
 
-```bash
-foo@bar:~$ Sudo apt update
-```
+```console foo@bar:~$ Sudo apt update ```
 hola
 ```console
 foo@bar:~$ Sudo apt install vsftpd

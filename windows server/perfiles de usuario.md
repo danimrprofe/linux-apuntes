@@ -23,9 +23,20 @@ Almacenan en una carpeta compartida en red, quedando disponibles para todo equip
 
 ### Perfil obligatorio. 
 
-No almacena los cambios. 
+Características: 
+* No almacena los cambios. 
+* Es un perfil móvil de solo lectura
+* Si guardamos cualquier documento en el perfil, después de cerrar sesión todos los documentos guardados serán borrados automáticamente
+* Cada perfil tiene su propio archivo de preferencias llamado NTUSER.DAT
+* Para configurar el perfil obligatorio necesitamos renombrar NTUSER.DAT a NTUSER.MAN
 
 ### Perfil súper-obligatorio.
+
+Este tipo de perfiles se incorpora a partir de Windows Server 2008 y su objetivo es similar al de los perfiles obligatorios
+
+La diferencia es que, si se produce un error que impide cargar el perfil, el usuario no podrá iniciar sesión
+
+En otras palabras, un perfil de usuario super-obligatorio impedirá que se cargue un perfil temporal cuando exista algún motivo que impida cargar el perfil super-obligatorio
 
 ## Ver el perfil de un usuario
 

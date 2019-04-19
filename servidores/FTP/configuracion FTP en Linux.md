@@ -9,17 +9,15 @@ Se puede conectar a un servidor FTP de 3 formas diferentes:
 *   Desde un cliente FTP como FileZilla o gFTP.
 *   Desde un navegador (chrome, Firefox)
 
-
 ## Conexión por navegador a un servidor FTP {#conexión-por-navegador-a-un-servidor-ftp}
 
 Para conectar a un servidor FTP desde un navegador, deberemos especificar el protocolo, puesto que de no hacerlo el navegador entiende que queremos conectar por HTTP. Por lo tanto, el formato sería:
 
-ftp://IPdelServidor
+    ftp://IPdelServidor
 
 Podemos por ejemplo conectar al FTP de RedIris ([ftp://ftp.rediris.es/](ftp://ftp.rediris.es/)) para encontrar distribuciones de Linux. Busca y descarga las ISO de las últimas versiones de Ubuntu. Una vez comience la descarga, cancelarla para no saturar la red.
 
 El nombre de dominio no tiene por qué llevar ftp delante, pero es el subdominio que se suele utilizar para diferenciarlo del dominio para el servidor web.
-
 
 ## Instalar vsftpd  {#instalar-vsftpd}
 
@@ -27,26 +25,26 @@ El nombre de dominio no tiene por qué llevar ftp delante, pero es el subdominio
 
 Instalar el servidor FTP, realizando previamente un update para actualizar la información desde los repositorios. Necesitaremos permisos de administrador para ello:
 
-Sudo apt update
-
-Sudo apt install vsftpd
-
+```bash
+foo@bar:~$ Sudo apt update
+```
+hola
+```console
+foo@bar:~$ Sudo apt install vsftpd
+```
 
 ## Comprobar creación de usuario y grupo FTP {#comprobar-creación-de-usuario-y-grupo-ftp}
 
 Comprobar que se han creado un usuario y un grupo ftp. Para ello consultar los dos archivos y buscar el grupo y usuario creados: 
 
-
-
-*   cat /etc/passwd  
-*   cat /etc/group
-
+    cat /etc/passwd  
+    cat /etc/group
 
 ## Apertura de conexión {#apertura-de-conexión}
 
 Comprobar que el servidor está iniciado y puerto de escucha. Podemos comprobar que el demonio vsftpd está escuchando en todas las interfaces de red en el puerto 21
 
-**sudo netstat -plunt | grep ftp**
+    sudo netstat -plunt | grep ftp
 
 El 21 es el puerto FTP para enviar y recibir comandos. Cuando se inicie la transferencia de archivos, veremos que se abre también otro puerto para transferir los datos.
 

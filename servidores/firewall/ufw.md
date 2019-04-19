@@ -5,17 +5,16 @@ Las direcciones IP diferencian una máquina en concreto (una interfaz de un orde
 Cada programa reserva uno o más puertos para utilizarlos él, y se conecta a otros programas de otros ordenadores  a través del puerto en el que ellos estén esuchando.
 
 
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](images/image2.png "image_tooltip")
 
 ## Tipos de puertos
 
-<span style="text-decoration:underline;">Puertos bien conocidos</span>
-
+### Puertos bien conocidos
 
 *   Puertos inferiores a 1024. Están reservados para servicios muy definidos, como telnet, SMTP, P0P3.
 *   Estas asignaciones son fijas y no pueden ser utilizadas por otros servicios. A menudo estos puertos son llamados «puertos bien conocidos».
 
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](images/image3.png "image_tooltip")
 
 Los puertos más utilizados por los diferentes protocolos son:
 
@@ -29,7 +28,7 @@ Los puertos más utilizados por los diferentes protocolos son:
 *   Los puertos entre 1024 y 49151 son puertos registrados.
 *   IANA intenta ordenar el uso de este rango, pero sin las restricciones que existen para los puertos bien conocidos.
 
-## Puertos privados
+### Puertos privados
 
 *   Puertos numerados entre 49152 y 65535. Son puertos privados de los que se puede disponer para cualquier uso.
 

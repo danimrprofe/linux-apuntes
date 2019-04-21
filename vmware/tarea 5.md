@@ -16,11 +16,13 @@ creo que hubiera tirado la toalla.
 # Instalación GuettoVCB
 
 Conectar con SSH al host y:
+
+```bash
 mkdir /vcb
 cd /vcb
 wget https://github.com/lamw/ghettoVCB/raw/master/vghetto-ghettoVCB-offline-bundle.zip\
 esxcli software vib install -d /vcb/vghetto-ghettoVCB-offline-bundle.zip –f
-
+```
 No me ha funcionado wget porque por lo visto no soporta https en la version instalada en el hipervisor
 
 Me voy a descargar el paquete en mi ordenador personaly lo voy a pasar por pscp
@@ -47,3 +49,9 @@ VIBs Skipped:
 ```
 Podemos comprobar que esta instalado con esxcli, un pipe y un grep
 para filtrar
+
+```bash
+[root@minint-fhbvlj9:~] esxcli software vib list Igrep ghettoVCB
+ghettoVCB	1.0.0-0.0.0	virtuallyGhetto CommunitySupported 2018-04-29
+[root@minint-fhbvlj9:^) 
+```

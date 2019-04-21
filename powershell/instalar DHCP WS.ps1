@@ -1,15 +1,14 @@
-$DNSDomain=&quot;pearson.com&quot;
-$DNSServerIP=&quot;172.16.1.10&quot;
-$DHCPServerIP=&quot;172.16.1.10&quot;
-$StartRange=&quot;172.16.1.150&quot;
-$EndRange=&quot;172.16.1.200&quot;
-$Subnet=&quot;255.255.255.0&quot;
-$Router=&quot;172.16.1.1&quot;
-Install-WindowsFeature -Name &#39;DHCP&#39; -IncludeManagementTools
-cmd.exe /c &quot;netsh dhcp add securitygroups&quot;
+$DNSDomain="pearson.com"
+$DNSServerlP="172.16.1.10"
+$DHCPServerlP=,,172.16.1.10"
+$StartRange=“172.16.1.150"
+$EndRange="172.16.1.200"
+$Subnet="255.255.255.0"
+$Router="172.16.1.1"
+Install-WindowsFeature -Name 'DHCP' -IndudeManagementTools cmd.exe /c "netsh dhcp add securitygroups"
 Restart-service dhcpserver
-Add-DhcpServerInDC -DnsName $Env:COMPUTERNAME
-Set-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\SOFTWARE Microsoft\ ServerManager\Roles\12 -Name ConfigurationState -Value 2
-Add-DhcpServerV4Scope -Name &quot;DHCP Scope&quot; -StartRange $StartRange -EndRange $EndRange -SubnetMask $Subnet
-Set-DhcpServerV4OptionValue -DnsDomain $DNSDomain -DnsServer $DNSServerIP -Router $Router
-Set-DhcpServerv4Scope -ScopeId $DHCPServerIP -LeaseDuration 1.00:00:00
+Add-DhcpServerlnDC -DnsName $Env:COMPUTERNAME
+Set-ltemProperty -Path registry::HKEY_LOCAL_MACHINE\SOFTWARE Microsoft ServerManager\Roles\12 -Name ConfigurationState -Value 2 
+Add-DhcpServerV4Scope -Name "DHCP Scope" -StartRange SStartRange -EndRange $EndRange -SubnetMask $Subnet 
+Set DhcpServerV40ptionValue -DnsDomain $DNSDomaln -DnsServer $DNSServerlP -Router SRouter 
+Set-DhcpServerv4Scope -Scopeld $DHCPServerlP -LeaseDuration 1.00:00:00

@@ -1,6 +1,6 @@
 $DNSDomain="pearson.com"
 $DNSServerlP="172.16.1.10"
-$DHCPServerlP=,,172.16.1.10"
+$DHCPServerlP="172.16.1.10"
 $StartRange=“172.16.1.150"
 $EndRange="172.16.1.200"
 $Subnet="255.255.255.0"

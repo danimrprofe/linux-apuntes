@@ -1,15 +1,24 @@
 # vSphere HA y FT
 
-En el entorno empresarial es muy importante que los servidores y otros sistemas informáticos funcionen ininterrumpidamente, 
-pues el tiempo de inactividad lleva a perder productividad y perder ingresos. O eso o al menos que el tiempo que están sin 
+- [vSphere HA y FT](#vsphere-ha-y-ft)
+  - [1) vSphere HA](#1-vsphere-ha)
+    - [Arquitectura de vSphere HA](#arquitectura-de-vsphere-ha)
+      - [vSphere HA: latidos de red](#vsphere-ha-latidos-de-red)
+      - [vSphere HA: latidos de almacén de datos (este no me ha quedado muy claro por lo que he investigado un poco)](#vsphere-ha-latidos-de-almac%C3%A9n-de-datos-este-no-me-ha-quedado-muy-claro-por-lo-que-he-investigado-un-poco)
+    - [Escenarios de errores de vSphere HA](#escenarios-de-errores-de-vsphere-ha)
+  - [2) vSphere Fault Tolerance FT](#2-vsphere-fault-tolerance-ft)
+
+En el entorno empresarial es muy importante que los servidores y otros sistemas informáticos funcionen ininterrumpidamente,
+pues el tiempo de inactividad lleva a perder productividad y perder ingresos. O eso o al menos que el tiempo que están sin
 funcionar sea el menor posible para reducir las pérdidas.
 
-vSphere permite utilizar técnicas para conseguir que las máquinas virtuales siempre estén disponibles y, 
+vSphere permite utilizar técnicas para conseguir que las máquinas virtuales siempre estén disponibles y,
 en caso de que sea necesario, se puedan recuperar rápidamente. Principalmente HA y FT.
 
 ## 1) vSphere HA
 
 Permite garantizar alta disponibilidad de máquinas virtuales, agrupando los hosts en los que se ejecutan como un clúster para proporcionar mecanismos de recuperación y alta disponibilidad. Por ejemplo:
+
 * Si falla un host, reinicia las máquinas virtuales que se ejecutaban sobre ese Host en otro host del clúster que esté operativo.
 * Si lo que falla es una MV, lo que se hace es reiniciarla, dentro del mismo host (el host en principio funciona). Se va monitorizando la MV para ver cuando deja de enviar señales de vida.
 * Si lo que falla es una aplicación dentro de una MV concreta, se reinicia la máquina virtual.
@@ -32,13 +41,13 @@ Existen 2 tipos de latidos, que son complementarios para el funcionamiento de HA
 * Network heartbeats (latidos de red)
 * Datastore heartbeats (latidos de almacén de datos)
 
-### Arquitectura de vSphere HA: latidos de red
+#### vSphere HA: latidos de red
 
 El host principal envía latidos a todos los hosts secundarios. Si alguno de estos no responde, se le declara inaccesible, 
 por el motivo que sea. El host principal intenta adivinar si el host ha dejado de funcionar, tiene problemas de red o es 
 inaccesible.
 
-### Arquitectura de vSphere HA: latidos de almacén de datos (este no me ha quedado muy claro por lo que he investigado un poco)
+#### vSphere HA: latidos de almacén de datos (este no me ha quedado muy claro por lo que he investigado un poco)
 
 Cuando el host principal del clúster no se puede comunicar con un host secundario a través de la red de administración, 
 daríamos al host por muerto y arrancaríamos las MV en otro host. Pero es posible que fuera un error de conectividad (externo) 

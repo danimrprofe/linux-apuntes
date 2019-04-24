@@ -19,6 +19,7 @@ Menú contextual de Users / Nuevo / Usuario Introducir los datos del usuario y e
 
 Menú Inicio / Herramientas administrativas / Usuarios y equipos de Active Directory. Clic en "+" del nombre del domlni. Users / usuario a modificar / menú co | ntextual y Propiedades. Se muestran varias fichas con los correspondientes apartados: Fichas General, Dirección, Cuenta, etc.
 Desde el menú Acción se pueden realizar las siguientes operaciones:
+
 * Añadir a un grupo.
 * Deshabilitar cuenta.
 * Usuarios y grupos en Windows Server

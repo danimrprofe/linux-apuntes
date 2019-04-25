@@ -19,6 +19,7 @@
     - [Variables de entorno](#variables-de-entorno)
     - [Ejemplo de docker-compose](#ejemplo-de-docker-compose)
     - [Ejecutar docker-compose](#ejecutar-docker-compose)
+  - [Persistencia](#persistencia)
   - [Monitorizar contenedores](#monitorizar-contenedores)
     - [Dive](#dive)
   - [Buenas prácticas para construir contenedores](#buenas-pr%C3%A1cticas-para-construir-contenedores)
@@ -49,8 +50,9 @@ los contenedores no son visibles desde el propio SO.
 
 ## Imágenes
 
-Una imagen es como una aplicación compilada. 
+Una imagen es como una aplicación compilada.
 Un contenedor es una instancia en ejecución de una imagen concreta.
+
 Las imágenes se construyen sobre una tecnología de **sistema de ficheros por capas**.
 
 Para crear una imagen, generalmente se crea un archivo de texto llamado docker file
@@ -264,6 +266,13 @@ docker stop $(docker ps -q)
 docker rm -v $(docker ps -aq)
 ```
 
+## Persistencia
+
+Los contenedores por defecto están completamente aislados del mundo exterior.
+
+Podemos montar un volumen que funcionará como si fuer una carpeta compartida
+a la que puedes acceder desde otro lugar.
+
 ## Monitorizar contenedores
 
 * Comprobar recursos que utiliza un contenedor: docker stats xxx
@@ -312,3 +321,4 @@ Algunas ventajas de cambiar a un entorno docker son:
 al tenerlos que definir como instrucciones en un Dockerfile.
 - Al hacer los dockerfiles tratas tu infraestructura como código que puede
 ser commited y compartido, así como ver un histórico de cambios.
+

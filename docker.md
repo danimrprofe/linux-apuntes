@@ -1,6 +1,10 @@
 # Apuntes de Docker
 
 - [Apuntes de Docker](#apuntes-de-docker)
+  - [Contenedores](#contenedores)
+    - [Contenedores Windows y contenedores Linux](#contenedores-windows-y-contenedores-linux)
+  - [Imágenes](#im%C3%A1genes)
+    - [Aprovechamiento de las capas](#aprovechamiento-de-las-capas)
   - [Docker](#docker)
   - [Dockerfiles](#dockerfiles)
     - [Formato de un dockerfile](#formato-de-un-dockerfile)
@@ -18,6 +22,69 @@
   - [Monitorizar contenedores](#monitorizar-contenedores)
     - [Dive](#dive)
   - [Buenas prácticas para construir contenedores](#buenas-pr%C3%A1cticas-para-construir-contenedores)
+    - [Multi stage builds](#multi-stage-builds)
+  - [Ventajas de dockerizar](#ventajas-de-dockerizar)
+
+## Contenedores
+
+Los contenedores no tienen un sistema operativo dentro, el contenedor aísla el espacio
+de usuario.
+
+Son muy ligeros porque corren como un proceso sobre el SO del host.
+
+Los contenedores escalan en función de la demanda, mientras que las MV tienen que ser aprovisionadas previamente.
+
+### Contenedores Windows y contenedores Linux
+
+Los contenedores Windows corren sobre Windows y los contenedores Linux sobre Linux
+Se diferencian en los tipos de aislamiento que tienen ambos
+
+Los contenedores Linux:
+
+- Se ejecutan sobre el host de modo que son visibles a ellos
+- Se ejecutan sobre el kernel como un proceso visible desde el host
+
+En Hyper-V Windows lanza una MV super fina que tiene su propio kernel y por tanto
+los contenedores no son visibles desde el propio SO.
+
+## Imágenes
+
+Una imagen es como una aplicación compilada. 
+Un contenedor es una instancia en ejecución de una imagen concreta.
+Las imágenes se construyen sobre una tecnología de **sistema de ficheros por capas**.
+
+Para crear una imagen, generalmente se crea un archivo de texto llamado docker file
+formado por diferentes **instrucciones**. Cada línea representa una instrucción, y cada
+vez que se ejecuta el dockerfile se ejecutan dichas instrucciones de arriba a abajo.
+
+Estos dockerfiles se almacenan como texto y se pueden compartir con facilidad, así
+como almacenarse en sistemas de control de versiones.
+
+Cada **instrucción** que se ejecuta cambia ligeramente el estado del sistema de archivos respecto a la instrucción anterior.
+
+La diferencia entre el estado del sistema de ficheros antes y después de cada instrucción se guarda en disco como un archivo, que conforma una **capa**.
+
+Cada **imagen** es un conjunto de capas que contienen los diferentes cambios que se van
+realizando sobre el sistema de archivos empaquetados.
+
+Al final del dockerfile, la última instrucción define el **comando** que se ejecutará cuando arranquemos el contenedor.
+
+Al ejecutar un comando a partir de la imagen creada, se ejecuta el comando especificado
+y se convierte en el proceso con PID 1 dentro del árbol virtual de procesos.
+
+El contenedor seguirá en marcha mientras el proceso creado siga en ejecución.
+
+### Aprovechamiento de las capas
+
+Cada vez que se ejecuta una instrucción, se crea un contenedor y se etiqueta con un
+hash creado para obtener un nombre único. De este modo, podemos reutilizar estas capas intermedias y solo tener que construirlas una vez.
+
+Si dos docker files comienzan por el mismo set de instrucciones desde el comienzo,
+todas las capas que coincidan solo existirán en el sistema de ficheros una vez, para
+ambos contenedores.
+
+Para cada RUN se crea una capa, por lo que se pueden agrupar varios comandos en un
+solo RUN y crear una única capa.
 
 ## Docker
 
@@ -215,9 +282,33 @@ https://github.com/yosifkit/dive
 
 ## Buenas prácticas para construir contenedores
 
-* Una sola aplicación por contenedor. Por ejemplo, PHP y Mysql en dos contenedores.
-* Agregar el código fuente de la aplición lo más tarde posible. Las capas y dependencias se pueden cachear y acelerar las builds posteriores
-* Eliminar todo lo que no sea necesario, o utilizar una imagen scratch o distroless.
-* Hacer las imágenes lo más pequeñas posibles. Reduce downtimes, tiempo de arranque y espacio en disco.
-* Etiquetar las imágenes
-* Utiliza volúmenes para manejar guardar la configuración y los datos fuera de los contenedores
+- Una sola aplicación por contenedor. Por ejemplo, PHP y Mysql en dos contenedores.
+- Agregar el código fuente de la aplición lo más tarde posible. Las capas y dependencias se pueden cachear y acelerar las builds posteriores
+- Eliminar todo lo que no sea necesario, o utilizar una imagen scratch o distroless.
+- Hacer las imágenes lo más pequeñas posibles. Reduce downtimes, tiempo de arranque y espacio en disco.
+- Etiquetar las imágenes
+- Utiliza volúmenes para manejar guardar la configuración y los datos fuera de los contenedores
+
+### Multi stage builds
+
+Definimos un **dockerfile** y ponemos en primer lugar una línea FROM. A continuación
+ponemos otra línea FROM. Por ejemplo:
+
+- FROM alpine golang
+- FROM alpine
+
+Puedes cargar el código fuente en una imagen y compilarlo
+Luego borrar el código fuente
+Etiquetamos el estado y utilizarlo como un nuevo statement.
+Todo lo que hay antes del segundo FROM se elimina
+
+## Ventajas de dockerizar
+
+Algunas ventajas de cambiar a un entorno docker son:
+
+- Ciclos de desarrollo más rápidos
+- Aplicaciones más pequeñas
+- Ayuda a tener más documentados los pasos de aprovisionamiento del servidor,
+al tenerlos que definir como instrucciones en un Dockerfile.
+- Al hacer los dockerfiles tratas tu infraestructura como código que puede
+ser commited y compartido, así como ver un histórico de cambios.

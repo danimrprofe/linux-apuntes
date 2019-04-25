@@ -3,6 +3,7 @@
 ## ¿Qué es un despliegue?
 
 Los despliegues (deployments) son una colección de recursos y referencias. Un despliegue:
+
 * Describe qué contenedores nos interesan
 * Indica cómo os contenedores se relacionan entre ellos
 * Qué se requiere para qué funcionen correctamente
@@ -11,6 +12,7 @@ Los despliegues (deployments) son una colección de recursos y referencias. Un d
 ## Qué puedo hacer con despliegues
 
 Cosas que puedo hacer con despliegues:
+
 * Crear uno nuevo
 * Actualizar un despliegue existente
 * Aplicar actualizaciones a pods que se estén ejecutando en el cluster
@@ -18,6 +20,7 @@ Cosas que puedo hacer con despliegues:
 * Pausar y arrancar un despliegue
 
 Gracias a kubectl puedo trabajar e interactuar con los diferentes despliegues y:
+
 * Listar despliegues
 * Ver el estado de los rollouts
 * Establecer la imagen para un despliegue
@@ -25,10 +28,11 @@ Gracias a kubectl puedo trabajar e interactuar con los diferentes despliegues y:
 
 ## Ejemplo de despliegue
 
-Los deployments se suelen describir en un archivo YAML. 
+Los **despliegues** se suelen describir en un archivo YAML.
 
-En el siguiente deployment, tendremos una réplica con un único contenedor, que será la imagen oficial de tomcat 9.0 y 
-que escuchará en el puerto 8080. La imagen del contenedor la descargará de Docker Hub.
+En el siguiente deployment, tendremos una réplica con un único contenedor, que será la imagen oficial de tomcat 9.0 y que escuchará en el puerto 8080.
+
+La imagen del contenedor la descargará de Docker Hub.
 
 ```yaml
 apiVersion: apps/v1beta2
@@ -50,7 +54,8 @@ spec:
         image: tomcat:9.0
         ports:
         - containerPort: 8080
-```     
+```
+
 El deployment se debería guardar en un fichero con extensión YAML, como por ejemplo **deployment.yaml**
 
 ## Despliegue del deployment
@@ -59,19 +64,23 @@ El deployment se debería guardar en un fichero con extensión YAML, como por ej
 
 Para crear el deployment:
 
-```
+```sh
 kubectl apply -f ./deployment.yaml
 contestación: deployment.apps/tomcat-deployment created
 ```
+
 Exponemos el despliegue para que nos asocie una IP y puerto
-```
+
+```sh
 kubectl expose deployment tomcat-deployment --type=NodePort
 Contestación: service/tomcat-deployment exposed
 ```
+
 Para saber la IP y el puerto en el que nos ha expuesto el servicio:
-```
+
+```sh
 minikube service tomcat-deployment --url
 Contestación: http://192.168.99.100:30836
 ```
-Si accedemos a esta URL veremos que está el servidor Tomcat escuchando
 
+Si accedemos a esta URL veremos que está el servidor Tomcat escuchando

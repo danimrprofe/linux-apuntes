@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <title>Virtualización</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        <link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+    </head>
+    <body>
+        <h1 id="virtualizaci%C3%B3n">Virtualización</h1>
+<ul>
+<li><a href="#virtualizaci%C3%B3n">Virtualización</a>
+<ul>
+<li><a href="#concepto-de-virtualizaci%C3%B3n">Concepto de virtualización</a>
+<ul>
+<li><a href="#de-qu%C3%A9-se-trata">De qué se trata</a></li>
+<li><a href="#usos-de-la-virtualizaci%C3%B3n">Usos de la virtualización</a></li>
+<li><a href="#ventajas-de-virtualizar">Ventajas de virtualizar</a></li>
+</ul>
+</li>
+<li><a href="#componentes-de-la-virtualizci%C3%B3n">Componentes de la virtualizción</a>
+<ul>
+<li><a href="#anfitri%C3%B3n-host">Anfitrión (HOST)</a></li>
+<li><a href="#hu%C3%A9sped-guest">Huésped (GUEST)</a></li>
+<li><a href="#hypervisor-vmm">Hypervisor (VMM)</a></li>
+</ul>
+</li>
+<li><a href="#tipos-de-virtualizaci%C3%B3n">Tipos de virtualización</a>
+<ul>
+<li><a href="#virtualizaci%C3%B3n-de-recursos">Virtualización de recursos</a></li>
+<li><a href="#virtualizaci%C3%B3n-de-plataforma">Virtualización de plataforma</a></li>
+</ul>
+</li>
+<li><a href="#virtualizaci%C3%B3n-de-plataforma-1">Virtualización de plataforma</a>
+<ul>
+<li><a href="#emulaci%C3%B3n">Emulación</a></li>
+<li><a href="#virtualizaci%C3%B3n-nativa">Virtualización nativa</a></li>
+<li><a href="#virtualizaci%C3%B3n-asistida-por-hardware">Virtualización asistida por hardware</a></li>
+</ul>
+</li>
+<li><a href="#tipos-de-hipervisor">Tipos de hipervisor</a>
+<ul>
+<li><a href="#tipo-1-hipervisor-alojado-o-hosted">Tipo 1: Hipervisor alojado o hosted</a></li>
+<li><a href="#tipo-2-hipervisor-nativo-o-bare-metal">Tipo 2: Hipervisor nativo o bare metal</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="concepto-de-virtualizaci%C3%B3n">Concepto de virtualización</h2>
+<h3 id="de-qu%C3%A9-se-trata">De qué se trata</h3>
+<p>Creación a través de <strong>software</strong> de una versión virtual de un <strong>recurso</strong> tecnológico</p>
+<h3 id="usos-de-la-virtualizaci%C3%B3n">Usos de la virtualización</h3>
+<ul>
+<li>Probar otros sistemas operativos</li>
+<li>Ejecutar programas antiguos</li>
+<li>Utilizar aplicaciones de otros SO</li>
+<li>Probar aplicación en diferentes sistemas</li>
+</ul>
+<h3 id="ventajas-de-virtualizar">Ventajas de virtualizar</h3>
+<ul>
+<li>Aprovechamiento de recursos</li>
+<li>Escalabilidad y disponibilidad</li>
+<li>Reducción de coste y consumo</li>
+<li>Copias de seguridad sencillas</li>
+<li>Seguridad</li>
+</ul>
+<h2 id="componentes-de-la-virtualizci%C3%B3n">Componentes de la virtualizción</h2>
+<h3 id="anfitri%C3%B3n-host">Anfitrión (HOST)</h3>
+<p>Equipo sobre el que se ejecuta todo el sistema de virtualización</p>
+<h3 id="hu%C3%A9sped-guest">Huésped (GUEST)</h3>
+<p>Lo que se virtualiza sobre el anfitrión
+Lo más habitual suelen ser máquinas virtuales
+Sobre un HOST se pueden ejecutar 1 o más GUEST</p>
+<h3 id="hypervisor-vmm">Hypervisor (VMM)</h3>
+<p>Es el software que permite llevar a cabo la virtualización
+Me deja crear las máquinas virtuales, definirlas, manipularlas
+Ejemplo: virtualbox</p>
+<h2 id="tipos-de-virtualizaci%C3%B3n">Tipos de virtualización</h2>
+<h3 id="virtualizaci%C3%B3n-de-recursos">Virtualización de recursos</h3>
+<p>Simulan:</p>
+<ul>
+<li>Volúmenes de almacenamiento</li>
+<li>Recursos de red</li>
+</ul>
+<p>Ejemplos:</p>
+<ul>
+<li>Sistemas RAID</li>
+<li>Redes VPN</li>
+<li>Almacenamiento en red (SAN)</li>
+<li>Computación en la nube (Cloud computing)</li>
+</ul>
+<h3 id="virtualizaci%C3%B3n-de-plataforma">Virtualización de plataforma</h3>
+<p>Crear MV combinando HW y SW
+Simulan un equipo completo con su SO</p>
+<p>Tipos principales:</p>
+<ul>
+<li>Emulación</li>
+<li>Virtualización nativa</li>
+<li>Virtualización asistida por hardware</li>
+</ul>
+<h2 id="virtualizaci%C3%B3n-de-plataforma-1">Virtualización de plataforma</h2>
+<h3 id="emulaci%C3%B3n">Emulación</h3>
+<ul>
+<li>Sucede cuando la arquitectura de <strong>host</strong> y <strong>GUEST</strong> es completamente diferente</li>
+<li>Ejemplos:
+<ul>
+<li>GUEST: ARM y HOST: procesador x64</li>
+<li>GUEST: PowerPC y HOST: x86</li>
+</ul>
+</li>
+</ul>
+<p>Se simula todo el hardware (completo)
+Software: QEMU, MAME, Bochs</p>
+<h3 id="virtualizaci%C3%B3n-nativa">Virtualización nativa</h3>
+<ul>
+<li>En este caso las arquitecturas de el <strong>host</strong> y el <strong>guest</strong> son idénticas</li>
+<li>El software simulado es la parte del hardware que no tienen en común</li>
+<li>Ejemplos de software:
+<ul>
+<li>VirtualBox, QEMU, Hyper-V, VMWare</li>
+</ul>
+</li>
+</ul>
+<h3 id="virtualizaci%C3%B3n-asistida-por-hardware">Virtualización asistida por hardware</h3>
+<ul>
+<li>Se trata de un tipo de virtualización nativa</li>
+<li>El procesador del HOST contribuye a la virtualización</li>
+<li>Para ello es necesario disponer en el procesador preparado para virtualización:
+<ul>
+<li>Tecnología AMD-V</li>
+<li>Intel VT-x</li>
+</ul>
+</li>
+<li>Las opciones de virtualización deben estar habilitadas desde la BIOS</li>
+</ul>
+<h2 id="tipos-de-hipervisor">Tipos de hipervisor</h2>
+<h3 id="tipo-1-hipervisor-alojado-o-hosted">Tipo 1: Hipervisor alojado o hosted</h3>
+<p>El <strong>hipervisor</strong> es un programa que se ejecuta sobre SO del <strong>host</strong></p>
+<p>Los ejemplos más habituales de hipervisores de este tipo son:</p>
+<ul>
+<li>VMware</li>
+<li>Virtual PC (Microsoft)</li>
+<li>VirtualBox (Oracle)</li>
+</ul>
+<h3 id="tipo-2-hipervisor-nativo-o-bare-metal">Tipo 2: Hipervisor nativo o bare metal</h3>
+<ul>
+<li>El hipervisor se instala y ejecuta directamente sobre el hardware del equipo</li>
+<li>No existe ningún SO intermedio instalado</li>
+<li>Ejemplos:
+<ul>
+<li>VMware ESX</li>
+<li>Hyper-V (Microsoft)</li>
+<li>Citrix XenServer</li>
+<li>Oracle VM</li>
+</ul>
+</li>
+</ul>
+
+    </body>
+    </html>

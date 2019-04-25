@@ -10,12 +10,20 @@
     - [Consultar imágenes](#consultar-im%C3%A1genes)
     - [Ejecutar un contenedor](#ejecutar-un-contenedor)
   - [Docker compose](#docker-compose)
+    - [Definición de servicios](#definici%C3%B3n-de-servicios)
+    - [Montaje de volúmenes](#montaje-de-vol%C3%BAmenes)
+    - [Variables de entorno](#variables-de-entorno)
+    - [Ejemplo de docker-compose](#ejemplo-de-docker-compose)
     - [Ejecutar docker-compose](#ejecutar-docker-compose)
   - [Monitorizar contenedores](#monitorizar-contenedores)
+    - [Dive](#dive)
   - [Buenas prácticas para construir contenedores](#buenas-pr%C3%A1cticas-para-construir-contenedores)
 
 ## Docker
-Diferentes configuraciones de Docker
+
+Docker permite automatizar el despliegue de aplicaciones dentro de contenedores.
+
+Veremos diferentes configuraciones de Docker que podemos hacer.
 
 ## Dockerfiles
 
@@ -43,7 +51,7 @@ CMD ["/bin/echo" , "Hi Docker !"]
 Construimos la imagen con el siguiente comando. Al haber un Dockerfile en la carpeta
 la detecta y monta la imagen a partir de las instrucciones del Dockerfile.
 
-```docker
+```sh
 docker build .
 ```
 
@@ -64,12 +72,24 @@ podemos levantar tantos contenedores como queramos.
 docker images
 ```
 
+Nos mostrará:
+
+```
+REPOSITORY            TAG                 IMAGE ID            CREATED             SIZE
+node.js-mongodb       latest              2ce837b1b0ca        11 minutes ago      111MB
+danimrtic/apache2     first               4223faeadc8f        2 months ago        208MB
+danimrprofe/apache2   first               4223faeadc8f        2 months ago        208MB
+danimrprofe/apache2   latest              4223faeadc8f        2 months ago        208MB
+ubuntu                latest              20bb25d32758        3 months ago        87.5MB
+node                  10.13-alpine        93f2dcbcddfe        4 months ago        70.3MB
+```
+
 ### Ejecutar un contenedor
 
 A partir de una imagen podemos crear y ejecutar un contenedor, especificando el ID de la imagen:
 
 ```docker
-docker run e778362ca7cf
+docker run 20bb25d32758
 ```
 
 ## Docker compose
@@ -83,9 +103,39 @@ a definir diferentes Dockerfiles para cada uno y levantar los contenedores uno a
 - Con un solo comando podemos poner en marcha varios contenedores al mismo tiempo.
 - Podemos decir que un servicio solo se levante si otro se ha iniciado previamente
 
+### Definición de servicios
+
 Para ello definimos la configuración de los servicios mediante un archivo en formato YAML, que llamaremos docker-compose.
 
-Ejemplo de docker-compose:
+Ejemplo de docker-compose, en el que podemos ver dos servicios:
+
+- Un servicio **basededatos** que cargará una imagen de **mysql:5.7**
+- Un servicio **wordpress** que cargará una imagen **wordpress:latest**
+
+Estas imágenes saldrán de docker hub. Los propios desarrolladores generan las
+imágenes docker y las publican allí.
+
+### Montaje de volúmenes
+
+Como ya sabemos, los contenedores tienen un ciclo de vida y dentro de ellos
+los datos no persisten, por lo que tendremos que enlazar una carpeta externa
+a una interna del contenedor.
+
+Por ejemplo, la carpeta `db_data` que tenemos en la carpeta contenedora de los dockerfiles y el código fuente se montará dentro del contenedor en la carpeta
+`/var/lib/mysql`.
+
+De este modo, al morir el contenedor los datos no serán borrados.
+
+### Variables de entorno
+
+Los diferentes servicios pueden tener que compartir variables entre ellos. Por
+ejemplo, wordpress necesitará saber los datos de acceso a la BD donde guardará
+la información que necesite. 
+
+Esto, que generalmente haríamos a mano modificando archivos de configuración, 
+se puede hacer definiendo variables externamente dentro del dockerfile.
+
+### Ejemplo de docker-compose
 
 ```yaml
 version: '3.3'
@@ -153,6 +203,15 @@ docker rm -v $(docker ps -aq)
 * Comprobar los logs de un contenedor: docker logs
 * Comprobar todos los eventos que han ocurrido a un contenedor: docker events 
 * Listar procesos de un contenedor: docker top xxx
+
+### Dive
+
+Existe una herramienta llamada dive que permite monitorizar una imagen para ver
+detalles, espacio ocupado, sistema de archivos, etc. e intentar optimizarla.
+
+No he tenido tiempo de probarlo, pero el proyecto está en:
+
+https://github.com/yosifkit/dive
 
 ## Buenas prácticas para construir contenedores
 

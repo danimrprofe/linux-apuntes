@@ -46,8 +46,8 @@ Tanto dpkg como rpm detectan dependencias de paquetes para autorizar o no la ins
 
 **YUM** o **APT** son gestores de paquetes. Descargan los paquetes de un repositorio y gestionan las dependencias automáticamente. Las herramientas **DPKG** o **RPM** no resuelven las dependencias, si hay alguna detienen la instalación e informan de las dependencias que no están cubiertas.
 
-- YUM se utiliza en distribuciones Red Hat, Fedora, etc y gestiona paquetes .rpm
-- APT se utiliza en sistemas Debian y derivados y gestiona paquetes .deb
+- **YUM** se utiliza en distribuciones Red Hat, Fedora, etc y gestiona paquetes **.rpm**
+- **APT** se utiliza en sistemas Debian y derivados y gestiona paquetes **.deb**
 
 ## 4. Repositorios
 
@@ -96,7 +96,8 @@ Es un administrador de paquetes con una interfaz en modo texto.
 ## Tareas
 
 Las **tareas** son grupos de paquetes que proporcionan un modo sencillo de seleccionar un conjunto predefinido de paquetes.
-Por ejemplo, la tarea LAMP server instala los siguientes paquetes:
+
+Por ejemplo, la tarea `LAMP server` instala los siguientes paquetes:
 
 Buscar paquetes que comienzan con apache:
 

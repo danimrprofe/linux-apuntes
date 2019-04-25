@@ -1,4 +1,5 @@
 # kubernetes
+
 Es un sistema de gestión y orquestación de contenedores. Permite automatizar el despliegue, escalado y gestión de contenedores.
 
 ## Minikube

@@ -369,8 +369,6 @@ Lo más probable es que a la primera no nos deje:
 
 Al menos esto significa que estamos pasando a través del firewall sin problemas. Miramos el archivo de configuración:
 
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Proxy-squid10.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 ![alt_text](images/Proxy-squid10.png "image_tooltip")
 
 Cambiamos el http_access y le metemos allow all

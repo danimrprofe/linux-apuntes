@@ -7,7 +7,7 @@ creando servicios.
 
 Añade un nivel de abstracción más por encima de Docker.
 
-A k8s le puedo escribir en un archivo YAML:
+A k8s le puedo escribir en un archivo **YAML**:
 
 - Qué imágenes de docker quiero que coja
 - Decirle que quiero 10 contenedores de estos, 5 de estos, y 3 de estos.
@@ -27,13 +27,12 @@ Puedo decirle que tengo estos nodos, que pueden ser, por ejemplo:
 
 - Instancias EC2
 - Google Compute Instances
-Instances.
 
 Estos serán los nodos **worker** o **minions**.
 Los asocio a los nodos máster para que puedan ejecutar contenedores en esos nodos.
 
 ## Minikube
 
-Minikube es una herramienta que facilita la ejecución local de Kubernetes. Minikube ejecuta un clúster Kubernetes de un solo nodo dentro de una máquina virtual 
+**Minikube** es una herramienta que facilita la ejecución local de Kubernetes. Minikube ejecuta un clúster Kubernetes de un solo nodo dentro de una máquina virtual.
 
 Proporciona una solución sencilla para usuarios que desean probar Kubernetes o desarrollar soluciones sobre él.

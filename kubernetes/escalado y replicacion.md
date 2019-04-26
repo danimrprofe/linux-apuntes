@@ -23,6 +23,7 @@ spec:
  ...
  ...
 ```
+
 ### Escalado por comando
 Otra opción es no modificar el despliegue (dejarlo a replicas=1 y ejecutar el comando scale para decirle 
 cuantas réplicas quiero
@@ -76,8 +77,9 @@ Session Affinity:         None
 External Traffic Policy:  Cluster
 Events:                   <none>
 ```
+
 Como podemos ver, las peticiones al puerto 8080 de la IP 10.96.43.114 se distribuirán a los endpoints:
+
 * 172.17.0.5:8080
 * 172.17.0.7:8080
 * etc.
-

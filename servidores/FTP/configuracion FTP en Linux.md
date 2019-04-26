@@ -1,4 +1,57 @@
 
+- [1. Instalación y configuración por defecto del servidor vsftpd](#1-instalaci%C3%B3n-y-configuraci%C3%B3n-por-defecto-del-servidor-vsftpd)
+  - [Tipos de conexiones FTP](#tipos-de-conexiones-ftp)
+  - [Conexión por navegador a un servidor FTP {#conexión-por-navegador-a-un-servidor-ftp}](#conexi%C3%B3n-por-navegador-a-un-servidor-ftp-conexi%C3%B3n-por-navegador-a-un-servidor-ftp)
+  - [Instalar vsftpd {#instalar-vsftpd}](#instalar-vsftpd-instalar-vsftpd)
+  - [Comprobar creación de usuario y grupo FTP {#comprobar-creación-de-usuario-y-grupo-ftp}](#comprobar-creaci%C3%B3n-de-usuario-y-grupo-ftp-comprobar-creaci%C3%B3n-de-usuario-y-grupo-ftp)
+  - [Apertura de conexión {#apertura-de-conexión}](#apertura-de-conexi%C3%B3n-apertura-de-conexi%C3%B3n)
+  - [Carpeta de almacenamiento {#carpeta-de-almacenamiento}](#carpeta-de-almacenamiento-carpeta-de-almacenamiento)
+  - [Archivo de configuración {#archivo-de-configuración}](#archivo-de-configuraci%C3%B3n-archivo-de-configuraci%C3%B3n)
+  - [Tipos de usuarios {#tipos-de-usuarios}](#tipos-de-usuarios-tipos-de-usuarios)
+- [2. Conexión con usuario anónimo {#2-conexión-con-usuario-anónimo}](#2-conexi%C3%B3n-con-usuario-an%C3%B3nimo-2-conexi%C3%B3n-con-usuario-an%C3%B3nimo)
+  - [Creación de archivos en el servidor](#creaci%C3%B3n-de-archivos-en-el-servidor)
+  - [Conectar al servidor](#conectar-al-servidor)
+  - [Permitir acceso anónimo {#permitir-acceso-anónimo}](#permitir-acceso-an%C3%B3nimo-permitir-acceso-an%C3%B3nimo)
+  - [Descargar archivos](#descargar-archivos)
+  - [Subir archivos](#subir-archivos)
+  - [Enjaulado de usuarios {#enjaulado-de-usuarios}](#enjaulado-de-usuarios-enjaulado-de-usuarios)
+- [3. Usuarios locales {#3-usuarios-locales}](#3-usuarios-locales-3-usuarios-locales)
+  - [Crear usuarios locales {#crear-usuarios-locales}](#crear-usuarios-locales-crear-usuarios-locales)
+    - [Configurar espacio alumno {#configurar-espacio-alumno}](#configurar-espacio-alumno-configurar-espacio-alumno)
+    - [Carpetas del usuario profesor {#carpetas-del-usuario-profesor}](#carpetas-del-usuario-profesor-carpetas-del-usuario-profesor)
+  - [Habilitar login con usuarios locales {#habilitar-login-con-usuarios-locales}](#habilitar-login-con-usuarios-locales-habilitar-login-con-usuarios-locales)
+  - [Acceder al FTP con otros usuarios {#acceder-al-ftp-con-otros-usuarios}](#acceder-al-ftp-con-otros-usuarios-acceder-al-ftp-con-otros-usuarios)
+    - [Conectar por consola a un servidor FTP](#conectar-por-consola-a-un-servidor-ftp)
+  - [Consultar el fichero de log {#consultar-el-fichero-de-log}](#consultar-el-fichero-de-log-consultar-el-fichero-de-log)
+  - [Habilitar subida de archivos locales {#habilitar-subida-de-archivos-locales}](#habilitar-subida-de-archivos-locales-habilitar-subida-de-archivos-locales)
+  - [Descarga un archivo fuera de la carpeta del usuario](#descarga-un-archivo-fuera-de-la-carpeta-del-usuario)
+  - [Enjaular usuarios locales {#enjaular-usuarios-locales}](#enjaular-usuarios-locales-enjaular-usuarios-locales)
+- [4. Configuración avanzada del servidor {#4-configuración-avanzada-del-servidor}](#4-configuraci%C3%B3n-avanzada-del-servidor-4-configuraci%C3%B3n-avanzada-del-servidor)
+  - [Activar mensaje de directorio {#activar-mensaje-de-directorio}](#activar-mensaje-de-directorio-activar-mensaje-de-directorio)
+    - [Configurar mensajes en los directorios {#configurar-mensajes-en-los-directorios}](#configurar-mensajes-en-los-directorios-configurar-mensajes-en-los-directorios)
+  - [Activar mensaje de bienvenida {#activar-mensaje-de-bienvenida}](#activar-mensaje-de-bienvenida-activar-mensaje-de-bienvenida)
+    - [Comprobación {#comprobación}](#comprobaci%C3%B3n-comprobaci%C3%B3n)
+  - [Configuración de tiempos de conexión {#configuración-de-tiempos-de-conexión}](#configuraci%C3%B3n-de-tiempos-de-conexi%C3%B3n-configuraci%C3%B3n-de-tiempos-de-conexi%C3%B3n)
+  - [Configuración de número de conexiones {#configuración-de-número-de-conexiones}](#configuraci%C3%B3n-de-n%C3%BAmero-de-conexiones-configuraci%C3%B3n-de-n%C3%BAmero-de-conexiones)
+  - [Enjaular usuarios locales (chroot)](#enjaular-usuarios-locales-chroot)
+    - [Lista {#lista}](#lista-lista)
+  - [Limitar velocidad a los usuarios {#limitar-velocidad-a-los-usuarios}](#limitar-velocidad-a-los-usuarios-limitar-velocidad-a-los-usuarios)
+  - [Limitar acceso a determinados usuarios {#limitar-acceso-a-determinados-usuarios}](#limitar-acceso-a-determinados-usuarios-limitar-acceso-a-determinados-usuarios)
+  - [Mostrar archivos ocultos {#mostrar-archivos-ocultos}](#mostrar-archivos-ocultos-mostrar-archivos-ocultos)
+  - [Mostrar información de los archivos {#mostrar-información-de-los-archivos}](#mostrar-informaci%C3%B3n-de-los-archivos-mostrar-informaci%C3%B3n-de-los-archivos)
+- [5. Configuración separada para cada usuario local {#5-configuración-separada-para-cada-usuario-local}](#5-configuraci%C3%B3n-separada-para-cada-usuario-local-5-configuraci%C3%B3n-separada-para-cada-usuario-local)
+- [6. Crear cuotas (no hacer nada a partir de aquí)](#6-crear-cuotas-no-hacer-nada-a-partir-de-aqu%C3%AD)
+  - [Agregar directiva a la partición {#agregar-directiva-a-la-partición}](#agregar-directiva-a-la-partici%C3%B3n-agregar-directiva-a-la-partici%C3%B3n)
+  - [Comprobación](#comprobaci%C3%B3n)
+    - [Chequeo del sistema de cuotas](#chequeo-del-sistema-de-cuotas)
+    - [Comprobación de cuotas de usuarios {#comprobación-de-cuotas-de-usuarios}](#comprobaci%C3%B3n-de-cuotas-de-usuarios-comprobaci%C3%B3n-de-cuotas-de-usuarios)
+  - [Limitar la cuota de cada usuario](#limitar-la-cuota-de-cada-usuario)
+- [7. Modos activo y pasivo (No hacer)](#7-modos-activo-y-pasivo-no-hacer)
+  - [Utilizar el modo pasivo](#utilizar-el-modo-pasivo)
+- [8. Configuración TLS/SSL/FTPS (No hacer)](#8-configuraci%C3%B3n-tlssslftps-no-hacer)
+- [9. Usuarios virtuales (NO HACER)](#9-usuarios-virtuales-no-hacer)
+- [10. Clientes de ftp](#10-clientes-de-ftp)
+
 # 1. Instalación y configuración por defecto del servidor vsftpd 
 
 ## Tipos de conexiones FTP
@@ -117,9 +170,7 @@ Por defecto viene deshabilitado, por lo que tendremos que cambiar el parámetro 
 
 ![alt_text](images/Configuraci-n-FTP2.png "image_tooltip")
 
-
 Reiniciamos el servidor y volvemos a comprobar desde un cliente que podemos acceder al servidor con el usuario anónimo.
-
 
 ## Descargar archivos
 
@@ -316,7 +367,6 @@ Conecta como profesor y prueba a descargar el archivo del servidor **/etc/passwd
 
 Conviene que los usuarios solo se descarguen cosas de su propia carpeta home. En el siguiente paso intentaremos arreglarlo.
 
-
 ## Enjaular usuarios locales {#enjaular-usuarios-locales}
 
 Modificar **/etc/vsftpd.conf** y habilitar que usuarios locales sean “enjaulados” en su directorio home: **chroot_local_user=YES**. De esta forma, no podrán acceder a ninguna carpeta fuera de su home (recomendable por temas de seguridad).
@@ -325,14 +375,11 @@ Reiniciar el servidor para aplicar cambios
 
 Comprobar poniendo la variable a YES y NO, si podéis o no acceder a otro lugar fuera de la carpeta personal. Consulta el fichero de log **/var/log/vsftpd.log** y comprobar que se han registrado los accesos y transferencias.
 
-
 # 4. Configuración avanzada del servidor {#4-configuración-avanzada-del-servidor}
-
 
 ## Activar mensaje de directorio {#activar-mensaje-de-directorio}
 
-Activar el mensaje de directorio (**.message**). En este caso, nos servirá para presentar mensaje a los usuarios anónimos usando el archivo .message ubicado en el directorio /srv/ftp. Tendremos que crear este archivo que contendrá el mensaje a mostrar.
-
+Activar el mensaje de directorio (**.message**). En este caso, nos servirá para presentar mensaje a los usuarios anónimos usando el archivo .message ubicado en el directorio `/srv/ftp`. Tendremos que crear este archivo que contendrá el mensaje a mostrar.
 
 ### Configurar mensajes en los directorios {#configurar-mensajes-en-los-directorios}
 
@@ -345,7 +392,6 @@ Con el siguiente comando redirigimos un texto hacia un archivo en concreto para 
 El parámetro a incluir en la configuración es: **dirmessage_enable=YES**
 
 Conéctate a un compañero para ver su mensaje de bienvenida y viceversa. Escribe en dos directorios un mensaje que explique qué se debe guardar en ese directorio.
-
 
 ## Activar mensaje de bienvenida {#activar-mensaje-de-bienvenida}
 
@@ -360,7 +406,6 @@ Podemos modificarlo por lo que queramos. Por ejemplo:
 Conectar desde un shell al servidor FTP, y comprobar que aparecen los mensajes que hemos configurado previamente.
 
 También podéis crear [banners ASCII art](https://www.shellhacks.com/create-ascii-text-banner-linux-command-line/) para ponerlos en vuestros servidores, como curiosidad.
-
 
 ## Configuración de tiempos de conexión {#configuración-de-tiempos-de-conexión}
 
@@ -381,24 +426,23 @@ También podemos limitar conexiones por IP: **max_per_ip =2**. No podrán conect
 
 Configura que solo se puedan conectar 2 clientes como máximo y solo 1 por IP. Comprueba que funciona correctamente
 
-
 ## Enjaular usuarios locales (chroot)
 
 Enjaula a los usuarios locales dentro de su propio directorio personal, esta opción mejora la seguridad. 
 
-*   Si el parámetro  es  **chroot_local_user=YES** se enjaula a todos los usuarios locales por defecto
-*   Si el parámetro  es  **chroot_local_user=NO** no se enjaula a ningún usuario local por defecto
+- Si el parámetro  es  **chroot_local_user=YES** se enjaula a todos los usuarios locales por defecto
+- Si el parámetro  es  **chroot_local_user=NO** no se enjaula a ningún usuario local por defecto
 
 ### Lista {#lista}
 
-Se permite especificar una lista con los usuarios locales a los cuales se les enjaula mediante la directiva:   
-   
+Se permite especificar una lista con los usuarios locales a los cuales se les enjaula mediante la directiva:
+
     chroot_list_enable=YES
 
 Especifica la ruta en donde se encuentra el archivo con la lista de usuarios enjaulados o no enjaulados. Se define por la directiva **chroot_list_file=/etc/vsftpd.chroot_list. **El significado cambia en función de la directiva anterior:
 
-*   Si **chroot_local_user=NO**, entonces, indica la lista de usuarios enjaulados.
-*   Si **chroot_local_user=YES**, indicaría la lista de usuarios no enjaulados. 
+- Si **chroot_local_user=NO**, entonces, indica la lista de usuarios enjaulados.
+- Si **chroot_local_user=YES**, indicaría la lista de usuarios no enjaulados. 
 
 Enjaula a algún compañero
 
@@ -432,7 +476,6 @@ La ruta del archivo con la lista de usuarios a los que se les deniega el acceso 
 
 Deberemos crear este archivo y escribir en él los usuarios a los que queremos denegar el acceso. Una estrategia sería colocar los usuarios en este archivo y comentar o descomentar según sea necesario.
 
-
 ## Mostrar archivos ocultos {#mostrar-archivos-ocultos}
 
 Por defecto no se mostrarán los archivos que comiencen por un punto .Para mostrar los archivos ocultos y las carpetas . y .., podemos utilizar la siguiente opción, que resulta útil para no sobrescribir archivos ocultos.
@@ -449,7 +492,7 @@ También puede resultar interesante esconder la información acerca del propieta
 
 Podemos crear un archivo con directivas para cada usuario por separado. Para ello, debemos especificar en primer lugar en el archivo de configuración la siguiente directiva>
 
-**user_config_dir = /etc/vsftpd/usuarios**
+    user_config_dir = /etc/vsftpd/usuarios
 
 Esta carpeta deberá existir, y por tanto habrá que crearla y añadir los permisos que sean necesarios para poder acceder a ella.
 
@@ -459,7 +502,7 @@ Dentro de este archivo, la configuración se escribe igual que en vsftpd.conf. L
 
 Por ejemplo, si queremos limitar a pepe, podríamos hacer lo siguiente:
 
-**echo "local_max_rate 1024" > /etc/vsftpd/usuarios/pepe**
+    echo "local_max_rate 1024" > /etc/vsftpd/usuarios/pepe
 
 Un ejemplo de configuración podría ser:
 ```
@@ -480,9 +523,9 @@ Los usuarios tienen por defecto espacio limitado en el servidor. Si esto no se c
 
 ## Agregar directiva a la partición  {#agregar-directiva-a-la-partición}
 
-En GNU/Linux antes de poder gestionarlas es necesario editar el fichero **/etc/fstab**, y añadir **usrquota **(cuota de usuario) o **grpquota **(cuota de grupo) como parámetro del punto de montaje del sistema de ficheros en el que queramos utilizar cuotas.
+En GNU/Linux antes de poder gestionarlas es necesario editar el fichero `/etc/fstab`, y añadir **usrquota** (cuota de usuario) o **grpquota** (cuota de grupo) como parámetro del punto de montaje del sistema de ficheros en el que queramos utilizar cuotas.
 
-En /etc/fstab agregamos la directiva a la partición en donde queremos limitar la cuota: Usrquota
+En `/etc/fstab` agregamos la directiva a la partición en donde queremos limitar la cuota: Usrquota
 
 Añadirnos usrquota, grpquota, a la partición en la que queramos activar las cuotas de disco. Hacemos una copia de la línea (CTRL+K --- CTRL+U) que vamos a editar, por si acaso, y la ponemos con comentarios. 
 
@@ -495,10 +538,8 @@ Reiniciar el sistema operativo
 ### Chequeo del sistema de cuotas 
 
 Podremos chequear las cuotas en nuestro sistema con:  
-    
-    quotacheck -augmv
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Configuraci-n-FTP5.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+    quotacheck -augmv
 
 ![alt_text](images/Configuraci-n-FTP5.png "image_tooltip")
 
@@ -506,7 +547,7 @@ Podremos chequear las cuotas en nuestro sistema con:
 
 Para listar las cuotas de los usuarios podemos utilizar quota -u idusuario
 
-Para ver un informe de todas las cuotas: 
+Para ver un informe de todas las cuotas:
     
     repquota -a
 
@@ -526,7 +567,7 @@ Utilizar cliente ftp para establecer conexión anónima con [ftp.rediris.es](ftp
 
 Ejecutar el comando ls. Comprobar si deja o no
 
-## Utilizar el modo pasivo {#utilizar-el-modo-pasivo}
+## Utilizar el modo pasivo 
 
 Iniciar modo pasivo dentro de la consola FTP utilizando el comando PASSIVE
 
@@ -537,7 +578,7 @@ Ejecutar LS de nuevo
 
 Es recomendable utilizar este sistema para conectar desde Internet al servidor, puesto que las contraseñas, por ejemplo, se envían en texto plano. Para utilizar VSFTPD con encriptación (más seguro), se necesita modificar la configuración:
 
-```
+```conf
 ssl_enable=YES
 allow_anon_ssl=NO
 force_local_data_ssl=YES
@@ -553,8 +594,7 @@ Si tenemos instalado openssl no hace falta en principio crear ningún certificad
 
 Para probarlo necesitaremos, desde la consola de comandos ejecutar el mismo comando, pero cambiando ftp por ftps en la URL
 
-ftp [ftps://IPdelServidor](https://IP)**
-
+    ftp [ftps://IPdelServidor](https://IP)
 
 # 9. Usuarios virtuales (NO HACER)
 
@@ -580,7 +620,7 @@ hide_ids=YES \
 guest_username=vsftpd
 ```
 
-Registramos los usuarios con htpasswd, con lo que se asume que Apache está ejecutándose en el servidor.
+Registramos los usuarios con **htpasswd**, con lo que se asume que Apache está ejecutándose en el servidor.
 
 Creamos una carpeta para poner los archivos de configuración dentro
 
@@ -615,9 +655,9 @@ Reiniciar el servidor
 
 Crear carpetas
 
-*   Carpeta raíz: /var/www/user1 con permisos 555
-    *   Subcarpeta /var/www/user1/www con permisos 755
-    *   Subcarpeta /var/www/user1/docs con permisos 755
+- Carpeta raíz: /var/www/user1 con permisos 555
+- Subcarpeta /var/www/user1/www con permisos 755
+- Subcarpeta /var/www/user1/docs con permisos 755
 
 Revisar que en vsftpd.conf tenemos chroot_local_user=YES para que el usuario no pueda ver nada fuera de esta carpeta.
 

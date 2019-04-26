@@ -166,7 +166,7 @@ docker run 20bb25d32758
 Si quisiera levantar varios contenedores de diferentes imágenes, me vería obligado
 a definir diferentes Dockerfiles para cada uno y levantar los contenedores uno a uno.
 
-**Docker-compose** es una herramienta que nos permite: 
+**Docker-compose** es una herramienta que nos permite:
 
 - Definir varios **servicios** en un solo archivo de configuración
 - Con un solo comando podemos poner en marcha varios contenedores al mismo tiempo.

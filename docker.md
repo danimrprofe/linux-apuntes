@@ -1,3 +1,12 @@
+--- 
+title:
+- Pandoc
+author:
+- Daniel Moreno
+theme:
+- metropolis
+---
+
 # Apuntes de Docker
 
 - [Apuntes de Docker](#apuntes-de-docker)

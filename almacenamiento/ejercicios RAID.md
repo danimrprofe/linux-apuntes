@@ -1,5 +1,12 @@
 # Ejercicios raid
 
+- [Ejercicios raid](#ejercicios-raid)
+  - [Cuestionario](#cuestionario)
+  - [Test de RAID](#test-de-raid)
+  - [EJERCICIO 1: RAID 5](#ejercicio-1-raid-5)
+  - [Ejercicio 2](#ejercicio-2)
+  - [Ejercicio 3: raid 6](#ejercicio-3-raid-6)
+
 ## Cuestionario
 
 1. ¿Es posible usar un sistema en RAID 5 para Instalar el sistema operativo?
@@ -49,19 +56,11 @@
     26. 300 GBytes.
     27. Ninguna es correcta.
     
-## EJERCICIO RAID 5
+## EJERCICIO 1: RAID 5
 
 Dado el conjunto de 4 discos que monta un volumen RAID 5. Calcula los bloques de paridad y completa la figura
 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Sistemas-RAID0.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Sistemas-RAID0.png "image_tooltip")
-
-
-
+![alt_text](img/ejercicio1.png)
 
 1. Imagina que se perdiera el disco 1. Llega una petición de lectura de la línea F, ¿podría realizarse? ¿Qué información devolvería?
 
@@ -69,30 +68,26 @@ Dado el conjunto de 4 discos que monta un volumen RAID 5. Calcula los bloques de
 
 3. Una vez que se ha conseguido un disco con las características adecuadas, se decide sustituir el disco dañado y recuperar el funcionamiento normal de la unidad utilizando los cuatro discos. Recupera la información de dicho disco utilizando solo la información de los discos 0, 2 y 3.
     
-## Ejercicio
+## Ejercicio 2
 
 En un servidor, disponemos de 6 discos duros de 100 GB. Necesitamos crear con ellos un volumen RAID con 300 GB de espacio disponible, de manera que se maximice el rendimiento en escrituras aleatorias y los datos estén protegidos contra el fallo total de 1 disco cualquiera. 
 
 Se pide: Hacer un diagrama de cómo se debe crear el volumen, usando los niveles RAID clásicos (RAID  0 a RAID 6) y/o sus combinaciones, siguiendo el ejemplo.
 
-![alt_text](images/Sistemas-RAID1.png "image_tooltip")
+![alt_text](img/ejercicio2-1.png "image_tooltip")
 
-![alt_text](images/Sistemas-RAID2.png "image_tooltip")
+![alt_text](images/ejercicio2-2.png "image_tooltip")
 
-## Ejercicio raid 6
+## Ejercicio 3: raid 6
 
 Discos necesarios mínimo: 4
 
 Se trata de una evolución del Raid 5, donde se busca ampliar la tolerancia frente a fallos, este aumento de tolerancia se consigue usando una **doble banda de paridad **(que también se distribuye entre todos los discos) y aumentando a 4 el número mínimo de discos necesarios para un Raid.
 
 
+![alt_text](img/ejercicio3.png)
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Sistemas-RAID3.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/Sistemas-RAID3.png "image_tooltip")
-[ \
-](http://blog.aodbc.es/wp-content/uploads/2013/01/800px-raid5.png)Como resultado de las modificaciones introducidas los Raid 6, toleran el fallo de dos discos (incluso durante la reconstrucción de uno de ellos), sin pérdida de datos.
+Como resultado de las modificaciones introducidas los Raid 6, toleran el fallo de dos discos (incluso durante la reconstrucción de uno de ellos), sin pérdida de datos.
 
 El principal problema del Raid 6 es su bajo ratio de utilización de espacio en conjuntos de discos pequeño, pensad que, si de 4 discos el espacio equivalente a 2 se dedica a paridad, nuestro raid tendrá un 50% de la capacidad máxima teórica de los discos. Afortunadamente conforme aumentamos el número de discos la ratio de utilización mejora.
 
@@ -245,16 +240,8 @@ El principal problema del Raid 6 es su bajo ratio de utilización de espacio en 
   </tr>
 </table>
 
+## Práctica 1
 
-
-
-    5. prácticas
 1. En una máquina virtual de Windows Server 2008 con 20 Gb de disco duro crea un volumen reflejado.
 2. En una máquina virtual de Windows 2008 Server, agregar tres discos duros de 10 Gb cada uno. Convertir los 3 discos a dinámicos y posteriormente hacer un volumen seccionado (RAID 0). Crear un fichero dentro del volumen
 3. En primer lugar, paramos la máquina virtual, si estuviese en funcionamiento, y agregamos un nuevo disco, del mismo tamaño del que contiene al sistema operativo (véase Figura 3.26).
-    6. Soluciones
-
-Ejercicio 7
-
-Necesitamos otro más de 200 Gb, como mínimo, para montar el RAID 1. Esto implicaría que perdemos un 50% del espacio que disponemos para información. además de tener que duplicar el coste en unidades de almacenamiento. Como ventaja destacaríamos que aumentaríamos la tolerancia a fallos de nuestro sistema.
-

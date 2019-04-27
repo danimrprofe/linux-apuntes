@@ -22,6 +22,7 @@ apt install -y docker.io
 apt-get install -y kubelet kubeadm kubectl
 ```
 ### Paso 3: Agregamos permisos 
+
     usermod -aG docker vagrant
     systemctl enable docker
 

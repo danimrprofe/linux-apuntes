@@ -1,5 +1,26 @@
 --- 
 title:
+- Título
+subtitle:
+- Pruebas con Título
+author:
+- Daniel Moreno
+institute:
+- IES Francesc de Borja Moll
+date: 
+- \today
+theme:
+- metropolis
+header-includes:
+ - '\usetheme{metropolis}'
+ - '\makeatletter'
+ - '\beamer@ignorenonframefalse'
+ - '\makeatother'
+aspectratio:
+ - 169
+---
+--- 
+title:
 - Docker
 subtitle:
 - Pruebas con Docker

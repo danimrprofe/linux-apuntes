@@ -1,13 +1,26 @@
 --- 
 title:
-- Pandoc
+- Docker
+subtitle:
+- Pruebas con Docker
 author:
 - Daniel Moreno
+institute:
+- IES Francesc de Borja Moll
+date: 
+- \today
 theme:
 - metropolis
+header-includes:
+ - '\usetheme{metropolis}'
+ - '\makeatletter'
+ - '\beamer@ignorenonframefalse'
+ - '\makeatother'
+aspectratio:
+ - 169
 ---
 
-# Apuntes de Docker
+# Índice
 
 - [Apuntes de Docker](#apuntes-de-docker)
   - [Contenedores](#contenedores)

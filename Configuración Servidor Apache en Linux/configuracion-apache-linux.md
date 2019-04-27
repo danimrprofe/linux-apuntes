@@ -254,7 +254,7 @@ contenido de la carpeta
 
 [15.2 Autenticación HTTP Basic 47](#autenticación-http-basic)
 
-[15.2.1 Comprobar módulo auth\_basic habilitado
+[15.2.1 Comprobar módulo auth<site>_basic habilitado
 47](#comprobar-módulo-auth_basic-habilitado)
 
 [15.2.2 Usar autenticación básica en Apache
@@ -267,7 +267,7 @@ contenido de la carpeta
 
 [16.1 Configurar servidor HTTPS 51](#configurar-servidor-https)
 
-[16.1.1 Habilitar mod\_ssl 51](#habilitar-mod_ssl)
+[16.1.1 Habilitar mod<site>_ssl 51](#habilitar-mod_ssl)
 
 [16.1.2 Comprobar carga del módulo 51](#comprobar-carga-del-módulo)
 
@@ -465,10 +465,10 @@ propietario del proceso apache2.
 Hay que disponer de un usuario y grupo para ello. En Ubuntu se dispone
 del usuario y grupo www-data.
 
--   cat /etc/passwrd \| grep www-data para comprobar la creación del
+-   cat /etc/passwrd <site>| grep www-data para comprobar la creación del
     usuario www-data
 
--   cat /etc/group \| grep www-data para comprobar la creación del grupo
+-   cat /etc/group <site>| grep www-data para comprobar la creación del grupo
     www-data
 
 ![](./media/image12.png){width="5.905555555555556in"
@@ -510,7 +510,7 @@ otra.
 
 Mods disponibles
 
-/etc/apache2/mods-available/
+    /etc/apache2/mods-available/
 
 ![](./media/image14.png){width="4.60799978127734in"
 height="0.23462707786526685in"}
@@ -520,7 +520,7 @@ height="2.348535651793526in"}
 
 Mods habilitados
 
-/etc/apache2/mods-enable/
+    /etc/apache2/mods-enable/
 
 ![](./media/image16.png){width="5.905555555555556in"
 height="4.072916666666667in"}
@@ -538,17 +538,17 @@ height="0.7756944444444445in"}
 
 ### Directorio de configuraciones locales
 
-/etc/apache2/conf-available/
+    /etc/apache2/conf-available/
 
 ![](./media/image19.tmp){width="5.905555555555556in"
 height="1.3756944444444446in"}
 
-/etc/apache2/conf-enabled/
+    /etc/apache2/conf-enabled/
 
 ![](./media/image20.tmp){width="5.905555555555556in"
 height="1.5902777777777777in"}
 
-/etc/apache2/envars
+    /etc/apache2/envars
 
 ![](./media/image21.tmp){width="5.905555555555556in" height="4.05625in"}
 
@@ -640,9 +640,7 @@ ejecutando.
 Sin embargo, si se quiere limitar la escucha a:
 
 -   Un determinado puerto (o varios)
-
 -   En unas determinadas direcciones
-
 -   En una combinación de ambos
 
 Hay que especificarlo en los archivos de configuración
@@ -654,7 +652,7 @@ virtuales, funcionalidad con la que un servidor Apache puede responder a
 peticiones en diferentes direcciones IP, diferentes nombres de hosts y
 diferentes puertos.
 
-Consultar el fichero /etc/apache2/ports.conf
+Consultar el fichero `/etc/apache2/ports.conf`
 
 -   Comprobar que están habilitados los servidores virtuales por nombre
     en todas
@@ -685,15 +683,15 @@ Por ejemplo, para hacer que el servidor acepte conexiones tanto en el
 puerto 80 como en el puerto 8000, desde cualquier interfaz, se puede
 usar:
 
--   Listen 80
-
--   Listen 8000
+```
+Listen 80
+Listen 8000
+```
 
 Para hacer que el servidor acepte conexiones en dos interfaces de red y
 puertos específicos, usar
 
 -   Listen 192.168.1.1:80
-
 -   Listen 192.168.1.5:8000
 
 ![](./media/image28.png){width="5.28in" height="2.335145450568679in"}
@@ -701,10 +699,8 @@ puertos específicos, usar
 En este caso, Apache escuchará en todas las IP de sus adaptadores:
 
 -   Abre el puerto 80
-
--   Si el módulo ssl\_module está cargado, también abre el 443
-
--   Si el módulo mod\_gnutls.c está cargado, también abre el 443
+-   Si el módulo `ssl_module` está cargado, también abre el 443
+-   Si el módulo `mod_gnutls.c` está cargado, también abre el 443
 
 ### Configuración de cortafuegos
 
@@ -733,7 +729,6 @@ Un mismo servidor puede alojar más de un sitio web diferente. Para cada
 uno de ellos, podemos crear un site para, entre otras cosas:
 
 -   Tener una configuración específica diferente para cada sitio web
-
 -   Habilitar y deshabilitarlos de forma separada.
 
 ### Sites disponibles
@@ -783,16 +778,17 @@ height="0.7729166666666667in"}
 ### Habilitar y deshabilitar sites
 
 Para habilitar o deshabilitar un sitio alojado con Apache, puede usar
-los comandos \'a2ensite\' y \'a2dissite\', respectivamente. Ambos
+los comandos <site>'a2ensite<site>' y <site>'a2dissite<site>', respectivamente. Ambos
 comandos usan esencialmente la misma sintaxis:
 
--   a2ensite \<site\>
+```
+a2ensite <site>
+a2dissite <site>
+```
 
--   a2dissite \<site\>
-
-donde \'\<site\>\' es el nombre del archivo de configuración del host
-virtual de su sitio, ubicado en /etc/apache2/sites-available/, menos la
-extensión \'.conf\'.
+donde `<site>` es el nombre del archivo de configuración del host
+virtual de su sitio, ubicado en `/etc/apache2/sites-available/`, menos la
+extensión `.conf`.
 
 ### Crear nuestro propio site
 
@@ -807,7 +803,7 @@ Lo vamos a modificar para que coincida con nuestra configuración.
 ![](./media/image35.tmp){width="5.383999343832021in"
 height="1.2934514435695539in"}
 
-Necesitaremos crear la carpeta /var/www/xxx.smx2.org/ y copiar dentro un
+Necesitaremos crear la carpeta `/var/www/xxx.smx2.org/` y copiar dentro un
 archivo HTML
 
 ### Habilitar el nuevo site
@@ -848,9 +844,10 @@ Utilizando la interfaz de red local
 Si ejecutamos el navegador en la misma máquina en la que está corriendo
 el servidor podemos hacer lo siguiente:
 
--   <http://localhost>
-
--   <http://127.0.0.1>
+```
+<http://localhost>
+<http://127.0.0.1>
+```
 
 Utilizando la IP del servidor
 
@@ -882,7 +879,7 @@ height="2.0159995625546805in"}
 Configurar un hostname para el servidor
 ---------------------------------------
 
-Editar /etc/hostname y /etc/hosts configurar el nombre FQDN del equipo.
+Editar `/etc/hostname` y `/etc/hosts` configurar el nombre FQDN del equipo.
 
 ![](./media/image40.tmp){width="5.905555555555556in"
 height="1.2465277777777777in"}
@@ -947,7 +944,9 @@ máquina localmente, o a través de un servidor DNS.
 Para esta opción, deberemos modificar el servidor DNS y agregar la
 siguiente entrada:
 
+```
 www IN A 192.168.0.10
+```
 
 Esto no hace falta hacerlo porque ya está configurada la zona en el
 servidor
@@ -957,13 +956,11 @@ Abrir páginas desde el shell
 
 ### Comprobar con el navegador las URLs
 
--   <http://localhost>
+<http://localhost>
+<http://172.6.254.1/red.html>
+<http://smx2.org/datos/datos.html>
 
--   <http://172.6.254.1/red.html>
-
--   
-
-<http://smx2.org/datos/datos.html>Si no disponemos de navegador, podemos
+Si no disponemos de navegador, podemos
 utilizar WGET. Wget es un paquete de software gratuito para recuperar
 archivos usando HTTP, HTTPS, FTP y FTPS.
 
@@ -995,7 +992,7 @@ Existen **dos tipos básicos** de secciones de configuración.
     directivas que se incluyen en las distintas secciones solamente a
     las peticiones que se adecúan a determinadas características.
 
--   Por otro lado, las secciones de tipo \<IfDefine\> e \<IfModule\>, se
+-   Por otro lado, las secciones de tipo <site><IfDefine<site>> e <site><IfModule<site>>, se
     evalúan **solamente al inicio o reinicio del servidor**.
 
 Si al iniciar el servidor las condiciones son las adecuadas, las
@@ -1009,12 +1006,11 @@ Sección directory
 La sección directory engloba una o más directivas de configuración que
 sólo se aplican al directorio y subdirectorios especificados.
 
-Se especifica: \<Directory /path/a/directorio\> / \</Directory\>
+Se especifica: `<Directory /path/a/directorio ></Directory>`
 
-El argumento /path/a/directorio puede ser:
+El argumento `/path/a/directorio` puede ser:
 
 -   Un nombre de directorio (ruta absoluta)
-
 -   Una expresión regular
 
 Dentro de una sección podemos incluir tantas directivas como queramos.
@@ -1022,37 +1018,33 @@ Dentro de una sección podemos incluir tantas directivas como queramos.
 ### Ejemplo de configuración de directory
 
 Este es un ejemplo de configuración, no hay que hacerlo. Las líneas
-tomadas del archivo /etc/apache2/apache2.conf. Partes importantes:
+tomadas del archivo `/etc/apache2/apache2.conf`. Partes importantes:
 
--   Options especifica Indexes (mostrará el contenido de la carpeta si
+-   `Options` especifica Indexes (mostrará el contenido de la carpeta si
     es necesario)
 
--   AllowOverride indica si se pueden sobrescribir las opciones de esta
+-   `AllowOverride` indica si se pueden sobrescribir las opciones de esta
     carpeta a través de un archivo externo (.htaccess). Lo veremos
     luego.
 
--   Allow from all nos indica que cualquiera puede acceder al contenido
+-   `Allow from all` nos indica que cualquiera puede acceder al contenido
     de esta carpeta desde el navegador.
 
-**\<Directory \"/usr/share/apache2/icons\"\>**
-
+```xml
+<Directory "/usr/share/apache2/icons<site>"<site>>
 Options Indexes MultiViews
-
 AllowOverride None
-
 Order allow,deny
-
 Allow from all
-
-**\</Directory\>**
+</Directory<site>>
+```
 
 ### Permitir solo acceso a directorio a una red concreta
 
-Crear un directorio llamado clase en /var/www/xxx.smx2.org/. En este
+Crear un directorio llamado clase en `/var/www/xxx.smx2.org/`. En este
 directorio:
 
 -   Denegar la entrada a todo el mundo
-
 -   Permitir a los ordenadores de nuestra red.
 
 Si hacemos esto, todos los equipos desde 172.16.254.1 hasta
@@ -1107,14 +1099,14 @@ ellos.
 
 ### Utilización conjunta de directory y files
 
-También se pueden utilizar de forma conjunta las secciones \<Directory\>
-y \<Files\> para referirse a archivos que se encuentran en un
+También se pueden utilizar de forma conjunta las secciones <site><Directory<site>>
+y <site><Files<site>> para referirse a archivos que se encuentran en un
 determinado lugar del sistema de archivos. Por ejemplo:
 
--   Denegará el acceso a /var/www/xxx.smx2.org/clase/privado.html
+-   Denegará el acceso a `/var/www/xxx.smx2.org/clase/privado.html`
 
 -   Cualquier otra aparición de privado.html que se encuentre en
-    /var/www/xxx.smx2.org/o cualquiera de sus subdirectorios si que se
+    `/var/www/xxx.smx2.org/` o cualquiera de sus subdirectorios si que se
     mostrará.
 
 ![](./media/image50.tmp){width="4.655999562554681in"
@@ -1122,23 +1114,23 @@ height="0.8801979440069991in"}
 
 ### Especificar un conjunto de archivos al que aplicará una configuración
 
-El argumento de \<Files\> puede ser un nombre de archivo, o una
+El argumento de <site><Files<site>> puede ser un nombre de archivo, o una
 expresión regular. Por ejemplo, para indicar que el argumento es
 cualquier archivo con formato gif, jpg, jpeg o png utilizaríamos la
 **siguiente** expresión regular:
 
-\<Files \~ \"\\.(gif\|jp?g\|png)\$\"\>
+    <Files <site>~ <site>"<site><site>.(gif<site>|jp?g<site>|png)<site>$<site>"<site>>
 
 donde
 
--   \'?\' sustituye 0 o una ocurrencia de la expresión regular anterior
+-   <site>'?<site>' sustituye 0 o una ocurrencia de la expresión regular anterior
     (1 carácter)
 
--   \'\*\' equivale a cualquier secuencia de caracteres
+-   <site>'<site>*<site>' equivale a cualquier secuencia de caracteres
 
--   \'\$\' indica final de línea
+-   <site>'<site>$<site>' indica final de línea
 
--   \'\\\' se utiliza para escapar el carácter \'.\'
+-   <site>'<site><site><site>' se utiliza para escapar el carácter <site>'.<site>'
 
 Se puede utilizar la sección FilesMatch para trabajar con expresiones
 regulares.
@@ -1149,16 +1141,14 @@ Sección location
 La sección Location está relacionada con el espacio web y cambia la
 configuración para el contenido del espacio web. Por ejemplo:
 
-\<Location /privado\>
-
+```xml
+<Location /privado>
 Order Allow,Deny
-
 Deny from all
-
-\</Location\>
+</Location>
 
 Esta configuración evita que se acceda a cualquier URL que empiece por
-/privado, utilizándose la palabra privado como expresión regular. Por
+`/privado`, utilizándose la palabra privado como expresión regular. Por
 ejemplo, se aplicaría a peticiones que comiencen o contengan /privado en
 su URL (<http://localhost/privado123>).
 
@@ -1188,9 +1178,9 @@ IfDefine engloba directivas que serán procesadas sólo si se cumple una
 determinada condición (test) al iniciar el servidor.
 
 ```xml
-<IfDefine \[!\]nombre\_parametro\>
+<IfDefine <site>[!<site>]nombre<site>_parametro<site>>
 
-</IfDefine\>
+</IfDefine<site>>
 ```
 
 IfDefine se usa para marcar directivas que son condicionales.
@@ -1218,31 +1208,33 @@ servicio. El argumento nombre-parámetro se define cuando se ejecuta
 Apache2 por la línea de órdenes con la opción -Dparametro, al iniciar el
 servidor.
 
-Ejemplo: apache2 -DReverseProxy \...
+Ejemplo: 
 
-\# en el archivo apache2.conf
+    apache2 -DReverseProxy <site>...
 
-Como hemos pasado el argumento ReverseProxy, en la sección Ifdefine lo
+<site># en el archivo apache2.conf
+
+Como hemos pasado el argumento `ReverseProxy`, en la sección `Ifdefine` lo
 verá, y el servidor utilizará las directivas que hay dentro.
 
 ```xml
-\<IfDefine ReverseProxy\>
-LoadModule rewrite\_module modules/mod\_rewrite.so
-LoadModule proxy\_module modules/libproxy.so
-\</IfDefine\>
+<site><IfDefine ReverseProxy<site>>
+LoadModule rewrite<site>_module modules/mod<site>_rewrite.so
+LoadModule proxy<site>_module modules/libproxy.so
+<site></IfDefine<site>>
 ```
 
-Indica que se cargan los módulos mod\_rewrite y libproxy, ya que, en el
+Indica que se cargan los módulos `mod_rewrite` y `libproxy`, ya que, en el
 archivo de configuración existe la directiva IfDefine relativa al
-parámetro ReverseProxy con el que se ha lanzado la ejecución de Apache
+parámetro `ReverseProxy` con el que se ha lanzado la ejecución de Apache
 (-D).
 
 Directivas
 ==========
 
 Los archivos de configuración de apache2 se encuentran en la carpeta
-/etc/apache2. El archivo principal de configuración es
-/etc/apache2/apache2.conf. Antes de realizar cualquier cambio en este
+`/etc/apache2`. El archivo principal de configuración es
+`/etc/apache2/apache2.conf.` Antes de realizar cualquier cambio en este
 archivo, es conveniente realizar una copia de seguridad del mismo ya que
 si apache encuentra algún error en el archivo de configuración, no
 arrancará.
@@ -1257,11 +1249,11 @@ Las directivas se pueden colocar en muchos sitios, generalmente se
 responde al considerar dónde desea que una directiva sea efectiva.
 
 -   Si se trata de una configuración global, debe aparecer en el archivo
-    de configuración, fuera de cualquier \<Directory\>, \<Location\>,
-    \<VirtualHost\> u otra sección.
+    de configuración, fuera de cualquier <site><Directory<site>>, <site><Location<site>>,
+    <site><VirtualHost<site>> u otra sección.
 
 -   Si se aplica solo a un directorio en particular, debe ir dentro de
-    una sección \<Directory\> que se refiera a ese directorio, y así
+    una sección <site><Directory<site>> que se refiera a ese directorio, y así
     sucesivamente.
 
 Directiva ServerRoot 
@@ -1271,7 +1263,7 @@ La directiva ServerRoot es el directorio raíz donde se almacenan los
 distintos ficheros que utiliza el servidor Apache salvo que se indiquen
 rutas absolutas como se indicaba con anterioridad.
 
-Podemos comprobar la directiva en /etc/apache2/apache2.conf
+Podemos comprobar la directiva en `/etc/apache2/apache2.conf`
 
 ![](./media/image51.tmp){width="4.895999562554681in"
 height="1.6782502187226596in"}
@@ -1319,23 +1311,23 @@ Cambiar directiva DirectoryIndex
 Podemos configurar un índice de directorio para llamar a varios archivos
 usando el siguiente texto:
 
--   Ejemplo: **DirectoryIndex** index.html index.cgi index.php
+Ejemplo: 
+
+    DirectoryIndex index.html index.cgi index.php
 
 Las líneas anteriores le indican al servidor web Apache que:
 
-1.  muestre el archivo \'index.html\' como el índice de directorio.
-
-2.  Si este archivo no está disponible, entonces muestre \'index.cgi\'
-
-3.  Si no está disponible, entonces muestre \'index.php\'.
+1.  muestre el archivo <site>'index.html<site>' como el índice de directorio.
+2.  Si este archivo no está disponible, entonces muestre <site>'index.cgi<site>'
+3.  Si no está disponible, entonces muestre <site>'index.php<site>'.
 
 Si no está disponible uno de los archivos especificados, el servidor web
 Apache volverá a su configuración predeterminada, ya sea mostrando un
 mensaje de error, un mensaje de lista de directorios no disponible o
 mostrando las listas de directorios de archivos y directorios
 
-Editar /etc/apache2/sites-available/xxx.smx2.org.conf e incluir la
-directiva DirectoryIndex para que muestre como índice el archivo
+Editar `/etc/apache2/sites-available/xxx.smx2.org.conf` e incluir la
+directiva `DirectoryIndex` para que muestre como índice el archivo
 índice.html
 
 ![](./media/image56.tmp){width="4.903999343832021in"
@@ -1386,8 +1378,8 @@ Configurar la carpeta DATOS para mostrar index.html y no listar contenido de la 
 ---------------------------------------------------------------------------------------
 
 Imaginemos que no queremos que para la carpeta datos se aplique la
-configuración de /var/www. Deberíamos crear una nueva sección Directory
-para /var/www/datos. Todo lo que pongamos aquí, afectará ahora a la
+configuración de `/var/www`. Deberíamos crear una nueva sección Directory
+para `/var/www/datos`. Todo lo que pongamos aquí, afectará ahora a la
 carpeta datos y todas sus subcarpetas. Si alguna directiva no la
 ponemos, aplicará las opciones de la carpeta padre (/var/www)
 
@@ -1437,15 +1429,15 @@ Consultar logs
 
 Por defecto Apache crea sus propios logs, pese a que se pueden crear
 otros que sean más convenientes. Por defecto el archivo de registro de
-errores se encuentra en /var/log/apache2/error.log.
+errores se encuentra en `/var/log/apache2/error.log`.
 
 Se recomienda mostrar los archivos de registro en una consola mientras
 se accede al servidor para ver cómo reacciona éste en cada momento. Con
 este fin, ejecute en una consola el siguiente comando como root.
 
-**Ejecutar la orden:** 
+Ejecutar la orden:
 
-    tail -f /var/log/apache2/\*.log
+    tail -f /var/log/apache2/<site>*.log
 
 Mientras mantengamos abierto el shell, se irán mostrando por pantalla
 solo las nuevas líneas que se añadan al log a partir del momento en que
@@ -1473,13 +1465,13 @@ Conocer donde se guardan los archivos de log
 --------------------------------------------
 
 El lugar donde se guardan los archivos de log está configurado dentro
-del fichero /etc/apache2/sites-available/xxx.smx2.org.conf
+del fichero `/etc/apache2/sites-available/xxx.smx2.org.conf`
 
 ![](./media/image60.tmp){width="5.905555555555556in"
 height="1.1659722222222222in"}
 
 En general, los ficheros de log se encuentran por defecto en
-/var/log/apache2/ (la localización habitual). \$(APACHE\_LOG\_DIR) hace
+/var/log/apache2/ (la localización habitual). <site>$(APACHE<site>_LOG<site>_DIR) hace
 referencia a esta carpeta.
 
 ![](./media/image61.tmp){width="5.905555555555556in"
@@ -1489,8 +1481,8 @@ Consulta del fichero log de errores
 -----------------------------------
 
 Los archivos de log de apache tienen líneas muy largas y conviene
-visualizarlos con la pantalla completa. Podemos utilizar **grep** para
-hilar más fino y filtrar los logs, o bien utilizar **more** y **less**
+visualizarlos con la pantalla completa. Podemos utilizar `grep` para
+hilar más fino y filtrar los logs, o bien utilizar `more` y `less`
 para navegar por el resultado.
 
 El log de errores general se suele llamar error.log
@@ -1504,13 +1496,13 @@ Consulta del fichero log de accesos
 En este archivo se guardan los accesos que se han realizado al servidor
 junto con las peticiones y respuestas.
 
-El log de accesos se suele llamar accesos.log
+El log de accesos se suele llamar `accesos.log`
 
 ![](./media/image63.tmp){width="5.72967738407699in"
 height="0.6783617672790901in"}
 
 Como podemos ver en este caso, las últimas solicitudes han sido
-peticiones GET a la URL /privado/. Al no tener permiso, el servidor nos
+peticiones GET a la URL `/privado/`. Al no tener permiso, el servidor nos
 ha contestado con un "Error HTTP **401** No autorizado"
 
 Códigos de error (ErrorDocument)
@@ -1534,7 +1526,9 @@ encontrada en el servidor de la red".
 
 ![](./media/image64.tmp){width="5.905555555555556in" height="0.76in"}
 
-Reiniciamos el servidor: sudo systemctl restart apache2
+Reiniciamos el servidor: 
+
+    sudo systemctl restart apache2
 
 Podemos comprobar que funciona accediendo a una página cualquiera
 inexistente, por ejemplo <http://IPdelServidor/noesta.html>. Así podemos
@@ -1556,8 +1550,8 @@ servidor.
 
 Crear fichero personalizado
 
-Crearemos el archivo en /var/www/xxx.smx2.org/no\_encontrada.html y
-escribiremos su contenido en lenguaje HTML
+- Crearemos el archivo en `/var/www/xxx.smx2.org/no_encontrada.html`
+- Escribiremos su contenido en lenguaje HTML
 
 ![](./media/image66.tmp){width="5.207999781277341in"
 height="1.4453062117235345in"}
@@ -1567,7 +1561,7 @@ Modificar archivo de configuración del site
 Deberemos de modificar el archivo de configuración
 /etc/apache2/sites-available/xxx.smx2.org.conf para que cuando retorne
 el código de error 404 (página no encontrada) presente el contenido del
-archivo /var/www/no\_encontrada.html
+archivo /var/www/no_encontrada.html
 
 ![](./media/image67.tmp){width="5.905555555555556in"
 height="0.8208333333333333in"}
@@ -1609,13 +1603,11 @@ carpeta a otra.
 
 Pasos
 
--   Crear una cuenta llamada **alumno** e iniciar sesión con este
+-   Crear una cuenta llamada `alumno` e iniciar sesión con este
     usuario
-
--   Crear la carpeta /home/alumno/wiki
-
--   Dentro crear una página **wiki1.html** que contenga \"PÁGINA WIKI
-    1\"
+-   Crear la carpeta `/home/alumno/wiki`
+-   Dentro crear una página `wiki1.html` que contenga <site>"PÁGINA WIKI
+    1<site>"
 
 ![](./media/image69.tmp){width="5.905555555555556in"
 height="0.26319444444444445in"}
@@ -1637,7 +1629,9 @@ height="1.1405653980752406in"}
 Además, deberemos buscar y cambiar en la sección directory / (raíz) de
 apache2.conf para que ponga require from all. Sino no funcionará
 
-Reiniciamos el servidor: sudo systemctl restart apache2
+Reiniciamos el servidor: 
+
+    sudo systemctl restart apache2
 
 ### Acceder a la página wiki {#acceder-a-la-página-wiki .ListParagraph}
 
@@ -1661,18 +1655,21 @@ archivo indicado por la ruta del enlace.
 
 Sintaxis:
 
--   **Para crearlo:** ln -s \<destination file or directory\> \<name of
-    the symlink\>
+-   **Para crearlo:**
 
--   **Para borrarlo:** rm \<name of the symlink\>
+    ln -s <site><destination file or directory<site>> <site><name of the symlink<site>>
+
+-   **Para borrarlo:** 
+
+    rm <site><name of the symlink<site>>
 
 Nota: Al borrar el enlace simbólico no se borra el archivo destino
 
 Pasos a realizar:
 
 1.  Iniciar sesión como usuario alumno.
-2.  Crear directorio /home/alumno/blog/
-3.  Dentro crear el archivo blog1.html con el texto \"PÁGINA BLOG 1\"
+2.  Crear directorio `/home/alumno/blog/`
+3.  Dentro crear el archivo blog1.html con el texto <site>"PÁGINA BLOG 1<site>"
 
 ![](./media/image73.tmp){width="5.905555555555556in"
 height="0.29930555555555555in"}
@@ -1684,10 +1681,10 @@ height="0.29930555555555555in"}
 
     a.  Ejecutar sudo adduser alumno sudo
 
-6.  Crear el enlace simbólico /var/www/blog que apunte a
-    /home/alumno/blog
+6.  Crear el enlace simbólico `/var/www/blog` que apunte a
+    `/home/alumno/blog`
 
-    b.  Ejecutar sudo ln -s /home/alumno/blog /var/www/blog
+    b.  Ejecutar `sudo ln -s /home/alumno/blog /var/www/blog`
 
 7.  A continuación, podemos ver el enlace creado
 
@@ -1703,7 +1700,7 @@ height="1.0188331146106737in"}
 Opción followsymlinks
 
 Verificar que está definida la opción FollowSymLinks en la configuración
-del directorio /var/www
+del directorio `/var/www`
 
 ![](./media/image76.tmp){width="4.930435258092738in"
 height="0.8337215660542432in"}
@@ -1732,7 +1729,7 @@ de módulos base.
 
 Las directivas de configuración se pueden incluir de forma condicional
 dependiendo de la presencia de un módulo particular, poniéndolas dentro
-de un bloque \<IfModule\> como veremos más adelante
+de un bloque <site><IfModule<site>> como veremos más adelante
 
 Instalación y carga de módulos
 ------------------------------
@@ -1753,7 +1750,7 @@ Los módulos dinámicos cargados se comprueban consultando el directorio
 
 ### Carpetas de módulos {#carpetas-de-módulos .ListParagraph}
 
-**mods-available:** Este directorio contiene una serie de archivos .load
+`mods-available`: Este directorio contiene una serie de archivos .load
 y .conf.
 
 -   Los archivos. load contienen directivas de configuración de Apache
@@ -1762,12 +1759,12 @@ y .conf.
 -   El correspondiente archivo .conf contiene directivas de
     configuración necesarias para la utilización del módulo en cuestión.
 
-**mods-enabled:** para activar un módulo para Apache2 es necesario crear
+`mods-enabled`: para activar un módulo para Apache2 es necesario crear
 un enlace simbólico en este directorio a los
 
 ### Módulos activados por defecto
 
-Por defecto la instalación de Apache2 deja \'activados\' un grupo de
+Por defecto la instalación de Apache2 deja <site>'activados<site>' un grupo de
 módulos.
 
 ![](./media/image78.tmp){width="5.905555555555556in"
@@ -1784,7 +1781,7 @@ height="0.4284722222222222in"}
 ### Archivos de configuración de módulos
 
 Editar un fichero .conf y observar cómo se añaden directivas dentro de
-una declaración \<IfModule nombre modulo\>\...\</IfModule\> que se
+una declaración <site><IfModule nombre modulo<site>><site>...<site></IfModule<site>> que se
 ejecutarán si se carga el módulo
 
 ![](./media/image80.tmp){width="5.905555555555556in"
@@ -1825,8 +1822,8 @@ que pueda ofrecer un espacio web para usuarios de nuestro sistema y que
 estos puedan tener un espacio web.
 
 Cada uno de estos usuarios disfrutará de un espacio web que se
-almacenará en la carpeta /public\_html, dentro de su carpeta home
-(/home/nombreusuario/public\_html)
+almacenará en la carpeta /public<site>_html, dentro de su carpeta home
+(/home/nombreusuario/public<site>_html)
 
 Para que Apache procese los espacios web de los usuarios es necesario
 activar el módulo **userdir**
@@ -1848,7 +1845,6 @@ Para habilitar o deshabilitar cualquier módulo de los que dispone Apache
 debemos utilizar los comandos:
 
 -   **a2enmod** para habilitar un módulo que nos interese
-
 -   **a2dismod** para deshabilitar el módulo.
 
 Los módulos disponibles se encuentran en el directorio
@@ -1862,7 +1858,9 @@ Vamos a buscarlo
 ![](./media/image85.tmp){width="5.905555555555556in"
 height="0.5027777777777778in"}
 
-Y lo instalamos: sudo apt install libapache2-mod-ldap-usedir
+Y lo instalamos: 
+
+    sudo apt install libapache2-mod-ldap-usedir
 
 ![](./media/image86.tmp){width="5.905555555555556in"
 height="2.2472222222222222in"}
@@ -1886,20 +1884,22 @@ hacia /etc/apache2/mods-available
 ![](./media/image89.tmp){width="5.905555555555556in"
 height="0.7208333333333333in"}
 
-Reiniciamos el servidor: sudo systemctl restart apache2
+Reiniciamos el servidor: 
+
+    sudo systemctl restart apache2
 
 ### Consultar fichero de configuración de userdir
 
-Consultar el fichero /etc/apache2/mod\_enabled/userdir.conf
+Consultar el fichero /etc/apache2/mod<site>_enabled/userdir.conf
 
 ![](./media/image90.tmp){width="5.905555555555556in" height="1.575in"}
 
 ### Crear directorio personal
 
 Iniciar sesión como usuario y crear el directorio
-/home/pepe/public\_html
+`/home/pepe/public_html`
 
-Por defecto la carpeta public\_html no está creada en ninguna carpeta
+Por defecto la carpeta `public_html` no está creada en ninguna carpeta
 home de ningún usuario. Por lo que debemos crear y asignar los permisos
 necesarios.
 
@@ -1909,13 +1909,15 @@ Es necesario asignar permisos 755 para que el grupo de usuarios y el
 resto de usuarios tengan acceso de lectura y puedan visualizar las
 páginas allí almacenadas.
 
-Para cambiar permisos: chmod -R 755 /home/pepe/public\_html
+Para cambiar permisos: 
 
-Dentro crear el archivo personal1.html con el texto \"PÁGINA PERSONAL
-DEL USUARIO ALUMNO\"
+    chmod -R 755 /home/pepe/public<site>_html
+
+Dentro crear el archivo personal1.html con el texto <site>"PÁGINA PERSONAL
+DEL USUARIO ALUMNO<site>"
 
 Acceder a
-[http://IPdelServidor/\~pepe/personal1.html](http://xxx.smx2.org/~pepe/personal1.html)
+[http://IPdelServidor/<site>~pepe/personal1.html](http://xxx.smx2.org/~pepe/personal1.html)
 
 Modulo modsecurity
 ------------------
@@ -1925,14 +1927,12 @@ de tiempo, ignorarlo.
 
 Instalar el mod y configurar:
 
--   Sudo apt-get install libapache2-mod-security2
-
--   Sudo apachectl -M \| grep --color security2
-
--   sudo mv /etc/modsecurity/modsecurity.conf-recommended
-    modsecurity.conf
-
--   sudo service apache2 reload
+```
+sudo apt-get install libapache2-mod-security2
+sudo apachectl -M | grep --color security2
+sudo mv /etc/modsecurity/modsecurity.conf-recommended modsecurity.conf
+sudo service apache2 reload
+```
 
 Control de acceso
 =================
@@ -1941,13 +1941,11 @@ Control de acceso por IP y nombre de dominio
 --------------------------------------------
 
 1.  Iniciar sesión como administrador
-
 2.  Crear el directorio /var/www/xxx.smx2.org/privado
-
-3.  Crear dentro la página privado1.html con el texto \"PÁGINA PRIVADA\"
+3.  Crear dentro la página privado1.html con el texto <site>"PÁGINA PRIVADA<site>"
 
 Editar /etc/apache2/sites-available/xxx.smx2.org.conf y utilizar la
-sentencia \<Directory\> para denegar el acceso al directorio a todos los
+sentencia <site><Directory<site>> para denegar el acceso al directorio a todos los
 equipos excepto al local y a la MV Ubuntu Desktop
 
 Reiniciamos el servidor: sudo systemctl restart apache2
@@ -1959,9 +1957,9 @@ ubicaciones
 Autenticación HTTP Basic
 ------------------------
 
-### Comprobar módulo auth\_basic habilitado
+### Comprobar módulo auth<site>_basic habilitado
 
-Miramos en /etc/apache2/mods-enabled, que el módulo **auth\_basic** está
+Miramos en `/etc/apache2/mods-enabled`, que el módulo **auth<site>_basic** está
 habilitado
 
 ![](./media/image91.tmp){width="5.905555555555556in"
@@ -1969,15 +1967,15 @@ height="2.144000437445319in"}
 
 ### Usar autenticación básica en Apache
 
-**Crear el fichero /etc/apache2/passwd y añadir el usuario mortadelo. **
+Crear el fichero `/etc/apache2/passwd `y añadir el usuario mortadelo.
 
-Ejecutando el comando htpasswd -c mortadelo. La opción -c creará el
+Ejecutando el comando `htpasswd -c mortadelo`. La opción -c creará el
 fichero.
 
 ![](./media/image92.tmp){width="5.905555555555556in"
 height="0.8173611111111111in"}
 
-Fichero passwd creado en /etc/apache2
+Fichero passwd creado en `/etc/apache2`
 
 ![](./media/image93.tmp){width="5.905555555555556in"
 height="2.3569444444444443in"}
@@ -1992,9 +1990,9 @@ height="1.0993055555555555in"}
 
 **Permitir accesos a mortadelo y filemon**
 
--   Editar /etc/apache2/sites-available/xxx.smx2.org.conf
+-   Editar `/etc/apache2/sites-available/xxx.smx2.org.conf`
 
--   Permitir el acceso al directorio /var/www/privado a los usuarios
+-   Permitir el acceso al directorio `/var/www/privado` a los usuarios
     mortadelo y filemon
 
 ![](./media/image95.tmp){width="5.905555555555556in"
@@ -2024,7 +2022,7 @@ height="1.2236111111111112in"}
 Habilitar uso de .htaccess
 --------------------------
 
-Los ficheros .htaccess (o \"ficheros de configuración distribuida\")
+Los ficheros `.htaccess` (o <site>"ficheros de configuración distribuida<site>")
 facilitan una forma de realizar cambios en la configuración en contexto
 directorio.
 
@@ -2032,19 +2030,19 @@ Se trata de un archivo, que contiene una o más directivas, se coloca en
 un directorio, y estas directivas aplican a ese directorio y todos sus
 subdirectorios.
 
-Generalmente, los ficheros .htaccess usan la misma sintaxis que los
+Generalmente, los ficheros `.htaccess` usan la misma sintaxis que los
 ficheros de la configuración principal. Lo que puede utilizar en estos
 ficheros lo determina la directiva AllowOverride. Esta directiva
 específica, en categorías, qué directivas tendrán efecto si se
-encuentran en un fichero .htaccess.
+encuentran en un fichero `.htaccess`.
 
-Generalmente, solo se debería usar ficheros .htaccess cuando no tiene
+Generalmente, solo se debería usar ficheros `.htaccess` cuando no tiene
 acceso al fichero principal de configuración del servidor.
 
 -   Como administrador, editar el fichero
-    /etc/apache2/sites-available/xxx.smx2.org.conf
+    `/etc/apache2/sites-available/xxx.smx2.org.conf`
 
--   Habilitar el uso de ficheros .htaccess
+-   Habilitar el uso de ficheros `.htaccess`
 
 **AllowOverride** va a permitir que se puedan sobrescribir parámetros
 desde un archivo externo
@@ -2057,15 +2055,13 @@ Reiniciamos el servidor: sudo systemctl restart apache2
 **Crear un archivo .htaccess**
 
 -   Iniciar sesión como usuario alumno
-
--   Crear el fichero /home/alumno/wiki/ .htaccess
+-   Crear el fichero `/home/alumno/wiki/.htaccess`
 
 Configuración mediante .htaccess
 
 Pasos:
 
--   Crear el fichero /home/alumno/wiki/.htpassw y añadir al usuario wiki
-
+-   Crear el fichero `/home/alumno/wiki/.htpassw` y añadir al usuario wiki
 -   Editar el fichero /home/alumno/wiki/.htaccess y añadir las
     directivas para realizar autenticación básica
 
@@ -2077,16 +2073,18 @@ Configurar un site seguro con https
 Configurar servidor HTTPS
 -------------------------
 
-**mod\_ssl** es un módulo opcional para el servidor HTTP Apache.
+**mod<site>_ssl** es un módulo opcional para el servidor HTTP Apache.
 Proporciona criptografía para el servidor a través de los protocolos
 criptográficos Secure Sockets Layer) y Transport Layer Security.
 
-### Habilitar mod\_ssl
+### Habilitar mod<site>_ssl
 
 ![](./media/image99.tmp){width="5.905555555555556in"
 height="1.5391305774278214in"}
 
-Reiniciamos el servidor: sudo systemctl restart apache2
+Reiniciamos el servidor: 
+
+    sudo systemctl restart apache2
 
 ### Comprobar carga del módulo
 
@@ -2094,11 +2092,10 @@ Reiniciamos el servidor: sudo systemctl restart apache2
 
 ### Ver contenido de port.conf
 
-En este caso, al estar habilitado el módulo SSL\_module, el servidor
+En este caso, al estar habilitado el módulo SSL<site>_module, el servidor
 abrirá, además del puerto 80, el puerto 443.
 
 -   Las peticiones HTTP llegarán por defecto por el puerto 80
-
 -   Las peticiones HTTPS llegarán por defecto por el puerto 443
 
 ![](./media/image101.tmp){width="5.0879997812773405in"
@@ -2112,7 +2109,9 @@ height="0.9890682414698163in"}
 ### Comprobar puertos con nmap
 
 Nmap es un programa de código abierto que sirve para efectuar rastreo de
-puertos. Instalar si no lo está: sudo apt install nmap
+puertos. Instalar si no lo está: 
+
+    sudo apt install nmap
 
 ![](./media/image103.tmp){width="5.905555555555556in"
 height="1.8076388888888888in"}
@@ -2163,16 +2162,14 @@ Crear un servidor virtual https
 Creo la carpeta "seguro" y dentro la página index.html que lo
 identifique.
 
--   sudo mkdir /var/www/seguro
-
--   sudo nano /var/www/seguro/index.html
+    sudo mkdir /var/www/seguro
+    sudo nano /var/www/seguro/index.html
 
 ### Crear un certificado digital
 
 Creo un certificado digital auto firmado usado openssl. Para ello:
 
 -   Me voy al directorio home del usuario
-
 -   Creo una clave privada RSA (en este caso de 2048 bits)
 
 ![](./media/image109.tmp){width="5.905555555555556in"
@@ -2198,7 +2195,7 @@ ejecutar los comandos anteriores).
 ![](./media/image112.tmp){width="5.905555555555556in"
 height="0.8076388888888889in"}
 
-Cat seguro.key seguro.crt \> nombre-sitio.pem
+Cat seguro.key seguro.crt <site>> nombre-sitio.pem
 
 Copy nombre-sitio.pem /etc/ssl/private/
 
@@ -2221,29 +2218,31 @@ height="2.73043416447944in"}
 
 Agregar las directivas dentro de virtualhost:
 
-SSLEngine on
-
-SSLCertificateFile /etc/ssl/private/nombre-sitio.pem
+    SSLEngine on
+    SSLCertificateFile /etc/ssl/private/nombre-sitio.pem
 
 Hay que comentar la opción SSLCertificateKeyFile
 
 Dentro de la carpeta html debe aparecer la siguiente configuración:
 
-\<Directory /var/www/html\>
+<site><Directory /var/www/html<site>>
 
 SSLRequireSSL
 
-\...
+<site>...
 
-\</Directory\>
+<site></Directory<site>>
 
 Por defecto tenemos activado el site HTTPS que viene por defecto con
 apache, por lo que deberemos deshabilitarlo y habilitar el site nuevo:
 
--   Deshabilito el servidor virtual SSL que venía por defecto
-    (default-ssl): a2dissite default-ssl
+Deshabilito el servidor virtual SSL que venía por defecto (default-ssl): 
+    
+    a2dissite default-ssl
 
--   Habilitamos el site que hemos creado (seguro): a2ensite seguro
+Habilitamos el site que hemos creado (seguro): 
+
+    a2ensite seguro
 
 ####  Conexión al servidor HTTPS desde el navegador
 

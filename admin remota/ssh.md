@@ -75,14 +75,15 @@ Al conectar con el cliente, deberemos especificar también el nuevo puerto al qu
 
 ## Archivos de configuración
 
-Los archivos de configuración se encuentran en /etc/ssh/`
-sshd_config: Configuración del servidor SSH
-ssh_config: Configuración del cliente SSH
-ssh_host_rsa_key: Clave RSA privada
-ssh_host_rsa_key.pub: Clave RSA pública
-ssh_known_hosts: claves de otras máquinas
-~/.ssh/id_rsa: clave privada del usuario
-~/.ssh/id_rsa.pub: clave pública del usuario
+Los archivos de configuración se encuentran en `/etc/ssh/`
+
+- sshd_config: Configuración del servidor SSH
+- ssh_config: Configuración del cliente SSH
+- ssh_host_rsa_key: Clave RSA privada
+- ssh_host_rsa_key.pub: Clave RSA pública
+- ssh_known_hosts: claves de otras máquinas
+- ~/.ssh/id_rsa: clave privada del usuario
+- ~/.ssh/id_rsa.pub: clave pública del usuario
 
 ### Configuración sshd_config
 

@@ -254,7 +254,7 @@ contenido de la carpeta
 
 [15.2 Autenticación HTTP Basic 47](#autenticación-http-basic)
 
-[15.2.1 Comprobar módulo auth<site>_basic habilitado
+[15.2.1 Comprobar módulo auth_basic habilitado
 47](#comprobar-módulo-auth_basic-habilitado)
 
 [15.2.2 Usar autenticación básica en Apache
@@ -267,7 +267,7 @@ contenido de la carpeta
 
 [16.1 Configurar servidor HTTPS 51](#configurar-servidor-https)
 
-[16.1.1 Habilitar mod<site>_ssl 51](#habilitar-mod_ssl)
+[16.1.1 Habilitar mod_ssl 51](#habilitar-mod_ssl)
 
 [16.1.2 Comprobar carga del módulo 51](#comprobar-carga-del-módulo)
 
@@ -465,10 +465,10 @@ propietario del proceso apache2.
 Hay que disponer de un usuario y grupo para ello. En Ubuntu se dispone
 del usuario y grupo www-data.
 
--   cat /etc/passwrd <site>| grep www-data para comprobar la creación del
+-   cat /etc/passwrd | grep www-data para comprobar la creación del
     usuario www-data
 
--   cat /etc/group <site>| grep www-data para comprobar la creación del grupo
+-   cat /etc/group | grep www-data para comprobar la creación del grupo
     www-data
 
 ![](./media/image12.png){width="5.905555555555556in"
@@ -778,15 +778,15 @@ height="0.7729166666666667in"}
 ### Habilitar y deshabilitar sites
 
 Para habilitar o deshabilitar un sitio alojado con Apache, puede usar
-los comandos <site>'a2ensite<site>' y <site>'a2dissite<site>', respectivamente. Ambos
+los comandos 'a2ensite' y 'a2dissite', respectivamente. Ambos
 comandos usan esencialmente la misma sintaxis:
 
 ```
-a2ensite <site>
-a2dissite <site>
+a2ensite 
+a2dissite 
 ```
 
-donde `<site>` es el nombre del archivo de configuración del host
+donde `` es el nombre del archivo de configuración del host
 virtual de su sitio, ubicado en `/etc/apache2/sites-available/`, menos la
 extensión `.conf`.
 
@@ -992,7 +992,7 @@ Existen **dos tipos básicos** de secciones de configuración.
     directivas que se incluyen en las distintas secciones solamente a
     las peticiones que se adecúan a determinadas características.
 
--   Por otro lado, las secciones de tipo <site><IfDefine<site>> e <site><IfModule<site>>, se
+-   Por otro lado, las secciones de tipo <IfDefine> e <IfModule>, se
     evalúan **solamente al inicio o reinicio del servidor**.
 
 Si al iniciar el servidor las condiciones son las adecuadas, las
@@ -1031,12 +1031,12 @@ tomadas del archivo `/etc/apache2/apache2.conf`. Partes importantes:
     de esta carpeta desde el navegador.
 
 ```xml
-<Directory "/usr/share/apache2/icons<site>"<site>>
+<Directory "/usr/share/apache2/icons">
 Options Indexes MultiViews
 AllowOverride None
 Order allow,deny
 Allow from all
-</Directory<site>>
+</Directory>
 ```
 
 ### Permitir solo acceso a directorio a una red concreta
@@ -1099,8 +1099,8 @@ ellos.
 
 ### Utilización conjunta de directory y files
 
-También se pueden utilizar de forma conjunta las secciones <site><Directory<site>>
-y <site><Files<site>> para referirse a archivos que se encuentran en un
+También se pueden utilizar de forma conjunta las secciones <Directory>
+y <Files> para referirse a archivos que se encuentran en un
 determinado lugar del sistema de archivos. Por ejemplo:
 
 -   Denegará el acceso a `/var/www/xxx.smx2.org/clase/privado.html`
@@ -1114,23 +1114,23 @@ height="0.8801979440069991in"}
 
 ### Especificar un conjunto de archivos al que aplicará una configuración
 
-El argumento de <site><Files<site>> puede ser un nombre de archivo, o una
+El argumento de <Files> puede ser un nombre de archivo, o una
 expresión regular. Por ejemplo, para indicar que el argumento es
 cualquier archivo con formato gif, jpg, jpeg o png utilizaríamos la
 **siguiente** expresión regular:
 
-    <Files <site>~ <site>"<site><site>.(gif<site>|jp?g<site>|png)<site>$<site>"<site>>
+    <Files ~ ".(gif|jp?g|png)$">
 
 donde
 
--   <site>'?<site>' sustituye 0 o una ocurrencia de la expresión regular anterior
+-   '?' sustituye 0 o una ocurrencia de la expresión regular anterior
     (1 carácter)
 
--   <site>'<site>*<site>' equivale a cualquier secuencia de caracteres
+-   '*' equivale a cualquier secuencia de caracteres
 
--   <site>'<site>$<site>' indica final de línea
+-   '$' indica final de línea
 
--   <site>'<site><site><site>' se utiliza para escapar el carácter <site>'.<site>'
+-   '' se utiliza para escapar el carácter '.'
 
 Se puede utilizar la sección FilesMatch para trabajar con expresiones
 regulares.
@@ -1146,6 +1146,7 @@ configuración para el contenido del espacio web. Por ejemplo:
 Order Allow,Deny
 Deny from all
 </Location>
+```
 
 Esta configuración evita que se acceda a cualquier URL que empiece por
 `/privado`, utilizándose la palabra privado como expresión regular. Por
@@ -1168,7 +1169,7 @@ Userdir directorio
 </IfModule>
 ```
 
-En este caso, si el módulo **usedir** está activado, se aplica la
+En este caso, si el módulo `usedir` está activado, se aplica la
 directiva de dentro. En cambio, si no está activado, se ignora.
 
 Sección ifdefine
@@ -1178,9 +1179,9 @@ IfDefine engloba directivas que serán procesadas sólo si se cumple una
 determinada condición (test) al iniciar el servidor.
 
 ```xml
-<IfDefine <site>[!<site>]nombre<site>_parametro<site>>
+<IfDefine [!]nombre_parametro>
 
-</IfDefine<site>>
+</IfDefine>
 ```
 
 IfDefine se usa para marcar directivas que son condicionales.
@@ -1210,18 +1211,18 @@ servidor.
 
 Ejemplo: 
 
-    apache2 -DReverseProxy <site>...
+    apache2 -DReverseProxy ...
 
-<site># en el archivo apache2.conf
+# en el archivo apache2.conf
 
 Como hemos pasado el argumento `ReverseProxy`, en la sección `Ifdefine` lo
 verá, y el servidor utilizará las directivas que hay dentro.
 
 ```xml
-<site><IfDefine ReverseProxy<site>>
-LoadModule rewrite<site>_module modules/mod<site>_rewrite.so
-LoadModule proxy<site>_module modules/libproxy.so
-<site></IfDefine<site>>
+<IfDefine ReverseProxy>
+LoadModule rewrite_module modules/mod_rewrite.so
+LoadModule proxy_module modules/libproxy.so
+</IfDefine>
 ```
 
 Indica que se cargan los módulos `mod_rewrite` y `libproxy`, ya que, en el
@@ -1249,11 +1250,11 @@ Las directivas se pueden colocar en muchos sitios, generalmente se
 responde al considerar dónde desea que una directiva sea efectiva.
 
 -   Si se trata de una configuración global, debe aparecer en el archivo
-    de configuración, fuera de cualquier <site><Directory<site>>, <site><Location<site>>,
-    <site><VirtualHost<site>> u otra sección.
+    de configuración, fuera de cualquier <Directory>, <Location>,
+    <VirtualHost> u otra sección.
 
 -   Si se aplica solo a un directorio en particular, debe ir dentro de
-    una sección <site><Directory<site>> que se refiera a ese directorio, y así
+    una sección <Directory> que se refiera a ese directorio, y así
     sucesivamente.
 
 Directiva ServerRoot 
@@ -1317,9 +1318,9 @@ Ejemplo:
 
 Las líneas anteriores le indican al servidor web Apache que:
 
-1.  muestre el archivo <site>'index.html<site>' como el índice de directorio.
-2.  Si este archivo no está disponible, entonces muestre <site>'index.cgi<site>'
-3.  Si no está disponible, entonces muestre <site>'index.php<site>'.
+1.  muestre el archivo 'index.html' como el índice de directorio.
+2.  Si este archivo no está disponible, entonces muestre 'index.cgi'
+3.  Si no está disponible, entonces muestre 'index.php'.
 
 Si no está disponible uno de los archivos especificados, el servidor web
 Apache volverá a su configuración predeterminada, ya sea mostrando un
@@ -1437,7 +1438,7 @@ este fin, ejecute en una consola el siguiente comando como root.
 
 Ejecutar la orden:
 
-    tail -f /var/log/apache2/<site>*.log
+    tail -f /var/log/apache2/*.log
 
 Mientras mantengamos abierto el shell, se irán mostrando por pantalla
 solo las nuevas líneas que se añadan al log a partir del momento en que
@@ -1471,7 +1472,7 @@ del fichero `/etc/apache2/sites-available/xxx.smx2.org.conf`
 height="1.1659722222222222in"}
 
 En general, los ficheros de log se encuentran por defecto en
-/var/log/apache2/ (la localización habitual). <site>$(APACHE<site>_LOG<site>_DIR) hace
+/var/log/apache2/ (la localización habitual). $(APACHE_LOG_DIR) hace
 referencia a esta carpeta.
 
 ![](./media/image61.tmp){width="5.905555555555556in"
@@ -1606,8 +1607,8 @@ Pasos
 -   Crear una cuenta llamada `alumno` e iniciar sesión con este
     usuario
 -   Crear la carpeta `/home/alumno/wiki`
--   Dentro crear una página `wiki1.html` que contenga <site>"PÁGINA WIKI
-    1<site>"
+-   Dentro crear una página `wiki1.html` que contenga "PÁGINA WIKI
+    1"
 
 ![](./media/image69.tmp){width="5.905555555555556in"
 height="0.26319444444444445in"}
@@ -1657,11 +1658,11 @@ Sintaxis:
 
 -   **Para crearlo:**
 
-    ln -s <site><destination file or directory<site>> <site><name of the symlink<site>>
+    ln -s <destination file or directory> <name of the symlink>
 
 -   **Para borrarlo:** 
 
-    rm <site><name of the symlink<site>>
+    rm <name of the symlink>
 
 Nota: Al borrar el enlace simbólico no se borra el archivo destino
 
@@ -1669,7 +1670,7 @@ Pasos a realizar:
 
 1.  Iniciar sesión como usuario alumno.
 2.  Crear directorio `/home/alumno/blog/`
-3.  Dentro crear el archivo blog1.html con el texto <site>"PÁGINA BLOG 1<site>"
+3.  Dentro crear el archivo blog1.html con el texto "PÁGINA BLOG 1"
 
 ![](./media/image73.tmp){width="5.905555555555556in"
 height="0.29930555555555555in"}
@@ -1729,7 +1730,7 @@ de módulos base.
 
 Las directivas de configuración se pueden incluir de forma condicional
 dependiendo de la presencia de un módulo particular, poniéndolas dentro
-de un bloque <site><IfModule<site>> como veremos más adelante
+de un bloque <IfModule> como veremos más adelante
 
 Instalación y carga de módulos
 ------------------------------
@@ -1764,7 +1765,7 @@ un enlace simbólico en este directorio a los
 
 ### Módulos activados por defecto
 
-Por defecto la instalación de Apache2 deja <site>'activados<site>' un grupo de
+Por defecto la instalación de Apache2 deja 'activados' un grupo de
 módulos.
 
 ![](./media/image78.tmp){width="5.905555555555556in"
@@ -1781,7 +1782,7 @@ height="0.4284722222222222in"}
 ### Archivos de configuración de módulos
 
 Editar un fichero .conf y observar cómo se añaden directivas dentro de
-una declaración <site><IfModule nombre modulo<site>><site>...<site></IfModule<site>> que se
+una declaración <IfModule nombre modulo>...</IfModule> que se
 ejecutarán si se carga el módulo
 
 ![](./media/image80.tmp){width="5.905555555555556in"
@@ -1822,8 +1823,8 @@ que pueda ofrecer un espacio web para usuarios de nuestro sistema y que
 estos puedan tener un espacio web.
 
 Cada uno de estos usuarios disfrutará de un espacio web que se
-almacenará en la carpeta /public<site>_html, dentro de su carpeta home
-(/home/nombreusuario/public<site>_html)
+almacenará en la carpeta /public_html, dentro de su carpeta home
+(/home/nombreusuario/public_html)
 
 Para que Apache procese los espacios web de los usuarios es necesario
 activar el módulo **userdir**
@@ -1890,7 +1891,7 @@ Reiniciamos el servidor:
 
 ### Consultar fichero de configuración de userdir
 
-Consultar el fichero /etc/apache2/mod<site>_enabled/userdir.conf
+Consultar el fichero /etc/apache2/mod_enabled/userdir.conf
 
 ![](./media/image90.tmp){width="5.905555555555556in" height="1.575in"}
 
@@ -1911,13 +1912,13 @@ páginas allí almacenadas.
 
 Para cambiar permisos: 
 
-    chmod -R 755 /home/pepe/public<site>_html
+    chmod -R 755 /home/pepe/public_html
 
-Dentro crear el archivo personal1.html con el texto <site>"PÁGINA PERSONAL
-DEL USUARIO ALUMNO<site>"
+Dentro crear el archivo personal1.html con el texto "PÁGINA PERSONAL
+DEL USUARIO ALUMNO"
 
 Acceder a
-[http://IPdelServidor/<site>~pepe/personal1.html](http://xxx.smx2.org/~pepe/personal1.html)
+[http://IPdelServidor/~pepe/personal1.html](http://xxx.smx2.org/~pepe/personal1.html)
 
 Modulo modsecurity
 ------------------
@@ -1942,10 +1943,10 @@ Control de acceso por IP y nombre de dominio
 
 1.  Iniciar sesión como administrador
 2.  Crear el directorio /var/www/xxx.smx2.org/privado
-3.  Crear dentro la página privado1.html con el texto <site>"PÁGINA PRIVADA<site>"
+3.  Crear dentro la página privado1.html con el texto "PÁGINA PRIVADA"
 
 Editar /etc/apache2/sites-available/xxx.smx2.org.conf y utilizar la
-sentencia <site><Directory<site>> para denegar el acceso al directorio a todos los
+sentencia <Directory> para denegar el acceso al directorio a todos los
 equipos excepto al local y a la MV Ubuntu Desktop
 
 Reiniciamos el servidor: sudo systemctl restart apache2
@@ -1957,9 +1958,9 @@ ubicaciones
 Autenticación HTTP Basic
 ------------------------
 
-### Comprobar módulo auth<site>_basic habilitado
+### Comprobar módulo auth_basic habilitado
 
-Miramos en `/etc/apache2/mods-enabled`, que el módulo **auth<site>_basic** está
+Miramos en `/etc/apache2/mods-enabled`, que el módulo **auth_basic** está
 habilitado
 
 ![](./media/image91.tmp){width="5.905555555555556in"
@@ -2022,7 +2023,7 @@ height="1.2236111111111112in"}
 Habilitar uso de .htaccess
 --------------------------
 
-Los ficheros `.htaccess` (o <site>"ficheros de configuración distribuida<site>")
+Los ficheros `.htaccess` (o "ficheros de configuración distribuida")
 facilitan una forma de realizar cambios en la configuración en contexto
 directorio.
 
@@ -2073,11 +2074,11 @@ Configurar un site seguro con https
 Configurar servidor HTTPS
 -------------------------
 
-**mod<site>_ssl** es un módulo opcional para el servidor HTTP Apache.
+**mod_ssl** es un módulo opcional para el servidor HTTP Apache.
 Proporciona criptografía para el servidor a través de los protocolos
 criptográficos Secure Sockets Layer) y Transport Layer Security.
 
-### Habilitar mod<site>_ssl
+### Habilitar mod_ssl
 
 ![](./media/image99.tmp){width="5.905555555555556in"
 height="1.5391305774278214in"}
@@ -2092,7 +2093,7 @@ Reiniciamos el servidor:
 
 ### Ver contenido de port.conf
 
-En este caso, al estar habilitado el módulo SSL<site>_module, el servidor
+En este caso, al estar habilitado el módulo SSL_module, el servidor
 abrirá, además del puerto 80, el puerto 443.
 
 -   Las peticiones HTTP llegarán por defecto por el puerto 80
@@ -2195,7 +2196,7 @@ ejecutar los comandos anteriores).
 ![](./media/image112.tmp){width="5.905555555555556in"
 height="0.8076388888888889in"}
 
-Cat seguro.key seguro.crt <site>> nombre-sitio.pem
+Cat seguro.key seguro.crt > nombre-sitio.pem
 
 Copy nombre-sitio.pem /etc/ssl/private/
 
@@ -2225,13 +2226,13 @@ Hay que comentar la opción SSLCertificateKeyFile
 
 Dentro de la carpeta html debe aparecer la siguiente configuración:
 
-<site><Directory /var/www/html<site>>
+<Directory /var/www/html>
 
 SSLRequireSSL
 
-<site>...
+...
 
-<site></Directory<site>>
+</Directory>
 
 Por defecto tenemos activado el site HTTPS que viene por defecto con
 apache, por lo que deberemos deshabilitarlo y habilitar el site nuevo:

@@ -289,13 +289,37 @@ docker ps
 * Comprobar todos los eventos que han ocurrido a un contenedor: docker events 
 * Listar procesos de un contenedor: docker top xxx
 
-# Eliminar contenedores
+# Eliminar contenedores linux
 
 Eliminar todos los contenedores existentes (subshell):
 
 ```docker
 docker stop $(docker ps -q)
 docker rm -v $(docker ps -aq)
+```
+
+# Eliminar contenedores Windows
+
+Borrar todos los contenedores en windows. Meter en un bat
+
+```bat
+FOR /f "tokens=*" %i IN ('docker ps -a -q') DO docker rm %i
+```
+
+# Eliminar contenedores y imagenes con batch
+
+Un bat que te lo hace todo (maravilloso), borra contenedores e imágenes.
+
+```bat
+@echo off
+FOR /f "tokens=*" %%i IN ('docker ps -aq') DO docker rm %%i
+FOR /f "tokens=*" %%i IN ('docker images --format "{{.ID}}"') DO docker rmi %%i
+```
+
+# Eliminar contenedores en powershell:
+
+```poweshell
+docker ps -aq | foreach {docker rm $_}
 ```
 
 # Persistencia

@@ -1,9 +1,13 @@
+# Infraestructura habitual
+
 Una infraestructura moderna normalmente utiliza:
 
 * Múltiples proveedores (AWS, Google Cloud, Digital Ocean,etc)
 * Combinado con servicios externos: DNS, mail, monitorización, etc.
 
 Cada proveedor utiliza sus propias herramientas.
+
+# Con terraform
 
 Terraform permite manejarlas todas desde un solo sitio, mediante código.
 

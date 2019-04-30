@@ -44,12 +44,12 @@ if [ -z "$1" ]; then
   exit 13
 fi
 
-if [ ! -f "$1" ]; then
-  echo "FATAL missing file '$1'"
+if [ ! -f "$1.docx" ]; then
+  echo "FATAL missing file '$1.docx'"
   exit 11
 fi
 
-mkdir -p "img"
+mkdir -p "$1"
 
-cd "img"
-pandoc -f pptx -t markdown --extract-media="." -o "README.md" "../$1"
+cd "$1"
+pandoc -f docx -t markdown --extract-media="." -o "README.md" "../$1.docx"

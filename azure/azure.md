@@ -1,14 +1,28 @@
 # Conectar
 
-Acceder y logearse en: https://portal.azure.com/
+Hemos creado una cuenta con suscricion gratuita para probar las funcionalidades de azure.
+
+Para acceder y logearse podemos hacerlo a traves del portal:
+
+https://portal.azure.com/
+
+
+# Grupos de recursos
 
 Todos los recursos que se creen deben ir dentro de un grupo de recursos.
+
+Es decir, aunque solo creamos crear una maquina virtual, debemos crear un grupo de recursos en el que estara situada.
+
+Lo primero que nos preguntara al crear un recuroso cualquiera sera en que grupo queremos crearlo.
+
+# Crear una infraestructura
 
 Podemos crear toda nuestra infraestructura a base de clicks pero es un poco tedioso. 
 Vamos a crear toda la infraestructura automáticamente. Podemos hacerlo de varias formas:
 
 1. A base de shell puro y duro
 2. Automatización tipo terraform.
+3. Otros
 
 # Creación manual
 
@@ -38,6 +52,8 @@ Aquí definimos el número de nodos que vamos a meter. Nos recomiendan:
 
 Nos permiten elegir el tipo de máquina, por lo que vamos a pillar una sencillita, además de que
 nos consumirá menos dinero.
+
+He probado con maquinas de 2 GB y un vCore pero me dice que no valen para AKS.
 
 Me voy a coger una máquina A1_v2 que, por unos 30 euros mes, me da:
 
@@ -78,7 +94,8 @@ Le decimos que gracias pero que no queremos por ahora extra monitorización.
 Por último, nos dejará comprobar la configuración para levantar el sistema. 
 
 Me permite guardar como template la configuración que he hecho en varios sistemas, entre ellos:
-* Powershell
+
+* Un script powershell
 * .NET, Ruby, etc.
 * Shell scripts
 
@@ -88,7 +105,7 @@ Lo que más tarda es en levantar el cluster, puesto que me tiene que arrancar la
 
 Por lo que veo, me ha creado un deployment llamado:
 
-Deployment name:microsoft.aks-20190429114347
+    Deployment name:microsoft.aks-20190429114347
 
 Al cabo de 8 minutazos:
 

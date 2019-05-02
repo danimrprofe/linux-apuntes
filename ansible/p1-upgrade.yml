@@ -1,0 +1,8 @@
+---
+-   hosts: 'clients'
+    tasks:
+    -   name: 'ejemplo'
+        become: true
+        apt:
+            update-cache: true
+            upgrade: true

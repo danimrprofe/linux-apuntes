@@ -1,0 +1,12 @@
+---
+# <ansible_base_dir>/group_vars/back-end-servers
+
+WEBSERVER:
+  PORT: 8080
+  WEBROOT: /var/www
+
+DATABASE:
+  USER: admin
+  PORT: 3306
+
+PATH_ENV: /opt/dev

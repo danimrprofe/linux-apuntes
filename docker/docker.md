@@ -291,6 +291,10 @@ docker ps
 
 # Eliminar contenedores linux
 
+Actualización: podemos borrar todas las imágenes:
+
+ docker system prune -a
+
 Eliminar todos los contenedores existentes (subshell):
 
 ```docker
@@ -373,4 +377,78 @@ Algunas ventajas de cambiar a un entorno docker son:
 al tenerlos que definir como instrucciones en un Dockerfile.
 - Al hacer los dockerfiles tratas tu infraestructura como código que puede
 ser commited y compartido, así como ver un histórico de cambios.
+
+# Almacenar en repositorio
+
+Podemos pushear la imagen a un registro del tipo Docker hub, para poderla utilizar y construir y escalar contenedores a partir de ella.
+
+Primero creo la imagen, si no la tenía ya creada:
+
+ docker build -t danimrtic/nodejs-mongodb .
+
+Comprobamos que me la ha creado:
+
+ 
+```
+C:\xxx>docker images
+REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
+danimrtic/nodejs-mongodb   latest              1d3b7e77a948        32 seconds ago      117MB
+```
+Ahora podríamos crear todos los contenedores que queramos a partir de ella, o utilizarla como punto
+de partida para crear otras imágenes.
+
+Ahora vamos a subir la imagen al repositorio. Para ello nos logueamos:
+
+```
+C:\xxx>docker login -u danimrtic
+Password:
+Login Succeeded
+```
+Una vez esto, me guarda la configuración en un archivo JSON.
+
+Pusheo la imagen:
+
+ docker push danimrtic/nodejs-mongodb
+
+Y ale, a subir se ha dicho:
+
+```
+C:\xxx> docker push danimrtic/nodejs-mongodb
+The push refers to repository [docker.io/danimrtic/nodejs-mongodb]
+c9b7262cf2a9: Pushed
+484f9423b541: Pushed
+6faf95ed340e: Pushed
+a4c2fd79fb93: Pushed
+2faeaaebb113: Mounted from library/node
+387bc77dd3f2: Mounted from library/node
+df64d3292fd6: Mounted from library/node
+latest: digest: sha256:c0540a9bcce05b35ef3b0738aee2681b78246b91503d0ae25091b52644c4df49 size: 1788
+```
+
+Al no darle etiqueta, se convierte en la versión `latest`. Ahora la puedo pullear desde cualquier proveedor cloud y montar los contenedores que quiera.
+
+Borro todas las imágenes para obligar la descarga:
+
+ docker system prune -a
+ 
+Y a descargar la imagen:
+
+ docker pull danimrtic/nodejs-mongodb
+ 
+Respuesta:
+
+```
+C:\Users\dnick\Desktop\github\node.js-mongodb>docker pull danimrtic/nodejs-mongodb
+Using default tag: latest
+latest: Pulling from danimrtic/nodejs-mongodb
+4fe2ade4980c: Pull complete
+c245f6a8ecc5: Pull complete
+82bdc9503d50: Pull complete
+f4a77d5c469c: Pull complete
+628735677efb: Pull complete
+69feec983dbb: Pull complete
+7a0d47fa11c7: Pull complete
+Digest: sha256:c0540a9bcce05b35ef3b0738aee2681b78246b91503d0ae25091b52644c4df49
+Status: Downloaded newer image for danimrtic/nodejs-mongodb:latest
+```
 

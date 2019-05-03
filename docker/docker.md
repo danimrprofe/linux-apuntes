@@ -22,31 +22,42 @@ aspectratio:
 
 # Índice
 
-- [Apuntes de Docker](#apuntes-de-docker)
-  - [Contenedores](#contenedores)
-    - [Contenedores Windows y contenedores Linux](#contenedores-windows-y-contenedores-linux)
-  - [Imágenes](#im%C3%A1genes)
-    - [Aprovechamiento de las capas](#aprovechamiento-de-las-capas)
-  - [Docker](#docker)
-  - [Dockerfiles](#dockerfiles)
-    - [Formato de un dockerfile](#formato-de-un-dockerfile)
-    - [Ejecutar un comando](#ejecutar-un-comando)
-    - [Construir una imagen](#construir-una-imagen)
-    - [Definir etiqueta para una imagen](#definir-etiqueta-para-una-imagen)
+- [Índice](#%C3%ADndice)
+- [Contenedores](#contenedores)
+- [Contenedores Windows y contenedores Linux](#contenedores-windows-y-contenedores-linux)
+- [Imágenes](#im%C3%A1genes)
+- [Aprovechamiento de las capas](#aprovechamiento-de-las-capas)
+- [Docker](#docker)
+- [Dockerfiles](#dockerfiles)
+  - [Formato de un dockerfile](#formato-de-un-dockerfile)
+  - [Ejecutar un comando](#ejecutar-un-comando)
+- [Construir una imagen](#construir-una-imagen)
+- [Definir etiqueta para una imagen](#definir-etiqueta-para-una-imagen)
     - [Consultar imágenes](#consultar-im%C3%A1genes)
     - [Ejecutar un contenedor](#ejecutar-un-contenedor)
-  - [Docker compose](#docker-compose)
-    - [Definición de servicios](#definici%C3%B3n-de-servicios)
-    - [Montaje de volúmenes](#montaje-de-vol%C3%BAmenes)
-    - [Variables de entorno](#variables-de-entorno)
-    - [Ejemplo de docker-compose](#ejemplo-de-docker-compose)
-    - [Ejecutar docker-compose](#ejecutar-docker-compose)
-  - [Persistencia](#persistencia)
-  - [Monitorizar contenedores](#monitorizar-contenedores)
-    - [Dive](#dive)
-  - [Buenas prácticas para construir contenedores](#buenas-pr%C3%A1cticas-para-construir-contenedores)
-    - [Multi stage builds](#multi-stage-builds)
-  - [Ventajas de dockerizar](#ventajas-de-dockerizar)
+- [Docker compose](#docker-compose)
+- [Definición de servicios](#definici%C3%B3n-de-servicios)
+- [Montaje de volúmenes](#montaje-de-vol%C3%BAmenes)
+- [Variables de entorno](#variables-de-entorno)
+- [Ejemplo de docker-compose](#ejemplo-de-docker-compose)
+- [Ejecutar docker-compose](#ejecutar-docker-compose)
+- [Visualizar contenedores](#visualizar-contenedores)
+- [Monitorizar contenedores](#monitorizar-contenedores)
+- [Eliminar contenedores](#eliminar-contenedores)
+  - [Eliminar contenedores linux](#eliminar-contenedores-linux)
+  - [Eliminar contenedores Windows](#eliminar-contenedores-windows)
+  - [Eliminar contenedores y imagenes con batch](#eliminar-contenedores-y-imagenes-con-batch)
+- [Eliminar contenedores en powershell:](#eliminar-contenedores-en-powershell)
+- [Persistencia](#persistencia)
+- [Dive](#dive)
+- [Multi stage builds](#multi-stage-builds)
+- [Buenas prácticas para construir contenedores](#buenas-pr%C3%A1cticas-para-construir-contenedores)
+- [Ventajas de dockerizar](#ventajas-de-dockerizar)
+- [Almacenar en repositorio](#almacenar-en-repositorio)
+  - [Construir la imagen](#construir-la-imagen)
+  - [Login en docker hub](#login-en-docker-hub)
+  - [Subir imagen](#subir-imagen)
+  - [Descargar imagen](#descargar-imagen)
 
 # Contenedores
 
@@ -128,6 +139,7 @@ Formato del Dockerfile, que se creará dentro de la carpeta donde tengamos el pr
 FROM ubuntu:14.04
 ENTRYPOINT ["/bin/echo"]
 ```
+
 ## Ejecutar un comando
 
 Si en lugar de utilizar entrypoints queremos pasar parámetros, podemos utilizar CMD
@@ -289,7 +301,9 @@ docker ps
 * Comprobar todos los eventos que han ocurrido a un contenedor: docker events 
 * Listar procesos de un contenedor: docker top xxx
 
-# Eliminar contenedores linux
+# Eliminar contenedores
+
+## Eliminar contenedores linux
 
 Actualización: podemos borrar todas las imágenes:
 
@@ -302,7 +316,7 @@ docker stop $(docker ps -q)
 docker rm -v $(docker ps -aq)
 ```
 
-# Eliminar contenedores Windows
+## Eliminar contenedores Windows
 
 Borrar todos los contenedores en windows. Meter en un bat
 
@@ -310,7 +324,7 @@ Borrar todos los contenedores en windows. Meter en un bat
 FOR /f "tokens=*" %i IN ('docker ps -a -q') DO docker rm %i
 ```
 
-# Eliminar contenedores y imagenes con batch
+## Eliminar contenedores y imagenes con batch
 
 Un bat que te lo hace todo (maravilloso), borra contenedores e imágenes.
 
@@ -380,22 +394,26 @@ ser commited y compartido, así como ver un histórico de cambios.
 
 # Almacenar en repositorio
 
-Podemos pushear la imagen a un registro del tipo Docker hub, para poderla utilizar y construir y escalar contenedores a partir de ella.
+Podemos pushear la imagen a un registro del tipo `Docker hub`, para poderla utilizar 
+y construir y escalar contenedores a partir de ella.
+
+## Construir la imagen
 
 Primero creo la imagen, si no la tenía ya creada:
 
- docker build -t danimrtic/nodejs-mongodb .
+    docker build -t danimrtic/nodejs-mongodb .
 
 Comprobamos que me la ha creado:
 
- 
-```
+```docker
 C:\xxx>docker images
 REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
 danimrtic/nodejs-mongodb   latest              1d3b7e77a948        32 seconds ago      117MB
 ```
-Ahora podríamos crear todos los contenedores que queramos a partir de ella, o utilizarla como punto
-de partida para crear otras imágenes.
+
+Ahora podríamos crear todos los contenedores que queramos a partir de ella, o utilizarla como punto de partida para crear otras imágenes.
+
+## Login en docker hub
 
 Ahora vamos a subir la imagen al repositorio. Para ello nos logueamos:
 
@@ -404,11 +422,13 @@ C:\xxx>docker login -u danimrtic
 Password:
 Login Succeeded
 ```
-Una vez esto, me guarda la configuración en un archivo JSON.
+Una vez esto, me guarda la configuración en un archivo `JSON`.
+
+## Subir imagen
 
 Pusheo la imagen:
 
- docker push danimrtic/nodejs-mongodb
+    docker push danimrtic/nodejs-mongodb
 
 Y ale, a subir se ha dicho:
 
@@ -429,12 +449,14 @@ Al no darle etiqueta, se convierte en la versión `latest`. Ahora la puedo pulle
 
 Borro todas las imágenes para obligar la descarga:
 
- docker system prune -a
- 
+    docker system prune -a
+
+## Descargar imagen
+
 Y a descargar la imagen:
 
- docker pull danimrtic/nodejs-mongodb
- 
+    docker pull danimrtic/nodejs-mongodb
+
 Respuesta:
 
 ```

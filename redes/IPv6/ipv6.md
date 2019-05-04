@@ -4,9 +4,12 @@
 - [Apuntes IPv6](#apuntes-ipv6)
   - [Direccionamiento IPv6](#direccionamiento-ipv6)
   - [IPv4 vs IPv6](#ipv4-vs-ipv6)
+- [Notación IPv6](#notaci%C3%B3n-ipv6)
   - [Encabezado IPv4 vs IPv6](#encabezado-ipv4-vs-ipv6)
     - [Ventajas del encabezado de IPv6](#ventajas-del-encabezado-de-ipv6)
   - [Acortar direcciones](#acortar-direcciones)
+    - [Los ceros iniciales de los campos son opcionales](#los-ceros-iniciales-de-los-campos-son-opcionales)
+    - [Campos sucesivos de 0](#campos-sucesivos-de-0)
   - [Ejemplos](#ejemplos)
   - [Máscaras](#m%C3%A1scaras)
   - [Tipos de direcciones IPv6](#tipos-de-direcciones-ipv6)
@@ -39,23 +42,28 @@
 
 ## IPv4 vs IPv6
 
+Las diferencias entre los protocolos son las siguientes:
+
 - Internet Protocol version 4 (IPv4)
-- Creado alrededor de 1979
-- Espacio de direcciones de 32-bit. Cuatro mil millones de direcciones IP
-- Los métodos de asignación desperdiciaron direcciones
+  - Creado alrededor de 1979
+  - Espacio de direcciones de 32-bit. Cuatro mil millones de direcciones IP
+  - Los métodos de asignación desperdiciaron direcciones
 - Internet Protocol version 6 (IPv6)
-- Direcciones de 128-bit
-- Mejoran seguridad, encaminamiento y otras características
-- Hasta 3.4 x 10^38 direcciones IP = 340,282,366,920,938,463,463,374,607,431,768,211,456 direcciones
+  - Direcciones de 128-bit
+  - Mejoran seguridad, encaminamiento y otras características
+  - Hasta 3.4 x 10^38 direcciones IP = 340,282,366,920,938,463,463,374,607,431,768,211,456 direcciones
 
 - IPv6 e IPv4 difieren en la implementación
 - El espacio de direcciones funciona de manera diferente
 - Las direcciones no se parecen
 - IPv6 siempre usa el direccionamiento de enlace local
 - El subnetting funciona de manera diferente
-- Notación IPv6
-- Notación de direcciones IPv6
-- 128 bits en hexadecimal: 2001:0000:0000:3210:0800:200C:00CF:1234
+
+# Notación IPv6
+
+El formato de las direcciones IPv6 es el siguiente:
+
+- 128 bits en hexadecimal: `2001:0000:0000:3210:0800:200C:00CF:1234`
 - Separador de dos puntos en lugar de punto
 - Grupos de cuartetos (o hextetos): 0000 to FFFF
 
@@ -63,19 +71,23 @@
 
 ### Ventajas del encabezado de IPv6
 
-- Mayor eficacia de enrutamiento para obtener mejor rendimiento y más escalabilidad de - velocidad de reenvío.
-- Ausencia de broadcasts, de manera que no existe peligro potencial de tormentas de - broadcasts.
+- Mayor eficacia de enrutamiento para obtener mejor rendimiento y más escalabilidad de velocidad de reenvío.
+- Ausencia de broadcasts, de manera que no existe peligro potencial de tormentas de broadcasts.
 - No hay necesidad de procesar sumas de comprobación.
 - Mecanismos de encabezado de extensión más simples y eficaces.
-- Rótulos de flujo en función del procesamiento de flujo sin necesidad de abrir el - paquete interno de transporte para identificar los diferentes flujos de tráfico
+- Rótulos de flujo en función del procesamiento de flujo sin necesidad de abrir el paquete interno de transporte para identificar los diferentes flujos de tráfico
 
 ## Acortar direcciones
 
 Las direcciones en IPv6 se pueden simplificar.
 
-- Los ceros iniciales de los campos son opcionales.
+### Los ceros iniciales de los campos son opcionales
+
 - Por ejemplo, el campo 09C0 es igual a 9C0 y el campo 0000 es igual a 0. De manera que
-- 2031:0000:130F:0000:0000:09C0:876A:130B puede escribirse como - 2031:0:130F:0000:0000:9C0:876A:130B.
+- `2031:0000:130F:0000:0000:09C0:876A:130B` puede escribirse como - 2031:0:130F:0000:0000:9C0:876A:130B.
+  
+### Campos sucesivos de 0
+
 - Los campos sucesivos de ceros pueden representarse con doble dos puntos "::". Sin - embargo, este método de abreviación sólo puede utilizarse una vez en una dirección. - Por ejemplo
 - 2031:0:130F:0000:0000:9C0:876A:130B puede escribirse como
 - 2031:0:130F::9C0:876A:130B.
@@ -86,17 +98,17 @@ Un analizador de direcciones identifica la cantidad de ceros faltantes
 
 ## Ejemplos
 
-- FF01:0:0:0:0:0:0:1 se convierte en FF01::1
-- 0:0:0:0:0:0:0:1 se convierte en ::1
-- 0:0:0:0:0:0:0:0 se convierte en ::
-- FF01:0000:0000:0000:0000:0000:0000:1 = FF01:0:0:0:0:0:0:1 = FF01::1
-- E3D7:0000:0000:0000:51F4:00C8:C0A8:6420 = E3D7::51F4:C8:C0A8:6420
+- FF01:0:0:0:0:0:0:1 se convierte en `FF01::1`
+- 0:0:0:0:0:0:0:1 se convierte en `::1`
+- 0:0:0:0:0:0:0:0 se convierte en `::`
+- FF01:0000:0000:0000:0000:0000:0000:1 = FF01:0:0:0:0:0:0:1 = `FF01::1`
+- E3D7:0000:0000:0000:51F4:00C8:C0A8:6420 = `E3D7::51F4:C8:C0A8:6420`
 - 3FFE:0501:0008:0000:0260:97FF:FE40:EFAB = 3FFE:501:8:0:260:97FF:FE40:EFAB = 3FFE:501:8::260:97FF:FE40:EFAB
 
 ## Máscaras
 
-- Las máscaras son expresadas de la misma forma que en la notación CIDR utilizada en - IPv4.
-- En IPv6 la longitud del prefijo indica bits comunes del PREFIJO que no se deben - cambiar (identifican unívocamente a cualquier clase de la DIRECCION IPv6)
+- Las máscaras son expresadas de la misma forma que en la notación CIDR utilizada en  IPv4.
+- En IPv6 la longitud del prefijo indica bits comunes del PREFIJO que no se deben cambiar (identifican unívocamente a cualquier clase de la DIRECCION IPv6)
 - En las redes IPv6 el prefijo es siempre /64 (fijo)
 - Un prefijo de dirección IPv6 se representa con la siguiente notación
 - Dirección/prefijo
@@ -107,14 +119,14 @@ Un analizador de direcciones identifica la cantidad de ceros faltantes
 
 ### Espacio de direcciones
 
-- La IANA divide el espacio disponible en 8 segmentos iguales
-- Los grupos están basados en los 3 primeros bits de dirección
-- Solo una octava parte del espacio disponible ha sido reservado para utilizarse como - direcciones globales unicast
+- La IANA divide el espacio disponible en **8 segmentos** iguales
+- Los grupos están basados en los **3 primeros bits** de dirección
+- Solo una octava parte del espacio disponible ha sido reservado para utilizarse como  direcciones globales unicast
 - Se han creado 4 subgrupos más pequeños:
-- Unique local unicast
-- Link-local unicast
-- Muticast
-- Otros
+  - Unique local unicast
+  - Link-local unicast
+  - Muticast
+  - Otros
 
 ### Tipos de direcciones
 
@@ -175,7 +187,7 @@ FF00::/8
 
 En windows podemos ver la **dirección IPv6 local**.
 
-```
+```console
 Adaptador de Ethernet Ethernet:
 
    Sufijo DNS específico para la conexión. . :
@@ -243,7 +255,8 @@ Los datagramas que se envían a esta dirección regresan al dispositivo emisor y
 
 ##### Dirección no especificada
 
-- En IPv4, una dirección IP compuesta únicamente por ceros tiene un significado - especial: hace referencia al mismo host y se utiliza cuando un dispositivo no conoce - su propia dirección. En IPv6, este concepto se formalizó y la dirección compuesta - únicamente por ceros (0:0:0:0:0:0:0:0) se denomina dirección "no especificada".
+- En IPv4, una dirección IP compuesta únicamente por ceros tiene un significado - especial: hace referencia al mismo host y se utiliza cuando un dispositivo no conoce - su propia dirección. 
+- En IPv6, este concepto se formalizó y la dirección compuesta - únicamente por ceros (`0:0:0:0:0:0:0:0`) se denomina dirección "no especificada".
 - Normalmente se utiliza en el campo de origen de un datagrama que envía un dispositivo - que desea configurar su dirección IP.
 - Es posible aplicar compresión de direcciones en esta dirección, lo que la convierte - simplemente en "::".
 

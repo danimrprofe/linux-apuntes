@@ -224,7 +224,7 @@ Estas direcciones IP:
 
 # Direcciones IP estáticas (fijas)
 
-Host siempre se conecta a la red con una misma IP 
+Host siempre se conecta a la red con una misma IP.
 
 Las direcciones IP públicas estáticas son las que utilizan los servidores de Internet con objeto de que estén siempre localizables por los usuarios de Internet 
 
@@ -242,9 +242,15 @@ Los proveedores de Internet utilizan direcciones IP dinámicas debido a que tien
 
 # Dirección de red
 
-Para identificar la red en sí: 198.150.11.0
+Para identificar la red en sí, utilizamos una dirección concreta:
 
-Los datos enviados a cualquier host de dicha red (198.150.11.1- 198.150.11.254) se verán desde fuera de la red LAN con la dirección 198.159.11.0
+    198.150.11.0
+
+Esta dirección, representa la red en la que están los hosts:
+
+    198.150.11.1 a 198.150.11.254
+
+Los datos enviados a cualquier host de dicha red se verán desde fuera de la red LAN con la dirección 198.159.11.0
 
 # Dirección del router o puerta de enlace
 
@@ -287,18 +293,18 @@ El router debe realizar un AND lógico binario entre la dirección IP de destino
 
 Se trata de una interfaz de red `virtual`, con las siguientes características:
 
-- Siempre activa.
-- No asociado a hardware.
+- Siempre está activa.
+- No está asociada a ningún componente hardware real (tarjeta de red).
 - No conectada a ninguna red real.
-- Implementada dentro del sistema operativo
+- Implementada mediante software dentro del sistema operativo.
 
 # Utilización
 
-- Usada para emular tráfico de red entre 2 procesos del mismo host. 
-- Se suele utilizar como banco de pruebas
-- Tráfico enviado a la IP de loopback se pasa como si fuera recibida desde otro dispositivo
-- Dirección habitual: 127.0.0.1 o ::1 
-- Nombre de host localhost
+- Usada para emular tráfico de red entre 2 procesos del mismo host.
+- Se suele utilizar para hacer pruebas.
+- Tráfico enviado a la IP de `loopback` se pasa como si fuera recibida desde otro dispositivo.
+- Dirección habitual: `127.0.0.1` (IPv4) o `::1` (IPv6).
+- Nombre de host `localhost`
 
 # Obtención de direcciones IP
 

@@ -14,9 +14,14 @@ Si definimos un entorno determinado, lo podemos ejecutar
 en cualquier lugar, sabiendo que cada vez que implemente en un sitio diferente
 se crearán las mismas máquinas y funcionarán de la misma forma.
 
-Agrega una capa por encima del software de virtualización (Virtualbox, VMware, etc).
-Está escrito en Ruby y, pese a que inicialmente se construyó para ser utilizado
-con VirtualBox como hipervisor, actualmente soporta muchos más.
+# Características
+
+Características de Vagrant:
+
+- Agrega una capa por encima del software de virtualización (Virtualbox, VMware, etc).
+- Está escrito en Ruby 
+- Inicialmente se construyó para ser utilizado con VirtualBox como hipervisor
+- Actualmente soporta muchos más.
 
 Vagrant permite crear entornos de desarrollo:
 

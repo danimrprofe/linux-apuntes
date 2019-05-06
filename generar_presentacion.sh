@@ -7,13 +7,17 @@ then
 else
 
 archivo="$1"
-temp="$1.temp"
-salida="$1.pdf"
+nombre_archivo="$(basename $archivo)"
+temp="$nombre_archivo.temp"
+
+salida="slides/$nombre_archivo.pdf"
 
 cat generar_presentacion_plantilla > "$temp"
 cat "$archivo" >> "$temp"
 
-pandoc "$temp" -t beamer -o "$salida"
+pandoc "$temp" -s --highlight-style pygments -t beamer -o "$salida"
+
+rm "$temp"
 mupdf "$salida"
 
 fi

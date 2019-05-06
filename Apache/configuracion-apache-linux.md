@@ -1048,7 +1048,7 @@ directorio:
 -   Permitir a los ordenadores de nuestra red.
 
 Si hacemos esto, todos los equipos desde 172.16.254.1 hasta
-172.16.254.255 podrán ver la carpeta. El testo, no. Para ello editamos
+172.16.254.255 podrán ver la carpeta. El resto, no. Para ello editamos
 el archivo **apache2.conf**
 
 ![](./media/image45.tmp){width="4.471999125109361in"
@@ -1347,7 +1347,7 @@ Editar /etc/apache2/sites-available/xxx.smx2.org.conf y modificar la
 siguiente sección directory, para hacer que el archivo a servir por
 defecto sea red.html
 
-Aquí debajo cambiar /var/www/ por /var/www/xxx.smx2.org/
+Aquí debajo cambiar `/var/www/` por `/var/www/xxx.smx2.org/`
 
 ![](./media/image57.tmp){width="3.135513998250219in"
 height="0.8720002187226596in"}

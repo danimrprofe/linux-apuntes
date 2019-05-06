@@ -2,7 +2,7 @@
 
 Para ello, entrar en el shell desde el menú de Clonezilla.
 
-## 1) Fdisk y a ver que hay en el disco
+# 1) Fdisk y a ver que hay en el disco
 
 Al crear el disco, no está ni formateado, ni tiene tabla de particiones, ni sistema de archivos, por lo que Clonezilla no lo reconoce.
 
@@ -15,7 +15,7 @@ Unpartitioned space /dev/sdb: 10 GiB, 10736369664 bytes, 20969472 sectors
  2048   20971519    20969472 10G
 ```
 
-## 2) Crear tabla de particiones
+# 2) Crear tabla de particiones
 
 En este caso la crearé del tipo GPT
 
@@ -24,7 +24,7 @@ Command (m for help): g
 Created a new GPT disklabel (GUID: 76AAA8AE-BD36-BE42-AE5D-A44852D884E0).
 ```
 
-## 3) Creo una partición que ocupe todo el disco
+# 3) Creo una partición que ocupe todo el disco
 
 Tengo para crear hasta 128 particiones, nada más y nada menos. Elijo los parámetros por defecto porque pretendo ocupar todo el disco.
 
@@ -37,7 +37,7 @@ First sector (2048-20971486, default 2048):
 Last sector, +sectors or +size£K,M,G,T,P} (2048-20971486, default 20971486) Created a new partition 1 of type 'Linux filesystem' and of size 10 GiB.
 ```
 
-## 4) Mostrar table de particiones
+# 4) Mostrar table de particiones
 
 Muestro la tabla de particiones para ver que ha quedado todo como toca:
 
@@ -51,7 +51,7 @@ Ddev/sdbl 2048 20971486 20969439 10G Linux filesystem
 
 Me ha quedado estupenda. Pero de momento hasta que no lo grabe no quedará escrita la tabla de particiones.
 
-## 5) Grabo la tabla de particiones
+# 5) Grabo la tabla de particiones
 
 COn w se graba la tabla de particiones en el disco:
 
@@ -62,7 +62,7 @@ Calling ioctlO to re-read partition table.
 Syncing disks.
 ```
 
-## 6) Última comprobación
+# 6) Última comprobación
 
 Cno el comando `lsblk` puedo ver como ha quedado. **sdb1** es la partición creada.
 

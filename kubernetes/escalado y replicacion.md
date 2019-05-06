@@ -1,10 +1,8 @@
 ## Escalado y replicación
 
-Nos puede interesar tener más de una instancia de un POD, pero por necesidades de demanda o por disponibilidad, nos
-puede interesar tener réplicas de un POD.
+Nos puede interesar tener más de una instancia de un POD, pero por necesidades de demanda o por disponibilidad, nos puede interesar tener réplicas de un POD.
 
-Vamos a ver cómo utilizar esto en aplicaciones stateless. La forma más habitual es especificar el parámetro
-replica en nuestro despliegue.
+Vamos a ver cómo utilizar esto en aplicaciones stateless. La forma más habitual es especificar el parámetro replica en nuestro despliegue.
 
 ### Escalado modificando el despliegue
 
@@ -25,8 +23,8 @@ spec:
 ```
 
 ### Escalado por comando
-Otra opción es no modificar el despliegue (dejarlo a replicas=1 y ejecutar el comando scale para decirle 
-cuantas réplicas quiero
+
+Otra opción es no modificar el despliegue (dejarlo a replicas=1 y ejecutar el comando scale para decirle cuantas réplicas quiero
 
 ```
 kubectl scale --replicas=4 deployment/tomcat-deployment
@@ -40,18 +38,30 @@ hazelcast           0/1     1            0           29m
 hello-minikube      1/1     1            1           6d20h
 tomcat-deployment   4/4     4            4           53m
 ```
-Ahora tenemos un problema de red, puesto que cuando únicamente teníamos un POD, mapeábamos un puerto suyo
-con uno accesible externamente. Para que los 4 puedan escuchar en el mismo puerto y se repartan las peticiones
-de servicio entre todos, necesitaremos un balanceador de carga.
+
+Ahora tenemos un problema de red, puesto que cuando únicamente teníamos un POD, mapeábamos un puerto suyo con uno accesible externamente.
+
+Para que los 4 puedan escuchar en el mismo puerto y se repartan las peticiones
+de servicio entre todos, necesitaremos un **balanceador de carga**.
 
 ### Crear servicio de balanceo de carga
 
 Crearemos un servicio para utilizar un **load balancer** que explonga un único puerto externo y balancear la carga a los diferentes pods.
 
+Ojo que está en varias líneas pero es una sola.
 ```
-kubectl expose deployment tomcat-deployment --type=LoadBalancer --port=8080 --target-port 8080 --name=tomcat-load-balancer
+kubectl expose deployment tomcat-deployment 
+--type=LoadBalancer 
+--port=8080 
+--target-port 8080 
+--name=tomcat-load-balancer
+```
+A lo que nos contesta:
+
+```
 service/tomcat-load-balancer exposed
 ```
+
 Como podemos ver, hemos asignado el balanceador al despliegue **tomcat-deployment**, para que actúe sobre él.
 
 Vamos a ver cómo ha quedado la cosa, mirando la descripción del balanceador que hemos creado:

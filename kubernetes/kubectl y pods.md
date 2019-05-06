@@ -1,17 +1,35 @@
+
+- [Trabajando con PODs y kubectl](#trabajando-con-pods-y-kubectl)
+- [Listar PODs en ejecución](#listar-pods-en-ejecuci%C3%B3n)
+- [Ver información de un pod](#ver-informaci%C3%B3n-de-un-pod)
+- [Ejecutar comandos dentro de un pod](#ejecutar-comandos-dentro-de-un-pod)
+- [Desplegar PODs sin crear un deployment](#desplegar-pods-sin-crear-un-deployment)
+
 # Trabajando con PODs y kubectl
 
-### Listar PODs en ejecución
+# Listar PODs en ejecución
 
 Podemos comprobar cuantos pods tengo en marcha. En este caso hay dos pods en ejecución
+
+    kubectl get pods
+
+Nos mostrará la información de los pods existentes.
+
 ```
-kubectl get pods
 NAME                                 READY   STATUS    RESTARTS   AGE
 hello-minikube-5857d96c67-nt4x7      1/1     Running   1          6d19h
 tomcat-deployment-5c4b9b9c99-zp7t5   1/1     Running   0          13m
 ```
+
+# Ver información de un pod
+
 Vamos a ver más información de un pod concreto si le pasamos el nombre:
+
+    kubectl describe pods tomcat-deployment-5c4b9b9c99-zp7t5
+
+Nos devuelve:
+
 ```
-kubectl describe pods tomcat-deployment-5c4b9b9c99-zp7t5
 Name:               tomcat-deployment-5c4b9b9c99-zp7t5
 Namespace:          default
 Priority:           0
@@ -39,13 +57,17 @@ Containers:
     Mounts:
       /var/run/secrets/kubernetes.io/serviceaccount from default-token-6zhlc (ro)
 ```
-### Ejecutar comandos dentro de un pod
+
+# Ejecutar comandos dentro de un pod
 
 Podemos ejecutar un comando dentro de un pod pasándoselo como parámetro.
 En este caso abrimos un shell dentro del pod, que nos puede servir para debuguear.
 
+    kubectl exec -it tomcat-deployment-5c4b9b9c99-zp7t5 bash
+
+En este caso entraremos en la shell del pod
+
 ```
-kubectl exec -it tomcat-deployment-5c4b9b9c99-zp7t5 bash
 root@tomcat-deployment-5c4b9b9c99-zp7t5:/usr/local/tomcat# ls
 BUILDING.txt     LICENSE  README.md      RUNNING.txt  conf     lib   native-jni-lib  webapps
 CONTRIBUTING.md  NOTICE   RELEASE-NOTES  bin          include  logs  temp            work
@@ -55,7 +77,7 @@ root@tomcat-deployment-5c4b9b9c99-zp7t5:/usr/local/tomcat# uname -r
 4.15.0
 ```
 
-### Desplegar PODs sin crear un deployment
+# Desplegar PODs sin crear un deployment
 
 Podemos utilizarlo para desplegar PODs directamente sin tener que crear un archivo de despliegue.
 

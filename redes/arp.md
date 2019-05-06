@@ -6,7 +6,7 @@ El sistema operatiu té una ordre anomenada arp que permet treballar amb la taul
 
 # Consulta de la cau
 
-    arp -a 
+    arp -a
 
 El resultat:
 

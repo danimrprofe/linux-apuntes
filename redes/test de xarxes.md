@@ -60,12 +60,13 @@
 
 1. Quina és l’adreça de subxarxa que correspon al host 172.16.210.0/22?
 
-- 	172.16.42.0
+- a. 172.16.42.0
 - b. 172.16.107.0
 - c. 172.16.208.0
 - d. 172.16.252.0
 - e. 172.16.254.0
 - f. Cap de les anteriors
+  
 9.	Quina és l’adreça de subxarxa que correspon al host 172.16.210.0/22
 - a. 201.100.5.0
 - b. 201.100.5.32

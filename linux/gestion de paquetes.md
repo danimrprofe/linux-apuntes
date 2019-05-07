@@ -20,23 +20,24 @@ aspectratio:
  - 169
 ---
 
-
-
 # Instalación de paquetes
 
 - [Instalación de paquetes](#instalaci%C3%B3n-de-paquetes)
-  - [1. Noción de paquete](#1-noci%C3%B3n-de-paquete)
-  - [2. Gestor de paquetes DPKG](#2-gestor-de-paquetes-dpkg)
-  - [3. Programa de gestión de paquetes avanzada APT y YUM](#3-programa-de-gesti%C3%B3n-de-paquetes-avanzada-apt-y-yum)
-  - [4. Repositorios](#4-repositorios)
-  - [5. Prácticas con el gestor APT](#5-pr%C3%A1cticas-con-el-gestor-apt)
-  - [6. Cliente gráfico synaptic](#6-cliente-gr%C3%A1fico-synaptic)
-  - [7. Aptitude](#7-aptitude)
-  - [Tareas](#tareas)
+- [1. Noción de paquete](#1-noci%C3%B3n-de-paquete)
+- [2. Gestor de paquetes DPKG](#2-gestor-de-paquetes-dpkg)
+- [Ejemplo: instalación de google chrome](#ejemplo-instalaci%C3%B3n-de-google-chrome)
+- [3. Programa de gestión de paquetes avanzada APT y YUM](#3-programa-de-gesti%C3%B3n-de-paquetes-avanzada-apt-y-yum)
+- [4. Repositorios](#4-repositorios)
+  - [Lista de repositorios](#lista-de-repositorios)
+- [5. Prácticas con el gestor APT](#5-pr%C3%A1cticas-con-el-gestor-apt)
+- [Mostrar que paquetes se pueden actualizar:](#mostrar-que-paquetes-se-pueden-actualizar)
+- [Tareas](#tareas)
+- [6. Cliente gráfico synaptic](#6-cliente-gr%C3%A1fico-synaptic)
+- [7. Aptitude](#7-aptitude)
 
 # 1. Noción de paquete
 
-En Linux no es habitual disponer de software proporcionado con un programa de instalación interactivo (install.exe). Con Linux es muy habitual disponer de herramientas, actualizaciones, etc. en forma de paquetes (packages).
+En Linux no es habitual disponer de software proporcionado con un programa de instalación interactivo (install.exe). Con Linux es muy habitual disponer de herramientas, actualizaciones, etc. en forma de **paquetes** (packages).
 
 Un paquete es un archivo que contiene un software a instalar y unas reglas. Suele tener una extensión .rpm, .deb, en función del tipo de paquete. Cada tipo de distribución puede funcionar con un tipo de paquetes diferentes. Los paquetes son incompatibles entre sí, pero se pueden convertir.
 
@@ -91,15 +92,48 @@ Para modificar el repositorio:
 
     nano /etc/apt/sources.list
 
+## Lista de repositorios
+
+```bash
+deb http://ftp.cixug.es/mint/packages tessa main upstream import backport 
+
+deb http://mirror.tedra.es/ubuntu bionic main restricted universe multiverse
+deb http://mirror.tedra.es/ubuntu bionic-updates main restricted universe multiverse
+deb http://mirror.tedra.es/ubuntu bionic-backports main restricted universe multiverse
+
+deb http://security.ubuntu.com/ubuntu/ bionic-security main restricted universe multiverse
+deb http://archive.canonical.com/ubuntu/ bionic partner
+```
+
 Cómo conocer la versión de SO
 
     lsb_release -a
+
+En mi caso, nos devuelve:
+
+```bash
+No LSB modules are available.
+Distributor ID:	LinuxMint
+Description:	Linux Mint 19.1 Tessa
+Release:	19.1
+Codename:	tessa
+```
 
 # 5. Prácticas con el gestor APT
 
 - Para buscar un paquete: `apt-cache search nombre`
 - Actualizar lista de paquetes: `apt update`
-- Mostrar que paquetes se pueden actualizar: `apt list --upgradable`
+
+# Mostrar que paquetes se pueden actualizar: 
+
+Para mostrar los paquetes:
+
+`apt list --upgradable`
+
+```
+firefox/tessa 66.0.3+linuxmint1+tessa amd64 [actualizable desde: 66.0.2+linuxmint1+tessa]
+```
+
 - Simulación de actualización: `apt upgrade (cancelar al final)`
 - Buscar si un paquete està instalado o no: `apt list –installed`
 - Mostrar información de un paquete: `apt-cache show apache2`

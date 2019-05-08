@@ -5,6 +5,7 @@
   - [Direccionamiento IPv6](#direccionamiento-ipv6)
   - [IPv4 vs IPv6](#ipv4-vs-ipv6)
 - [Notación IPv6](#notaci%C3%B3n-ipv6)
+- [Creación de una dirección IPv6](#creaci%C3%B3n-de-una-direcci%C3%B3n-ipv6)
   - [Encabezado IPv4 vs IPv6](#encabezado-ipv4-vs-ipv6)
     - [Ventajas del encabezado de IPv6](#ventajas-del-encabezado-de-ipv6)
   - [Acortar direcciones](#acortar-direcciones)
@@ -20,18 +21,22 @@
         - [Comprobación de dirección de enlace local](#comprobaci%C3%B3n-de-direcci%C3%B3n-de-enlace-local)
       - [Dirección unicast global](#direcci%C3%B3n-unicast-global)
       - [Dirección unicast global (ejemplo de funcionamiento)](#direcci%C3%B3n-unicast-global-ejemplo-de-funcionamiento)
+- [Ejemplos de configuración](#ejemplos-de-configuraci%C3%B3n)
       - [Direcciones anycast](#direcciones-anycast)
       - [Direcciones multicast](#direcciones-multicast)
       - [Direcciones especiales](#direcciones-especiales)
         - [Dirección de loopback](#direcci%C3%B3n-de-loopback)
         - [Dirección no especificada](#direcci%C3%B3n-no-especificada)
   - [Transición de IPv4 a IPv6](#transici%C3%B3n-de-ipv4-a-ipv6)
+    - [Estrategias](#estrategias)
     - [Dual stack](#dual-stack)
     - [Tunneling](#tunneling)
+    - [Correspondencia direcciones especiales](#correspondencia-direcciones-especiales)
   - [Loopback en IPv6](#loopback-en-ipv6)
   - [Reparto de direcciones IPv6](#reparto-de-direcciones-ipv6)
     - [Reparto entre las RIR](#reparto-entre-las-rir)
   - [Cómo se reparten las direcciones IP](#c%C3%B3mo-se-reparten-las-direcciones-ip)
+- [Mapa geolocalizacion IPs](#mapa-geolocalizacion-ips)
 
 ## Direccionamiento IPv6
 
@@ -39,6 +44,10 @@
 - Direcciones IPv6: 128 bits más largas y representación diferente (tamaño). Utilizan - dos puntos (:) para separar entradas en una serie hexadecimal de 16 bits.
 - IPv6 debería proporcionar una cantidad de direcciones suficiente para las necesidades - de crecimiento futuras de Internet durante muchos años más.
 - La cantidad de direcciones IPv6 disponibles permiten asignar a cada persona del planeta un espacio de direcciones de Internet equivalente al espacio total de IPv4.
+
+![](2019-05-08-08-52-56.png)
+
+![](2019-05-08-08-53-05.png)
 
 ## IPv4 vs IPv6
 
@@ -67,7 +76,13 @@ El formato de las direcciones IPv6 es el siguiente:
 - Separador de dos puntos en lugar de punto
 - Grupos de cuartetos (o hextetos): 0000 to FFFF
 
+# Creación de una dirección IPv6
+
+![](2019-05-08-08-54-04.png)
+
 ## Encabezado IPv4 vs IPv6
+
+![](2019-05-08-08-53-42.png)
 
 ### Ventajas del encabezado de IPv6
 
@@ -92,6 +107,8 @@ Las direcciones en IPv6 se pueden simplificar.
 - 2031:0:130F:0000:0000:9C0:876A:130B puede escribirse como
 - 2031:0:130F::9C0:876A:130B.
 - Una dirección no especificada se escribe "::" porque sólo contiene ceros
+
+![](2019-05-08-08-54-41.png)
 
 El uso de la notación "::" reduce el tamaño de la mayoría de direcciones
 Un analizador de direcciones identifica la cantidad de ceros faltantes
@@ -119,6 +136,10 @@ Un analizador de direcciones identifica la cantidad de ceros faltantes
 
 ### Espacio de direcciones
 
+![](2019-05-08-08-55-01.png)
+
+![](2019-05-08-08-55-10.png)
+
 - La IANA divide el espacio disponible en **8 segmentos** iguales
 - Los grupos están basados en los **3 primeros bits** de dirección
 - Solo una octava parte del espacio disponible ha sido reservado para utilizarse como  direcciones globales unicast
@@ -139,41 +160,11 @@ Un analizador de direcciones identifica la cantidad de ceros faltantes
 - Anycast identifican a un conjunto de interfaces. Un paquete enviado a una dirección - anycast, será entregado a alguna de las interfaces identificadas con la dirección del - conjunto al cual pertenece esa dirección anycast.
 - Multicast identifican un grupo de interfaces. Cuando un paquete es enviado a una - dirección multicast es entregado a todos las interfaces del grupo identificadas con - esa dirección.
 
+En el IPv6 no existen direcciones broadcast, su funcionalidad ha sido  mejorada por las direcciones multicast
+
 ### Formato de tipos de direcciones
 
-En el IPv6 no existen direcciones broadcast, su funcionalidad ha sido mejorada por las direcciones multicast.
-16
-IP versión 6
-Tipos de direcciones
-Tipo de dirección
-Comienzo en binario
-Comienzo en hexadecimal
-Dirección
-Reservada
-0000 0000
-00
-::/8
-Unicast Global
-001
-2 ó 3
-2000::/3
-Unicast local exclusiva
-1111 1101
-FD
-FD00::/8
-Unicast Enlace Local
-1111 1110 10
-FE8 hasta FEB
-FE80::/10
-Unicast Sitio Local
-1111 1110 11
-FEC hasta FEF
-FEC0::/10
-Multicast
-1111 1111
-FF
-FF00::/8
-17
+![](2019-05-08-08-56-45.png)
 
 #### Dirección de enlace local (link local)
 
@@ -182,6 +173,8 @@ FF00::/8
 - Identificador de interfaz: los segundos 64 bits
 - Desde Windows Vista, los clientes de Windows han generado un número aleatorio de 64 bits
 - Los SO antiguos usan la dirección MAC de un dispositivo para crear un identificador único ampliado (EUI-64)
+
+![](2019-05-08-08-56-53.png)
 
 ##### Comprobación de dirección de enlace local
 
@@ -214,12 +207,22 @@ Adaptador de Ethernet Ethernet:
 - Las organizaciones individuales pueden utilizar un campo de subred de 16 bits para - crear su propia jerarquía de direccionamiento local (hasta 65.535 subredes)
 - IANA está asignando espacio de direcciones IPv6 en los rangos de `2001::/16` a los cinco -registros RIR (ARIN, RIPE, APNIC, LACNIC y AfriNIC).
 
+![](2019-05-08-08-57-05.png)
+
 #### Dirección unicast global (ejemplo de funcionamiento)
 
 - Un ordenador con IPv6 arranca y envía un mensaje solicitation a (`FF02::2`)
 - El router envía el prefijo (`2001:470:B8F9:1/64`)
 - El ordenador coge el prefijo y le añade el identificador de interfaz o una dirección - EUI-64. Ejemplo EUI-64: 20C:29FF:FE53:45CA
 - La dirección global unicast es el resultado de combinar ambas: 2001:470:B8F9:1:20C:29FF:FE53:45CA
+
+![](2019-05-08-08-57-19.png)
+
+# Ejemplos de configuración
+
+![](2019-05-08-08-57-40.png)
+
+![](2019-05-08-08-57-46.png)
 
 #### Direcciones anycast
 
@@ -233,6 +236,8 @@ Adaptador de Ethernet Ethernet:
 - Se puede usar para descubrir servicios de red (DNS, proxies)
 - Garantizan la redundancia y/o balanceo de carga, entre otros usos
 
+![](2019-05-08-08-58-00.png)
+
 #### Direcciones multicast
 
 - ¿Qué es una dirección multicast?
@@ -244,6 +249,12 @@ Adaptador de Ethernet Ethernet:
 - Prefijo FF + 4 bits de flag + 4 bits que definen el alcance de la dirección.
 - 112 bits restantes identifican al grupo multicast
 - Posibles aplicaciones: video bajo demanda, actualizaciones de software, juegos
+
+![](2019-05-08-08-58-07.png)
+
+Direcciones multicast reservadas:
+
+![](2019-05-08-08-58-24.png)
 
 #### Direcciones especiales
 
@@ -262,6 +273,8 @@ Los datagramas que se envían a esta dirección regresan al dispositivo emisor y
 
 ## Transición de IPv4 a IPv6
 
+![](2019-05-08-08-58-54.png)
+
 - ¿Qué va a pasar ahora?
 - IPv4 coexistirá durante un tiempo con IPv6
 - Será reemplazado gradualmente por IPv6
@@ -270,6 +283,11 @@ Los datagramas que se envían a esta dirección regresan al dispositivo emisor y
 - Existen diferentes técnicas. Consejo actual:
 - Usar stack doble cuando pueda
 - Tunneling cuando no tenga otra opción
+
+
+### Estrategias
+
+![](2019-05-08-08-59-35.png)
 
 ### Dual stack
 
@@ -282,8 +300,9 @@ Los datagramas que se envían a esta dirección regresan al dispositivo emisor y
 - Desventajas
 - Disminución del desempeño de los equipos de red. Deben mantener tablas de direcciones y rutas independientes para cada protocolo
 IP versión 6
-Transición
-28
+
+
+![](2019-05-08-08-59-05.png)
 
 ### Tunneling
 
@@ -291,6 +310,12 @@ Transición
 - Los paquetes viajan por una red IPv4 y en el otro extremo se extrae el paquete IPv6 original.
 - Técnica de integración y transición intermedia (no definitiva)
 - El objetivo final debe ser una arquitectura IPv6 nativa.
+
+![](2019-05-08-08-59-14.png)
+
+### Correspondencia direcciones especiales
+
+![](2019-05-08-09-00-52.png)
 
 ## Loopback en IPv6
 
@@ -355,9 +380,11 @@ Para acceder en el navegador al servidor http local, en el caso de IPv6 tendremo
 
 ### Reparto entre las RIR
 
-En IPv6 existen diferentes tipos de direcciones IP según el uso. La **IANA** se encarga de repartir las direcciones IP unicast globales entre los diferentes registros regionales o **RIR**. En su página web tienen un esquema de la repartición de los diferentes bloques de direcciones IP a los RIR.
+En IPv6 existen diferentes tipos de direcciones IP según el uso. La **IANA** se encarga de repartir las direcciones IP unicast globales entre los diferentes registros regionales o **RIR**. 
 
-A día de hoy, la última asignación a **RIPE NCC** (para Europa) ha sido el bloque:
+En su página web tienen un esquema de la repartición de los diferentes bloques de direcciones IP a los RIR.
+
+A día de hoy  (2018), la última asignación a **RIPE NCC** (para Europa) ha sido el bloque:
 
     2a00:0000::/12
 
@@ -372,7 +399,7 @@ Las direcciones asignables serían:
 
 Este espacio da para la friolera de:
 
-2^116 = 83,076,749,736,557,242,056,487,941,267,521,536 direcciones
+`2^116 = 83,076,749,736,557,242,056,487,941,267,521,536 direcciones`
 
 Cabe recordar que las direcciones unicast globales se componen de:
 
@@ -400,7 +427,7 @@ Las direcciones se asignan jerárquicamente. En general:
 
 Como curiosidad, en la propia página del RIPE podemos introducir una IP pública y conocer, entre otros datos, a que ISP pertenece. También podemos ver un mapa de geolocalización de las IP de la red al que pertenece la nuestra.
 
-mapa geolocalizacion IPs
+# Mapa geolocalizacion IPs
 
 Por lo visto parecen bloques destinados a la zona del levante Español. Pertenece a un bloque asignado al operador de /14, que daría espacio para más de 260.000 direcciones.
 

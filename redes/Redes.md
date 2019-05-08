@@ -8,8 +8,10 @@
 - [Formato dirección IPv4](#formato-direcci%C3%B3n-ipv4)
 - [Jerarquía de direcciones](#jerarqu%C3%ADa-de-direcciones)
 - [Reglas IP e interfaces](#reglas-ip-e-interfaces)
+- [Interfaz de red](#interfaz-de-red)
 - [Sistema con clases (direccionamiento classful)](#sistema-con-clases-direccionamiento-classful)
 - [Classes de direcciones](#classes-de-direcciones)
+- [Diagrama de clases](#diagrama-de-clases)
 - [CLASE A](#clase-a)
 - [CLASE B](#clase-b)
 - [CLASE C](#clase-c)
@@ -27,6 +29,8 @@
 - [Dirección del router o puerta de enlace](#direcci%C3%B3n-del-router-o-puerta-de-enlace)
 - [Dirección broadcast](#direcci%C3%B3n-broadcast)
 - [Máscara de red](#m%C3%A1scara-de-red)
+  - [Representación de la máscara](#representaci%C3%B3n-de-la-m%C3%A1scara)
+  - [Utilización de la máscara](#utilizaci%C3%B3n-de-la-m%C3%A1scara)
 - [Direcciones reservadas](#direcciones-reservadas)
 - [Interfaces especiales](#interfaces-especiales)
   - [¿Qué es el loopback?](#%C2%BFqu%C3%A9-es-el-loopback)
@@ -42,6 +46,7 @@
 - [Segmentación](#segmentaci%C3%B3n)
 - [Subnetting o creación de subredes](#subnetting-o-creaci%C3%B3n-de-subredes)
 - [Máscara de subred](#m%C3%A1scara-de-subred)
+- [Subredes posibles clase C](#subredes-posibles-clase-c)
 - [Agotamiento del espacio de direcciones](#agotamiento-del-espacio-de-direcciones)
 - [Ejercicio](#ejercicio)
 - [Preguntas](#preguntas)
@@ -120,24 +125,36 @@
 - Cada interfaz solo puede tener una IP (IPv4)
 - Las IP no se pueden repetir en la misma - subred o red
 - Cada dirección IP es única para cada - interfaz de red de cada host.
-- Interfaces
+
+# Interfaz de red
+
 - Una interfaz de red es una conexión entre 
   - un host
   - Un enlace físico conectado a la red (ejemplo: entre ordenador y cable de - red)
 - Interfaz de red = NIC = tarjeta de red
 - Un dispositivo puede tener una o más 
 
+![](2019-05-08-08-42-11.png)
+
+![](2019-05-08-08-42-35.png)
+
 # Sistema con clases (direccionamiento classful)
 
 - ¿Cómo definimos qué parte es la de red y - cual la de host?
-- Al comienzo de Internet
+
+Al comienzo de Internet
+
 - 8 primeros bits = identificador de red. 
 - Especificaba la red particular a la que - estaba conectado un host. 
 - 24 bits restantes = host conectado a esa - red. 
-- Problemática
+
+Problemática
+
 - Formato suficiente en ese momento (pocas - redes grandes)
 - Amplia proliferación de redes LAN
 - Espacio de direcciones solo admite 254 redes independientes
+
+![](2019-05-08-08-42-46.png)
 
 # Classes de direcciones
 
@@ -151,6 +168,16 @@
 - La clase D es para redes de multidifusión 
 - Rango de direcciones de clase E está reservado para fines futuros o experimentales.
 
+# Diagrama de clases
+
+![](2019-05-08-08-43-18.png)
+
+![](2019-05-08-08-43-27.png)
+
+![](2019-05-08-08-44-02.png)
+
+![](2019-05-08-08-44-30.png)
+
 # CLASE A
 
 - El primer bit es un 0, así quedarán 7 bits - para definir la red.
@@ -159,11 +186,15 @@
 - 0 y el 127 reservados (entre 1 y 126 en realidad).
 - La red 127.0.0.1 es para loopback.
 
+![](2019-05-08-08-43-36.png)
+
 # CLASE B
 
 - 2 primeros bits de la red son 10, quedando 6+8=14 bits para definir las redes.
 - IP de clase B empezarán por un valor entre 10000000 y 10111111
 - Direcciones que comienzan entre 128 y 191.
+
+![](2019-05-08-08-43-44.png)
 
 # CLASE C
 
@@ -220,6 +251,8 @@ Estas direcciones IP:
 - Se guarda dirección y puerto que  corresponde a cada dispositivo cliente y así saber dónde deben regresar los paquetes de respuesta.
 - En general es el router quien realiza esta traducción NAT.
 
+![](2019-05-08-08-44-45.png)
+
 # Direcciones estáticas y dinámicas
 
 # Direcciones IP estáticas (fijas)
@@ -252,11 +285,15 @@ Esta dirección, representa la red en la que están los hosts:
 
 Los datos enviados a cualquier host de dicha red se verán desde fuera de la red LAN con la dirección 198.159.11.0
 
+![](2019-05-08-08-45-12.png)
+
 # Dirección del router o puerta de enlace
 
 - Equipo informático configurado para dotar a las máquinas de una red local (LAN) conectadas a él de un acceso hacia una red exterior
 - Generalmente realizando para ello operaciones de traducción de direcciones IP
 - Ejemplo: 198.150.12.1
+
+![](2019-05-08-08-45-17.png)
 
 # Dirección broadcast
 
@@ -269,6 +306,10 @@ Broadcasts son necesarios para:
 
 - Establecer comunicación inicial con otro cliente, ejemplo, resolución de direcciones
 - Para DHCP y asignación de direcciones
+
+![](2019-05-08-08-45-27.png)
+
+![](2019-05-08-08-45-57.png)
 
 # Máscara de red
 
@@ -285,7 +326,24 @@ El router debe realizar un AND lógico binario entre la dirección IP de destino
 - Clase C: 255.255.255.0
 - Clase D i E: no tienen
 
+![](2019-05-08-08-46-40.png)
+
+## Representación de la máscara
+
+La máscara de red se puede representar:
+
+1. En formato IP decimal (255.255.255.0) 
+2. Con la notación / en la que se especifican los bits de red (/24)
+
+## Utilización de la máscara
+
+![](2019-05-08-08-47-12.png)
+
 # Direcciones reservadas
+
+![](2019-05-08-08-47-22.png)
+
+![](2019-05-08-08-47-34.png)
 
 # Interfaces especiales
 
@@ -312,13 +370,17 @@ Se trata de una interfaz de red `virtual`, con las siguientes características:
 
 # ICANN (IANA)
 
+![](2019-05-08-08-47-47.png)
+
 - ICANN = Corporación de Internet para la Asignación de Nombres y Números
-- Organización responsable de la asignación de direcciones IP a los distintos proveedores 
+- Organización responsable de la asignación de direcciones IP a los distintos proveedores
 - Administra las direcciones IP para garantizar que no se generen repeticiones de direcciones públicas
 - Mantener la estabilidad de Internet
 - Administra y coordina el sistema de nombres de dominio
 
 # RIR
+
+![](2019-05-08-08-48-48.png)
 
 Asignación IANA: https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xhtml
 
@@ -358,13 +420,19 @@ Cómo calcular las direcciones:
 - Dividir clases de direcciones de red en partes de menor tamaño.
 - Dividir una red en subredes significa:
   - Utilizar una máscara de subred para dividir la red.
-  - Convertir una gran red en segmentos más pequeños, eficientes y administrables.
+  - Convertir una gran red en segmentos más pequeños, eficientes y administrables.ç
+
+![](2019-05-08-08-49-20.png)
 
 # Máscara de subred
 
 Podemos coger tantos bits de la parte de host para hacer subredes como queramos
 
+# Subredes posibles clase C
+
 Las combinaciones posibles para una IP de clase C son:
+
+![](2019-05-08-08-50-03.png)
 
 # Agotamiento del espacio de direcciones
 

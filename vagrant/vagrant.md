@@ -198,7 +198,23 @@ To-do
 #### script
 To-do
 #### ansible
-To-do
+
+Para aprovisionar con Ansible, podemos tener un playbook creado en la misma carpeta. Lo habitual es crear un archivo hosts para ello.
+
+Si no le decimos nada, en distribuciones linux buscará el archivo en /etc/ansible/hosts. Si no queremos que coja ese, y queremos que coja uno que queramos nosotros (en este caso en la misma carpeta del playbook):
+
+    ansible-playbook instrucciones.yml -i hosts
+
+La primera vez nos pedirá confirmación:
+
+```
+PLAY [Configurar webserver con nginx] **************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************
+The authenticity of host '[127.0.0.1]:2222 ([127.0.0.1]:2222)' can't be established.
+ECDSA key fingerprint is SHA256:MGWE4lf8Hgq9vYEe4Qr52RJNKpM9mfN124g96Y/xc2Y.
+Are you sure you want to continue connecting (yes/no)? 
+```
 
 ## Proyectos en este repositorio
 

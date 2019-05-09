@@ -34,8 +34,18 @@ Vagrant permite crear entornos de desarrollo:
 Para poner en macha Vagrant necesitaremos, por lo menos:
 
 * Descargar e instalar VirtualBox (si es el hipervisor elegido).
+
+    apt install virtualbox
+
 * Descargar e instalar Vagrant
+
+    apt install vagrant
+
 * Descargar la box de vagrant que queramos
+
+En caso de aprovisionamiento con ansible:
+
+    apt install ansible
 
 # Boxes
 
@@ -111,6 +121,20 @@ Una vez definido el vagrantfile ya podemos levantar la/s MV:
 ```
 vagrant up
 ```
+
+Veremos que nos empieza a descargar la box, que no estaba descargada en el equipo
+```
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'ubuntu/precise64' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Loading metadata for box 'ubuntu/precise64'
+    default: URL: https://vagrantcloud.com/ubuntu/precise64
+==> default: Adding box 'ubuntu/precise64' (v20170427.0.0) for provider: virtualbox
+    default: Downloading: https://vagrantcloud.com/ubuntu/boxes/precise64/versions/20170427.0.0/providers/virtualbox.box
+    default: Download redirected to host: cloud-images.ubuntu.com
+```
+
 Podemos ver qué MV tenemos levantadas con:
 ```
 vagrant status

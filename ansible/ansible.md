@@ -1,8 +1,11 @@
 # Ansible
 
 - [Ansible](#ansible)
+- [Funcionamiento](#funcionamiento)
+- [SSH](#ssh)
 - [Formas de configuracion](#formas-de-configuracion)
 - [Modo ad-hoc](#modo-ad-hoc)
+- [Comandos](#comandos)
 - [Playbooks](#playbooks)
   - [Estructura de un playbook](#estructura-de-un-playbook)
   - [Módulos](#m%C3%B3dulos)
@@ -14,9 +17,26 @@
 - [Ejecucion de comandos](#ejecucion-de-comandos)
 - [Actualizacioon del sistema](#actualizacioon-del-sistema)
 - [Instalar o desinstalar paquetes](#instalar-o-desinstalar-paquetes)
+- [Inventario](#inventario)
 - [Roles](#roles)
   - [Creando roles](#creando-roles)
 - [Reutilización de componentes](#reutilizaci%C3%B3n-de-componentes)
+
+# Funcionamiento
+
+El funcionamiento es el siguiente:
+
+- Ansible conecta con los diferentes nodos
+- Les envia pequeños programas llamados módulos
+- Estos módulos se ejecutan sobre SSH
+- Los módulos definen estados en los que queremos encontrar el sistema
+
+# SSH
+
+A la hora de conectar con los nodos para hacer cosas tenemos varias posibilidades:
+
+- Se pueden utilizar passwords
+- Se recomienda utilizar claves SSH
 
 # Formas de configuracion
 
@@ -33,6 +53,20 @@ Se utiliza cuando queremos realizar una acción simple como:
 - Verificar conectividad
 
 Si queremos realizar configuraciones complejas, son más útiles los playbooks.
+
+# Comandos
+
+Podemos hace rping a todos los hosts:
+
+    ansible all -m ping
+
+Pedir que un servidor esté instalado:
+
+    ansible maquina -m yum -a "name=httpd state=installed"
+
+Reiniciar una máquina:
+
+    ansible maquina -m -a "/usr/sbin/reboot"
 
 # Playbooks
 
@@ -186,12 +220,19 @@ Para desinstalar: absent
             state: 'present'
 ```
 
-Podemos definir en que nodos queremos que se ejecute un playbook. 
+# Inventario
+
+Podemos definir que nodos queremos que gestione Ansible
+
+Los módulos se pueden agrupar en grupos
+
+La lista de hosts representa el inventario 
+Podemos asignar variables por host o por grupos
 Para ello, deberemos crear un archivo `hosts` que incluira la lista de nodos y sus direcciones
 
 Ejemplo:
 
-```yaml
+```ini
 [webserver]
 10.0.0.2    ansible_ssh_user=user   ansible_ssh_private_key_file=
 [dbserver]

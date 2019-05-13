@@ -23,9 +23,29 @@ Debe cambiarse el usuario de acuerdo a la configuración particular de cada PC.
 pscp [options] [user@]host:source target
 pscp [options] source [source...] [user@]host:target
 pscp [options] -ls [user@]host:filespec
+
 Opciones
- -V        print version information and exit  -pgpfp    print PGP key fingerprints and exit  -p        preserve file attributes  -q        quiet, don't show statistics  -r        copy directories recursively  -v        show verbose messages  -load sessname  Load settings from saved session  -P port   connect to specified port
- Options:  -l user   connect with specified username  -pw passw login with specified password  -1 -2     force use of particular SSH protocol version  -4 -6     force use of IPv4 or IPv6  -C        enable compression  -i key    private key file for authentication  -noagent  disable use of Pageant  -agent    enable use of Pageant  -batch    disable all interactive prompts  -unsafe   allow server-side wildcards (DANGEROUS)  -sftp     force use of SFTP protocol  -scp      force use of SCP protocol
+
+-V        print version information and exit
+-pgpfp    print PGP key fingerprints and exit
+-p        preserve file attributes
+-q        quiet, don't show statistics
+-r        copy directories recursively
+-v        show verbose messages
+-load sessname  Load settings from saved session
+-P port   connect to specified port
+ Options:
+ -l user   connect with specified username
+ -pw passw login with specified password
+ -1 -2     force use of particular SSH protocol version
+ -4 -6     force use of IPv4 or IPv6
+ -C        enable compression
+ -i key    private key file for authentication
+ -noagent  disable use of Pageant
+ -agent    enable use of Pageant
+ -batch    disable all interactive prompts
+ -unsafe   allow server-side wildcards (DANGEROUS)
+ -sftp     force use of SFTP protocol  -scp      force use of SCP protocol
 
 ## Copiar archivos
 

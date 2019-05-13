@@ -72,9 +72,9 @@ Las etapas son:
 
 ### Etapa de síntesis
 
-	Código intermedio
-	Optimización de código
-	Generación de código
+-	Código intermedio
+-	Optimización de código
+-	Generación de código
 
 ### Elementos importantes en las etapas
 

@@ -37,7 +37,7 @@
 
 ## Protocol SMB
 
-El protocol SMB va ser dissenyat per tal de permetre que els ordinadors llegeixin i escriguin arxius a un ordinador remot a través d’una xarxa local. 
+El protocol `SMB` va ser dissenyat per tal de permetre que els ordinadors llegeixin i escriguin arxius a un ordinador remot a través d’una xarxa local.
 Aquest protocol es fa servir principalment entre sistemes Windows.
 
 ## Samba
@@ -64,7 +64,7 @@ Essencialment, Samba el constitueix dos dimonis:
 - smdb
 - nmdb
   
-Aquests dos processos han d’estar en execució per a que Samba funcioni correctament.
+Aquests dos processos han d’estar en execució per a que samba funcioni correctament.
 
 # Instal·lació del servidor
 

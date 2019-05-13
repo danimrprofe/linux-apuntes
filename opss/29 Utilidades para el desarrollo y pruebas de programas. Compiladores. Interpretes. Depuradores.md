@@ -1,8 +1,8 @@
 # Utilidades para el desarrollo y pruebas de programas. Compiladores. Interpretes. Depuradores
 
 - [Utilidades para el desarrollo y pruebas de programas. Compiladores. Interpretes. Depuradores](#utilidades-para-el-desarrollo-y-pruebas-de-programas-compiladores-interpretes-depuradores)
-- [1. Introducción](#1-introducci%C3%B3n)
-  - [2. Compiladores](#2-compiladores)
+- [Introducción](#introducci%C3%B3n)
+  - [Compiladores](#compiladores)
     - [Ventajas](#ventajas)
     - [Tipos de compiladores](#tipos-de-compiladores)
     - [Etapas del proceso de traducción](#etapas-del-proceso-de-traducci%C3%B3n)
@@ -20,13 +20,16 @@
     - [Componentes de un IDE](#componentes-de-un-ide)
   - [6. Bibliografia](#6-bibliografia)
 
-# 1. Introducción
+# Introducción
 
 - Lenguaje ordenadores formado por nistrucciones codificadas en código binario
 - Lenguajes de programación formado por símbolos y reglas que permiten escribir programas
 - Creados para facilitar la tarea de programación
 - Compuestos por un léxico, sintaxis y semántica
-- Necesidad de traducir de un programa escrito en un lenguaje fuente a un lenguaje máquina. Tipos de traductores
+- Necesidad de traducir de un programa escrito en un lenguaje fuente a un lenguaje máquina. 
+
+Tipos de traductores:
+
 - Compiladores
 - Intérpretes
 - Según lenguajes de programación uno u otro
@@ -34,7 +37,7 @@
 - Java compilado e interpretado
 - SQL, interpretado
 
-## 2. Compiladores
+## Compiladores
 
 - Convierte un programa de un lenguaje a otro, informando de posibles errores y generando los resultados a partir de datos de entrada.
 - A partir de un lenguaje fuente se crea un programa objeto ejecutable

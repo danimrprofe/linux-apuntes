@@ -15,7 +15,7 @@ metadata:
   name: tomcat-deployment
 spec:
   selector:
-    matchLabels:
+    matchLabels:1
       app: tomcat
   replicas: 4
  ...
@@ -46,7 +46,7 @@ de servicio entre todos, necesitaremos un **balanceador de carga**.
 
 ### Crear servicio de balanceo de carga
 
-Crearemos un servicio para utilizar un **load balancer** que explonga un único puerto externo y balancear la carga a los diferentes pods.
+Crearemos un servicio para utilizar un **load balancer** que exponga un único puerto externo y balancear la carga a los diferentes pods.
 
 Ojo que está en varias líneas pero es una sola.
 ```

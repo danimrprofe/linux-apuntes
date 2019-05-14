@@ -46,7 +46,7 @@ aspectratio:
 - [Eliminar contenedores](#eliminar-contenedores)
   - [Eliminar contenedores linux](#eliminar-contenedores-linux)
   - [Eliminar contenedores Windows](#eliminar-contenedores-windows)
-  - [Eliminar contenedores y imagenes con batch](#eliminar-contenedores-y-imagenes-con-batch)
+  - [Eliminar contenedores y imágenes con batch](#eliminar-contenedores-y-im%C3%A1genes-con-batch)
 - [Eliminar contenedores en powershell:](#eliminar-contenedores-en-powershell)
 - [Persistencia](#persistencia)
 - [Dive](#dive)
@@ -159,7 +159,7 @@ docker build .
 
 # Definir etiqueta para una imagen
 
-Al no definir repositorios ni tags, se asigna a la imagen una ID hexadecimal. Podemos especificar un nombre y una etiqueta al vonstruir la imagen:
+Al no definir repositorios ni tags, se asigna a la imagen una ID hexadecimal. Podemos especificar un nombre y una etiqueta al construir la imagen:
 
 ```docker
 docker build -t cookbook:hello .
@@ -230,12 +230,9 @@ De este modo, al morir el contenedor los datos no serán borrados.
 
 # Variables de entorno
 
-Los diferentes servicios pueden tener que compartir variables entre ellos. Por
-ejemplo, wordpress necesitará saber los datos de acceso a la BD donde guardará
-la información que necesite. 
+Los diferentes servicios pueden tener que compartir variables entre ellos. Por ejemplo, `wordpress` necesitará saber los datos de acceso a la BD donde guardará la información que necesite.
 
-Esto, que generalmente haríamos a mano modificando archivos de configuración, 
-se puede hacer definiendo variables externamente dentro del dockerfile.
+Esto, que generalmente haríamos a mano modificando archivos de configuración, se puede hacer definiendo variables externamente dentro del dockerfile.
 
 # Ejemplo de docker-compose
 
@@ -286,7 +283,7 @@ De todos modos, también podemos ejecutar los contenedores en segundo plano (det
 docker-compose up -d
 ```
 
-# Visualizar contenedores 
+# Visualizar contenedores
 
 Si queremos visualizar los contenedores que se están ejecutando:
 
@@ -324,7 +321,7 @@ Borrar todos los contenedores en windows. Meter en un bat
 FOR /f "tokens=*" %i IN ('docker ps -a -q') DO docker rm %i
 ```
 
-## Eliminar contenedores y imagenes con batch
+## Eliminar contenedores y imágenes con batch
 
 Un bat que te lo hace todo (maravilloso), borra contenedores e imágenes.
 
@@ -347,7 +344,6 @@ Los contenedores por defecto están completamente aislados del mundo exterior.
 Podemos montar un volumen que funcionará como si fuer una carpeta compartida
 a la que puedes acceder desde otro lugar.
 
-
 # Dive
 
 Existe una herramienta llamada dive que permite monitorizar una imagen para ver
@@ -355,7 +351,7 @@ detalles, espacio ocupado, sistema de archivos, etc. e intentar optimizarla.
 
 No he tenido tiempo de probarlo, pero el proyecto está en:
 
-https://github.com/yosifkit/dive
+<https://github.com/yosifkit/dive>
 
 
 
@@ -394,7 +390,7 @@ ser commited y compartido, así como ver un histórico de cambios.
 
 # Almacenar en repositorio
 
-Podemos pushear la imagen a un registro del tipo `Docker hub`, para poderla utilizar 
+Podemos pushear la imagen a un registro del tipo `Docker hub`, para poderla utilizar
 y construir y escalar contenedores a partir de ella.
 
 ## Construir la imagen

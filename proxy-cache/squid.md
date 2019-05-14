@@ -72,7 +72,7 @@ En windows se llaman servicios, pero en Linux se les conoce como **daemons**, y 
 
 ## 5. Scripts de servicios
 
-Dentro de esta carpeta ubicada en /etc o en /etc/rc.d dependiendo de la distribucción, se encuentran una serie de scripts que permiten inicar/detener la gran mayoría de los servicios/servidores que estén instalados en el equipo. Estos scripts están programados de tal manera que la mayoría reconoce los siguientes argumentos:
+Dentro de esta carpeta ubicada en /etc o en /etc/rc.d dependiendo de la distribución, se encuentran una serie de scripts que permiten iniciar/detener la gran mayoría de los servicios/servidores que estén instalados en el equipo. Estos scripts están programados de tal manera que la mayoría reconoce los siguientes argumentos:
 
 - start
 - stop
@@ -193,7 +193,9 @@ En esta sección estableceremos los permisos de acceso, es decir, quien puede na
 
 ### Listas de control ACL
 
-Una** lista de control de acceso (acl) **se crea utilizando la palabra acl seguido del nombre que queramos dar a la lista y seguido de una condición que cumplirán los miembros de la lista. Entre las condiciones más utilizadas destacamos: src (IPs o URLs origen), dst (IPs o URLs destino), port (puertos) y proto (protocolos). Ejemplos:
+Una** lista de control de acceso (acl) **se crea utilizando la palabra acl seguido del nombre que queramos dar a la lista y seguido de una condición que cumplirán los miembros de la lista. 
+
+Entre las condiciones más utilizadas destacamos: src (IPs o URLs origen), dst (IPs o URLs destino), port (puertos) y proto (protocolos). Ejemplos:
 
 #### Definir una ACL para toda la red
 
@@ -374,7 +376,7 @@ Tal y como se ha comentado anteriormente, con squid es sencillo permitir o deneg
  \
 Para no tener que tocar el archivo squid.conf, lo mejor es crear una ACL que cargue las aulas desde un archivo externo. Podemos crear con un editor de texto el archivo /etc/squid/aulas-prohibidas.txt en el que indicaremos los rangos de IPs que no queremos que naveguen. Por ejemplo, si no queremos que naveguen las aulas 2 y 3, el contenido del archivo /etc/squid/aulas-prohibidas.txt deberá ser:
 
-```
+```ini
 //Archivo /etc/squid/aulas-prohibidas.txt \
 10.0.2.0/24 \
 10.0.3.0/24
@@ -395,7 +397,7 @@ Por último, tan solo tenemos que recargar la configuración de squid para que e
 
 //Recargar la configuración de squid \
 
-```
+```bash
 sudo /etc/init.d/squid reload
 ```
 
@@ -403,12 +405,14 @@ sudo /etc/init.d/squid reload
 
 Podemos crear ACL para listas de direcciones.
 
-```
+```ini
 acl urls-prohibidas dst .facebook.com .twitter.com \
 http_access deny urls-prohibidas
 ```
 
-Las direcciones que comienzan por un punto (.) hacen referencia a cualquier URL que acabe en esta cadena. Ejemplo: .facebook.com afecta a static.facebook.com
+Las direcciones que comienzan por un punto (.) hacen referencia a cualquier URL que acabe en esta cadena. 
+
+Ejemplo: `.facebook.com` afecta a `static.facebook.com`
 
 Igualmente podemos crear una ACL para indicar las URL prohibidas desde un archivo externo:
 

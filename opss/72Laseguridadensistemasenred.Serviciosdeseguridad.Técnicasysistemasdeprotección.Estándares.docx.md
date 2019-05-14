@@ -14,26 +14,34 @@
 
 Confidencialidad, integridad, disponibilidad y autenticidad
 
-Componentes a proteger: hardware, software, información
+Componentes a proteger: 
 
-Clasificación de amenazas
+- Hardware
+- Software
+- Información
 
-Interrupción, interceptación, modificación, fabricación
+## Clasificación de amenazas
+
+- Interrupción
+- Interceptación
+- Modificación
+- Fabricación
 
 ## Clasificación de seguridad
 
-Física o lógica
+### Física o lógica
 
-Activa o pasiva
+### Activa o pasiva
 
-Activa: medidas que intentan prevenir y evitar daños en sistemas
-informáticos
+Activa:
 
-ACL, contraseñas, encriptación, firmas, cuotas, encriptación
+- Medidas que intentan prevenir y evitar daños en sistemas informáticos
+- ACL, contraseñas, encriptación, firmas, cuotas, encriptación
 
-Pasiva: minimizar los efectos ocasionados
+Pasiva: 
 
-SAI, backups, RAID
+- Minimizar los efectos ocasionados
+- SAI, backups, RAID
 
 ## Seguridad física: 
 
@@ -42,55 +50,40 @@ naturales
 
 Amenazas según origen
 
-Incendio
-
-Inundación
-
-Desastres naturales
-
-Electromagnetismo
+- Incendio
+- Inundación
+- Desastres naturales
+- Electromagnetismo
 
 Amenazas según objetivo
 
-Recursos
-
-Utilización
-
-Información
-
-Imagen
+- Recursos
+- Utilización
+- Información
+- Imagen
 
 ## Seguridad lógica: 
 
-protege el software de los sistemas informáticos
+- Protege el software de los sistemas informáticos
 
 ### Nivel físico
 
 ### Nivel enlace
 
-MAC, protocolo ARP
-
-Man in the middle
-
-Defensa
-
-Vulnerabilidad STP
+- MAC, protocolo ARP
+- Man in the middle
+- Defensa
+- Vulnerabilidad STP
 
 ### Nivel de red
 
-Sniffing o análisis de tráfico
-
-Spoofing o suplantación de la identidad, falseando algún dato de un PC
-
-Hijacking
-
-Denegación de servicio
-
-Fragmentación
-
-Inundación
-
-DDoS
+- Sniffing o análisis de tráfico
+- Spoofing o suplantación de la identidad, falseando algún dato de un PC
+- Hijacking
+- Denegación de servicio
+- Fragmentación
+- Inundación
+- DDoS
 
 ### Nivel de transporte
 
@@ -107,8 +100,10 @@ DDoS
 
 Herramientas WAF
 
-DNS spoofing: falsear respuesta del servidor DNS sobre una petición y
-darle una IP diferente a la real
+DNS spoofing: 
+
+- Falsear respuesta del servidor DNS sobre una petición 
+- Darle una IP diferente a la real
 
 ### Nivel de meta aplicación
 

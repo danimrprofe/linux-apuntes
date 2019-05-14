@@ -43,6 +43,8 @@ Sobre red eléctrica convencional
 
 # Tecnologia fibra-coaxial
 
+![](2019-05-14-13-50-02.png)
+
 - Las redes HFC son redes formadas por una parte de fibra óptica y una parte de cable coaxial
 - El abonado se conecta por cable coaxial a un nodo de zona
 - Los nodos de zona se interconectan con fibra óptica
@@ -64,6 +66,8 @@ La fibra óptica:
 - permite más ancho de banda (más velocidad)
 - Es más resistente a interferencias
 - Más segura
+
+![](2019-05-14-13-49-46.png)
 
 Sin embargo, la fibra es más cara y la instalación es más compleja y las herramientas para la instalación son más caras.
 

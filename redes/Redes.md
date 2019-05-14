@@ -11,35 +11,35 @@
 - [Interfaz de red](#interfaz-de-red)
 - [Sistema con clases (direccionamiento classful)](#sistema-con-clases-direccionamiento-classful)
 - [Classes de direcciones](#classes-de-direcciones)
-- [Diagrama de clases](#diagrama-de-clases)
+  - [¿Cómo se divide el espacio de direcciones?](#%C2%BFc%C3%B3mo-se-divide-el-espacio-de-direcciones)
+  - [Diagrama de clases](#diagrama-de-clases)
 - [CLASE A](#clase-a)
 - [CLASE B](#clase-b)
 - [CLASE C](#clase-c)
 - [Tipos de direcciones IP](#tipos-de-direcciones-ip)
-- [Direcciones IP públicas](#direcciones-ip-p%C3%BAblicas)
-- [Direcciones IP privadas (reservadas)](#direcciones-ip-privadas-reservadas)
-- [Bloques de redes privadas](#bloques-de-redes-privadas)
-- [Traducción IP pública y privada](#traducci%C3%B3n-ip-p%C3%BAblica-y-privada)
-- [NAT](#nat)
-- [Direcciones estáticas y dinámicas](#direcciones-est%C3%A1ticas-y-din%C3%A1micas)
-- [Direcciones IP estáticas (fijas)](#direcciones-ip-est%C3%A1ticas-fijas)
-- [Direcciones IP dinámicas](#direcciones-ip-din%C3%A1micas)
-- [Direcciones especiales](#direcciones-especiales)
-- [Dirección de red](#direcci%C3%B3n-de-red)
-- [Dirección del router o puerta de enlace](#direcci%C3%B3n-del-router-o-puerta-de-enlace)
-- [Dirección broadcast](#direcci%C3%B3n-broadcast)
-- [Máscara de red](#m%C3%A1scara-de-red)
-  - [Representación de la máscara](#representaci%C3%B3n-de-la-m%C3%A1scara)
-  - [Utilización de la máscara](#utilizaci%C3%B3n-de-la-m%C3%A1scara)
-- [Direcciones reservadas](#direcciones-reservadas)
-- [Interfaces especiales](#interfaces-especiales)
+  - [Direcciones IP públicas](#direcciones-ip-p%C3%BAblicas)
+  - [Direcciones IP privadas (reservadas)](#direcciones-ip-privadas-reservadas)
+    - [Bloques de redes privadas](#bloques-de-redes-privadas)
+  - [Traducción IP pública y privada](#traducci%C3%B3n-ip-p%C3%BAblica-y-privada)
+    - [NAT](#nat)
+  - [Direcciones estáticas (fijas)](#direcciones-est%C3%A1ticas-fijas)
+  - [Direcciones dinámicas](#direcciones-din%C3%A1micas)
+  - [Direcciones especiales](#direcciones-especiales)
+    - [Dirección de red](#direcci%C3%B3n-de-red)
+    - [Dirección del router o puerta de enlace](#direcci%C3%B3n-del-router-o-puerta-de-enlace)
+    - [Dirección broadcast](#direcci%C3%B3n-broadcast)
+    - [Máscara de red](#m%C3%A1scara-de-red)
+      - [Representación de la máscara](#representaci%C3%B3n-de-la-m%C3%A1scara)
+      - [Utilización de la máscara](#utilizaci%C3%B3n-de-la-m%C3%A1scara)
+  - [Direcciones reservadas](#direcciones-reservadas)
+- [Interfaces loopback](#interfaces-loopback)
   - [¿Qué es el loopback?](#%C2%BFqu%C3%A9-es-el-loopback)
-- [Utilización](#utilizaci%C3%B3n)
+  - [Utilización](#utilizaci%C3%B3n)
 - [Obtención de direcciones IP](#obtenci%C3%B3n-de-direcciones-ip)
 - [Obtención de direcciones públicas](#obtenci%C3%B3n-de-direcciones-p%C3%BAblicas)
-- [ICANN (IANA)](#icann-iana)
-- [RIR](#rir)
-- [Repartición de direcciones](#repartici%C3%B3n-de-direcciones)
+  - [ICANN (IANA)](#icann-iana)
+  - [RIR](#rir)
+  - [Repartición de direcciones](#repartici%C3%B3n-de-direcciones)
 - [Cálculo de parámetros de redes](#c%C3%A1lculo-de-par%C3%A1metros-de-redes)
 - [Subredes](#subredes)
 - [Problemática](#problem%C3%A1tica)
@@ -48,12 +48,8 @@
 - [Máscara de subred](#m%C3%A1scara-de-subred)
 - [Subredes posibles clase C](#subredes-posibles-clase-c)
 - [Agotamiento del espacio de direcciones](#agotamiento-del-espacio-de-direcciones)
-- [Ejercicio](#ejercicio)
 - [Preguntas](#preguntas)
-- [Ejercicio](#ejercicio-1)
-- [Ejercicio](#ejercicio-2)
-- [Ejercicio](#ejercicio-3)
-- [Ejercicio](#ejercicio-4)
+- [Ejercicio](#ejercicio)
 
 # Teoría redes
 
@@ -144,9 +140,9 @@
 
 Al comienzo de Internet
 
-- 8 primeros bits = identificador de red. 
-- Especificaba la red particular a la que - estaba conectado un host. 
-- 24 bits restantes = host conectado a esa - red. 
+- 8 primeros bits = identificador de red.
+- Especificaba la red particular a la que estaba conectado un host.
+- 24 bits restantes = host conectado a esa red.
 
 Problemática
 
@@ -158,17 +154,18 @@ Problemática
 
 # Classes de direcciones
 
-- Una red con clase (classful) es una arquitectura de direccionamiento de red 
-- utilizada en Internet desde 1981 hasta la 
-- Introducción del enrutamiento entre - dominios sin clase en 1993. 
-- ¿Cómo se divide el espacio de direcciones?
-- En IPv4 se divide en cinco clases de - direcciones 
-- Clases basadas en los 4 primeros bits de - dirección 
-- Clases A, B y C proporcionan direcciones de - unidifusión para redes de tres tamaños de - red diferentes. 
-- La clase D es para redes de multidifusión 
+- Una red con clase (classful) es una arquitectura de direccionamiento de red utilizada en Internet desde 1981 
+- A partir de 1993 se introduce el enrutamiento entre dominios sin clase en 1993 (CIDR)
+
+## ¿Cómo se divide el espacio de direcciones?
+
+- En IPv4 se divide en cinco clases de direcciones.
+- Clases basadas en los 4 primeros bits de dirección.
+- Clases A, B y C proporcionan direcciones de unidifusión para redes de tres tamaños de red diferentes.
+- La clase D es para redes de multidifusión.
 - Rango de direcciones de clase E está reservado para fines futuros o experimentales.
 
-# Diagrama de clases
+## Diagrama de clases
 
 ![](2019-05-08-08-43-18.png)
 
@@ -208,26 +205,26 @@ Las direcciones también pueden ser:
 
 - Públicas o privadas
 - Estáticas o dinámicas
-- Dirsecciones especiales
+- Direcciones especiales
 
-# Direcciones IP públicas
+## Direcciones IP públicas
 
-- Son visibles en todo Internet. 
-- Un ordenador con una IP pública es - accesible (visible) desde cualquier otro - ordenador conectado a Internet. 
-- Para conectarse a Internet es necesario - tener una dirección IP pública.
+- Son visibles en todo Internet.
+- Un ordenador con una IP pública es accesible (visible) desde cualquier otro ordenador conectado a Internet.
+- Para conectarse a Internet es necesario tener una dirección IP pública.
 - Las direcciones IP públicas son exclusivas:
-- 2 máquinas conectadas a internet no pueden - tener la misma IP
+- 2 máquinas conectadas a internet no pueden tener la misma IP
 - Hay que obtener las IP públicas de un ISP
 Públicas y privadas
 
-# Direcciones IP privadas (reservadas)
+## Direcciones IP privadas (reservadas)
 
 - Son visibles únicamente por otros hosts de su propia red o de otras redes privadas interconectadas por routers. 
 - Se utilizan en las empresas para los - puestos de trabajo. 
 - Los ordenadores con direcciones IP privadas - pueden salir a Internet por medio de un - router (o proxy) que tenga una IP pública. 
 - Desde Internet no se puede acceder a ordenadores con direcciones IP privadas.
 
-# Bloques de redes privadas
+### Bloques de redes privadas
 
 La Autoridad de números asignados de Internet (IANA) ha reservado el siguiendo tres bloques del espacio de direcciones IP para las redes privadas:
 
@@ -241,21 +238,21 @@ Estas direcciones IP:
 - Los rangos de direcciones no se pueden repetir dentro de una misma organización
 - Los rangos de direcciones se pueden utilizar en muchas empresas.
 
-# Traducción IP pública y privada
+## Traducción IP pública y privada
 
-# NAT
+### NAT
 
 - Una opción para compensar el déficit de IPs públicas es el uso de NAT (Network Address Translation).
 - NAT cambia la dirección origen y el puerto origen en cada paquete que salga de la red local
 - Estas traducciones de dirección se almacenan en una tabla
-- Se guarda dirección y puerto que  corresponde a cada dispositivo cliente y así saber dónde deben regresar los paquetes de respuesta.
+  - Se guarda dirección y puerto que  corresponde a cada dispositivo cliente
+  - Así saber dónde deben regresar los paquetes de respuesta.
 - En general es el router quien realiza esta traducción NAT.
 
 ![](2019-05-08-08-44-45.png)
 
-# Direcciones estáticas y dinámicas
 
-# Direcciones IP estáticas (fijas)
+## Direcciones estáticas (fijas)
 
 Host siempre se conecta a la red con una misma IP.
 
@@ -263,7 +260,7 @@ Las direcciones IP públicas estáticas son las que utilizan los servidores de I
 
 Estas direcciones hay que contratarlas
 
-# Direcciones IP dinámicas
+## Direcciones dinámicas
 
 Un host que se conecte a la red cada vez lo hará con una dirección IP distinta. 
 
@@ -271,9 +268,9 @@ Las direcciones IP públicas dinámicas son las que se utilizan en las conexione
 
 Los proveedores de Internet utilizan direcciones IP dinámicas debido a que tienen más clientes que direcciones IP (es muy improbable que todos se conecten a la vez).
 
-# Direcciones especiales
+## Direcciones especiales
 
-# Dirección de red
+### Dirección de red
 
 Para identificar la red en sí, utilizamos una dirección concreta:
 
@@ -287,7 +284,7 @@ Los datos enviados a cualquier host de dicha red se verán desde fuera de la red
 
 ![](2019-05-08-08-45-12.png)
 
-# Dirección del router o puerta de enlace
+### Dirección del router o puerta de enlace
 
 - Equipo informático configurado para dotar a las máquinas de una red local (LAN) conectadas a él de un acceso hacia una red exterior
 - Generalmente realizando para ello operaciones de traducción de direcciones IP
@@ -295,7 +292,7 @@ Los datos enviados a cualquier host de dicha red se verán desde fuera de la red
 
 ![](2019-05-08-08-45-17.png)
 
-# Dirección broadcast
+### Dirección broadcast
 
 - Se utiliza para comunicarse con todos los clientes de una red o subred
 - La dirección broadcast es una dirección con la porción del host (cliente) configurada solo con 1’s
@@ -311,7 +308,7 @@ Broadcasts son necesarios para:
 
 ![](2019-05-08-08-45-57.png)
 
-# Máscara de red
+### Máscara de red
 
 La máscara:
 
@@ -328,24 +325,24 @@ El router debe realizar un AND lógico binario entre la dirección IP de destino
 
 ![](2019-05-08-08-46-40.png)
 
-## Representación de la máscara
+#### Representación de la máscara
 
 La máscara de red se puede representar:
 
 1. En formato IP decimal (255.255.255.0) 
 2. Con la notación / en la que se especifican los bits de red (/24)
 
-## Utilización de la máscara
+#### Utilización de la máscara
 
 ![](2019-05-08-08-47-12.png)
 
-# Direcciones reservadas
+## Direcciones reservadas
 
 ![](2019-05-08-08-47-22.png)
 
 ![](2019-05-08-08-47-34.png)
 
-# Interfaces especiales
+# Interfaces loopback
 
 ## ¿Qué es el loopback?
 
@@ -356,7 +353,7 @@ Se trata de una interfaz de red `virtual`, con las siguientes características:
 - No conectada a ninguna red real.
 - Implementada mediante software dentro del sistema operativo.
 
-# Utilización
+## Utilización
 
 - Usada para emular tráfico de red entre 2 procesos del mismo host.
 - Se suele utilizar para hacer pruebas.
@@ -368,7 +365,7 @@ Se trata de una interfaz de red `virtual`, con las siguientes características:
 
 # Obtención de direcciones públicas
 
-# ICANN (IANA)
+## ICANN (IANA)
 
 ![](2019-05-08-08-47-47.png)
 
@@ -378,13 +375,13 @@ Se trata de una interfaz de red `virtual`, con las siguientes características:
 - Mantener la estabilidad de Internet
 - Administra y coordina el sistema de nombres de dominio
 
-# RIR
+## RIR
 
 ![](2019-05-08-08-48-48.png)
 
 Asignación IANA: https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xhtml
 
-# Repartición de direcciones
+## Repartición de direcciones
 
 - Una organización o cliente obtiene las direcciones IP a través de un Internet Service Provider (ISP).
 - El ISP asigna una dirección o rango a la organización o cliente
@@ -394,10 +391,14 @@ Asignación IANA: https://www.iana.org/assignments/ipv4-address-space/ipv4-addre
 
 Cómo calcular las direcciones:
 
-- La dirección de la red o subred: Todos los bits de host a 0 (en la máscara de Subred)
-- La dirección de broadcast: Todos los bits de host a 0 (en la máscara de Subred)
-- El primer host de la subred: Todos los bits de host a 0 (en la máscara de Subred) menos el último a 1
-- El último host de la subred: Todos los bits de host a 1 (en la máscara de Subred) menos el último a 0
+- La dirección de la red o subred: 
+  - Todos los bits de host a 0 (en la máscara de Subred)
+- La dirección de broadcast: 
+  - Todos los bits de host a 0 (en la máscara de Subred)
+- El primer host de la subred: 
+  - Todos los bits de host a 0 (en la máscara de Subred) menos el último a 1
+- El último host de la subred: 
+  - Todos los bits de host a 1 (en la máscara de Subred) menos el último a 0
 
 # Subredes
 
@@ -446,77 +447,28 @@ La división en subredes, la traducción NAT y el direccionamiento IP han sido a
 
 Por ello existe IPv6, un espacio de direccionamiento mayor.
 
-# Ejercicio
-
-IP asignada: 195.85.8.0
-Necesitamos 8 subredes
-
-Calcular los siguientes parámetros.
-
-Clase de dirección:
-Máscara de red por defecto:
-Máscara de subred:
-Cantidad de subredes:
-Cantidad de direcciones por subred:
-
 # Preguntas
 
-¿A qué subred pertenece la IP 195.85.8.87?
-¿Qué tipo de IP es 195.85.8.95?¿ y 195.85.8.96? 
-¿Pertenecen a la misma subred?
-¿A qué IP tengo que enviar un paquete para que llegue a todos los hosts de la subred 195.85.8.96?
-¿A cuantos hosts puedo asignar IP en toda la red?
+- ¿A qué subred pertenece la IP 195.85.8.87?
+- ¿Qué tipo de IP es 195.85.8.95?¿ y 195.85.8.96?
+- ¿Pertenecen a la misma subred?
+- ¿A qué IP tengo que enviar un paquete para que llegue a todos los hosts de la subred 195.85.8.96?
+- ¿A cuantos hosts puedo asignar IP en toda la red?
 
 # Ejercicio
 
-IP asignada: 218.35.50.0
-Necesitamos 5 subredes
+Para los siguientes supuestos:
+
+- IP asignada: 218.35.50.0. Necesitamos 5 subredes
+- IP asignada: 195.100.5.0. 50 máquinas en cada subred
+- IP asignada: 140.10.0.0. Necesitamos 8 subredes
+- IP asignada: 172.59.0.0. Necesitamos 10 subredes
+- IP asignada: 195.85.8.0. Necesitamos 8 subredes
 
 Calcular los siguientes parámetros.
 
-Clase de dirección:
-Máscara de red por defecto:
-Máscara de subred:
-Cantidad de subredes:
-Cantidad de direcciones:
-
-# Ejercicio
-
-IP asignada: 195.100.5.0
-50 máquinas en cada subred
-
-
-
-
-Clase de dirección:
-Máscara de red por defecto:
-Máscara de subred:
-Cantidad de subredes:
-Cantidad de direcciones:
-
-# Ejercicio
-
-IP asignada: 172.59.0.0
-Necesitamos 10 subredes
-
-
-
-
-Clase de dirección:
-Máscara de red por defecto:
-Máscara de subred:
-Cantidad de subredes:
-Cantidad de direcciones:
-
-# Ejercicio
-
-IP asignada: 140.10.0.0
-Necesitamos 8 subredes
-
-Clase de dirección:
-Máscara de red por defecto:
-Máscara de subred:
-Cantidad de subredes:
-Cantidad de direcciones:
-
-
+- Clase de dirección:
+- Máscara de red por defecto:
+- Máscara de subred:
+- Cantidad de subredes:
+- Cantidad de direcciones:

@@ -1,5 +1,30 @@
 # Vagrant
 
+- [Vagrant](#vagrant)
+- [Introducción](#introducci%C3%B3n)
+- [Características](#caracter%C3%ADsticas)
+- [Cómo instalarlo](#c%C3%B3mo-instalarlo)
+- [Boxes](#boxes)
+- [Creación de boxes](#creaci%C3%B3n-de-boxes)
+- [Cosas que puedes hacer con Vagrant](#cosas-que-puedes-hacer-con-vagrant)
+- [Vagrantfiles](#vagrantfiles)
+- [Comandos vagrant](#comandos-vagrant)
+  - [Version utilizada](#version-utilizada)
+- [Descargando boxes](#descargando-boxes)
+- [Inicializando configuraciones (Vagrantfile)](#inicializando-configuraciones-vagrantfile)
+- [Conectando con las máquinas virtuales](#conectando-con-las-m%C3%A1quinas-virtuales)
+- [Parando máquinas](#parando-m%C3%A1quinas)
+- [Configuraciones de Vagrant](#configuraciones-de-vagrant)
+- [Aprovisionamiento](#aprovisionamiento)
+- [Ejemplos de aprovisionamiento](#ejemplos-de-aprovisionamiento)
+      - [shell](#shell)
+      - [script](#script)
+      - [ansible](#ansible)
+  - [Proyectos en este repositorio](#proyectos-en-este-repositorio)
+  - [vagrant-ansible](#vagrant-ansible)
+  - [vagrant-mult](#vagrant-mult)
+  - [vagrant-wordpress](#vagrant-wordpress)
+
 # Introducción
 
 `Vagrant` es una herramienta que permite crear entornos de desarrollo basados en 
@@ -49,18 +74,20 @@ En caso de aprovisionamiento con ansible:
 
 # Boxes
 
-Una box es un archivo (tareado y gzipeado) parecida a una imagen de máquina 
-virtual, lista para ejecutarse (sin necesidad de instalación). Las podemos:
+Una `box` es un archivo (tareado y gzipeado) parecida a una imagen de máquina
+virtual, lista para ejecutarse (sin necesidad de instalación). 
+
+Las podemos:
 
 * Descargar de diferentes proveedores
 * Crear nosotros manualmente
 
 Cada box contiene:
 
-* Un Vagrantfile
-* Una imagen de máquina virtual (vmdk)
-* Un archivo OVF que define el hardware virtual del box
-* Un archivo JSON que define que proveedor trabaja con la caja
+* Un `Vagrantfile`
+* Una imagen de máquina virtual (`vmdk`)
+* Un archivo `OVF` que define el hardware virtual del box
+* Un archivo `JSON` que define que proveedor trabaja con la caja
 
 # Creación de boxes
 

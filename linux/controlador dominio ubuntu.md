@@ -1,11 +1,28 @@
+# Controlador dominio en Ubuntu
+
+- [Controlador dominio en Ubuntu](#controlador-dominio-en-ubuntu)
+- [Samba](#samba)
+- [Instal·lació del servidor](#installaci%C3%B3-del-servidor)
+- [Creació de recursos compartits](#creaci%C3%B3-de-recursos-compartits)
+- [Instalació del client](#instalaci%C3%B3-del-client)
+- [Montar recursos compartits amb samba](#montar-recursos-compartits-amb-samba)
+- [Especificacions](#especificacions)
+- [Adreçament IP fixa del servidor](#adre%C3%A7ament-ip-fixa-del-servidor)
+- [Configurant amb netplan](#configurant-amb-netplan)
+- [Instal·lació d’un controlador de domini](#installaci%C3%B3-dun-controlador-de-domini)
+- [Instal·lar client kerberos](#installar-client-kerberos)
+
 # Samba
 Samba és una implementació del protocol de compartició d’arxius i impresores de Windows que es coneixia com a Server Message Bloc (SMB) i ara es diu Common Internet File System (CIFS).
 Existeix una implementació de Samba a Linux, així com a molts altres sistemes operatius. Per a utilizar samba, és necessari instal·lar els paquets samba i samba-doc.
 També existeixen eines gràfiques per a compartir, consultar i muntar directoris SMB compartits des de Windows que inclueixen el Samba SWAT. 
 Les comandes per a treballar amb recursos compartits de SAMBA també es poden utilitzar per consultar servidors SMB, muntar directoris i compartir-los.
+
 Essencialment, Samba el constitueix dos dimonis:
+
 * smbd
 * nmbd
+  
 # Instal·lació del servidor
     apt install tasksel
     sudo tasksel install samba-server

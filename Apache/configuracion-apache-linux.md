@@ -1,295 +1,123 @@
-ContenIDOS {#contenidos .TOCHeading}
-==========
+- [Instrucciones para entregar la práctica](#instrucciones-para-entregar-la-pr%C3%A1ctica)
+- [Escenario de prácticas](#escenario-de-pr%C3%A1cticas)
+  - [Configuración de servidor Ubuntu Server](#configuraci%C3%B3n-de-servidor-ubuntu-server)
+  - [Configuración del cliente Ubuntu Desktop](#configuraci%C3%B3n-del-cliente-ubuntu-desktop)
+  - [Dominios y subdominios](#dominios-y-subdominios)
+- [Instalación](#instalaci%C3%B3n)
+  - [Instalar apache](#instalar-apache)
+  - [usuario www-data y el grupo www-data](#usuario-www-data-y-el-grupo-www-data)
+  - [Directorio contenedor de páginas](#directorio-contenedor-de-p%C3%A1ginas)
+  - [Configuración](#configuraci%C3%B3n)
+    - [Directorios de configuración de módulos](#directorios-de-configuraci%C3%B3n-de-m%C3%B3dulos)
+    - [Directorios de configuración de sitios virtuales](#directorios-de-configuraci%C3%B3n-de-sitios-virtuales)
+    - [Directorio de configuraciones locales](#directorio-de-configuraciones-locales)
+  - [Estado del servicio](#estado-del-servicio)
+    - [Comprobación de que el servidor está INICIADO](#comprobaci%C3%B3n-de-que-el-servidor-est%C3%A1-iniciado)
+    - [Arrancar, parar y estado del servicio](#arrancar-parar-y-estado-del-servicio)
+    - [Reiniciar y recargar servicio](#reiniciar-y-recargar-servicio)
+    - [Reinicio del servidor con apachectl](#reinicio-del-servidor-con-apachectl)
+- [Puertos](#puertos)
+  - [Comprobación de puertos](#comprobaci%C3%B3n-de-puertos)
+  - [Configuración de puertos](#configuraci%C3%B3n-de-puertos)
+    - [Directiva Listen](#directiva-listen)
+    - [Configuración de cortafuegos](#configuraci%C3%B3n-de-cortafuegos)
+- [Sitios web](#sitios-web)
+  - [Configuración de sites](#configuraci%C3%B3n-de-sites)
+    - [Sites disponibles](#sites-disponibles)
+    - [Sites habilitados](#sites-habilitados)
+    - [Habilitar y deshabilitar sites](#habilitar-y-deshabilitar-sites)
+    - [Crear nuestro propio site](#crear-nuestro-propio-site)
+    - [Habilitar el nuevo site](#habilitar-el-nuevo-site)
+  - [Acceder desde el navegador al servidor](#acceder-desde-el-navegador-al-servidor)
+  - [Configurar un hostname para el servidor](#configurar-un-hostname-para-el-servidor)
+- [Crear estructura de páginas web](#crear-estructura-de-p%C3%A1ginas-web)
+  - [Comprobar archivo de índice](#comprobar-archivo-de-%C3%ADndice)
+  - [Crear más archivos y carpetas](#crear-m%C3%A1s-archivos-y-carpetas)
+  - [Comprobar funcionamiento desde cliente](#comprobar-funcionamiento-desde-cliente)
+    - [Acceder con IP](#acceder-con-ip)
+    - [Acceder con nombre de dominio](#acceder-con-nombre-de-dominio)
+  - [Abrir páginas desde el shell](#abrir-p%C3%A1ginas-desde-el-shell)
+    - [Comprobar con el navegador las URLs](#comprobar-con-el-navegador-las-urls)
+    - [Navegador en shell](#navegador-en-shell)
+- [Secciones](#secciones)
+  - [Tipos de secciones](#tipos-de-secciones)
+  - [Sección directory](#secci%C3%B3n-directory)
+    - [Ejemplo de configuración de directory](#ejemplo-de-configuraci%C3%B3n-de-directory)
+    - [Permitir solo acceso a directorio a una red concreta](#permitir-solo-acceso-a-directorio-a-una-red-concreta)
+    - [Permitir solo acceso a directorio a un equipo concreto](#permitir-solo-acceso-a-directorio-a-un-equipo-concreto)
+  - [Sección files](#secci%C3%B3n-files)
+    - [Denegar acceso a un archivo concreto](#denegar-acceso-a-un-archivo-concreto)
+    - [Utilización conjunta de directory y files](#utilizaci%C3%B3n-conjunta-de-directory-y-files)
+    - [Especificar un conjunto de archivos al que aplicará una configuración](#especificar-un-conjunto-de-archivos-al-que-aplicar%C3%A1-una-configuraci%C3%B3n)
+  - [Sección location](#secci%C3%B3n-location)
+  - [Sección ifmodule](#secci%C3%B3n-ifmodule)
+  - [Sección ifdefine](#secci%C3%B3n-ifdefine)
+- [en el archivo apache2.conf](#en-el-archivo-apache2conf)
+- [Directivas](#directivas)
+  - [Directiva ServerRoot](#directiva-serverroot)
+  - [Conexiones persistentes](#conexiones-persistentes)
+- [Ficheros a servir por defecto (Directory Index)](#ficheros-a-servir-por-defecto-directory-index)
+  - [Comprobar página por defecto](#comprobar-p%C3%A1gina-por-defecto)
+  - [Renombrar fichero de índice](#renombrar-fichero-de-%C3%ADndice)
+  - [Cambiar directiva DirectoryIndex](#cambiar-directiva-directoryindex)
+- [Opciones sobre directorios](#opciones-sobre-directorios)
+  - [Configurar la carpeta DATOS para mostrar index.html y no listar contenido de la carpeta](#configurar-la-carpeta-datos-para-mostrar-indexhtml-y-no-listar-contenido-de-la-carpeta)
+- [Logs (ErrorLog, CustomLog, LogFormat)](#logs-errorlog-customlog-logformat)
+  - [Consultar logs](#consultar-logs)
+  - [Consultar en internet](#consultar-en-internet)
+  - [Conocer donde se guardan los archivos de log](#conocer-donde-se-guardan-los-archivos-de-log)
+  - [Consulta del fichero log de errores](#consulta-del-fichero-log-de-errores)
+  - [Consulta del fichero log de accesos](#consulta-del-fichero-log-de-accesos)
+- [Códigos de error (ErrorDocument)](#c%C3%B3digos-de-error-errordocument)
+  - [Configurar directiva ErrorDocument](#configurar-directiva-errordocument)
+    - [Configurar mensaje](#configurar-mensaje)
+    - [Crear archivo para error no encontrado](#crear-archivo-para-error-no-encontrado)
+- [Directorios virtuales](#directorios-virtuales)
+  - [Directorios Virtuales (Directiva Alias)](#directorios-virtuales-directiva-alias)
+    - [Iniciar sesión como usuario alumno y crear directorio {#iniciar-sesión-como-usuario-alumno-y-crear-directorio .ListParagraph}](#iniciar-sesi%C3%B3n-como-usuario-alumno-y-crear-directorio-iniciar-sesi%C3%B3n-como-usuario-alumno-y-crear-directorio-listparagraph)
+    - [Iniciar sesión como administrador y crear el Alias /wiki {#iniciar-sesión-como-administrador-y-crear-el-alias-wiki .ListParagraph}](#iniciar-sesi%C3%B3n-como-administrador-y-crear-el-alias-wiki-iniciar-sesi%C3%B3n-como-administrador-y-crear-el-alias-wiki-listparagraph)
+    - [Acceder a la página wiki {#acceder-a-la-página-wiki .ListParagraph}](#acceder-a-la-p%C3%A1gina-wiki-acceder-a-la-p%C3%A1gina-wiki-listparagraph)
+  - [Directorios Virtuales (usando enlaces simbólicos)](#directorios-virtuales-usando-enlaces-simb%C3%B3licos)
+- [Módulos](#m%C3%B3dulos)
+  - [Instalación y carga de módulos](#instalaci%C3%B3n-y-carga-de-m%C3%B3dulos)
+    - [Comprobar los módulos que se han cargado estáticamente](#comprobar-los-m%C3%B3dulos-que-se-han-cargado-est%C3%A1ticamente)
+    - [Comprobar los módulos que se han cargado dinámicamente](#comprobar-los-m%C3%B3dulos-que-se-han-cargado-din%C3%A1micamente)
+    - [Carpetas de módulos {#carpetas-de-módulos .ListParagraph}](#carpetas-de-m%C3%B3dulos-carpetas-de-m%C3%B3dulos-listparagraph)
+    - [Módulos activados por defecto](#m%C3%B3dulos-activados-por-defecto)
+    - [Directiva LoadModule](#directiva-loadmodule)
+    - [Archivos de configuración de módulos](#archivos-de-configuraci%C3%B3n-de-m%C3%B3dulos)
+    - [Consultar los módulos disponibles](#consultar-los-m%C3%B3dulos-disponibles)
+    - [Listar mods para Apache](#listar-mods-para-apache)
+  - [Mod USEDIR](#mod-usedir)
+    - [Directorios personales de usuarios (módulo userdir)](#directorios-personales-de-usuarios-m%C3%B3dulo-userdir)
+    - [Comprobar que el módulo no está habilitado](#comprobar-que-el-m%C3%B3dulo-no-est%C3%A1-habilitado)
+    - [Habilitar el módulo ejecutando el comando: a2enmod userdir](#habilitar-el-m%C3%B3dulo-ejecutando-el-comando-a2enmod-userdir)
+    - [Verificar que se ha cargado el módulo](#verificar-que-se-ha-cargado-el-m%C3%B3dulo)
+    - [Consultar fichero de configuración de userdir](#consultar-fichero-de-configuraci%C3%B3n-de-userdir)
+    - [Crear directorio personal](#crear-directorio-personal)
+    - [Asignar permisos a la carpeta](#asignar-permisos-a-la-carpeta)
+  - [Modulo modsecurity](#modulo-modsecurity)
+- [Control de acceso](#control-de-acceso)
+  - [Control de acceso por IP y nombre de dominio](#control-de-acceso-por-ip-y-nombre-de-dominio)
+  - [Autenticación HTTP Basic](#autenticaci%C3%B3n-http-basic)
+    - [Comprobar módulo auth_basic habilitado](#comprobar-m%C3%B3dulo-authbasic-habilitado)
+    - [Usar autenticación básica en Apache](#usar-autenticaci%C3%B3n-b%C3%A1sica-en-apache)
+  - [Habilitar uso de .htaccess](#habilitar-uso-de-htaccess)
+- [Configurar un site seguro con https](#configurar-un-site-seguro-con-https)
+  - [Configurar servidor HTTPS](#configurar-servidor-https)
+    - [Habilitar mod_ssl](#habilitar-modssl)
+    - [Comprobar carga del módulo](#comprobar-carga-del-m%C3%B3dulo)
+    - [Ver contenido de port.conf](#ver-contenido-de-portconf)
+    - [Comprobar puertos con netstat](#comprobar-puertos-con-netstat)
+    - [Comprobar puertos con nmap](#comprobar-puertos-con-nmap)
+    - [Habilitar servidor virtual por defecto para SSL](#habilitar-servidor-virtual-por-defecto-para-ssl)
+  - [Crear un servidor virtual https](#crear-un-servidor-virtual-https)
+    - [Crear un certificado digital](#crear-un-certificado-digital)
+    - [Crear un nuevo site seguro](#crear-un-nuevo-site-seguro)
+      - [Conexión al servidor HTTPS desde el navegador](#conexi%C3%B3n-al-servidor-https-desde-el-navegador)
+
+# Instrucciones para entregar la práctica
 
-[1 Instrucciones para entregar la práctica
-4](#instrucciones-para-entregar-la-práctica)
-
-[2 Escenario de prácticas 5](#escenario-de-prácticas)
-
-[2.1 Configuración de servidor Ubuntu Server
-5](#configuración-de-servidor-ubuntu-server)
-
-[2.2 Configuración del cliente Ubuntu Desktop
-6](#configuración-del-cliente-ubuntu-desktop)
-
-[2.3 Dominios y subdominios 6](#dominios-y-subdominios)
-
-[3 Instalación 7](#instalación)
-
-[3.1 Instalar apache 7](#instalar-apache)
-
-[3.2 usuario www-data y el grupo www-data
-8](#usuario-www-data-y-el-grupo-www-data)
-
-[3.3 Directorio contenedor de páginas
-8](#directorio-contenedor-de-páginas)
-
-[3.4 Configuración 8](#configuración)
-
-[3.4.1 Directorios de configuración de módulos
-9](#directorios-de-configuración-de-módulos)
-
-[3.4.2 Directorios de configuración de sitios virtuales
-10](#directorios-de-configuración-de-sitios-virtuales)
-
-[3.4.3 Directorio de configuraciones locales
-10](#directorio-de-configuraciones-locales)
-
-[3.5 Estado del servicio 12](#estado-del-servicio)
-
-[3.5.1 Comprobación de que el servidor está INICIADO
-12](#comprobación-de-que-el-servidor-está-iniciado)
-
-[3.5.2 Arrancar, parar y estado del servicio
-12](#arrancar-parar-y-estado-del-servicio)
-
-[3.5.3 Reiniciar y recargar servicio 12](#reiniciar-y-recargar-servicio)
-
-[3.5.4 Reinicio del servidor con apachectl
-13](#reinicio-del-servidor-con-apachectl)
-
-[4 Puertos 14](#puertos)
-
-[4.1 Comprobación de puertos 14](#comprobación-de-puertos)
-
-[4.2 Configuración de puertos 14](#configuración-de-puertos)
-
-[4.2.1 Directiva Listen 15](#directiva-listen)
-
-[4.2.2 Configuración de cortafuegos 16](#configuración-de-cortafuegos)
-
-[5 Sitios web 17](#sitios-web)
-
-[5.1 Configuración de sites 17](#configuración-de-sites)
-
-[5.1.1 Sites disponibles 17](#sites-disponibles)
-
-[5.1.2 Sites habilitados 19](#sites-habilitados)
-
-[5.1.3 Habilitar y deshabilitar sites
-19](#habilitar-y-deshabilitar-sites)
-
-[5.1.4 Crear nuestro propio site 19](#crear-nuestro-propio-site)
-
-[5.1.5 Habilitar el nuevo site 20](#habilitar-el-nuevo-site)
-
-[5.2 Acceder desde el navegador al servidor
-21](#acceder-desde-el-navegador-al-servidor)
-
-[5.3 Configurar un hostname para el servidor
-21](#configurar-un-hostname-para-el-servidor)
-
-[6 Crear estructura de páginas web 22](#crear-estructura-de-páginas-web)
-
-[6.1 Comprobar archivo de índice 22](#comprobar-archivo-de-índice)
-
-[6.2 Crear más archivos y carpetas 22](#crear-más-archivos-y-carpetas)
-
-[6.3 Comprobar funcionamiento desde cliente
-23](#comprobar-funcionamiento-desde-cliente)
-
-[6.3.1 Acceder con IP 23](#acceder-con-ip)
-
-[6.3.2 Acceder con nombre de dominio 23](#acceder-con-nombre-de-dominio)
-
-[6.4 Abrir páginas desde el shell 23](#abrir-páginas-desde-el-shell)
-
-[6.4.1 Comprobar con el navegador las URLs
-23](#comprobar-con-el-navegador-las-urls)
-
-[6.4.2 Navegador en shell 23](#navegador-en-shell)
-
-[7 Secciones 24](#secciones)
-
-[7.1 Tipos de secciones 24](#tipos-de-secciones)
-
-[7.2 Sección directory 24](#sección-directory)
-
-[7.2.1 Ejemplo de configuración de directory
-24](#ejemplo-de-configuración-de-directory)
-
-[7.2.2 Permitir solo acceso a directorio a una red concreta
-25](#permitir-solo-acceso-a-directorio-a-una-red-concreta)
-
-[7.2.3 Permitir solo acceso a directorio a un equipo concreto
-25](#permitir-solo-acceso-a-directorio-a-un-equipo-concreto)
-
-[7.3 Sección files 26](#sección-files)
-
-[7.3.1 Denegar acceso a un archivo concreto
-26](#denegar-acceso-a-un-archivo-concreto)
-
-[7.3.2 Utilización conjunta de directory y files
-26](#utilización-conjunta-de-directory-y-files)
-
-[7.3.3 Especificar un conjunto de archivos al que aplicará una
-configuración
-26](#especificar-un-conjunto-de-archivos-al-que-aplicará-una-configuración)
-
-[7.4 Sección location 27](#sección-location)
-
-[7.5 Sección ifmodule 27](#sección-ifmodule)
-
-[7.6 Sección ifdefine 28](#sección-ifdefine)
-
-[8 Directivas 29](#directivas)
-
-[8.1 Directiva ServerRoot 29](#directiva-serverroot)
-
-[8.2 Conexiones persistentes 29](#conexiones-persistentes)
-
-[9 Ficheros a servir por defecto (Directory Index)
-30](#ficheros-a-servir-por-defecto-directory-index)
-
-[9.1 Comprobar página por defecto 30](#comprobar-página-por-defecto)
-
-[9.2 Renombrar fichero de índice 30](#renombrar-fichero-de-índice)
-
-[9.3 Cambiar directiva DirectoryIndex
-31](#cambiar-directiva-directoryindex)
-
-[10 Opciones sobre directorios 32](#opciones-sobre-directorios)
-
-[10.1 Configurar la carpeta DATOS para mostrar index.html y no listar
-contenido de la carpeta
-32](#configurar-la-carpeta-datos-para-mostrar-index.html-y-no-listar-contenido-de-la-carpeta)
-
-[11 Logs (ErrorLog, CustomLog, LogFormat)
-34](#logs-errorlog-customlog-logformat)
-
-[11.1 Consultar logs 34](#consultar-logs)
-
-[11.2 Consultar en internet 34](#consultar-en-internet)
-
-[11.3 Conocer donde se guardan los archivos de log
-34](#conocer-donde-se-guardan-los-archivos-de-log)
-
-[11.4 Consulta del fichero log de errores
-35](#consulta-del-fichero-log-de-errores)
-
-[11.5 Consulta del fichero log de accesos
-35](#consulta-del-fichero-log-de-accesos)
-
-[12 Códigos de error (ErrorDocument)
-36](#códigos-de-error-errordocument)
-
-[12.1 Configurar directiva ErrorDocument
-36](#configurar-directiva-errordocument)
-
-[12.1.1 Configurar mensaje 36](#configurar-mensaje)
-
-[12.1.2 Crear archivo para error no encontrado
-36](#crear-archivo-para-error-no-encontrado)
-
-[13 Directorios virtuales 38](#directorios-virtuales)
-
-[13.1 Directorios Virtuales (Directiva Alias)
-38](#directorios-virtuales-directiva-alias)
-
-[Iniciar sesión como usuario alumno y crear directorio
-38](#iniciar-sesión-como-usuario-alumno-y-crear-directorio)
-
-[Iniciar sesión como administrador y crear el Alias /wiki
-38](#iniciar-sesión-como-administrador-y-crear-el-alias-wiki)
-
-[Acceder a la página wiki 39](#acceder-a-la-página-wiki)
-
-[13.2 Directorios Virtuales (usando enlaces simbólicos)
-39](#directorios-virtuales-usando-enlaces-simbólicos)
-
-[14 Módulos 41](#módulos)
-
-[14.1 Instalación y carga de módulos
-41](#instalación-y-carga-de-módulos)
-
-[14.1.1 Comprobar los módulos que se han cargado estáticamente
-41](#comprobar-los-módulos-que-se-han-cargado-estáticamente)
-
-[14.1.2 Comprobar los módulos que se han cargado dinámicamente
-41](#comprobar-los-módulos-que-se-han-cargado-dinámicamente)
-
-[Carpetas de módulos 41](#carpetas-de-módulos)
-
-[14.1.3 Módulos activados por defecto
-42](#módulos-activados-por-defecto)
-
-[14.1.4 Directiva LoadModule 42](#directiva-loadmodule)
-
-[14.1.5 Archivos de configuración de módulos
-42](#archivos-de-configuración-de-módulos)
-
-[14.1.6 Consultar los módulos disponibles
-43](#consultar-los-módulos-disponibles)
-
-[14.1.7 Listar mods para Apache 43](#listar-mods-para-apache)
-
-[14.2 Mod USEDIR 44](#mod-usedir)
-
-[14.2.1 Directorios personales de usuarios (módulo userdir)
-44](#directorios-personales-de-usuarios-módulo-userdir)
-
-[14.2.2 Comprobar que el módulo no está habilitado
-44](#comprobar-que-el-módulo-no-está-habilitado)
-
-[14.2.3 Habilitar el módulo ejecutando el comando: a2enmod userdir
-44](#habilitar-el-módulo-ejecutando-el-comando-a2enmod-userdir)
-
-[14.2.4 Verificar que se ha cargado el módulo
-45](#verificar-que-se-ha-cargado-el-módulo)
-
-[14.2.5 Consultar fichero de configuración de userdir
-45](#consultar-fichero-de-configuración-de-userdir)
-
-[14.2.6 Crear directorio personal 46](#crear-directorio-personal)
-
-[14.2.7 Asignar permisos a la carpeta
-46](#asignar-permisos-a-la-carpeta)
-
-[14.3 Modulo modsecurity 46](#modulo-modsecurity)
-
-[15 Control de acceso 47](#control-de-acceso)
-
-[15.1 Control de acceso por IP y nombre de dominio
-47](#control-de-acceso-por-ip-y-nombre-de-dominio)
-
-[15.2 Autenticación HTTP Basic 47](#autenticación-http-basic)
-
-[15.2.1 Comprobar módulo auth_basic habilitado
-47](#comprobar-módulo-auth_basic-habilitado)
-
-[15.2.2 Usar autenticación básica en Apache
-47](#usar-autenticación-básica-en-apache)
-
-[15.3 Habilitar uso de .htaccess 50](#habilitar-uso-de-.htaccess)
-
-[16 Configurar un site seguro con https
-51](#configurar-un-site-seguro-con-https)
-
-[16.1 Configurar servidor HTTPS 51](#configurar-servidor-https)
-
-[16.1.1 Habilitar mod_ssl 51](#habilitar-mod_ssl)
-
-[16.1.2 Comprobar carga del módulo 51](#comprobar-carga-del-módulo)
-
-[16.1.3 Ver contenido de port.conf 51](#ver-contenido-de-port.conf)
-
-[16.1.4 Comprobar puertos con netstat
-52](#comprobar-puertos-con-netstat)
-
-[16.1.5 Comprobar puertos con nmap 52](#comprobar-puertos-con-nmap)
-
-[16.1.6 Habilitar servidor virtual por defecto para SSL
-54](#habilitar-servidor-virtual-por-defecto-para-ssl)
-
-[16.2 Crear un servidor virtual https
-55](#crear-un-servidor-virtual-https)
-
-[16.2.1 Crear un certificado digital 55](#crear-un-certificado-digital)
-
-[16.2.2 Crear un nuevo site seguro 56](#crear-un-nuevo-site-seguro)
-
-Instrucciones para entregar la práctica
-=======================================
 
 Tenéis que demostrar que habéis realizado las prácticas de la 4 a la 15.
 
@@ -328,18 +156,16 @@ la de los compañeros. Por ello:
 
 -   Plazo máximo para la entrega: Domingo 13
 
-Escenario de prácticas
-======================
+# Escenario de prácticas
 
 Para estas prácticas de web, vamos a montar una red de toda la clase
 para poder compartir nuestro trabajo y hacer pruebas entre nosotros.
 
-Vamos a partir de la red 172.16.254.0/24, y cada uno de vosotros tendrá
+Vamos a partir de la red `172.16.254.0/24`, y cada uno de vosotros tendrá
 5 IPs asignadas:
 
--   2 IP para servidores
-
--   3 IP para clientes
+- 2 IP para servidores
+- 3 IP para clientes
 
 Las IP las tendréis que sacar de un Excel que yo os facilitaré. Todos
 los equipos se configurarán con IPs estáticas.
@@ -576,10 +402,8 @@ height="3.011111111111111in"}
 
 Diferencia:
 
--   Restart: para e inicia el servicio
-
--   Reload: el servicio sigue funcionando y se vuelven a leer los
-    archivos de configuración
+- Restart: para e inicia el servicio
+- Reload: el servicio sigue funcionando y se vuelven a leer los archivos de configuración
 
 ![](./media/image24.tmp){width="5.905555555555556in"
 height="1.0222222222222221in"}
@@ -591,9 +415,11 @@ transferencia de hipertexto de Apache (HTTP). Está diseñado para ayudar
 al administrador a controlar el funcionamiento del demonio httpd de
 Apache.
 
-El programa /usr/sbin/apache2ctl es el programa de línea de comandos
+El programa `/usr/sbin/apache2ctl` es el programa de línea de comandos
 para manejar Apache en Ubuntu. La sintaxis del comando es bastante
-sencilla. También se puede lograr la misma funcionalidad con el script
+sencilla. 
+
+También se puede lograr la misma funcionalidad con el script
 de inicio apache2. Por lo tanto, los tres comandos que hacen la misma
 cosa son los siguientes:
 
@@ -691,8 +517,8 @@ Listen 8000
 Para hacer que el servidor acepte conexiones en dos interfaces de red y
 puertos específicos, usar
 
--   Listen 192.168.1.1:80
--   Listen 192.168.1.5:8000
+- Listen 192.168.1.1:80
+- Listen 192.168.1.5:8000
 
 ![](./media/image28.png){width="5.28in" height="2.335145450568679in"}
 
@@ -2226,13 +2052,12 @@ Hay que comentar la opción SSLCertificateKeyFile
 
 Dentro de la carpeta html debe aparecer la siguiente configuración:
 
+```xml
 <Directory /var/www/html>
-
 SSLRequireSSL
-
 ...
-
 </Directory>
+```
 
 Por defecto tenemos activado el site HTTPS que viene por defecto con
 apache, por lo que deberemos deshabilitarlo y habilitar el site nuevo:

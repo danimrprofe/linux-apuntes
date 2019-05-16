@@ -1,3 +1,12 @@
+
+- [Comprobaciones de conectividad a Internet](#comprobaciones-de-conectividad-a-internet)
+- [Comprobaciones de conectividad entre equipos](#comprobaciones-de-conectividad-entre-equipos)
+- [Deshabilitar y habilitar interfaz](#deshabilitar-y-habilitar-interfaz)
+- [Reiniciar servicio de red](#reiniciar-servicio-de-red)
+- [Comprobar si la interfaz está activa:](#comprobar-si-la-interfaz-est%C3%A1-activa)
+- [Si se ha cambiado el adaptador o se ha añadido nuevo desde Virtualbox](#si-se-ha-cambiado-el-adaptador-o-se-ha-a%C3%B1adido-nuevo-desde-virtualbox)
+- [Comprobar que el adaptador está habilitado en la MV (virtualbox)](#comprobar-que-el-adaptador-est%C3%A1-habilitado-en-la-mv-virtualbox)
+
 # Comprobaciones de conectividad a Internet
 * Ping a google. Si no funciona, seguir
 * Ping a 8.8.8.8. Si responde, puede ser problema de DNS

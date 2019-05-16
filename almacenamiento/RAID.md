@@ -1,58 +1,91 @@
 # RAID
 
+- [RAID](#raid)
+  - [Qué es un sistema RAID](#qu%C3%A9-es-un-sistema-raid)
+  - [Requisitos para montar un RAID](#requisitos-para-montar-un-raid)
+  - [RAID software y hardware](#raid-software-y-hardware)
+    - [RAID por hardware](#raid-por-hardware)
+    - [RAID por software](#raid-por-software)
+  - [Tipos de raid](#tipos-de-raid)
+    - [RAID 0 (Stripping)](#raid-0-stripping)
+    - [RAID 1 (Mirroring)](#raid-1-mirroring)
+    - [Stripping vs mirroring](#stripping-vs-mirroring)
+    - [Raid 5](#raid-5)
+    - [Raid 6](#raid-6)
+  - [Raid anidados](#raid-anidados)
+    - [RAID 0+1](#raid-01)
+    - [RAID 1+0](#raid-10)
+  - [Elección de RAID](#elecci%C3%B3n-de-raid)
+  - [Duplexing vs mirroring](#duplexing-vs-mirroring)
+    - [Diferencia entre duplexing y mirroring](#diferencia-entre-duplexing-y-mirroring)
+
 ## Qué es un sistema RAID
 
 Conjunto redundante de discos independientes
-En algunos entornos la solución de la copia de seguridad no es suficiente. 
+En algunos entornos la solución de la copia de seguridad no es suficiente.
 
 Se necesita:
-Alta disponibilidad de la información
-Mayor seguridad e integridad de los datos
+
+- Alta disponibilidad de la información
+- Mayor seguridad e integridad de los datos
 
 En un sistema RAID combinan dos o más discos físicos en una unidad lógica
-Se tratan como si fuera un único disco 
+
+- Se tratan como si fuera un único disco 
 
 Se considera que hay redundancia cuando la misma información se almacena más de una vez en una unidad lógica
 
 ![conjunto raid](img/conjunto_raid.png)
 
-Requisitos para montar un RAID
-No es necesario que sean discos iguales
-No tienen porque tener la misma capacidad
+## Requisitos para montar un RAID
+
+¿Cómo deben ser los discos?
+
+- No es necesario que sean discos iguales
+- No tienen porque tener la misma capacidad
+
 El equipo (placa y sistema) deben soportar RAID 
-En los sistemas RAID el espacio se sacrifica para 
-Proporcionar disponibilidad
-Garantizar integridad en los datos
-estado anterior en tiempo mínimo.
+
+En los sistemas RAID el espacio se sacrifica para:
+
+- Proporcionar disponibilidad
+- Garantizar integridad en los datos
+- estado anterior en tiempo mínimo.
+
 ¿Qué ocurre si falla un disco?
-Se suele disponer de discos de respaldo
-Empiezan a funcionar cuando falla un disco principal
+
+- Se suele disponer de discos de respaldo
+- Empiezan a funcionar cuando falla un disco principal
 
 ![conjunto raid](img/conjunto_raid2.png)
 
 ## RAID software y hardware
 
-RAID por hardware 
-La controladora de discos se encarga de que la agregación de discos sea totalmente transparente para el sistema operativo
-El SO solo ve un disco donde realmente hay varios. 
+### RAID por hardware
+
+- La controladora de discos se encarga de que la agregación de discos sea totalmente transparente para el sistema operativo
+- El SO solo ve un disco donde realmente hay varios. 
 Todo el trabajo extra de gestión del RAID lo hace la controladora
-No hay sobrecarga para la CPU.
-RAID por software
-Sistema operativo es el que tiene acceso directo a los discos 
-Es él el que monta el RAID a partir de esos discos de forma transparente para las aplicaciones 
-Las aplicaciones ven sólo un disco donde realmente hay varios. 
-El trabajo de gestión del RAID lo tiene que hacer enteramente la CPU
+- No hay sobrecarga para la CPU.
+
+### RAID por software
+
+- Sistema operativo es el que tiene acceso directo a los discos.
+- Es él el que monta el RAID a partir de esos discos de forma transparente para las aplicaciones.
+- Las aplicaciones ven sólo un disco donde realmente hay varios.
+- El trabajo de gestión del RAID lo tiene que hacer enteramente la CPU
 
 ![conjunto raid](img/conjunto_raid3.png)
+
 ![conjunto raid](img/conjunto_raid4.png)
 
 ## Tipos de raid
 
 ### RAID 0 (Stripping)
 
-Distribuye los datos equitativamente entre dos o más discos (stripping)
-Distribuye porciones de información entre varios discos para 
-Incrementa la velocidad de lectura/escritura al hacerlo de más de un disco a la vez
+- Distribuye los datos equitativamente entre dos o más discos (stripping)
+- Distribuye porciones de información entre varios discos
+- Incrementa la velocidad de lectura/escritura al hacerlo de más de un disco a la vez
 
 ![conjunto raid](img/raid0.png)
 
@@ -72,16 +105,16 @@ El RAID 1 permite utilizar el espejo para hacer la copia de seguridad del sistem
 
 ![conjunto raid](img/raid1vs0.png)
 
-## Raid 5
+### Raid 5
 
-Necesita al menos 3 discos para ser implementado. 
-Distribuye bloques de información entre los discos del RAID
-Añadiendo un bloque de paridad por banda
-Puede utilizarse para corregir los bloques de información en caso de un fallo en la operación de escritura.
+- Necesita al menos 3 discos para ser implementado.
+- Distribuye bloques de información entre los discos del RAID
+- Añadiendo un bloque de paridad por banda
+- Puede utilizarse para corregir los bloques de información en caso de un fallo en la operación de escritura.
 
 ![conjunto raid](img/raid5.png)
 
-## Raid 6
+### Raid 6
 
 Discos necesarios mínimo: 4
 

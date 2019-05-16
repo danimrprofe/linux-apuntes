@@ -16,7 +16,12 @@
   - [MANERA DE ABORDAR LA TAREA A REALIZAR.](#manera-de-abordar-la-tarea-a-realizar)
   - [Paradigma de programación](#paradigma-de-programaci%C3%B3n)
   - [Lugar de ejecución](#lugar-de-ejecuci%C3%B3n)
-- [CARACTERÍSTICAS DE LOS LENGUAJES MÁS DIFUNDIDOS](#caracter%C3%ADsticas-de-los-lenguajes-m%C3%A1s-difundidos)
+  - [CARACTERÍSTICAS DE LOS LENGUAJES MÁS DIFUNDIDOS](#caracter%C3%ADsticas-de-los-lenguajes-m%C3%A1s-difundidos)
+    - [C](#c)
+    - [C++](#c)
+    - [`Java`,](#java)
+    - [`PHP`,](#php)
+    - [Python](#python)
 - [Tipos de código](#tipos-de-c%C3%B3digo)
   - [Código fuente](#c%C3%B3digo-fuente)
   - [Código objeto](#c%C3%B3digo-objeto)
@@ -98,15 +103,21 @@ Según el nivel de abstracción, es decir, según el grado de cercanía a la má
 
 ### Lenguajes de bajo nivel
 
-La programación se realiza teniendo muy en cuenta las características del procesador. Cadenas interminables de secuencias de 1s y 0s que conforman operaciones que la máquina puede entender. Ejemplo: Lenguajes ensamblador.
+La programación se realiza teniendo muy en cuenta las características del procesador. Cadenas interminables de secuencias de 1s y 0s que conforman operaciones que la máquina puede entender. 
+
+Ejemplo: Lenguajes ensamblador.
 
 ### Lenguajes de nivel medio
 
-Permiten un mayor grado de abstracción pero al mismo tiempo mantienen algunas cualidades de los lenguajes de bajo nivel. Ejemplo: C puede realizar operaciones lógicas y de desplazamiento con bits, tratar todos los tipos de datos como lo que son en realidad a bajo nivel (números), etc.
+Permiten un mayor grado de abstracción pero al mismo tiempo mantienen algunas cualidades de los lenguajes de bajo nivel. 
+
+Ejemplo: C puede realizar operaciones lógicas y de desplazamiento con bits, tratar todos los tipos de datos como lo que son en realidad a bajo nivel (números), etc.
 
 ###	Lenguajes de alto nivel
 
-Más parecidos al lenguaje humano. Manejan conceptos, tipos de datos, etc., de una manera cercana al pensamiento humano ignorando (abstrayéndose) del funcionamiento de la máquina. Ejemplos: `Java`, Ruby.
+Más parecidos al lenguaje humano. Manejan conceptos, tipos de datos, etc., de una manera cercana al pensamiento humano ignorando (abstrayéndose) del funcionamiento de la máquina. 
+
+Ejemplos: `Java, Ruby.`
 
 Hay quien sólo considera lenguajes de bajo nivel y de alto nivel, (en ese caso, C es considerado de alto nivel).
 
@@ -158,8 +169,7 @@ En sistemas distribuidos, según dónde se ejecute:
 - Lenguajes de servidor: Se ejecutan en el servidor. Ejemplo: `PHP` es el más utilizado en servidores web.
 - Lenguajes de cliente: Se ejecutan en el cliente. Ejemplo: `JavaScript` en navegadores web.
 
-# CARACTERÍSTICAS DE LOS LENGUAJES MÁS DIFUNDIDOS
- 
+## CARACTERÍSTICAS DE LOS LENGUAJES MÁS DIFUNDIDOS
 
 Algunos de los lenguajes más difundidos son: 
 
@@ -179,26 +189,40 @@ quedando desplazado.
 sustituye las secuencias de ceros y unos (bits) por palabras más fáciles de recordar, 
 como MOV, ADD, CALL o JMP. 
 
-- C, uno de los mejor considerados actualmente (junto con C++ y `Java`, que 
-mencionaremos a continuación), porque no es demasiado difícil de aprender y permite un 
-grado de control del ordenador muy alto, combinando características de lenguajes de 
-alto y bajo nivel. Además, es muy transportable: existe un estándar, el ANSI C, lo que 
-asegura que se pueden convertir programas en C de un ordenador a otro o de un sistema 
+### C
+
+- Uno de los mejor considerados actualmente (junto con C++ y `Java`, que 
+mencionaremos a continuación), porque no es demasiado difícil de aprender y 
+- Permite un grado de control del ordenador muy alto, combinando características de lenguajes de 
+alto y bajo nivel. 
+- Es muy transportable: existe un estándar, el ANSI 
+- Asegura que se pueden convertir programas en C de un ordenador a otro o de un sistema 
 operativo a otro con bastante menos esfuerzo que en otros lenguajes. 
 
-- C++, un lenguaje desarrollado a partir de C, que permite Programación Orientada a 
-Objetos, por lo que resulta más adecuado para proyectos de una cierta envergadura. 
-Creado por Bjarne Stroustrup.
+### C++
 
-- `Java`, desarrollado a su vez a partir de C++, que elimina algunos de sus 
-inconvenientes, y ha alcanzado una gran difusión gracias a su empleo en Internet. 
+- Un lenguaje desarrollado a partir de C, que 
+- permite Programación Orientada a Objetos, por lo que resulta más adecuado para proyectos de una cierta envergadura. 
+- Creado por Bjarne Stroustrup.
 
-- `PHP`, es un lenguaje de programación interpretado, diseñado originalmente para la 
-creación de páginas web dinámicas. Se usa principalmente para la interpretación del 
-lado del servidor (server-side scripting) pero actualmente puede ser utilizado desde 
-una interfaz de línea de comandos o en la creación de otros tipos de programas.
+### `Java`, 
 
-- Python, es un lenguaje de programación de alto nivel cuya filosofía hace hincapié en una sintaxis muy limpia y que favorezca un código legible. Se trata de un lenguaje de programación multiparadigma ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional
+- Desarrollado a su vez a partir de C++
+- Elimina algunos de sus inconvenientes
+- Ha alcanzado una gran difusión gracias a su empleo en Internet. 
+
+### `PHP`, 
+
+- Es un lenguaje de programación interpretado, diseñado originalmente para la 
+creación de páginas web dinámicas.
+- Se usa principalmente para la interpretación del lado del servidor (server-side scripting) 
+- Actualmente puede ser utilizado desde una interfaz de línea de comandos o en la creación de otros tipos de programas.
+
+### Python
+  
+- Es un lenguaje de programación de alto nivel 
+- Filosofía hace hincapié en una sintaxis muy limpia y que favorezca un código legible. 
+- Se trata de un lenguaje de programación multiparadigma ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional
 
 # Tipos de código
 

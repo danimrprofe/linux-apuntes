@@ -1,7 +1,23 @@
+- [Convertir en servidor de red](#convertir-en-servidor-de-red)
+- [Active directory](#active-directory)
+- [Requisitos para montar active directory](#requisitos-para-montar-active-directory)
+- [Ventajas de active directory](#ventajas-de-active-directory)
+- [Conceptos de active directory](#conceptos-de-active-directory)
+  - [Dominio.](#dominio)
+  - [Unidad organizativa (UO)](#unidad-organizativa-uo)
+  - [Grupos.](#grupos)
+  - [Objetos.](#objetos)
+- [Identificación de un dominio](#identificaci%C3%B3n-de-un-dominio)
+- [Active directory y DNS](#active-directory-y-dns)
+  - [Resolución de nombres](#resoluci%C3%B3n-de-nombres)
+  - [Definición del espacio de nombres](#definici%C3%B3n-del-espacio-de-nombres)
+  - [Búsqueda de los componentes de DA](#b%C3%BAsqueda-de-los-componentes-de-da)
+  - [NetBIOS y DNS](#netbios-y-dns)
+
 # Convertir en servidor de red
 
-Hasta el momento, y tras la instalación de Windows Server, lo único que hemos hecho ha sido identificar al equipo en una 
-red asignándole:
+Hasta el momento, y tras la instalación de Windows Server, lo único que hemos hecho ha sido identificar al equipo en una red asignándole:
+
 * Un nombre
 * Una dirección IP
 * Un grupo de trabajo
@@ -11,14 +27,15 @@ De esta forma y por el momento nuestro equipo 2008 R2 Server, salvando las difer
 Hasta ahora, a pesar de poder ofrecer más servicios, no le hemos instalado ningún rol ni característica que lo diferencie 
 del resto. 
 
+Es ahora el momento de hacer que este SO se convierta en un servidor de red, con funcionalidad para:
 
-Es ahora el momento de hacer que este SO se convierta en un servidor de red, con funcionalidad para 
 * Loguear usuarios 
 * Gestionar de forma centralizada los recursos de la infraestructura de red.
 
 La forma más eficiente de aprovechar el potencial de los equipos con WS es mediante la creación de los llamados dominios. 
 
 En estos dominios se almacena de forma centralizada (facilitando así la labor del administrador) 
+
 * información administrativa (cuentas de usuarios, impresoras, directorios, etc.
 * Información de seguridad, facilitando así la labor del administrador. 
 
@@ -69,7 +86,7 @@ El DA almacena información sobre una organización en una base de datos central
 
 La estructura de un DA  se basa en los siguientes conceptos:
 
-## Dominio. 
+## Dominio.
 Estructura fundamental. Permite agrupar todos los objetos que se administran de forma estructural y jerárquica.
 ## Unidad organizativa (UO)
 Es la unidad jerárquica inferior al dominio 
@@ -86,7 +103,10 @@ Cada dominio de WS queda identificado unívocamente mediante un nombre DNS: mcgr
 Cada equipo WS que forma parte de un dominio tiene un nombre que lo identifica dentro del dominio. 
 Este nombre, que será de tipo DNS, también llamado FQDN (Fully Qualified Domain Name)
 Constará de dos partes:  
-Nombre NetBios del equipo + nombre DNS del dominio. Por ejemplo, server.mcgrawhill.es.
+
+- Nombre NetBios del equipo + nombre DNS del dominio. 
+
+Por ejemplo, server.mcgrawhill.es.
 Recordemos que el nombre NetBios del equipo es el nombre que le hemos dado al equipo durante el proceso de instalación o el que se le asignó en las tareas iniciales nada más terminar la instalación del SO
 
 # Active directory y DNS
@@ -109,5 +129,3 @@ La sigue utilizando por razones de compatibilidad.
 En la actualidad estructura de dominios de Windows Server se basa en un sistema jerárquico de nombres ampliamente aceptado, probado, normalizado: el espacio de nombres de DNS. 
 
 La forma en que Windows Server encuentra los servicios de red es a través del espacio de nombres de DNS y no a través de NetBios.
-
-

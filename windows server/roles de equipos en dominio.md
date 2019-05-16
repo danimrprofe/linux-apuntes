@@ -1,3 +1,8 @@
+- [Roles que puede desarrollar un equipo dentro de un dominio](#roles-que-puede-desarrollar-un-equipo-dentro-de-un-dominio)
+  - [Controladores de dominio (DC)](#controladores-de-dominio-dc)
+  - [Servidores miembros (MS):](#servidores-miembros-ms)
+  - [Clientes](#clientes)
+
 # Roles que puede desarrollar un equipo dentro de un dominio
 
 ## Controladores de dominio (DC)

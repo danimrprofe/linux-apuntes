@@ -14,10 +14,9 @@
 # Memoria del proyecto
 
 Durante la elaboración del proyecto, será necesario reflejar por escrito cada una de 
-las ideas y contenidos que se vayan definiendo para el mismo. Para facilitar esta 
-labor, se propone una plantilla de proyecto, que está incluida en el apartado de 
-anexos (anexo I) de esta “Guía para la Elaboración de Proyectos”. Esta plantilla 
-cumple un doble objetivo:
+las ideas y contenidos que se vayan definiendo para el mismo. 
+
+Se puede utilizar alguna plantilla para:
 
 - Servir como esquema de referencia durante la elaboración del proyecto: la plantilla 
 refleja los diferentes aspectos que se deben tener en cuenta para elaborar el proyecto 
@@ -64,8 +63,8 @@ Una vez entregado el proyecto llega el momento de la exposición y defensa del m
 
 La exposición del proyecto consta de dos momentos:
 
-- La exposición como tal, en la cual se describen los principales contenidos del proyecto.
-- La defensa del mismo, momento en el cual el profesor/es evaluador/es harán preguntas con el objetivo de aclarar aspectos que no hayan quedado suficientemente explicados y/o evaluar el grado de conocimiento del proyecto por parte del equipo que lo ha desarrollado.
+- La **exposición** como tal, en la cual se describen los principales contenidos del proyecto.
+- La **defensa** del mismo, momento en el cual el profesor/es evaluador/es harán preguntas con el objetivo de aclarar aspectos que no hayan quedado suficientemente explicados y/o evaluar el grado de conocimiento del proyecto por parte del equipo que lo ha desarrollado.
 
 ## PREPARACIÓN DE LA EXPOSICIÓN
 
@@ -128,7 +127,7 @@ Llegado el momento de la exposición también hay una serie de consejos que pued
    2. Atraerá menos la atención de quien evalúa.
 7. Preguntas del tribunal
    1. Intentar responder de memoria a las preguntas que formulen los/as evaluadores/as
-   2. Da impresión de dominio del proyect
+   2. Da impresión de dominio del proyecto
    3. Si se tienen dudas sobre la preguntas, no se han entendido bien, etc.
       1. Es preferible decirle al tribunal que las repita o formule de otra manera.
       2. En ningún caso

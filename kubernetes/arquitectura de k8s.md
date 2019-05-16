@@ -5,8 +5,9 @@
 
 Un cluster es un conjunto de nodos. cada uno de estos nodos puede ser:
 
-* Una máquina real física
-* Una máquina virtual
+- Una máquina real física
+- Una máquina virtual
+
 Pueden existir varios nodos worker, sobre los que se desplegarán los contenedores, y al menos un nodos maestro, que gestionará todo.
 
 ### Nodos worker
@@ -14,9 +15,9 @@ Pueden existir varios nodos worker, sobre los que se desplegarán los contenedor
 Los nodos worker son máquinas que ejecutan aplicaciones dentro de contenedores. 
 Ejecutan, monitorizan y proveen de servicios a las aplicaciones a través de diferentes componentes:
 
-* Docker (u otro sistema) ejecuta los contenedores
-* Los kubeletes se comunican con la API del servidor y gestionan los contenedores en su propio nodo
-* Un proxy de red balancea el tráfico entre los diferente componentes
+* `Docker` (u otro sistema) ejecuta los contenedores
+* Los `kubeletes` se comunican con la API del servidor y gestionan los contenedores en su propio nodo
+* Un `proxy` de red balancea el tráfico entre los diferente componentes
 
 ### Pods
 

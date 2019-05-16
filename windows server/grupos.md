@@ -1,4 +1,12 @@
 # Grupos
+
+- [Grupos](#grupos)
+  - [Pertenencia a grupos y grupos anidados](#pertenencia-a-grupos-y-grupos-anidados)
+  - [Ejemplo de agrupamiento anidado](#ejemplo-de-agrupamiento-anidado)
+  - [Tipos de grupos](#tipos-de-grupos)
+    - [Grupos de distribución](#grupos-de-distribuci%C3%B3n)
+    - [Grupos de seguridad](#grupos-de-seguridad)
+
 ## Pertenencia a grupos y grupos anidados
 Los usuarios pueden ser miembros de más de un grupo.
 Los grupos pueden contener otros objetos de active directory

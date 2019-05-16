@@ -1,3 +1,8 @@
+- [Unidades organizativas](#unidades-organizativas)
+  - [Diferencias entre grupos y unidades organizativas](#diferencias-entre-grupos-y-unidades-organizativas)
+  - [Uso de unidades organizativas](#uso-de-unidades-organizativas)
+    - [Asignar configuraciones de directiva de grupo](#asignar-configuraciones-de-directiva-de-grupo)
+    - [Delegar tareas de administración de Active Directory](#delegar-tareas-de-administraci%C3%B3n-de-active-directory)
 
 # Unidades organizativas
 

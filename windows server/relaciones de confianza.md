@@ -1,3 +1,13 @@
+
+- [Tipos de relaciones de confianza](#tipos-de-relaciones-de-confianza)
+  - [Método de creación.](#m%C3%A9todo-de-creaci%C3%B3n)
+  - [Dirección.](#direcci%C3%B3n)
+  - [Transitividad.](#transitividad)
+- [Crear relaciones de confianza](#crear-relaciones-de-confianza)
+  - [Paso 1](#paso-1)
+  - [Paso 2: Comprobación de puertos](#paso-2-comprobaci%C3%B3n-de-puertos)
+  - [Paso 3: Crear un reenviador condicional](#paso-3-crear-un-reenviador-condicional)
+
 ## Relaciones de confianza
 
 Una relación de confianza es una relación establecida entre dos dominios. Permite a los usuarios de un dominio ser reconocidos por los controladores de Dominio de otro dominio.
@@ -18,9 +28,9 @@ La solución usual para la configuración de niveles de acceso de usuario entre 
 Windows Server soporta varios tipos de relaciones de confianza. Los diferentes tipos de relaciones se diferencian en función de 3 rasgos característicos:
 
 ## Método de creación. 
-Algunos tipos de relaciones de confianza se crean de forma automática (implícita)
 
-Otros se tienen que crear de forma manual (explícita).
+- Algunos tipos de relaciones de confianza se crean de forma automática (implícita)
+- Otros se tienen que crear de forma manual (explícita).
 
 ## Dirección. 
 Si la relación de confianza es unidireccional, los usuarios del dominio A (de confianza) pueden utilizar los recursos del dominio B (que confía), pero no al revés. 

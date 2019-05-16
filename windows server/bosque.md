@@ -11,6 +11,7 @@ Los árboles en un bosque forman una jerarquía para los propósitos de la relac
 # Relación entre dominios de un bosque
 
 Todos los dominios de un bosque comparten:
+
 * Relaciones de confianza transitivas entre dominios
 * Relaciones de confianza transitivas entre árboles de dominio
 * Un esquema común, información de configuración común y un catálogo común

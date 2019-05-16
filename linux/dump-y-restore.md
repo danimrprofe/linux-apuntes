@@ -1,4 +1,16 @@
-#
+# Dump y restore
+
+- [Dump y restore](#dump-y-restore)
+- [Volcar](#volcar)
+- [Dump](#dump)
+- [Ejemplo de copias incrementales](#ejemplo-de-copias-incrementales)
+- [Otras opciones](#otras-opciones)
+- [Volcado de contenido](#volcado-de-contenido)
+- [Listar los contenidos de un archivo](#listar-los-contenidos-de-un-archivo)
+- [Restaurar un archivo en concreto:](#restaurar-un-archivo-en-concreto)
+- [Restaurar un sistema de archivos](#restaurar-un-sistema-de-archivos)
+- [Extraer contenido interactivamente](#extraer-contenido-interactivamente)
+- [Extraer archivos](#extraer-archivos)
 
 Dump y restore son dos comandos que vienen con el paquete `dump`.
 
@@ -55,17 +67,17 @@ Hacer copia incremental:
 
 Listar contenidos:
 
-  restore -f /dev/backup -t
+    restore -f /dev/backup -t
   
 Si queremos comprobar que existe un archivo:
 
-  restore -f /dev/backup -t /etc/archivo
+    restore -f /dev/backup -t /etc/archivo
   
 # Restaurar un archivo en concreto:
 
 Restaurar un archivo:
 
-  restore -f /var/backup.dump -x /etc/archivo
+    restore -f /var/backup.dump -x /etc/archivo
 
 # Restaurar un sistema de archivos
 
@@ -97,8 +109,9 @@ Al usar restore, añadimos los archivos que queremos extraer a una lista, y post
 
 Ejemplo
 
-  restore > cd etc
-  restore > add archivoA
-  restore > add archivoB
-  restore > extract
-  
+```
+restore > cd etc
+restore > add archivoA
+restore > add archivoB
+restore > extract
+```

@@ -1,9 +1,22 @@
+- [Perfiles de usuario](#perfiles-de-usuario)
+- [Tipos de perfiles](#tipos-de-perfiles)
+  - [Perfil local](#perfil-local)
+  - [Perfil temporal](#perfil-temporal)
+  - [Perfil de red](#perfil-de-red)
+  - [Tipos de perfil de red](#tipos-de-perfil-de-red)
+    - [Perfil móvil](#perfil-m%C3%B3vil)
+    - [Perfil obligatorio.](#perfil-obligatorio)
+    - [Perfil súper-obligatorio.](#perfil-s%C3%BAper-obligatorio)
+  - [Ver el perfil de un usuario](#ver-el-perfil-de-un-usuario)
+
+# Perfiles de usuario
+
 En un controlador de dominio con Windows Server se crean cuentas de usuario y de grupo que sirven para:
 
 1. Identificar y autentificar las personas o usuarios que podrán acceder a los recursos del sistema.
 2. Administrar y gestionar los permisos y privilegios que servirán para controlar los recursos de los usuarios a los recursos del sistema.
 
-# Perfiles de usuario
+# Tipos de perfiles
 
 ## Perfil local
 Solo accesible desde la estación de trabajo donde se ha creado

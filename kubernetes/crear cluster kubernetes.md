@@ -1,8 +1,18 @@
+- [Crear un cluster a mano](#crear-un-cluster-a-mano)
+  - [Paso 1: Agregar repositorio k8s](#paso-1-agregar-repositorio-k8s)
+  - [Paso 2: Instalamos Docker y las herramientas de k8s](#paso-2-instalamos-docker-y-las-herramientas-de-k8s)
+  - [Paso 3: Agregamos permisos](#paso-3-agregamos-permisos)
+  - [Paso 4: Inicializamos el nodo master (tardará algunos minutos)](#paso-4-inicializamos-el-nodo-master-tardar%C3%A1-algunos-minutos)
+  - [Paso 5: Comandos posteriores (solo nodo master)](#paso-5-comandos-posteriores-solo-nodo-master)
+  - [Paso 6: Inicializar la red de cluster (nodo master)](#paso-6-inicializar-la-red-de-cluster-nodo-master)
+  - [Paso 7: Agregar nodos a la red (nodos worker)](#paso-7-agregar-nodos-a-la-red-nodos-worker)
+
 ## Crear un cluster a mano
 
 Para este caso creamos 3 MV diferentes:
-* Una hará de nodo máster, que orquestará todo el sistema. 
-* Las otras 2 harán de nodos worker. 
+
+- Una hará de nodo máster, que orquestará todo el sistema. 
+- Las otras 2 harán de nodos worker. 
 
 Las 3 MV serán Ubuntu 16.04 para las pruebas.
 
@@ -10,7 +20,7 @@ Las 3 MV serán Ubuntu 16.04 para las pruebas.
 
 k8s no viene por defecto en los repositorios de nuestro SO, por lo que deberemos agregar el enlace al repositorio de k8s para que podamos instalarlo a través del gestor **apt**
 
-```
+```console
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
 ```
@@ -19,7 +29,7 @@ apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
 
 Deberemos actualizar la lista de paquets para que nos coja los del repositorio nuevo que acabamos de agregar.
 
-```bash    
+```bash 
 apt update
 apt install -y docker.io
 apt install -y kubelet kubeadm kubectl
@@ -47,14 +57,14 @@ Una vez iniciado el cluster, nos devolverá un comando para ejecutar en los nodo
 Si la liamos, podemos reiniciar en el maestro y volver a iniciar, reseteando el cluster:
 
     kubeadm reset
-    
+
 Después de esto, volveríamos a hacer el init en el master y hacer join en los workers.
 
 ### Paso 5: Comandos posteriores (solo nodo master)
 
 Para empezar a utilizar mi cluster me va apedir ejecutar una serie de comandos
 
-```
+```console
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config 
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
@@ -79,6 +89,8 @@ kubecetl get nodes
 Deberíamos ver el node1 con estado Ready, si todo va bien.
 
 ### Paso 7: Agregar nodos a la red (nodos worker)
+
+En cada uno de los nodos worker que queramos agregar al cluster:
 
     kubeadm join 192.168.205.10:6443 
     --token gsvzsq.3k76aiuuj12dk1fm 

@@ -1,5 +1,11 @@
 ## Escalado y replicación
 
+- [Escalado y replicación](#escalado-y-replicaci%C3%B3n)
+  - [Escalado modificando el despliegue](#escalado-modificando-el-despliegue)
+  - [Escalado por comando](#escalado-por-comando)
+  - [Crear servicio de balanceo de carga](#crear-servicio-de-balanceo-de-carga)
+  - [Mostrar información del balanceador](#mostrar-informaci%C3%B3n-del-balanceador)
+
 Nos puede interesar tener más de una instancia de un POD, pero por necesidades de demanda o por disponibilidad, nos puede interesar tener réplicas de un POD.
 
 Vamos a ver cómo utilizar esto en aplicaciones stateless. La forma más habitual es especificar el parámetro replica en nuestro despliegue.
@@ -26,12 +32,14 @@ spec:
 
 Otra opción es no modificar el despliegue (dejarlo a replicas=1 y ejecutar el comando scale para decirle cuantas réplicas quiero
 
-```
+```console
 kubectl scale --replicas=4 deployment/tomcat-deployment
 deployment.extensions/tomcat-deployment scaled
 ```
+
 Veremos que ahora los despliegues nos mostrarán el número de réplicas:
-```
+
+```console
 kubectl get deployments
 NAME                READY   UP-TO-DATE   AVAILABLE   AGE
 hazelcast           0/1     1            0           29m
@@ -49,29 +57,36 @@ de servicio entre todos, necesitaremos un **balanceador de carga**.
 Crearemos un servicio para utilizar un **load balancer** que exponga un único puerto externo y balancear la carga a los diferentes pods.
 
 Ojo que está en varias líneas pero es una sola.
-```
+
+```console
 kubectl expose deployment tomcat-deployment 
 --type=LoadBalancer 
 --port=8080 
 --target-port 8080 
 --name=tomcat-load-balancer
 ```
+
 A lo que nos contesta:
 
-```
+```console
 service/tomcat-load-balancer exposed
 ```
 
 Como podemos ver, hemos asignado el balanceador al despliegue **tomcat-deployment**, para que actúe sobre él.
 
+### Mostrar información del balanceador
+
 Vamos a ver cómo ha quedado la cosa, mirando la descripción del balanceador que hemos creado:
-```
+
+```console
 kubectl describe service tomcat-load-balancer
 ```
+
 La respuesta nos indica que hemos mapeado el puerto 8080 al 8080 de cada uno de los 4 PODs que tenemos en ejecución. 
+
 Se encargará de redirigir las peticiones a uno de ellos, repartiendo la carga.
 
-```
+```console
 Name:                     tomcat-load-balancer
 Namespace:                default
 Labels:                   <none>
@@ -88,7 +103,7 @@ External Traffic Policy:  Cluster
 Events:                   <none>
 ```
 
-Como podemos ver, las peticiones al puerto 8080 de la IP 10.96.43.114 se distribuirán a los endpoints:
+Como podemos ver, las peticiones al puerto `8080` de la IP `10.96.43.114` se distribuirán a los endpoints:
 
 * 172.17.0.5:8080
 * 172.17.0.7:8080

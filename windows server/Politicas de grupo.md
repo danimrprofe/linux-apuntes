@@ -1,9 +1,14 @@
 
+- [Políticas de grupo (GPO)](#pol%C3%ADticas-de-grupo-gpo)
+- [Vinculación](#vinculaci%C3%B3n)
 
-# Políticas de grupo (GPO)
+## Políticas de grupo (GPO)
+
 La política de grupo es un mecanismo para controlar e implementar la configuración del sistema operativo en las computadoras en toda su red. 
 
-La Política de grupo consiste en la configuración de usuario y computadora para los diversos sistemas operativos de Microsoft Windows, que los sistemas implementan durante el inicio y apagado de la computadora y el inicio y cierre de sesión del usuario. 
+La Política de grupo consiste en la configuración de usuario y computadora para los diversos sistemas operativos de Microsoft Windows, que los sistemas implementan durante el inicio y apagado de la computadora y el inicio y cierre de sesión del usuario.
+
+## Vinculación
 
 Se pueden configurar uno o más objetos de directiva de grupo (GPO) y luego usar un proceso llamado vinculación para asociarlos con objetos específicos de servicios de dominio de Active Directory (AD DS). 
 

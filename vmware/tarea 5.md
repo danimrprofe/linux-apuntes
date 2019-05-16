@@ -1,3 +1,7 @@
+- [Consideraciones previas](#consideraciones-previas)
+- [Instalación GuettoVCB](#instalaci%C3%B3n-guettovcb)
+- [Instalación del paquete](#instalaci%C3%B3n-del-paquete)
+
 # Consideraciones previas
 
 Se proponen hacer backups utilizando dos herramientas, tanto GuettoVCB como Veeam.

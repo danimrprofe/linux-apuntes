@@ -59,20 +59,49 @@ Otras opciones:
 - r: usado para agregar o actualizar archivos o directorios al archivo existente.
 - u: como -r, pero las nuevas entradas se agregan solo si tienen una fecha de modificación más nueva que la entrada correspondiente en el archivo.
 
+### Crear archivos de prueba
+
+Nos vamos a nuestro home y creamos una carpeta de pruebas:
+
+```
+cd ~
+mkdir docs
+cd docs
+```
+
+Creamos archivos de prueba:
+
+```
+touch doc1 doc2 doc3
+```
+Estos son los archivos que utilizaremos para crear las copias.
+
 ### Empaquetar archivos
 
 Podemos empaquetar archivos (sin compresión) de la siguiente forma:
 
     tar -cvf backup.tar *
-    tar -cvf backup.tar dir1 dir2 dir3
+    tar -cvf backup.tar doc1 doc2 doc3
 
 ### Ver los contenidos de un tar
 
 Una vez que tengamos algún tar creado, podemos ver lo que hay dentro sin necesidad de extraer su contenido:
 
     tar -tf backup.tar
+    
+### Extraer contenido del tar
 
-### Insertar y extraer archivos en un archivo tar
+Vamos a borrar los documentos originales, simulando que los hemos perdido:
+
+    rm doc*
+
+Probamos a extraer el contenido del tar.
+
+    tar -xvf backup.tar
+    
+Si todo va bien se nos habrán guardado.
+
+### Insertar y extraer archivos en un archivo tar (opcional)
 
 Podemos meter y sacar archivos de un tar sin tener que extraerlo todo y volverlo a empaquetar.
 
@@ -88,7 +117,15 @@ Para meter archivos dentro del tar:
 
 También podemos comprimir el archivo `tar`. Se pueden utilizar dos mecanismos de compresión. Para comprimir un archivo `tar` con gunzip, se utiliza la extensión `.tar.gz`.
 
-    tar -cvzf backup.tar.gz doc1 doc2 doc3
+    tar -cvzf backup-comprimido.tar.gz doc1 doc2 doc3
+    
+Ahora podemos comprobar la diferencia de tamaño entre el `.tar` (sin compresión) y el `.tar.gz`.
+
+    ls -lisa | grep tar
+    
+En caso que quisiéramos extraer el contenido:
+
+    tar -xvzf backup-comprimido.tar.gz
 
 ### Utilizar fecha
 
@@ -112,11 +149,25 @@ La sintaxis para poder modificar esta información es:
 - `l` ver las tareas programadas en el archivo cron
 - `r` borrar un archivo cron
 
+### Edición del crontab
+
 Cada usuario del sistema puede tener sus propias tareas para que cron las ejecute. Si no se especifica el usuario, el comando se ejecutara para el usuario que tiene iniciada la sesión.
 
     crontab -e 
 
-Dentro estas las lineas de texto con las programaciones:
+Veremos que el contenido del archvo `crontab` está vacío, porque nunca lo hemos utilizado.
+
+Por defecto, se nos abrirá para editar con `vim`, en modo de lectura.
+
+- Para insertar cosas, tenemos que pulsar `i`.
+- Para salir del modo edición, pulsamos `esc`.
+- Para salir guardando, tras salir del modo edición, escribir `:wq` y pulsar intro.
+
+Dentro del archivo introduciremos las lineas de texto con las diferentes tareas.
+
+- Cada línea representa una tarea
+- Cada tarea está formada por dos partes: el momento y la tarea a ejecutar.
+- El formato es el siguiente:
 
     * * * * * comando_o_programa_a_ejecutar
 

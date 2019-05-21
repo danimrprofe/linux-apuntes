@@ -167,7 +167,8 @@ Dentro del archivo introduciremos las lineas de texto con las diferentes tareas.
 
 - Cada línea representa una tarea
 - Cada tarea está formada por dos partes: el momento y la tarea a ejecutar.
-- El formato es el siguiente:
+
+El formato es el siguiente:
 
     * * * * * comando_o_programa_a_ejecutar
 

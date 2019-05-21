@@ -167,12 +167,33 @@ Con el siguiente comando, podemos agregar una tarea a `cron`.
 ```
 crontab -e 
 04 * * * *
-tar -czvf datadir-'date+\%s'.tar.gz nombrecarpeta;
+tar -zcvf "$(date '+%Y-%m-%d').tar.gz doc*
 scp datadir-'date+\%s'.tar.gz user@serverremoto:/backups
 ```
 
+### Crear un script
+
 Otra salida podría ser crear un `script` con todas las instrucciones y, simplemente, llamar al `script` dentro de cron.
 
+Creamos un archivo `backup.sh`:
+
+```
+#!/bin/bash
+tar -zcvf "$(date '+%Y-%m-%d').tar.gz doc*
+scp datadir-'date+\%s'.tar.gz user@serverremoto:/backups
+```
+El siguiente comando devuelve la fecha utilizando subshell: `$(date '+%Y-%m-%d')`
+
+Le damos permisos de ejecución:
+
+```
+chmod +x backup.sh
+```
+Modificamos el crontab:
+
+```
+crontab -e 30 11 * * * backup.sh
+```
 
 ### Copias incrementales
 

@@ -68,6 +68,8 @@ Problema:
 
 - Ineficiente, al tener que gestionar un equipo todo tráfico desde/hacia la red. 
 
+![](2019-05-21-09-15-56.png)
+
 ## NAS  o almacenamiento conectado a red
 
 Se trata de un sistema de almacenamiento **directamente conectado** a la red.
@@ -85,6 +87,8 @@ Ventaja:
 Centralizado, todos los datos a disposición de toda la red.
 Problema: 
 A medida que se aumente el número de equipos, la red puede saturarse.
+
+![](2019-05-21-09-15-44.png)
 
 ### Problemática NAS
 
@@ -109,6 +113,8 @@ A la que también se conectan los servidores
 - 1 red separada de altas prestaciones
 Interconecta los almacenes de datos con los servidores y entre si (malla de fibra óptica o similar).
 
+![](2019-05-21-09-14-57.png)
+
 ### Ventajas y desventajas
 
 Ventajas:
@@ -132,3 +138,5 @@ Capaces de almacenar grandes cantidades de información
 
 En discos duros de altas prestaciones
 Configurados en RAID (varios discos duros trabajando en espejo y/o conjuntamente).
+
+![](2019-05-21-09-15-11.png)

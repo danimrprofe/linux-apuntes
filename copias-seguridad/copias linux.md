@@ -88,7 +88,7 @@ Para meter archivos dentro del tar:
 
 También podemos comprimir el archivo `tar`. Se pueden utilizar dos mecanismos de compresión. Para comprimir un archivo `tar` con gunzip, se utiliza la extensión `.tar.gz`.
 
-    tar -cvzf backup.tar.gz file1 file2 file3
+    tar -cvzf backup.tar.gz doc1 doc2 doc3
 
 ### Utilizar fecha
 

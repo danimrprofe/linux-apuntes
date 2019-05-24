@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>copias linux.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: #4080D0;
+	text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+	font-size: inherit;
+	line-height: auto;
+}
+
+a:hover {
+	color: #4080D0;
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left: 5px solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 14px;
+	line-height: 19px;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+.mac code {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+/** Theming */
+
+.vscode-light,
+.vscode-light pre code {
+	color: rgb(30, 30, 30);
+}
+
+.vscode-dark,
+.vscode-dark pre code {
+	color: #DDD;
+}
+
+.vscode-high-contrast,
+.vscode-high-contrast pre code {
+	color: white;
+}
+
+.vscode-light code {
+	color: #A31515;
+}
+
+.vscode-dark code {
+	color: #D7BA7D;
+}
+
+.vscode-light pre:not(.hljs),
+.vscode-light code > div {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre:not(.hljs),
+.vscode-dark code > div {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre:not(.hljs),
+.vscode-high-contrast code > div {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.vscode-light blockquote,
+.vscode-dark blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.vscode-high-contrast blockquote {
+	background: transparent;
+	border-color: #fff;
+}
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family:  "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+</head>
+<body>
+<h1 id="copias-de-seguridad">Copias de seguridad</h1>
+<ul>
+<li><a href="#copias-de-seguridad">Copias de seguridad</a>
+<ul>
+<li><a href="#copias-de-seguridad-en-linux">Copias de seguridad en Linux</a></li>
+<li><a href="#tar">Tar</a>
+<ul>
+<li><a href="#argumentos">Argumentos</a></li>
+<li><a href="#crear-archivos-de-prueba">Crear archivos de prueba</a></li>
+<li><a href="#empaquetar-archivos">Empaquetar archivos</a></li>
+<li><a href="#ver-los-contenidos-de-un-tar">Ver los contenidos de un tar</a></li>
+<li><a href="#extraer-contenido-del-tar">Extraer contenido del tar</a></li>
+<li><a href="#insertar-y-extraer-archivos-en-un-archivo-tar-opcional">Insertar y extraer archivos en un archivo tar (opcional)</a></li>
+<li><a href="#comprimir-una-carpeta">Comprimir una carpeta</a></li>
+<li><a href="#utilizar-fecha">Utilizar fecha</a></li>
+</ul>
+</li>
+<li><a href="#cron">Cron</a>
+<ul>
+<li><a href="#par%C3%A1metros-de-cron">Parámetros de cron</a></li>
+<li><a href="#edici%C3%B3n-del-crontab">Edición del crontab</a></li>
+<li><a href="#ejemplos-de-cron">Ejemplos de cron</a></li>
+<li><a href="#programaci%C3%B3n-de-copia">Programación de copia</a></li>
+</ul>
+</li>
+<li><a href="#env%C3%ADo-remoto-de-la-copia-de-seguridad">Envío remoto de la copia de seguridad</a></li>
+<li><a href="#combos">Combos</a>
+<ul>
+<li><a href="#agregar-comando-a-crontab">Agregar comando a crontab</a></li>
+<li><a href="#crear-un-script">Crear un script</a></li>
+<li><a href="#reenviar-salida-de-tar-a-stdout">Reenviar salida de tar a stdout</a></li>
+<li><a href="#copias-incrementales">Copias incrementales</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="copias-de-seguridad-en-linux">Copias de seguridad en Linux</h2>
+<p>Generalmente en linux las copias se hacen utilizando una combinación de diferentes comandos que traen los sistemas operativos GNU/Linux. En este caso nos fijaremos en estos:</p>
+<ul>
+<li><code>tar</code> para archivar documentos y carpetas</li>
+<li><code>cron</code> para programar tareas</li>
+<li><code>scp</code> para copias remotas</li>
+</ul>
+<p>Con una combinación de dichos comandos, dentro de un script, podemos automatizar copias de seguridad.</p>
+<h2 id="tar">Tar</h2>
+<p>A la hora de hacer copias nos resulta útil empaquetar varios archivos en uno solo, que será más manejable.</p>
+<p>Tar toma una lista de archivos y/o carpetas y los guarda en un archivo concreto.</p>
+<p>Para ello se puede utilizar el comando <code>tar</code>.</p>
+<p>La sintaxis de <code>tar</code> es:</p>
+<pre><code>tar -argumentos archivo_a_crear archivos_a_copiar
+</code></pre>
+<h3 id="argumentos">Argumentos</h3>
+<p>Según que argumentos le pasemos al comando, podremos hacer diferentes cosas.</p>
+<p>Crear un archivo:</p>
+<ul>
+<li>c: Crea un nuevo archivo que contiene los elementos especificados.</li>
+<li>f: Especifica el nombre del archivo.</li>
+</ul>
+<p>Compresión:</p>
+<ul>
+<li>j: Se utiliza para comprimir el archivo a través de bzip2.</li>
+<li>z: Comprime un archivo a través de la herramienta gzip.</li>
+<li>x: Extrae el archivo de almacenamiento en el disco.</li>
+</ul>
+<p>Otras opciones:</p>
+<ul>
+<li>v: Ejecuta el comando en modo detallado para mostrar el progreso del archivo.</li>
+<li>W: se utiliza para verificar un archivo comprimido.</li>
+<li>t: se usa para visualizar el contenido del archivo.</li>
+<li>r: usado para agregar o actualizar archivos o directorios al archivo existente.</li>
+<li>u: como -r, pero las nuevas entradas se agregan solo si tienen una fecha de modificación más nueva que la entrada correspondiente en el archivo.</li>
+</ul>
+<h3 id="crear-archivos-de-prueba">Crear archivos de prueba</h3>
+<p>Nos vamos a nuestro home y creamos una carpeta de pruebas:</p>
+<pre class="hljs"><code><div>cd ~
+mkdir docs
+cd docs
+</div></code></pre>
+<p>Creamos archivos de prueba:</p>
+<pre class="hljs"><code><div>touch doc1 doc2 doc3
+</div></code></pre>
+<p>Estos son los archivos que utilizaremos para crear las copias.</p>
+<h3 id="empaquetar-archivos">Empaquetar archivos</h3>
+<p>Podemos empaquetar archivos (sin compresión) de la siguiente forma:</p>
+<pre><code>tar -cvf backup.tar *
+tar -cvf backup.tar doc1 doc2 doc3
+</code></pre>
+<h3 id="ver-los-contenidos-de-un-tar">Ver los contenidos de un tar</h3>
+<p>Una vez que tengamos algún tar creado, podemos ver lo que hay dentro sin necesidad de extraer su contenido:</p>
+<pre><code>tar -tf backup.tar
+</code></pre>
+<h3 id="extraer-contenido-del-tar">Extraer contenido del tar</h3>
+<p>Vamos a borrar los documentos originales, simulando que los hemos perdido:</p>
+<pre><code>rm doc*
+</code></pre>
+<p>Probamos a extraer el contenido del tar.</p>
+<pre><code>tar -xvf backup.tar
+</code></pre>
+<p>Si todo va bien se nos habrán guardado.</p>
+<h3 id="insertar-y-extraer-archivos-en-un-archivo-tar-opcional">Insertar y extraer archivos en un archivo tar (opcional)</h3>
+<p>Podemos meter y sacar archivos de un tar sin tener que extraerlo todo y volverlo a empaquetar.</p>
+<p>Para borrar archivos de dentro de un tar existente:</p>
+<pre><code>tar -f backup.tar --delete file1 file2
+</code></pre>
+<p>Para meter archivos dentro del tar:</p>
+<pre><code>tar -rf backup.tar file1 file2
+</code></pre>
+<h3 id="comprimir-una-carpeta">Comprimir una carpeta</h3>
+<p>También podemos comprimir el archivo <code>tar</code>. Se pueden utilizar dos mecanismos de compresión. Para comprimir un archivo <code>tar</code> con gunzip, se utiliza la extensión <code>.tar.gz</code>.</p>
+<pre><code>tar -cvzf backup-comprimido.tar.gz doc1 doc2 doc3
+</code></pre>
+<p>Ahora podemos comprobar la diferencia de tamaño entre el <code>.tar</code> (sin compresión) y el <code>.tar.gz</code>.</p>
+<pre><code>ls -lisa | grep tar
+</code></pre>
+<p>En caso que quisiéramos extraer el contenido:</p>
+<pre><code>tar -xvzf backup-comprimido.tar.gz
+</code></pre>
+<h3 id="utilizar-fecha">Utilizar fecha</h3>
+<p>En este caso estamos creando un <code>tar</code> comprimido que contendrá todos los archivos de la carpeta en la cual estamos.</p>
+<pre><code>tar -cvzf backup-$(date +%Y-%m-%d).tar.gz *
+</code></pre>
+<h2 id="cron">Cron</h2>
+<p>Otra utilidad importante es la de poder automatizar la ejecución de tareas sin que el usuario lo tenga que hacer manualmente. Para ello, se utiliza el daemon de <code>cron</code>.</p>
+<p><code>Cron</code> es un proceso que, consultando una lista de tareas, las va ejecutando cuando se cumplen ciertas condiciones de tiempo, como una hora concreta, un día concreto, etc.</p>
+<p>La sintaxis para poder modificar esta información es:</p>
+<pre><code>crontab [-e] -l [-r] [usuario]
+</code></pre>
+<h3 id="par%C3%A1metros-de-cron">Parámetros de cron</h3>
+<ul>
+<li><code>e</code> indica la edicion del cron</li>
+<li><code>l</code> ver las tareas programadas en el archivo cron</li>
+<li><code>r</code> borrar un archivo cron</li>
+</ul>
+<h3 id="edici%C3%B3n-del-crontab">Edición del crontab</h3>
+<p>Cada usuario del sistema puede tener sus propias tareas para que cron las ejecute. Si no se especifica el usuario, el comando se ejecutara para el usuario que tiene iniciada la sesión.</p>
+<pre><code>crontab -e 
+</code></pre>
+<p>Veremos que el contenido del archvo <code>crontab</code> está vacío, porque nunca lo hemos utilizado.</p>
+<p>Por defecto, se nos abrirá para editar con <code>vim</code>, en modo de lectura.</p>
+<ul>
+<li>Para insertar cosas, tenemos que pulsar <code>i</code>.</li>
+<li>Para salir del modo edición, pulsamos <code>esc</code>.</li>
+<li>Para salir guardando, tras salir del modo edición, escribir <code>:wq</code> y pulsar intro.</li>
+</ul>
+<p>Dentro del archivo introduciremos las lineas de texto con las diferentes tareas.</p>
+<ul>
+<li>Cada línea representa una tarea</li>
+<li>Cada tarea está formada por dos partes: el momento y la tarea a ejecutar.</li>
+</ul>
+<p>El formato es el siguiente:</p>
+<pre><code>* * * * * comando_o_programa_a_ejecutar
+</code></pre>
+<p>Cada asterisco en orden significa:</p>
+<ul>
+<li>Minuto (0 -59)</li>
+<li>Hora (0 – 23)</li>
+<li>Día del mes (1 – 31)</li>
+<li>Mes (1 – 12)</li>
+<li>Día de la semana (0 – 6) 0 domingo</li>
+</ul>
+<h3 id="ejemplos-de-cron">Ejemplos de cron</h3>
+<pre><code>0 3 * * 5 /home/user/backup (ejecuta todos los viernes a las 3 de la mañana)
+15 10 * * * /home/user/backup (ejecutar todos los días a las 10:15)
+</code></pre>
+<h3 id="programaci%C3%B3n-de-copia">Programación de copia</h3>
+<p>En nuestro caso, vamos a programar el tar a las 10:15 todos los días:</p>
+<pre><code>15 10 * * * tar -cvzf backup-$(date +%Y-%m-%d).tar.gz docs/*
+</code></pre>
+<p>A tener en cuenta:</p>
+<ul>
+<li>Todos los comandos se ejecutarán teniendo en cuenta que estamos situados en la home del usuario del cual estamos editando cron.</li>
+<li>En este caso, se supone que los archivos están en <code>/home/usuario/docs</code></li>
+<li>El backup se va a guardar en <code>/home/usuario/</code></li>
+</ul>
+<h2 id="env%C3%ADo-remoto-de-la-copia-de-seguridad">Envío remoto de la copia de seguridad</h2>
+<p>Lo más aconsejable es guardar las copias de seguridad en un dispositivo de almacenamiento o máquina diferente a la que contiene la información original. De este modo, si falla el disco original, no se destruirá la copia.</p>
+<p>Para ello existen muchos comandos:</p>
+<ul>
+<li>ssh</li>
+<li>scp</li>
+<li>rsync</li>
+</ul>
+<p>Cada uno de ellos se utiliza para cosas diferentes. Una de las posibilidades consiste en hacer la copia con <code>scp</code>. Este comando copia archivos de un ordenador a otro a través de red, siempre y cuando:</p>
+<ul>
+<li>Las dos máquinas pertenezcan a la misma red y se vean (ping)</li>
+<li>Esté instalado un servidor ssh (<code>openssh-server</code>) en la máquina destino</li>
+<li>Los puertos necesarios estén abiertos</li>
+<li>Se utilice una cuenta de usuario válida en la máquina destino</li>
+</ul>
+<p>El comando sería el siguiente:</p>
+<pre><code>scp /home/user/copiaseguridad.tar usuarioremoto@servidor:/etc/backups/
+</code></pre>
+<p>Donde:</p>
+<ul>
+<li><code>Servidor</code> puede ser una IP o un nombre de dominio, siempre que el dns esté configurado</li>
+<li><code>Usuarioremoto</code> puede ser cualquier usuario en el servidor remoto.</li>
+<li>Preguntará por la contraseña de usuarioremoto a continuación</li>
+</ul>
+<h2 id="combos">Combos</h2>
+<p>Normalmente se suelen combinar varios de los comandos vistos, junto con los comandos <code>ssh</code> o <code>scp</code> para, al mismo tiempo:</p>
+<ul>
+<li>Hacer un backup de la carpeta períodicamente</li>
+<li>Enviarlo a una localización remota</li>
+</ul>
+<h3 id="agregar-comando-a-crontab">Agregar comando a crontab</h3>
+<p>Con el siguiente comando, podemos agregar una tarea a <code>cron</code>.</p>
+<pre class="hljs"><code><div>crontab -e 
+04 * * * *
+tar -zcvf &quot;$(date '+%Y-%m-%d').tar.gz doc*
+scp datadir-'date+\%s'.tar.gz user@serverremoto:/backups
+</div></code></pre>
+<h3 id="crear-un-script">Crear un script</h3>
+<p>Otra salida podría ser crear un <code>script</code> con todas las instrucciones y, simplemente, llamar al <code>script</code> dentro de cron.</p>
+<p>Creamos un archivo <code>backup.sh</code>:</p>
+<pre class="hljs"><code><div>#!/bin/bash
+tar -zcvf &quot;$(date '+%Y-%m-%d').tar.gz doc*
+scp datadir-'date+\%s'.tar.gz user@serverremoto:/backups
+</div></code></pre>
+<p>El siguiente comando devuelve la fecha utilizando subshell: <code>$(date '+%Y-%m-%d')</code></p>
+<p>Le damos permisos de ejecución:</p>
+<pre class="hljs"><code><div>chmod +x backup.sh
+</div></code></pre>
+<p>Modificamos el crontab:</p>
+<pre class="hljs"><code><div>crontab -e 30 11 * * * backup.sh
+</div></code></pre>
+<h3 id="reenviar-salida-de-tar-a-stdout">Reenviar salida de tar a stdout</h3>
+<p>Podemos evitar que <code>tar</code> cree un archivo de salida y, a cambio, redirija la salida a stdout.</p>
+<pre><code>tar cvzf - /path/to/myBase.sql | ssh USER@HOST &quot;dd of=/path/to/backups/myBase$(date +\%Y\%m\%d\%H\%M\%S).tar.gz&quot;
+</code></pre>
+<h3 id="copias-incrementales">Copias incrementales</h3>
+<p>Podemos enviar copias incrementales utilizando rsync. Para ello:</p>
+<pre><code>rsync -avz ruta/a/carpeta userremoto@serverremoto:/backups
+</code></pre>
+
+</body>
+</html>

@@ -1,8 +1,10 @@
 # Dump y restore
 
 - [Dump y restore](#dump-y-restore)
+- [Introducción](#introducci%C3%B3n)
 - [Volcar](#volcar)
 - [Dump](#dump)
+- [Archivo dumpdates](#archivo-dumpdates)
 - [Ejemplo de copias incrementales](#ejemplo-de-copias-incrementales)
 - [Otras opciones](#otras-opciones)
 - [Volcado de contenido](#volcado-de-contenido)
@@ -10,10 +12,11 @@
 - [Restaurar un archivo en concreto:](#restaurar-un-archivo-en-concreto)
 - [Restaurar un sistema de archivos](#restaurar-un-sistema-de-archivos)
 - [Extraer contenido interactivamente](#extraer-contenido-interactivamente)
-- [Extraer archivos](#extraer-archivos)
+- [Extraer archivos (modo interactivo)](#extraer-archivos-modo-interactivo)
 
-Dump y restore son dos comandos que vienen con el paquete `dump`.
+# Introducción
 
+Dump y restore son dos comandos que vienen con el paquete `dump`. La herramienta dump está ligada con la herramienta restore, que sirve para restaurar las copias de seguridad realizadas.
 Es importante realizar el restore con la misma versión que se hizo el dump.
 
 # Volcar
@@ -35,11 +38,20 @@ tmpfs            3,9G      0  3,9G   0% /sys/fs/cgroup
 /dev/nvme0n1p2    96M    30M   67M  32% /boot/efi
 tmpfs            788M    24K  788M   1% /run/user/1000
 ```
+
 # Dump
 
 Tiene varios niveles, de 0 a 9. 0 copia todo lo que no esté marcado como nodump.
 
 Siguientes números significan "copia todos los archivos que han cambiado o han sido creados desde el anterior dump" de nivel inferior.
+
+# Archivo dumpdates
+
+Este archivo se utiliza para guardar información sobre las copias de seguridad realizadas:
+
+- Se guarda en `/etc/dumpdates`. Hay que crearlo antes (touch)
+- Guarda nivel, fecha y tipo de copia de cada copia realizada.
+- Si no registramos esta información, no podemos hacer backups progresivos (opción `-u`).
 
 # Ejemplo de copias incrementales
 
@@ -57,7 +69,13 @@ Con -f especificamos donde poner el archivo
 
 Vamos a volcar el contenido de una carpeta a un archivo `.dump`
 
-    dump 0zf volcado.dump linux-apuntes/
+    dump 0 -f copia-seguridad.dump /home/user/apuntes/
+
+Opciones:
+
+- 0 Con el este nivel se indica que la copia es completa.
+- z Se activa la compresión.
+- f Realizamos copia de seguridad del fichero indicado
 
 Hacer copia incremental:
 
@@ -83,7 +101,7 @@ Restaurar un archivo:
 
 Creamos un punto d montaje, y restauramos:
 
-```
+```bash
 newfs /dev/nombre
 mount /dev/nombre /mnt
 cd /mnt
@@ -101,7 +119,7 @@ Entraremos en un shell propio del comando restore y podremos, entre otras cosas:
 - Extraer contenidos (extract)
 - Listar contenidos (ls)
 
-# Extraer archivos
+# Extraer archivos (modo interactivo)
 
 Podemos movernos a través de los directorios y añadir los archivos que queremos que sean extraidos del volcado.
 

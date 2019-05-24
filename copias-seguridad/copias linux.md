@@ -4,33 +4,42 @@
   - [Copias de seguridad en Linux](#copias-de-seguridad-en-linux)
   - [Tar](#tar)
     - [Argumentos](#argumentos)
+    - [Crear archivos de prueba](#crear-archivos-de-prueba)
     - [Empaquetar archivos](#empaquetar-archivos)
     - [Ver los contenidos de un tar](#ver-los-contenidos-de-un-tar)
-    - [Insertar y extraer archivos en un archivo tar](#insertar-y-extraer-archivos-en-un-archivo-tar)
+    - [Extraer contenido del tar](#extraer-contenido-del-tar)
+    - [Insertar y extraer archivos en un archivo tar (opcional)](#insertar-y-extraer-archivos-en-un-archivo-tar-opcional)
     - [Comprimir una carpeta](#comprimir-una-carpeta)
     - [Utilizar fecha](#utilizar-fecha)
   - [Cron](#cron)
     - [Parámetros de cron](#par%C3%A1metros-de-cron)
+    - [Edición del crontab](#edici%C3%B3n-del-crontab)
     - [Ejemplos de cron](#ejemplos-de-cron)
+    - [Programación de copia](#programaci%C3%B3n-de-copia)
   - [Envío remoto de la copia de seguridad](#env%C3%ADo-remoto-de-la-copia-de-seguridad)
   - [Combos](#combos)
-    - [Reenviar salida de tar a stdout](#reenviar-salida-de-tar-a-stdout)
     - [Agregar comando a crontab](#agregar-comando-a-crontab)
+    - [Crear un script](#crear-un-script)
+    - [Reenviar salida de tar a stdout](#reenviar-salida-de-tar-a-stdout)
     - [Copias incrementales](#copias-incrementales)
 
 ## Copias de seguridad en Linux
 
 Generalmente en linux las copias se hacen utilizando una combinación de diferentes comandos que traen los sistemas operativos GNU/Linux. En este caso nos fijaremos en estos:
 
-- tar
-- cron
-- scp
+- `tar` para archivar documentos y carpetas
+- `cron` para programar tareas
+- `scp` para copias remotas
 
 Con una combinación de dichos comandos, dentro de un script, podemos automatizar copias de seguridad.
 
 ## Tar
 
-A la hora de hacer copias nos resulta útil empaquetar varios archivos en uno solo, que será más manejable. Para ello se puede utilizar el comando `tar`.
+A la hora de hacer copias nos resulta útil empaquetar varios archivos en uno solo, que será más manejable.
+
+Tar toma una lista de archivos y/o carpetas y los guarda en un archivo concreto.
+
+Para ello se puede utilizar el comando `tar`.
 
 La sintaxis de `tar` es:
 
@@ -145,7 +154,7 @@ La sintaxis para poder modificar esta información es:
 
 ### Parámetros de cron
 
-- `e` indica la edicion del cron
+- `e` indica la edición del cron
 - `l` ver las tareas programadas en el archivo cron
 - `r` borrar un archivo cron
 
@@ -153,9 +162,9 @@ La sintaxis para poder modificar esta información es:
 
 Cada usuario del sistema puede tener sus propias tareas para que cron las ejecute. Si no se especifica el usuario, el comando se ejecutara para el usuario que tiene iniciada la sesión.
 
-    crontab -e 
+    crontab -e
 
-Veremos que el contenido del archvo `crontab` está vacío, porque nunca lo hemos utilizado.
+Veremos que el contenido del archivo `crontab` está vacío, porque nunca lo hemos utilizado.
 
 Por defecto, se nos abrirá para editar con `vim`, en modo de lectura.
 
@@ -185,6 +194,18 @@ Cada asterisco en orden significa:
     0 3 * * 5 /home/user/backup (ejecuta todos los viernes a las 3 de la mañana)
     15 10 * * * /home/user/backup (ejecutar todos los días a las 10:15)
 
+### Programación de copia
+
+En nuestro caso, vamos a programar el tar a las 10:15 todos los días:
+
+    15 10 * * * tar -cvzf backup-$(date +%Y-%m-%d).tar.gz docs/*
+
+A tener en cuenta:
+
+- Todos los comandos se ejecutarán teniendo en cuenta que estamos situados en la home del usuario del cual estamos editando cron.
+- En este caso, se supone que los archivos están en `/home/usuario/docs`
+- El backup se va a guardar en `/home/usuario/`
+
 ## Envío remoto de la copia de seguridad
 
 Lo más aconsejable es guardar las copias de seguridad en un dispositivo de almacenamiento o máquina diferente a la que contiene la información original. De este modo, si falla el disco original, no se destruirá la copia.
@@ -195,9 +216,22 @@ Para ello existen muchos comandos:
 - scp
 - rsync
 
-Cada uno de ellos se utiliza para cosas diferentes. Una de las posibilidades consiste en hacer la copia con `scp`.
+Cada uno de ellos se utiliza para cosas diferentes. Una de las posibilidades consiste en hacer la copia con `scp`. Este comando copia archivos de un ordenador a otro a través de red, siempre y cuando:
+
+- Las dos máquinas pertenezcan a la misma red y se vean (ping)
+- Esté instalado un servidor ssh (`openssh-server`) en la máquina destino
+- Los puertos necesarios estén abiertos
+- Se utilice una cuenta de usuario válida en la máquina destino
+
+El comando sería el siguiente:
 
     scp /home/user/copiaseguridad.tar usuarioremoto@servidor:/etc/backups/
+
+Donde:
+
+- `Servidor` puede ser una IP o un nombre de dominio, siempre que el dns esté configurado
+- `Usuarioremoto` puede ser cualquier usuario en el servidor remoto. 
+- Preguntará por la contraseña de usuarioremoto a continuación
 
 ## Combos
 
@@ -205,12 +239,6 @@ Normalmente se suelen combinar varios de los comandos vistos, junto con los coma
 
 - Hacer un backup de la carpeta períodicamente
 - Enviarlo a una localización remota
-
-### Reenviar salida de tar a stdout
-
-Podemos evitar que `tar` cree un archivo de salida y, a cambio, redirija la salida a stdout.
-
-    tar cvzf - /path/to/myBase.sql | ssh USER@HOST "dd of=/path/to/backups/myBase$(date +\%Y\%m\%d\%H\%M\%S).tar.gz"
 
 ### Agregar comando a crontab
 
@@ -246,6 +274,12 @@ Modificamos el crontab:
 ```
 crontab -e 30 11 * * * backup.sh
 ```
+
+### Reenviar salida de tar a stdout
+
+Podemos evitar que `tar` cree un archivo de salida y, a cambio, redirija la salida a stdout.
+
+    tar cvzf - /path/to/myBase.sql | ssh USER@HOST "dd of=/path/to/backups/myBase$(date +\%Y\%m\%d\%H\%M\%S).tar.gz"
 
 ### Copias incrementales
 

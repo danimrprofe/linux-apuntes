@@ -1,10 +1,8 @@
 Alumno | Proyecto | Tecnologías implicadas
 -- | -- | -- 
-
-## José Pedro Campos
-
-- De la virtualización a los servicios en la nube
-- Tecnologías: Vagrant, Docker, Kubernetes, Azure, Ansible
+José Pedro Campos |
+De la virtualización a los servicios en la nube |
+Vagrant, Docker, Kubernetes, Azure, Ansible
 
 ## Mateo Font
 

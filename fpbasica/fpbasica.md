@@ -5,15 +5,14 @@ El Título Profesional Básico en Informática de O cina queda identi cado
 Los módulos de este ciclo formativo, son los que a continuación se relacionan:
 
 - 3029 Montaje y mantenimiento de sistemas y componentes informáticos.
-- 3030. Operaciones auxiliares para la con guración y la explotación.
-- 3031. 3031 O mática y archivo de documentos.
-- 3016. Instalación y mantenimiento de redes para transmisión de datos.
-- 3009. Ciencias aplicadas I.
-- 3019. Ciencias aplicadas II.
-- 3011. Comunicación y sociedad I.
-- 3012. Comunicación y sociedad II.
-- 3033. Formación en centros de trabajo.
-
+- 3030 Operaciones auxiliares para la configuración y la explotación.
+- 3031 Ofimática y archivo de documentos.
+- 3016 Instalación y mantenimiento de redes para transmisión de datos.
+- 3009 Ciencias aplicadas I.
+- 3019 Ciencias aplicadas II.
+- 3011 Comunicación y sociedad I.
+- 3012 Comunicación y sociedad II.
+- 3033 Formación en centros de trabajo.
 
 # Equipamientos mínimos
 

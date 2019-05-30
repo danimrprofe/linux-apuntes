@@ -1,20 +1,8 @@
 Alumno | Proyecto | Tecnologías implicadas
 -- | -- | -- 
 José Pedro Campos | De la virtualización a los servicios en la nube | Vagrant, Docker, Kubernetes, Azure, Ansible
-
-## Mateo Font
-
-- Raspberry per que? 
-- Tecnologías: Linux, Apache, Mysql, PHP, html, css,
-
-wordpress, ssh
-
-## Bohdan Kyfchuk 
-
-- Menú de herramientas en archivos Batch
-- Archivos de texto sin formato con la
-extensión .bat, máquina virtual Windows,
-PowerShell, aplicaciones del sistema.
+Mateo Font | Raspberry per que?  | Tecnologías: Linux, Apache, Mysql, PHP, html, css, wordpress, ssh
+Bohdan Kyfchuk | Menú de herramientas en archivos Batch  | Archivos de texto sin formato con la extensión .bat, máquina virtual Windows, PowerShell, aplicaciones del sistema.
 
 Jordan Santos Creación y gestión de redes
 mediante RouterBoard

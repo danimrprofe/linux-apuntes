@@ -1,3 +1,11 @@
+Dia | 15h | 16h | 17h
+-- | -- | -- | --
+Lunes 17 | Rafael | José Pedro | Daniel Tur
+Martes 18 | Andreu Bio | Martí Puig | Jordan | 
+Miércoles 19 | Harmanbir | Mateo  |  | 
+Jueves 20 | Daniel Ochoa | Bohdan |  | 
+
+
 Alumno | Proyecto | Tecnologías implicadas
 -- | -- | -- 
 José Pedro Campos | De la virtualización a los servicios en la nube | Vagrant, Docker, Kubernetes, Azure, Ansible

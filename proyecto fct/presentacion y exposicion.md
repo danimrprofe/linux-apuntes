@@ -1,23 +1,21 @@
-Alumno Proyecto Tecnologías implicadas
+Alumno | Proyecto | Tecnologías implicadas
 
-- sé Pedro Campos
-  -  la virtualización a los servicios en la nube
+## José Pedro Campos
 
-Tecnologías relacionadas:
-Vagrant, Docker, Kubernetes, Azure, Ansible
-Mateo Font 
+- De la virtualización a los servicios en la nube
+- Tecnologías: Vagrant, Docker, Kubernetes, Azure, Ansible
 
-Raspberry per que? 
+## Mateo Font
 
-Tecnologías: Linux, Apache, Mysql, PHP, html, css,
+- Raspberry per que? 
+- Tecnologías: Linux, Apache, Mysql, PHP, html, css,
 
 wordpress, ssh
 
-Bohdan Kyfchuk Menú de herramientas en
+## Bohdan Kyfchuk 
 
-archivos Batch
-
-Archivos de texto sin formato con la
+- Menú de herramientas en archivos Batch
+- Archivos de texto sin formato con la
 extensión .bat, máquina virtual Windows,
 PowerShell, aplicaciones del sistema.
 
@@ -27,35 +25,39 @@ Mikrotik con portal cautivo.
 
 RouterBoard Mikrotik, winbox
 
-Andreu Bió Entrenador Dvorak PHP, JS, Apache o Nginx, MariaDB, Docker,
+# Andreu Bió 
+
+Entrenador Dvorak PHP, JS, Apache o Nginx, MariaDB, Docker,
 
 Bash
 
-Daniel Ochoa Project K8S Kubernetes, Docker, HTML, CSS, PHP,
+# Daniel Ochoa 
 
+Project K8S Kubernetes, Docker, HTML, CSS, PHP,
 MySQL, Apache
 
-Rafael Astorga Actualizacion Sistemas
-Almacenes Femenias S.A.
+# Rafael Astorga 
 
-AZURE, NAVISION, MICROSOFT SERVER
-2016, OFFICE 365 (APLICACIONES QUE
-INCLUYE EL PAQUETE), TEAMVIEWER,
-SPICEWORKS INVENTORY,
+- Actualizacion Sistemas Almacenes Femenias S.A.
 
-Daniel Tur Zurita Front-end Web con React git, github, gitkraken, html, css, javascript,
-ecmascript, jsx, eslint, react, npm, entorno
-de desarrollo de JS, visual studio code,
-clean code
+## Tecnologías
 
-Marti Puig
-Albuquerque
+AZURE, NAVISION, MICROSOFT SERVER 2016, OFFICE 365 (APLICACIONES QUE
+INCLUYE EL PAQUETE), TEAMVIEWER, SPICEWORKS INVENTORY,
 
-Centralización CPD VMWare, Cisco, Fortigate, Arsys
+# Daniel Tur Zurita 
 
-Harmanbir Singh Virtualización con vmWare Servidores ESXI, VmWare, vCenter, Veeam
+- Front-end Web con React 
+- Tecnologías: git, github, gitkraken, html, css, javascript, ecmascript, jsx, eslint, react, npm, entorno de desarrollo de JS, visual studio code, clean code
 
-Backup & Replication.
-En HW: servidores huawei, para storage una
-cabina de huawei, y para copias de
+# Marti Puig
+
+- Centralización CPD 
+- Tecnologías: VMWare, Cisco, Fortigate, Arsys
+
+# Harmanbir Singh 
+
+- Virtualización con vmWare 
+- Servidores ESXI, VmWare, vCenter, Veeam Backup & Replication.
+- En HW: servidores huawei, para storage una cabina de huawei, y para copias de
 seguridad = un servidor nas.

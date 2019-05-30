@@ -15,9 +15,16 @@ Los módulos de este ciclo formativo, son los que a continuación se relacionan:
 - 3033. Formación en centros de trabajo.
 
 
-Equipamientos mínimos
+# Equipamientos mínimos
 
-Aula polivalentesOrdenadores instalados en red, cañón de proyección e Internet.Medios audiovisuales.Software de aplicación.Taller administrativoMesas de o cina con puestos de trabajo informatizadosImpresoraProgramas informáticos de aplicación.Equipos de encuadernación básica.Equipo de reprografía (fotocopiadora, scanner)Archivo convencionalMaterial de o cina Equipos y medios de seguridad.Taller de informática y comunicaciones.Kit Armario de cableado con paneles de parcheado.Herramientas especí cas para informática y montaje de redes y canalizaciones.Racks.Componentes para montaje redesSwitch de diversos tipos.Punto acceso inalámbrico.Router inalámbrico.Componentes para montaje de ordenadores Equipos y medios de seguridad.
+- Aula polivalentes.
+- Ordenadores instalados en red, cañón de proyección e Internet.Medios audiovisuales.Software de aplicación.
+- Taller administrativo
+- Mesas de oficina con puestos de trabajo informatizadosImpresoraProgramas informáticos de aplicación.Equipos de encuadernación básica.
+- Equipo de reprografía (fotocopiadora, scanner)Archivo convencionalMaterial de oficina 
+- Equipos y medios de seguridad.Taller de informática y comunicaciones.
+- Kit armario de cableado con paneles de parcheado. Herramientas específicas para informática y montaje de redes y canalizaciones. Racks. Componentes para montaje redes. Switch de diversos tipos.
+- Punto acceso inalámbrico. Router inalámbrico. Componentes para montaje de ordenadores Equipos y medios de seguridad.
 
 # Normativa general FP Basica
 

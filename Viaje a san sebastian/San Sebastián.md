@@ -2,7 +2,7 @@ Viaje San Sebastián
 
 - [3 de junio](#3-de-junio)
 - [4 de junio](#4-de-junio)
-  - [Visita tolosaldea](#visita-tolosaldea)
+  - [Visita Tolosaldea](#visita-tolosaldea)
   - [Vuelta a San Sebastián](#vuelta-a-san-sebasti%C3%A1n)
   - [Cena](#cena)
 - [5 de junio](#5-de-junio)
@@ -26,7 +26,7 @@ Viaje San Sebastián
 
 # 4 de junio
 
-## Visita tolosaldea
+## Visita Tolosaldea
 
 - Vamos con el coche hasta el centro Tolosaldea
 - Nos hacen una visita a las diferentes instalaciones que tienen para formación profesional.

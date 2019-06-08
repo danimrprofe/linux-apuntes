@@ -13,18 +13,13 @@
 
 # Memoria del proyecto
 
-Durante la elaboración del proyecto, será necesario reflejar por escrito cada una de 
-las ideas y contenidos que se vayan definiendo para el mismo. 
+Durante la elaboración del proyecto, será necesario reflejar por escrito cada una de las ideas y contenidos que se vayan definiendo para el mismo. 
 
 Se puede utilizar alguna plantilla para:
 
-- Servir como esquema de referencia durante la elaboración del proyecto: la plantilla 
-refleja los diferentes aspectos que se deben tener en cuenta para elaborar el proyecto 
-y que tendrá que definir cada equipo de alumnos al elaborar su proyecto.
+- Servir como esquema de referencia durante la elaboración del proyecto: la plantilla refleja los diferentes aspectos que se deben tener en cuenta para elaborar el proyecto  y que tendrá que definir cada equipo de alumnos al elaborar su proyecto.
 
-- Elaborar el documento-memoria en el que se plasma el proyecto del equipo, el cual 
-deberá ser entregado para su posterior defensa y para la evaluación por parte del 
-profesorado.
+- Elaborar el documento-memoria en el que se plasma el proyecto del equipo, el cual  deberá ser entregado para su posterior defensa y para la evaluación por parte del  profesorado.
 
 Además, la guía propone como herramienta para la elaboración del proyecto una lista de 
 control que recoge los principales pasos que se deberán dar a la hora de elaborar el 

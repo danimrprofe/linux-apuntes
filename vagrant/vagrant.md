@@ -16,10 +16,12 @@
 - [Parando máquinas](#parando-m%C3%A1quinas)
 - [Configuraciones de Vagrant](#configuraciones-de-vagrant)
 - [Aprovisionamiento](#aprovisionamiento)
+- [Herramientas de aprovisionamiento](#herramientas-de-aprovisionamiento)
 - [Ejemplos de aprovisionamiento](#ejemplos-de-aprovisionamiento)
       - [shell](#shell)
       - [script](#script)
       - [ansible](#ansible)
+- [Ejecucion de un playbook](#ejecucion-de-un-playbook)
   - [Proyectos en este repositorio](#proyectos-en-este-repositorio)
   - [vagrant-ansible](#vagrant-ansible)
   - [vagrant-mult](#vagrant-mult)
@@ -211,6 +213,8 @@ Estos scripts son los que se ejecutarán automáticamente al levantar las MV.
 
 Este proceso de instalar y configurar software dentro del SO guest automáticamente se conoce como `aprovisionamiento`.
 
+# Herramientas de aprovisionamiento
+
 Existen diferentes herramientas para ello:
 
 * Shell scripts
@@ -228,9 +232,11 @@ To-do
 
 Para aprovisionar con Ansible, podemos tener un playbook creado en la misma carpeta. Lo habitual es crear un archivo hosts para ello.
 
-Si no le decimos nada, en distribuciones linux buscará el archivo en /etc/ansible/hosts. Si no queremos que coja ese, y queremos que coja uno que queramos nosotros (en este caso en la misma carpeta del playbook):
+Si no le decimos nada, en distribuciones linux buscará el archivo en `/etc/ansible/hosts`. Si no queremos que coja ese, y queremos que coja uno que queramos nosotros (en este caso en la misma carpeta del playbook):
 
     ansible-playbook instrucciones.yml -i hosts
+
+# Ejecucion de un playbook
 
 La primera vez nos pedirá confirmación:
 

@@ -26,6 +26,7 @@ aspectratio:
 - [1. Noción de paquete](#1-noci%C3%B3n-de-paquete)
 - [2. Gestor de paquetes DPKG](#2-gestor-de-paquetes-dpkg)
 - [Ejemplo: instalación de google chrome](#ejemplo-instalaci%C3%B3n-de-google-chrome)
+- [Gestion de dependencias](#gestion-de-dependencias)
 - [3. Programa de gestión de paquetes avanzada APT y YUM](#3-programa-de-gesti%C3%B3n-de-paquetes-avanzada-apt-y-yum)
 - [4. Repositorios](#4-repositorios)
   - [Lista de repositorios](#lista-de-repositorios)
@@ -39,7 +40,7 @@ aspectratio:
 
 En Linux no es habitual disponer de software proporcionado con un programa de instalación interactivo (install.exe). Con Linux es muy habitual disponer de herramientas, actualizaciones, etc. en forma de **paquetes** (packages).
 
-Un paquete es un archivo que contiene un software a instalar y unas reglas. Suele tener una extensión .rpm, .deb, en función del tipo de paquete. Cada tipo de distribución puede funcionar con un tipo de paquetes diferentes. Los paquetes son incompatibles entre sí, pero se pueden convertir.
+Un **paquete** es un archivo que contiene un software a instalar y unas reglas. Suele tener una extensión .rpm, .deb, en función del tipo de paquete. Cada tipo de distribución puede funcionar con un tipo de paquetes diferentes. Los paquetes son incompatibles entre sí, pero se pueden convertir.
 
 # 2. Gestor de paquetes DPKG
 
@@ -47,27 +48,35 @@ El comando **dpkg** permite instalar, crear, eliminar y gestionar paquetes debia
 
 Comandos comunes:
 
-- Instalación: dpkg -i mipaquete.deb
-- Listar paquetes instalados: dpkg -l
-- Borrar paquetes: dpkg -r
+- Instalación: `dpkg -i mipaquete.deb`
+- Listar paquetes instalados: `dpkg -l`
+- Borrar paquetes: `dpkg -r`
 
 # Ejemplo: instalación de google chrome
 
 Descarga del paquete:
 
-    wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+`wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.`deb`
 
 Instalación del paquete
 
-    dpkg -i google-chrome-stable_current_amd64.deb
+`dpkg -i google-chrome-stable_current_amd64.deb`
 
 Borrar el paquete descargado (si queremos)
 
-    rm google-chrome-stable_current_amd64.deb
+`rm google-chrome-stable_current_amd64.deb`
+
+# Gestion de dependencias
+
+Los paquetes generalmente dependen de otros paquetes mas basicos para funcionar. Estos paquetes necesarios se llaman `dependencias`. Pueden suceder dos cosas:
+
+- Que todas las dependencias que necesita el paquete esten instaladas en la maquina. En este caso el paquete se instalara correctamente.
+- Que falte alguna dependencia. Deberemos instalar primero los paquetes necesarios previamente.
+- Por ultimo, puede ser que el paquete necesario se encuentre instalado pero no en la version necesaria. Para ello deberemo actualizarlo primero.
 
 # 3. Programa de gestión de paquetes avanzada APT y YUM
 
-Tanto dpkg como rpm detectan dependencias de paquetes para autorizar o no la instalación, pero no las resuelven. Si una dependencia de un paquete que no está, se deben instalar previamente.
+Tanto `dpkg` como `rpm` detectan dependencias de paquetes para autorizar o no la instalación, pero no las resuelven. Si una dependencia de un paquete no se encuentra, se deben instalar previamente.
 
 **YUM** o **APT** son gestores de paquetes. Descargan los paquetes de un repositorio y gestionan las dependencias automáticamente. Las herramientas **DPKG** o **RPM** no resuelven las dependencias, si hay alguna detienen la instalación e informan de las dependencias que no están cubiertas.
 
@@ -76,21 +85,21 @@ Tanto dpkg como rpm detectan dependencias de paquetes para autorizar o no la ins
 
 # 4. Repositorios
 
-En lugar de especificar un paquete, se encarga de los repositorios de paquetes situados en diferentes sitios, como pueden ser:
+Un `repositorio` es un lugar que contiene un conjunto de paquetes. Los repositorios de paquetes pueden estar situados en diferentes sitios, como pueden ser:
 
 - En un CD, DVD
 - En un directorio local
 - En internet (HTTP, FTP)
 
-Un repositorio contiene un conjunto de paquetes. Cuando se instala un paquete desde un repositorio, se instalan también sus dependencias.
+Cuando se instala un paquete desde un repositorio, se instalan también sus dependencias.
 
 Para mostrar la lista de repositorios:
 
-    cat /etc/apt/sources.list
+`cat /etc/apt/sources.list`
 
 Para modificar el repositorio:
 
-    nano /etc/apt/sources.list
+`nano /etc/apt/sources.list`
 
 ## Lista de repositorios
 
@@ -107,7 +116,7 @@ deb http://archive.canonical.com/ubuntu/ bionic partner
 
 Cómo conocer la versión de SO
 
-    lsb_release -a
+`lsb_release -a`
 
 En mi caso, nos devuelve:
 
@@ -162,3 +171,4 @@ aptitude search ^apache
 # 7. Aptitude
 
 Es un administrador de paquetes con una interfaz en modo texto.
+

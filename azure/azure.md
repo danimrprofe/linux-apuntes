@@ -9,7 +9,7 @@ https://portal.azure.com/
 
 # Grupos de recursos
 
-Todos los recursos que se creen deben ir dentro de un grupo de recursos.
+Todos los recursos que se creen deben ir dentro de un **grupo de recursos**.
 
 Es decir, aunque solo creamos crear una maquina virtual, debemos crear un grupo de recursos en el que estara situada.
 
@@ -43,7 +43,7 @@ Creamos un servicio AKS, para lo cual vamos a crear un grupo de recursos nuevo, 
   * lo llamamos `cluster-k8s-pruebas`.
   * Versión de kubernetes 1.12.7 región North Europe
 
-## Pool de nodos
+# Pool de nodos
 
 Aquí definimos el número de nodos que vamos a meter. Nos recomiendan:
 
@@ -53,9 +53,11 @@ Aquí definimos el número de nodos que vamos a meter. Nos recomiendan:
 Nos permiten elegir el tipo de máquina, por lo que vamos a pillar una sencillita, además de que
 nos consumirá menos dinero.
 
-He probado con maquinas de 2 GB y un vCore pero me dice que no valen para AKS.
+# Elegir maquinas para el cluster
 
-Me voy a coger una máquina A1_v2 que, por unos 30 euros mes, me da:
+He probado con maquinas de 2 GB y un vCore pero me dice que no valen para montar un AKS.
+
+Me voy a coger una máquina **A1_v2** que, por unos 30 euros mes, me da:
 
 * 2 vCPU
 * 4 GB RAM
@@ -63,7 +65,11 @@ Me voy a coger una máquina A1_v2 que, por unos 30 euros mes, me da:
 
 Todos los nodos que cree van a ser iguales, por lo que conviene atinar bien o deberemos crear el AKS de nuevo.
 
-Le indicamos que nos meta 2 nodos en el cluster. Mi cuenta no me deja crear más nodos.
+# Limitaciones de cuenta
+
+- Una vez definidas las maquinas voy a decirle cuantos nodos quiero
+- Le indicamos que nos meta 2 nodos en el cluster. 
+- La cuenta gratuita no me deja crear más nodos.
 
 # Escalado
 
@@ -76,7 +82,7 @@ De momento pasamos olímpicamente porque no vamos a implantar escalado.
 
 # Servicio
 
-Nos pedirá crear un un `service principal`
+Nos pedirá crear un  `service principal`
 
 # Networking
 
@@ -84,7 +90,7 @@ TODO
 
 # Monitorización
 
-Por lo que dice, AKS nos va a facilitar métricas ed CPU y memoria por cada nodo.
+Por lo que dice, **AKS** nos va a facilitar métricas ed CPU y memoria por cada nodo.
 
 También podemos meter más cosas de monitorización, pero nos avisan de que nos van a cobrar.
 Le decimos que gracias pero que no queremos por ahora extra monitorización.
@@ -101,11 +107,15 @@ Me permite guardar como template la configuración que he hecho en varios sistem
 
 Con lo cual, si tenemos que volver a crear el mismo chiringuito, no nos hará falta hacerlo a mano paso por paso.
 
-Lo que más tarda es en levantar el cluster, puesto que me tiene que arrancar las 2 MV.
+# Levantando el cluster
 
-Por lo que veo, me ha creado un deployment llamado:
+Lo que más tarda es en levantar el **cluster**, puesto que me tiene que arrancar las 2 MV.
+
+Por lo que veo, me ha creado un **deployment** llamado:
 
     Deployment name:microsoft.aks-20190429114347
+
+# Resultado del despliegue
 
 Al cabo de 8 minutazos:
 
@@ -125,10 +135,12 @@ Correlation ID:9df64479-3390-4b1f-b1bb-ee5be5158c97
 Bueno, pues tengo mi cluster creado con mis 2 maquinitas, y montado el AKS de kubernetes encima. De momento
 se quedan esperando a que despliegue algo encima.
 
-Me voy a `deployment center` para linkar a un proyecto de GitHub. He cogido un repo de un proyecto que tengo de pruebas
+Me voy a **deployment center** para linkar a un proyecto de **GitHub**. He cogido un repo de un proyecto que tengo de pruebas
 basado en Node.js y mongoDB, que ya tenía dockerizado.
 
-Me obliga a crear un DevOps proyect porque sí, al que voy a llamar `danimrprofe`. Podré consultar mis proyectos en:
+# DevOps project
+
+Me obliga a crear un **DevOps project** porque sí, al que voy a llamar `danimrprofe`. Podré consultar mis proyectos en:
 
  https://dev.azure.com/danimrprofe/
 

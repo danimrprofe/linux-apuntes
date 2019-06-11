@@ -8,8 +8,11 @@ else
 
 archivo="$1"
 nombre_archivo="$(basename $archivo)"
+
+echo "Creando archivo temporal"
 temp="$nombre_archivo.temp"
 
+echo "Creando archivo pdf"
 salida="slides/$nombre_archivo.pdf"
 
 cat generar_presentacion_plantilla > "$temp"

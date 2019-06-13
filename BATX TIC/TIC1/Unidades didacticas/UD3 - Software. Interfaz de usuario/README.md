@@ -1,0 +1,16 @@
+- 1. Introducción 
+- 2. Tipos de software
+  - 2.1. Según su funcionalidad 
+  - 2.2. Según sus limitaciones de uso
+- 3. Licencias
+- 4. El sistema operativo
+  - 4.1. Evolución de los sistemas operativos
+  - 4.2. Tipos de sistemas operativos
+  - 4.3. Funciones de los sistemas operativos
+  - 4.4. Sistemas de ficheros
+- 5. Ubuntu/Guadalinex
+  - 5.1. Presentación del sistema
+  - 5.2. Trabajar con archivos y carpetas
+  - 5.3. Trabajar con discos
+  - 5.4. Seguridad en el sistema
+- 6. Configuración de periféricos

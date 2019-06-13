@@ -1,0 +1,25 @@
+- 1. Introducción 
+  - 1.1. Red de ordenadores 
+- 2. Tipos de redes 
+  - 2.1. Según la cobertura 
+  - 2.2. Según el propietario 
+  - 2.3. Según el medio de transmisión 
+  - 2.4. Según el modelo de transmisión 
+  - 2.5. Según la topología 
+- 3. Arquitectura de red 
+  - 3.1. Modelo de referencia OSI 
+  - 3.2. Arquitectura TCP/IP 
+- 4. Redes de área local 
+  - 4.1. Hardware de una LAN 
+  - 4.2. Topología en estrella 
+  - 4.3. Conexión a Internet 
+  - 4.4. Seguridad en una LAN 
+- 5. Redes inalámbricas 
+  - 5.1. WLAN 
+  - 5.2. WPAN 
+- 6. Trabajo en red 
+  - 6.1. Red entre iguales y red cliente/servidor 
+  - 6.2. Configuración de la red 
+  - 6.3. Usuarios y grupos 
+  - 6.4. Permisos 
+  - 6.5. El reparto de recursos 

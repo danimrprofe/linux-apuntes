@@ -1,0 +1,17 @@
+- 1. Edición de imágenes digitales 
+  - 1.1. Tipos de imágenes 
+  - 1.2. Color de una imagen 
+  - 1.3. Resolución de impresión 
+  - 1.4. Tamaño del archivo 
+  - 1.5. Dispositivos para obtener imágenes digitales 
+  - 1.6. Software para el tratamiento de imágenes digitales 
+  - 1.7. Animaciones 
+- 2. Fotografía digital. Formatos 
+  - 2.1. Tamaño
+  - 2.2. Ajustes de la imagen
+- 3. Edición de sonido y vídeo digitales
+  - 3.1. Sonido digital 
+  - 3.2. Vídeo digital
+  - 3.3. Formatos de sonido y vídeo digital 
+  - 3.4. Dispositivos de captura de sonido y vídeo digitales 
+  - 3.5. Aplicaciones de edición

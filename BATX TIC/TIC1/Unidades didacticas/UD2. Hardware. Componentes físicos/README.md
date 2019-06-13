@@ -1,0 +1,26 @@
+- 1. Hardware básico de un ordenador
+- 2. Cajas y fuentes 
+- 3. Memoria del ordenador
+  - 3.1. Jerarquía de memoria
+  - 3.2. La memoria principal 
+- 4. Unidad central de proceso 
+  - 4.1. Registros
+  - 4.2. Unidad aritmético-lógica
+  - 4.3. Unidad de control
+  - 4.4. Microprocesadores
+- 5. Buses de comunicación
+  - 5.1. Tipos de buses de entrada/salida 
+- 6. La placa base 
+  - 6.1. Factor de forma
+  - 6.2. Chipset
+  - 6.3. Canales de memoria
+  - 6.4. BIOS
+- 7. Los periféricos
+  - 7.1. Periféricos de entrada
+  - 7.2. Periféricos de salida
+  - 7.3. Conexión de los periféricos
+  - 7.4. Dispositivos de almacenamiento
+- 8. Estado de la técnica 
+  - 8.1. Componentes
+  - 8.2. Dispositivos inteligentes (smart devices)
+  - 8.3. Periféricos

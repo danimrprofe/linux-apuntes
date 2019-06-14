@@ -1,5 +1,22 @@
 # TIC 1
 
+- [TIC 1](#tic-1)
+  - [BLOC 1. LA SOCIETAT DE LA INFORMACIÓ I L’ORDINADOR](#bloc-1-la-societat-de-la-informaci%C3%B3-i-lordinador)
+    - [Continguts](#continguts)
+    - [Criteris d’avaluació / Estàndards d’aprenentatge avaluables](#criteris-davaluaci%C3%B3--est%C3%A0ndards-daprenentatge-avaluables)
+  - [BLOC 2. ARQUITECTURA D’ORDINADORS](#bloc-2-arquitectura-dordinadors)
+    - [Continguts](#continguts-1)
+    - [Criteris d’avaluació / Estàndards d’aprenentatge avaluables](#criteris-davaluaci%C3%B3--est%C3%A0ndards-daprenentatge-avaluables-1)
+  - [BLOC 3. PROGRAMARI PER A SISTEMES INFORMÀTICS](#bloc-3-programari-per-a-sistemes-inform%C3%A0tics)
+      - [Continguts](#continguts-2)
+      - [Criteris d’avaluació / Estàndards d’aprenentatge avaluables](#criteris-davaluaci%C3%B3--est%C3%A0ndards-daprenentatge-avaluables-2)
+  - [BLOC 4. XARXES D’ORDINADORS](#bloc-4-xarxes-dordinadors)
+    - [Continguts](#continguts-3)
+    - [Criteris d’avaluació / Estàndards d’aprenentatge avaluables](#criteris-davaluaci%C3%B3--est%C3%A0ndards-daprenentatge-avaluables-3)
+  - [BLOC 5. PROGRAMACIÓ](#bloc-5-programaci%C3%B3)
+    - [Continguts](#continguts-4)
+    - [Criteris d’avaluació / Estàndards d’aprenentatge avaluables](#criteris-davaluaci%C3%B3--est%C3%A0ndards-daprenentatge-avaluables-4)
+
 ## BLOC 1. LA SOCIETAT DE LA INFORMACIÓ I L’ORDINADOR
 
 ### Continguts

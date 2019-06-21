@@ -2,8 +2,8 @@
 - 2. Cajas y fuentes 
 - 3. Memoria del ordenador
   - 3.1. Jerarquía de memoria
-  - 3.2. La memoria principal 
-- 4. Unidad central de proceso 
+  - 3.2. La memoria principal
+- 4. Unidad central de proceso
   - 4.1. Registros
   - 4.2. Unidad aritmético-lógica
   - 4.3. Unidad de control

@@ -1,6 +1,7 @@
 ### Unidad 5. Procesamiento de textos, autoedición y presentaciones
 
-- 1. El concepto de edición textual y de procesador de texto - 2. La edición genérica de documentos
+- 1. El concepto de edición textual y de procesador de texto
+- 2. La edición genérica de documentos
   - 2.1. Las principales propiedades de una fuente
   - 2.2. Las características de los párrafos
   - 2.3. Las propiedades comunes aplicables a un documento

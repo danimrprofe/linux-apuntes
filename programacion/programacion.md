@@ -1,48 +1,49 @@
 # Apuntes de programación
 
-- [Apuntes de programación](#apuntes-de-programaci%C3%B3n)
-- [Conceptos de programa, aplicación y lenguaje de programación](#conceptos-de-programa-aplicaci%C3%B3n-y-lenguaje-de-programaci%C3%B3n)
-  - [Software](#software)
-  - [Aplicaciones](#aplicaciones)
-  - [Algoritmos](#algoritmos)
-  - [Lenguajes de programación](#lenguajes-de-programaci%C3%B3n)
-- [Tipos de lenguaje de programación](#tipos-de-lenguaje-de-programaci%C3%B3n)
-  - [Nivel de abstracción](#nivel-de-abstracci%C3%B3n)
-    - [Lenguajes de bajo nivel](#lenguajes-de-bajo-nivel)
-    - [Lenguajes de nivel medio](#lenguajes-de-nivel-medio)
-  - [Propósito](#prop%C3%B3sito)
-  - [Evolución histórica](#evoluci%C3%B3n-hist%C3%B3rica)
-  - [Forma de ejecutarse](#forma-de-ejecutarse)
-  - [MANERA DE ABORDAR LA TAREA A REALIZAR](#manera-de-abordar-la-tarea-a-realizar)
-  - [Paradigma de programación](#paradigma-de-programaci%C3%B3n)
-  - [Lugar de ejecución](#lugar-de-ejecuci%C3%B3n)
-  - [CARACTERÍSTICAS DE LOS LENGUAJES MÁS DIFUNDIDOS](#caracter%C3%ADsticas-de-los-lenguajes-m%C3%A1s-difundidos)
-    - [C](#c)
-    - [C++](#c)
-    - [`Java`,](#java)
-    - [`PHP`,](#php)
-    - [Python](#python)
-- [Tipos de código](#tipos-de-c%C3%B3digo)
-  - [Código fuente](#c%C3%B3digo-fuente)
-  - [Código objeto](#c%C3%B3digo-objeto)
-  - [Código ejecutable](#c%C3%B3digo-ejecutable)
-  - [TRADUCTORES DE UN LENGUAJE DE PROGRAMACIÓN](#traductores-de-un-lenguaje-de-programaci%C3%B3n)
-- [Obtención de código ejecutable](#obtenci%C3%B3n-de-c%C3%B3digo-ejecutable)
-  - [Compilador](#compilador)
-  - [Intérprete](#int%C3%A9rprete)
-  - [COMPILADOR + INTÉRPRETE](#compilador--int%C3%A9rprete)
-  - [DIFERENCIA ENTRE COMPILADOR E INTÉRPRETE](#diferencia-entre-compilador-e-int%C3%A9rprete)
-  - [DEPURADORES](#depuradores)
-- [Paradigmas de programación](#paradigmas-de-programaci%C3%B3n)
-  - [Lenguajes](#lenguajes)
-    - [Lenguajes que soportan un paradigma](#lenguajes-que-soportan-un-paradigma)
-    - [Lenguajes que soporten múltiples paradigmas de programación](#lenguajes-que-soporten-m%C3%BAltiples-paradigmas-de-programaci%C3%B3n)
-    - [Lenguajes que soportan muchos paradigmas de programación](#lenguajes-que-soportan-muchos-paradigmas-de-programaci%C3%B3n)
-  - [Programación Imperativa](#programaci%C3%B3n-imperativa)
-  - [Programación declarativa](#programaci%C3%B3n-declarativa)
-  - [Diferencias principales](#diferencias-principales)
-  - [¿Y qué hay de la programación orientada a objetos?](#%C2%BFy-qu%C3%A9-hay-de-la-programaci%C3%B3n-orientada-a-objetos)
-  - [Conclusión](#conclusi%C3%B3n)
+- [Apuntes de programación](#Apuntes-de-programaci%C3%B3n)
+- [Conceptos de programa, aplicación y lenguaje de programación](#Conceptos-de-programa-aplicaci%C3%B3n-y-lenguaje-de-programaci%C3%B3n)
+  - [Software](#Software)
+  - [Aplicaciones](#Aplicaciones)
+  - [Algoritmos](#Algoritmos)
+    - [Formas de representación de un algoritmo](#Formas-de-representaci%C3%B3n-de-un-algoritmo)
+  - [Lenguajes de programación](#Lenguajes-de-programaci%C3%B3n)
+- [Tipos de lenguaje de programación](#Tipos-de-lenguaje-de-programaci%C3%B3n)
+  - [Nivel de abstracción](#Nivel-de-abstracci%C3%B3n)
+    - [Lenguajes de bajo nivel](#Lenguajes-de-bajo-nivel)
+    - [Lenguajes de nivel medio](#Lenguajes-de-nivel-medio)
+  - [Propósito](#Prop%C3%B3sito)
+  - [Evolución histórica](#Evoluci%C3%B3n-hist%C3%B3rica)
+  - [Forma de ejecutarse](#Forma-de-ejecutarse)
+  - [MANERA DE ABORDAR LA TAREA A REALIZAR](#MANERA-DE-ABORDAR-LA-TAREA-A-REALIZAR)
+  - [Paradigma de programación](#Paradigma-de-programaci%C3%B3n)
+  - [Lugar de ejecución](#Lugar-de-ejecuci%C3%B3n)
+  - [CARACTERÍSTICAS DE LOS LENGUAJES MÁS DIFUNDIDOS](#CARACTER%C3%8DSTICAS-DE-LOS-LENGUAJES-M%C3%81S-DIFUNDIDOS)
+    - [C](#C)
+    - [C++](#C)
+    - [`Java`,](#Java)
+    - [`PHP`,](#PHP)
+    - [Python](#Python)
+- [Tipos de código](#Tipos-de-c%C3%B3digo)
+  - [Código fuente](#C%C3%B3digo-fuente)
+  - [Código objeto](#C%C3%B3digo-objeto)
+  - [Código ejecutable](#C%C3%B3digo-ejecutable)
+  - [TRADUCTORES DE UN LENGUAJE DE PROGRAMACIÓN](#TRADUCTORES-DE-UN-LENGUAJE-DE-PROGRAMACI%C3%93N)
+- [Obtención de código ejecutable](#Obtenci%C3%B3n-de-c%C3%B3digo-ejecutable)
+  - [Compilador](#Compilador)
+  - [Intérprete](#Int%C3%A9rprete)
+  - [COMPILADOR + INTÉRPRETE](#COMPILADOR--INT%C3%89RPRETE)
+  - [DIFERENCIA ENTRE COMPILADOR E INTÉRPRETE](#DIFERENCIA-ENTRE-COMPILADOR-E-INT%C3%89RPRETE)
+  - [DEPURADORES](#DEPURADORES)
+- [Paradigmas de programación](#Paradigmas-de-programaci%C3%B3n)
+  - [Lenguajes](#Lenguajes)
+    - [Lenguajes que soportan un paradigma](#Lenguajes-que-soportan-un-paradigma)
+    - [Lenguajes que soporten múltiples paradigmas de programación](#Lenguajes-que-soporten-m%C3%BAltiples-paradigmas-de-programaci%C3%B3n)
+    - [Lenguajes que soportan muchos paradigmas de programación](#Lenguajes-que-soportan-muchos-paradigmas-de-programaci%C3%B3n)
+  - [Programación Imperativa](#Programaci%C3%B3n-Imperativa)
+  - [Programación declarativa](#Programaci%C3%B3n-declarativa)
+  - [Diferencias principales](#Diferencias-principales)
+  - [¿Y qué hay de la programación orientada a objetos?](#%C2%BFY-qu%C3%A9-hay-de-la-programaci%C3%B3n-orientada-a-objetos)
+  - [Conclusión](#Conclusi%C3%B3n)
 
 # Conceptos de programa, aplicación y lenguaje de programación
 
@@ -63,13 +64,7 @@ Existen diferentes tipos de software: software de sistema y software de aplicaci
 
 ## Aplicaciones
 
-Una **aplicación** es un tipo de programa informático diseñado para facilitar al usuario 
-la realización de un determinado tipo de trabajo. Esto lo diferencia principalmente de 
-otros tipos de programas (sistema) que realizan tareas más avanzadas y no pertinentes 
-al usuario común, como los sistemas operativos (que hacen funcionar al ordenador, como 
-Windows, Mac o Linux), las utilidades (que realizan tareas de mantenimiento o de uso 
-general), y los lenguajes de programación (con el cual se crean los programas 
-informáticos).
+Una **aplicación** es un tipo de programa informático diseñado para facilitar al usuario la realización de un determinado tipo de trabajo. Esto lo diferencia principalmente de otros tipos de programas (sistema) que realizan tareas más avanzadas y no pertinentes al usuario común, como los sistemas operativos (que hacen funcionar al ordenador, como Windows, Mac o Linux), las utilidades (que realizan tareas de mantenimiento o de uso general), y los lenguajes de programación (con el cual se crean los programas informáticos).
 
 Las aplicaciones suelen diseñarse para la **automatización** de ciertas **tareas** complicadas
 o tediosas como pueden ser la contabilidad, la redacción de documentos, o la gestión de un almacén. Algunos ejemplos de programas de aplicación son los procesadores de textos, hojas de cálculo, y base de datos.
@@ -78,14 +73,23 @@ De modo que una aplicación informática es un programa o consta de varios progr
 
 ## Algoritmos
 
-Un **algoritmo** es la forma de resolver un problema, los pasos a seguir para resolver un problema estándar. El algoritmo de “ir a la compra” sería:
+Cuando queremos resolver un problema a través de la creación de un programa informático habremos de diseñar previamente lo que se denomina un algoritmo. Un **algoritmo** es la forma de resolver un problema, los pasos a seguir para resolver un problema estándar. 
 
-1) Hago la lista de la compra
-2) Voy a comprar
-3) Guardo las cosas.
+Se llama algoritmo a la secuencia de pasos organizados a seguir para resolver un problema. Cualquier algoritmo debe tener las siguientes características:
 
-Un ejemplo un poco tonto pero es para que se entienda.
-Veamos ahora un algoritmo universal para sistemas informáticos
+- La descripción de cada paso no debe llevar a ambigüedades, los pasos son absolutamente explícitos y no inducen a error.
+- El número de pasos debe ser finito, de forma que el algoritmo se pueda ejecutar en un tiempo finito.
+
+Los algoritmos son independientes de la sintaxis de cada lenguaje de programación en particular, siendo evidente que el algoritmo que lleve a la solución de un determinado problema puede ser expresado utilizando distintos lenguajes de programación.
+
+### Formas de representación de un algoritmo
+
+Hay distintas formas de escribir un algoritmo, bien usando un lenguaje específico de descripción de algoritmos (**pseudocódigo**), bien mediante representaciones gráficas (organigramas o **diagramas de flujo**).
+
+- En los **diagramas de flujo** existen símbolos estandarizados que permiten reflejar distintos tipos de pasos en un algoritmo.
+- El **pseudocódigo** es una forma de escribir los pasos, pero de la forma más cercana al lenguaje de programación que vamos a utilizar, es como un falso lenguaje muy cercano al lenguaje humano.
+
+Independiente del lenguaje de programación que vaya a usarse, un algoritmo que esté escrito en pseudocódigo o con un diagrama de flujo es fácilmente traducible a muchos lenguajes de programación.
 
 ## Lenguajes de programación
 
@@ -252,6 +256,8 @@ El programa original (fichero fuente) sólo se traduce una vez, creando un nuevo
 Como una parte fundamental de este proceso de traducción, el compilador le hace notar al usuario la presencia de errores en el código fuente del programa. Vea la siguiente figura.
 
 Los lenguajes C y C++ son lenguajes que utilizan un compilador. El trabajo del compilador y su función es llevar el código fuente escrito en C/C++ a un programa escrito en lenguaje máquina. Entrando en más detalle, un programa en código fuente es compilado obteniendo un archivo parcial (un objeto) que tiene extensión obj. Luego  el compilador invoca al “linker” que convierte al archivo objeto en un ejecutable con extensión exe; este último archivo es un archivo en formato binario (ceros y unos) y puede funcionar por sí sólo.
+
+![](2019-06-21-08-30-28.png)
 
 ## Intérprete
 

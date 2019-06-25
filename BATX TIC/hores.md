@@ -11,15 +11,29 @@ Total: 19 hores
 
 # Eines
 
-- 4h setmanals TIC 2
+https://sites.google.com/site/saratecnoeso/1o-bachillerato/writer
+
+# TIC2
+
   - Javascript
   - Tutorial w3schools.com/JS
   - Eina online codepen.io (Tres seccions: HTML, CSS, JS)
   - 1r trimestre edicio pagines web (HTML i CSS)
   - Noticies seguretat
-- 3h setmanals TIC 1 (lletres)
   - http://sqlfiddle.com (bd)
-  - Scratch (programacio)
+
+# TIC1
+
+- App inventor
+- Sketchup
+- GIMP
+- Inkscape
+
+# TIC 4 ESO
+
+- Scratch (programacio)
+
+
   - https://www.bighero6challenge.com
 - 3h setmanals TIC 1 (ciencies)
 - 3h cap de departament

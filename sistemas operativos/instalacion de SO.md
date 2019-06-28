@@ -1,23 +1,23 @@
 
-- [Instalación de sistemas operativos](#instalaci%C3%B3n-de-sistemas-operativos)
-  - [Tipos de instalación](#tipos-de-instalaci%C3%B3n)
-    - [Instalación normal (limpia)](#instalaci%C3%B3n-normal-limpia)
-    - [Actualización](#actualizaci%C3%B3n)
-    - [Downgrade](#downgrade)
-    - [Migración](#migraci%C3%B3n)
-  - [Entornos de instalación](#entornos-de-instalaci%C3%B3n)
-    - [Virtual](#virtual)
-    - [No virtual](#no-virtual)
-  - [Instalación atendida vs desatendida](#instalaci%C3%B3n-atendida-vs-desatendida)
-    - [Atendida](#atendida)
-    - [Desatendida](#desatendida)
-  - [Ficheros o imágenes](#ficheros-o-im%C3%A1genes)
-  - [Clonación](#clonaci%C3%B3n)
-  - [Creación de una imagen](#creaci%C3%B3n-de-una-imagen)
-  - [Carpetas compartidas](#carpetas-compartidas)
-  - [PXE (Preboot eXecution Environment)](#pxe-preboot-execution-environment)
-    - [Herramientas PXE instalación SO](#herramientas-pxe-instalaci%C3%B3n-so)
-  - [Proceso para la instalación de un SO](#proceso-para-la-instalaci%C3%B3n-de-un-so)
+- [Instalación de sistemas operativos](#Instalaci%C3%B3n-de-sistemas-operativos)
+  - [Tipos de instalación](#Tipos-de-instalaci%C3%B3n)
+    - [Instalación normal (limpia)](#Instalaci%C3%B3n-normal-limpia)
+    - [Actualización](#Actualizaci%C3%B3n)
+    - [Downgrade](#Downgrade)
+    - [Migración](#Migraci%C3%B3n)
+  - [Entornos de instalación](#Entornos-de-instalaci%C3%B3n)
+    - [Virtual](#Virtual)
+    - [No virtual](#No-virtual)
+  - [Instalación atendida vs desatendida](#Instalaci%C3%B3n-atendida-vs-desatendida)
+    - [Atendida](#Atendida)
+    - [Desatendida](#Desatendida)
+  - [Ficheros o imágenes](#Ficheros-o-im%C3%A1genes)
+  - [Clonación](#Clonaci%C3%B3n)
+  - [Creación de una imagen](#Creaci%C3%B3n-de-una-imagen)
+  - [Carpetas compartidas](#Carpetas-compartidas)
+  - [PXE (Preboot eXecution Environment)](#PXE-Preboot-eXecution-Environment)
+    - [Herramientas PXE instalación SO](#Herramientas-PXE-instalaci%C3%B3n-SO)
+  - [Proceso para la instalación de un SO](#Proceso-para-la-instalaci%C3%B3n-de-un-SO)
 
 # Instalación de sistemas operativos
 
@@ -63,6 +63,8 @@ En versiones más actuales de un SO no funcionan correctamente
 - Para conservar los datos
 - Hacer una copia de seguridad 
 - En algún dispositivo (un CD, DVD, dispositivo USB, tarjeta de memoria
+
+![](2019-06-28-09-23-21.png)
 
 ## Entornos de instalación
 

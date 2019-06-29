@@ -825,13 +825,13 @@ descobriments amb el context en què es desenvolupen.
 BLOC 1. ÈTICA I ESTÈTICA EN LA INTERACCIÓ EN XARXA
 
 1. Adoptar conductes i hàbits que permetin la protecció de l’individu en la interacció a la xarxa.
-1.1. Interactua amb hàbits adequats en entorns virtuals.
-1.2. Aplica polítiques segures d’ús de contrasenyes per protegir la informació personal.
+   1. Interactua amb hàbits adequats en entorns virtuals.
+   2. Aplica polítiques segures d’ús de contrasenyes per protegir la informació personal.
 2. Accedir a serveis d’intercanvi i publicació d’informació digital amb criteris de seguretat i ús responsable.
-2.1. Duu a terme activitats amb responsabilitat sobre conceptes com la propietat i l’intercanviï d’informació.
+   1. Duu a terme activitats amb responsabilitat sobre conceptes com la propietat i l’intercanviï d’informació.
 3. Reconèixer i comprendre els drets dels materials allotjats al web.
-3.1. Consulta diferents fonts i navega coneixent la importància de la identitat digital i els tipus de frau del web.
-3.2. Diferencia els conceptes de material subjecte a drets d’autor i material de lliure distribució .
+   1. Consulta diferents fonts i navega coneixent la importància de la identitat digital i els tipus de frau del web.
+   2. Diferencia els conceptes de material subjecte a drets d’autor i material de lliure distribució.
 
 BLOC 2. ORDINADORS, SISTEMES OPERATIUS I XARXES
 

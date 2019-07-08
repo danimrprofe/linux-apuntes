@@ -1,67 +1,67 @@
 # Viaje a vietnam
 
-- [Viaje a vietnam](#viaje-a-vietnam)
-  - [Preparativos](#preparativos)
-    - [Cambio de moneda](#cambio-de-moneda)
-    - [Planning](#planning)
-  - [Día 01 (19/06/16) - Palma / Berlín / Abu Dhabi](#d%C3%ADa-01-190616---palma--berl%C3%ADn--abu-dhabi)
-    - [Vuelo Palma - Abu Dhabi](#vuelo-palma---abu-dhabi)
-  - [Día 02 (20/06/16) - Abu Dhabi a Ho Chi Minh](#d%C3%ADa-02-200616---abu-dhabi-a-ho-chi-minh)
-    - [Taxi aeropuerto - ciudad](#taxi-aeropuerto---ciudad)
-    - [Hotel](#hotel)
-    - [Cena](#cena)
-  - [Día 03 (21/06/16) - Ho Chi Minh](#d%C3%ADa-03-210616---ho-chi-minh)
-  - [Día 04 (22/06/16) - De Ho Chi Minh a Hanoi](#d%C3%ADa-04-220616---de-ho-chi-minh-a-hanoi)
-    - [Vuelo Ho Chi Minh - Hanoi](#vuelo-ho-chi-minh---hanoi)
-    - [Hotel](#hotel-1)
-  - [Día 05 (23/06/16) - Pagoda del perfume](#d%C3%ADa-05-230616---pagoda-del-perfume)
-  - [Día 06 (24/06/16) - Hanoi a Sapa](#d%C3%ADa-06-240616---hanoi-a-sapa)
-    - [Transfer a Hanoi Central](#transfer-a-hanoi-central)
-    - [Tren nocturno a Sapa](#tren-nocturno-a-sapa)
-  - [Día 07 (25/06/16) - Sapa (I) Visita poblado Cat Cat](#d%C3%ADa-07-250616---sapa-i-visita-poblado-cat-cat)
-    - [Hotel en Sapa](#hotel-en-sapa)
-  - [Día 08 (26/06/16) - Sapa (II) Excursión por Sapa](#d%C3%ADa-08-260616---sapa-ii-excursi%C3%B3n-por-sapa)
-  - [Día 09 (27/06/16) - Sapa a Hanoi](#d%C3%ADa-09-270616---sapa-a-hanoi)
-    - [Bus limusine Sapa - Hanoi](#bus-limusine-sapa---hanoi)
-    - [Hotel en Hanoi](#hotel-en-hanoi)
-  - [Día 10 (28/06/16) - Hanoi a crucero de Halong (I)](#d%C3%ADa-10-280616---hanoi-a-crucero-de-halong-i)
-    - [Crucero](#crucero)
-    - [Tarde](#tarde)
-    - [Noche](#noche)
-  - [Día 11 (29/06/16) - Crucero de Halong (II)](#d%C3%ADa-11-290616---crucero-de-halong-ii)
-  - [Día 12 (30/06/16) - Vuelta de Halong a Hanoi](#d%C3%ADa-12-300616---vuelta-de-halong-a-hanoi)
-  - [Día 13 (01/07/16) - Hanoi](#d%C3%ADa-13-010716---hanoi)
-    - [Comida](#comida)
-  - [Día 14 (02/07/16) - Hanoi a Hue (I)](#d%C3%ADa-14-020716---hanoi-a-hue-i)
-    - [Vuelo Hanoi - Hue](#vuelo-hanoi---hue)
-    - [Comida](#comida-1)
-    - [Cena](#cena-1)
-  - [Día 15 (03/07/16) - Hue (II): Ciudadela](#d%C3%ADa-15-030716---hue-ii-ciudadela)
-  - [Día 16 (04/07/16) - De Hue (III) a Hoi an](#d%C3%ADa-16-040716---de-hue-iii-a-hoi-an)
-    - [Montañas del Mármol](#monta%C3%B1as-del-m%C3%A1rmol)
-    - [Check-in hotel](#check-in-hotel)
-    - [Comida](#comida-2)
-    - [Cena](#cena-2)
-    - [Hotel](#hotel-2)
-  - [Día 17 (05/07/16) - Hoi An (II): Playa](#d%C3%ADa-17-050716---hoi-an-ii-playa)
-    - [Comida](#comida-3)
-    - [Cena](#cena-3)
-  - [Día 18 (06/07/16) - Hoi An (III)](#d%C3%ADa-18-060716---hoi-an-iii)
-  - [Día 19 (07/07/16) - Viaje Da Nang a Ho Chi Minh](#d%C3%ADa-19-070716---viaje-da-nang-a-ho-chi-minh)
-    - [Vuelo Da Nang - Ho Chi Minh](#vuelo-da-nang---ho-chi-minh)
-    - [Hotel Town House 23](#hotel-town-house-23)
-    - [Cena](#cena-4)
-  - [Dïa 20 (08/07/16) - Delta del Mekong día 1](#d%C3%AFa-20-080716---delta-del-mekong-d%C3%ADa-1)
-  - [Día 21 (09/07/16) - Delta del Mekong día 2](#d%C3%ADa-21-090716---delta-del-mekong-d%C3%ADa-2)
-  - [Día 22 (10/07/16) - Viaje Ho Chi Minh a Siem Reap](#d%C3%ADa-22-100716---viaje-ho-chi-minh-a-siem-reap)
-    - [Vuelo a Camboya](#vuelo-a-camboya)
-    - [Cena](#cena-5)
-  - [Día 23 (11/07/16) - Siem Reap (I)](#d%C3%ADa-23-110716---siem-reap-i)
-  - [Día 24 (12/07/16) - Siem Reap (II)](#d%C3%ADa-24-120716---siem-reap-ii)
-  - [Día 25 (13/07/16) - Siem Reap (III)](#d%C3%ADa-25-130716---siem-reap-iii)
-    - [Vuelo a Ho Chi Minh](#vuelo-a-ho-chi-minh)
-  - [Día 26 (14/07/16) - Ho Chi Minh y vuelta a España](#d%C3%ADa-26-140716---ho-chi-minh-y-vuelta-a-espa%C3%B1a)
-  - [Vuelta a España](#vuelta-a-espa%C3%B1a)
+- [Viaje a vietnam](#Viaje-a-vietnam)
+  - [Preparativos](#Preparativos)
+    - [Cambio de moneda](#Cambio-de-moneda)
+    - [Planning](#Planning)
+  - [Día 01 (19/06/16) - Palma / Berlín / Abu Dhabi](#D%C3%ADa-01-190616---Palma--Berl%C3%ADn--Abu-Dhabi)
+    - [Vuelo Palma - Abu Dhabi](#Vuelo-Palma---Abu-Dhabi)
+  - [Día 02 (20/06/16) - Abu Dhabi a Ho Chi Minh](#D%C3%ADa-02-200616---Abu-Dhabi-a-Ho-Chi-Minh)
+    - [Taxi aeropuerto - ciudad](#Taxi-aeropuerto---ciudad)
+    - [Hotel](#Hotel)
+    - [Cena](#Cena)
+  - [Día 03 (21/06/16) - Ho Chi Minh](#D%C3%ADa-03-210616---Ho-Chi-Minh)
+  - [Día 04 (22/06/16) - De Ho Chi Minh a Hanoi](#D%C3%ADa-04-220616---De-Ho-Chi-Minh-a-Hanoi)
+    - [Vuelo Ho Chi Minh - Hanoi](#Vuelo-Ho-Chi-Minh---Hanoi)
+    - [Hotel](#Hotel-1)
+  - [Día 05 (23/06/16) - Pagoda del perfume](#D%C3%ADa-05-230616---Pagoda-del-perfume)
+  - [Día 06 (24/06/16) - Hanoi a Sapa](#D%C3%ADa-06-240616---Hanoi-a-Sapa)
+    - [Transfer a Hanoi Central](#Transfer-a-Hanoi-Central)
+    - [Tren nocturno a Sapa](#Tren-nocturno-a-Sapa)
+  - [Día 07 (25/06/16) - Sapa (I) Visita poblado Cat Cat](#D%C3%ADa-07-250616---Sapa-I-Visita-poblado-Cat-Cat)
+    - [Hotel en Sapa](#Hotel-en-Sapa)
+  - [Día 08 (26/06/16) - Sapa (II) Excursión por Sapa](#D%C3%ADa-08-260616---Sapa-II-Excursi%C3%B3n-por-Sapa)
+  - [Día 09 (27/06/16) - Sapa a Hanoi](#D%C3%ADa-09-270616---Sapa-a-Hanoi)
+    - [Bus limusine Sapa - Hanoi](#Bus-limusine-Sapa---Hanoi)
+    - [Hotel en Hanoi](#Hotel-en-Hanoi)
+  - [Día 10 (28/06/16) - Hanoi a crucero de Halong (I)](#D%C3%ADa-10-280616---Hanoi-a-crucero-de-Halong-I)
+    - [Crucero](#Crucero)
+    - [Tarde](#Tarde)
+    - [Noche](#Noche)
+  - [Día 11 (29/06/16) - Crucero de Halong (II)](#D%C3%ADa-11-290616---Crucero-de-Halong-II)
+  - [Día 12 (30/06/16) - Vuelta de Halong a Hanoi](#D%C3%ADa-12-300616---Vuelta-de-Halong-a-Hanoi)
+  - [Día 13 (01/07/16) - Hanoi](#D%C3%ADa-13-010716---Hanoi)
+    - [Comida](#Comida)
+  - [Día 14 (02/07/16) - Hanoi a Hue (I)](#D%C3%ADa-14-020716---Hanoi-a-Hue-I)
+    - [Vuelo Hanoi - Hue](#Vuelo-Hanoi---Hue)
+    - [Comida](#Comida-1)
+    - [Cena](#Cena-1)
+  - [Día 15 (03/07/16) - Hue (II): Ciudadela](#D%C3%ADa-15-030716---Hue-II-Ciudadela)
+  - [Día 16 (04/07/16) - De Hue (III) a Hoi an](#D%C3%ADa-16-040716---De-Hue-III-a-Hoi-an)
+    - [Montañas del Mármol](#Monta%C3%B1as-del-M%C3%A1rmol)
+    - [Check-in hotel](#Check-in-hotel)
+    - [Comida](#Comida-2)
+    - [Cena](#Cena-2)
+    - [Hotel](#Hotel-2)
+  - [Día 17 (05/07/16) - Hoi An (II): Playa](#D%C3%ADa-17-050716---Hoi-An-II-Playa)
+    - [Comida](#Comida-3)
+    - [Cena](#Cena-3)
+  - [Día 18 (06/07/16) - Hoi An (III)](#D%C3%ADa-18-060716---Hoi-An-III)
+  - [Día 19 (07/07/16) - Viaje Da Nang a Ho Chi Minh](#D%C3%ADa-19-070716---Viaje-Da-Nang-a-Ho-Chi-Minh)
+    - [Vuelo Da Nang - Ho Chi Minh](#Vuelo-Da-Nang---Ho-Chi-Minh)
+    - [Hotel Town House 23](#Hotel-Town-House-23)
+    - [Cena](#Cena-4)
+  - [Dïa 20 (08/07/16) - Delta del Mekong día 1](#D%C3%AFa-20-080716---Delta-del-Mekong-d%C3%ADa-1)
+  - [Día 21 (09/07/16) - Delta del Mekong día 2](#D%C3%ADa-21-090716---Delta-del-Mekong-d%C3%ADa-2)
+  - [Día 22 (10/07/16) - Viaje Ho Chi Minh a Siem Reap](#D%C3%ADa-22-100716---Viaje-Ho-Chi-Minh-a-Siem-Reap)
+    - [Vuelo a Camboya](#Vuelo-a-Camboya)
+    - [Cena](#Cena-5)
+  - [Día 23 (11/07/16) - Siem Reap (I)](#D%C3%ADa-23-110716---Siem-Reap-I)
+  - [Día 24 (12/07/16) - Siem Reap (II)](#D%C3%ADa-24-120716---Siem-Reap-II)
+  - [Día 25 (13/07/16) - Siem Reap (III)](#D%C3%ADa-25-130716---Siem-Reap-III)
+    - [Vuelo a Ho Chi Minh](#Vuelo-a-Ho-Chi-Minh)
+  - [Día 26 (14/07/16) - Ho Chi Minh y vuelta a España](#D%C3%ADa-26-140716---Ho-Chi-Minh-y-vuelta-a-Espa%C3%B1a)
+  - [Vuelta a España](#Vuelta-a-Espa%C3%B1a)
 
 ## Preparativos
 
@@ -128,15 +128,18 @@ Check in en Hong Vina Luxury - (145 Ky Con , District 1, Ho Chi Minh, Vietnam)
 
 ### Cena
 
-Cenamos de 2 Pho en un restaurante cercano. (132.000)
+Cenamos de 2 Pho en un restaurante cercano. (132.000 VND)
+
+![](2019-07-08-16-21-28.png)
+
 22:00 - Dormir en el hotel
 
 ## Día 03 (21/06/16) - Ho Chi Minh
 
-Cappucino y coca cola en McCafe al lado de Notre Dame (40.000 + 15.000)
-Comida en Lemongrass (419.000)
-16:30 a 17:30 - Compras en Saigon Square
-Dormir en Hong Vina Luxury - (145 Ky Con , District 1, Ho Chi Minh, Vietnam)
+- Cappucino y coca cola en McCafe al lado de Notre Dame (40.000 + 15.000)
+- Comida en Lemongrass (419.000)
+- 16:30 a 17:30 - Compras en Saigon Square
+- Dormir en Hong Vina Luxury - (145 Ky Con , District 1, Ho Chi Minh, Vietnam)
 
 ## Día 04 (22/06/16) - De Ho Chi Minh a Hanoi
 
@@ -149,11 +152,23 @@ Detalles del vuelo:
 - Precio: 3,328,000 VND
 - Compañia: Vietjet
 
+Damos una vuelta alrededor del lago Kiem
+
+![](2019-07-08-16-24-53.png)
+
+Nos tomamos un café en Highlands Coffee Hoan Kiem Lake
+
+![](2019-07-08-16-27-05.png)
+
+
+
 ### Hotel
 
 Dormir en Hanoi Charming 2 Hotel (31 Hang Ga Street, Hoan Kiem, Hanoi)
 
 ## Día 05 (23/06/16) - Pagoda del perfume
+
+![](2019-07-08-16-23-24.png)
 
 Dormir en Hanoi Charming 2 Hotel (31 Hang Ga Street, Hoan Kiem, Hanoi)
 
@@ -243,6 +258,8 @@ Al dejarnos comemos de puestos callejeros (bocata con pinchos). Nos comemos unos
 
 ## Día 13 (01/07/16) - Hanoi
 
+![](2019-07-08-15-37-02.png)
+
 10:30 a 11:10 - Café en Giang Cafe (39 Nguyễn Hữu Huân, Lý Thái Tổ, Hoàn Kiếm, Hà Nội, Vietnam)
 
 Tomamos café con huevo
@@ -251,11 +268,15 @@ Tomamos café con huevo
 
 12:25 a 13:45 - Comida en Orchid Cooking class & restaurant (25 Hàng Bạc, Hoàn Kiếm, Hà Nội, Vietnam)
 
+21:30-22:30 - Yo me fui a correr alrededor del lago.
+
 ## Día 14 (02/07/16) - Hanoi a Hue (I)
 
 07:50 a 9:05 - Taxi al aeropuerto Noi Bai (Hanoi)
 
 ### Vuelo Hanoi - Hue
+
+![](2019-07-08-16-36-32.png)
 
 Datos del vuelo:
 
@@ -264,13 +285,17 @@ Datos del vuelo:
 - Airbus A321-100/200 * Operated by - Vietnam Airlines
 - Precio: 2,900,000 VND
 
+Ya en Hue tomamos un café en **The One Coffee & Bakery** porque hacía mucho calor fuera.
+
+![](2019-07-08-16-29-19.png)
+
 ### Comida
 
 Comida en Golden Rice
 
 ### Cena
 
-20:50 a 21:25 - Comida en Elegant restaurant (29 Võ Thị Sáu, Phú Hội, tp. Huế, Thừa Thiên Huế, Vietnam)
+20:50 a 21:25 - Comida en **Elegant restaurant** (29 Võ Thị Sáu, Phú Hội, tp. Huế, Thừa Thiên Huế, Vietnam)
 
 ## Día 15 (03/07/16) - Hue (II): Ciudadela
 
@@ -279,15 +304,16 @@ Comida en Golden Rice
 
 ## Día 16 (04/07/16) - De Hue (III) a Hoi an
 
+![](2019-07-08-16-40-39.png)
+
 - 7.00. Vamos a desayunar en la cafetería del hotel. Hoy dejamos el hotel pilgrimage 
 - 8.00. Recogida coche y tumbas Nos pasa a recoger un coche privado de classy Travel para ir a ver algunas de las tumbas de Hué
 - 9.45. Tras visitar las tumbas, nos dirigimos hacia Hoi An por la autopista nacional que conecta el norte y sur de Vietnam 
 - 11.15 - 11:50 -  Puerto de montaña Hải Vân Pass
-Llegamos al paso de montaña que divide Hué y da Nang. Paramos en una cafetería con vistas a da Nang. 
+Llegamos al paso de montaña que divide Hué y da Nang. Paramos en una cafetería con vistas a da Nang.
 
 Pedimos un cà phê sữa đá, una coca cola y unas Pringles (20,20 y 40k)
-Atravesamos Da Nang  dirigirnos hacia Hoi An, pasando por las montañas de mármol (
-Ngũ Hành Sơn). 
+Atravesamos Da Nang  dirigirnos hacia Hoi An, pasando por las montañas de mármol (Ngũ Hành Sơn). 
 
 ### Montañas del Mármol
 
@@ -305,17 +331,18 @@ Datos del hotel:
 
 ### Comida
 
-- 15:10 a 15:45 - Comida en Bánh mỳ Phượng (2B Phan Châu Trinh, Minh An, tp. Hội An, Quảng Nam, Vietnam)
+- 15:10 a 15:45 - Comida en **Bánh mỳ Phượng** (2B Phan Châu Trinh, Minh An, tp. Hội An, Quảng Nam, Vietnam)
 - Los bocatas cuestan 20.000 VND y las cervezas 15.000 VND.
 - Muy bueno pero un poco picante. 
 - Comemos uno de barbacoa y otro de cerdo a la parrilla.
 
 16.00 - Hotel y descanso 
+
 Recien comidos, volvemos al hotel para darnos una ducha y hacer la siesta hasta que bajen las temperaturas. 
 
 ### Cena
 
-19:35 a 21:20 - Cena en Morning Glory 
+19:35 a 21:20 - Cena en **Morning Glory**
 (106 Nguyễn Thái Học, Minh An, tp. Hội An, Quảng Nam, Vietnam)
 
 ### Hotel 
@@ -330,8 +357,7 @@ Compras por la calle hasta el puente japonés. Aprovechamos para visitar algún 
 
 Aprovechamos para comprar un juego de tazas 
 
-- 08:50 a 09:30 - Café en Mia Coffee (20 Phan Bội Châu, Sơn Phong, tp. Hội An, Quảng Nam, Vietnam)
-Seguimos hasta el café Mia café, dónde nos tomamos un café vietnamita con hielo y un coconut no se que.
+- 08:50 a 09:30 - Café en **Mia Coffee** (20 Phan Bội Châu, Sơn Phong, tp. Hội An, Quảng Nam, Vietnam). Nos tomamos un café vietnamita con hielo y un coconut no se que.
 
 ### Comida
 
@@ -351,6 +377,8 @@ Seguimos hasta el café Mia café, dónde nos tomamos un café vietnamita con hi
 ## Día 19 (07/07/16) - Viaje Da Nang a Ho Chi Minh
 
 ### Vuelo Da Nang - Ho Chi Minh
+
+![](2019-07-08-16-43-45.png)
 
 - Comemos en el Burger King del aeropuerto
 - 13.20 - 14.35	"Vuelo Danang – Ho Chi Minh. (1h20m)
@@ -393,7 +421,7 @@ Descansamos en la habitación hasta las 16.30, y decidimos dar un paseo por la z
 
 ## Día 22 (10/07/16) - Viaje Ho Chi Minh a Siem Reap
 
-- 08:20 a 10:30 - Museo de la guerra War Remnants Museum  (28 Võ Văn Tần, 6, Quận 3, Hồ Chí Minh, Vietnam))
+- 08:20 a 10:30 - Museo de la guerra **War Remnants Museum**  (28 Võ Văn Tần, 6, Quận 3, Hồ Chí Minh, Vietnam))
 - 12:15 a 12:35 - Comida en Cua Hang KFC (28 Võ Văn Tần, 6, Quận 3, Hồ Chí Minh, Vietnam)
 
 ### Vuelo a Camboya
@@ -410,7 +438,9 @@ Datos vuelo
 
 ## Día 23 (11/07/16) - Siem Reap (I)
 
-13:10 a 14:20 - Comida en Traditional Khmer Food restaurant 
+A las 4:45 de la mañana nos recogen para ir a ver el amanecer en los templos de Angkor.
+
+13:10 a 14:20 - Comida en **Traditional Khmer Food restaurant** 
 (Krong Siem Reap, Camboya)
 
 ## Día 24 (12/07/16) - Siem Reap (II)

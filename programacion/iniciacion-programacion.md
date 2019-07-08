@@ -44,8 +44,10 @@ Cada lenguaje tiene un determinado número de palabras reservadas dependiendo de
 
 # 4 Variables y constantes. Datos
 
- Variables Una variable es una localización o casillero en la memoria de un programa u ordenador con un nombre simbólico asociado a dicho espacio, y cuyo contenido cambia durante la fase de procesamiento de información. Son pues "contenedores de datos", y por ello se diferencian según el tipo de dato que son capaces de almacenar.
+Una **variable** es una localización o casillero en la memoria de un programa u ordenador con un nombre simbólico asociado a dicho espacio, y cuyo contenido cambia durante la fase de procesamiento de información. Son pues "contenedores de datos", y por ello se diferencian según el tipo de dato que son capaces de almacenar.
+
 El nombre de una variable comenzará siempre por una letra, pudiendo contener a continuación tanto letras como números.
+
 Las letras pueden ser tanto mayúsculas como minúsculas. No se admiten nombres de variables incluyendo espacios en blanco ni símbolos especiales como guiones, puntos, comas, comillas, etc. ni símbolos matemáticos ni palabras reservadas (que veremos más adelante). El nombre de una variable será lo suficientemente largo como para impedir que pueda confundirse con otra variable por tener nombre similar, así como para aportar una indicación de cuál es el contenido o función que cumple.
 7
 Podríamos clasificar las variables según distintos criterios:

@@ -32,13 +32,28 @@ aspectratio:
   - [3r ESO](#3r-ESO)
   - [4t ESO](#4t-ESO)
   - [TIC 4t ESO](#TIC-4t-ESO)
+- [UD 1 Sistemas operativos](#UD-1-Sistemas-operativos)
+- [UD2 Redes y su seguridad](#UD2-Redes-y-su-seguridad)
+- [UD3 Presentación de contenidos](#UD3-Presentaci%C3%B3n-de-contenidos)
+- [Fotografía digital](#Fotograf%C3%ADa-digital)
+- [UD4 - Publicación web](#UD4---Publicaci%C3%B3n-web)
+- [Internet y redes sociales](#Internet-y-redes-sociales)
+- [Audio y video digital](#Audio-y-video-digital)
+- [Comercio electrónico y fraude en la red](#Comercio-electr%C3%B3nico-y-fraude-en-la-red)
+- [Un mundo de descargas](#Un-mundo-de-descargas)
   - [TECNOLOGIA INDUSTRIAL I](#TECNOLOGIA-INDUSTRIAL-I)
   - [TECNOLOGIA INDUSTRIAL II](#TECNOLOGIA-INDUSTRIAL-II)
   - [TECNOLOGIES DE LA INFORMACIÓ I LA COMUNICACIÓ I](#TECNOLOGIES-DE-LA-INFORMACI%C3%93-I-LA-COMUNICACI%C3%93-I)
   - [TECNOLOGIES DE LA INFORMACIÓ I LA COMUNICACIÓ II](#TECNOLOGIES-DE-LA-INFORMACI%C3%93-I-LA-COMUNICACI%C3%93-II)
 - [3. MÈTODES PEDAGÒGICS](#3-M%C3%88TODES-PEDAG%C3%92GICS)
+  - [Agrupaments](#Agrupaments)
 - [4. DISTRIBUCIÓ ESPAI-TEMPS](#4-DISTRIBUCI%C3%93-ESPAI-TEMPS)
 - [5. ACTIVITATS D'AMPLIACIÓ I DE REFORÇ](#5-ACTIVITATS-DAMPLIACI%C3%93-I-DE-REFOR%C3%87)
+  - [Alumnes amb necessitats educatives especials](#Alumnes-amb-necessitats-educatives-especials)
+  - [Alumnes amb necessitats d'aprenentatge](#Alumnes-amb-necessitats-daprenentatge)
+  - [Alumnes amb altes capacitats](#Alumnes-amb-altes-capacitats)
+  - [Alumnes d'inscripció tardana](#Alumnes-dinscripci%C3%B3-tardana)
+  - [Alumnes que per condicions personals o d'horari estan derivades a assumptes socials](#Alumnes-que-per-condicions-personals-o-dhorari-estan-derivades-a-assumptes-socials)
 - [6. CRITERIS D'AVALUACIÓ I QUALIFICACIÓ](#6-CRITERIS-DAVALUACI%C3%93-I-QUALIFICACI%C3%93)
   - [Procediments d'avaluació](#Procediments-davaluaci%C3%B3)
   - [Criteris de qualificació](#Criteris-de-qualificaci%C3%B3)
@@ -51,10 +66,52 @@ aspectratio:
   - [Tecnologies 3r ESO](#Tecnologies-3r-ESO)
   - [Tecnoogies 4t ESO](#Tecnoogies-4t-ESO)
   - [TECNOLOGIES DE LA INFORMACIÓ I LA COMUNICACIÓ 4 t d'ESO](#TECNOLOGIES-DE-LA-INFORMACI%C3%93-I-LA-COMUNICACI%C3%93-4-t-dESO)
+    - [BLOC 1. ÈTICA I ESTÈTICA EN LA INTERACCIÓ EN XARXA](#BLOC-1-%C3%88TICA-I-EST%C3%88TICA-EN-LA-INTERACCI%C3%93-EN-XARXA)
+      - [Continguts](#Continguts)
+      - [Criteris i estándars d'aprenentatge](#Criteris-i-est%C3%A1ndars-daprenentatge)
+    - [BLOC 2. ORDINADORS, SISTEMES OPERATIUS I XARXES](#BLOC-2-ORDINADORS-SISTEMES-OPERATIUS-I-XARXES)
+      - [Continguts](#Continguts-1)
+      - [Criteris i estándars d'aprenentatge](#Criteris-i-est%C3%A1ndars-daprenentatge-1)
+  - [BLOC 3. ORGANITZACIÓ, DISSENY I PRODUCCIÓ D’INFORMACIÓ DIGITAL](#BLOC-3-ORGANITZACI%C3%93-DISSENY-I-PRODUCCI%C3%93-DINFORMACI%C3%93-DIGITAL)
+    - [Continguts](#Continguts-2)
+      - [Criteris i estándars d'aprenentatge](#Criteris-i-est%C3%A1ndars-daprenentatge-2)
+  - [BLOC 4. SEGURETAT INFORMÀTICA](#BLOC-4-SEGURETAT-INFORM%C3%80TICA)
+    - [Continguts](#Continguts-3)
+      - [Criteris i estándars d'aprenentatge](#Criteris-i-est%C3%A1ndars-daprenentatge-3)
+    - [BLOC 5. PUBLICACIÓ I DIFUSIÓ DE CONTINGUTS](#BLOC-5-PUBLICACI%C3%93-I-DIFUSI%C3%93-DE-CONTINGUTS)
+    - [Continguts](#Continguts-4)
+      - [Criteris i estándars d'aprenentatge](#Criteris-i-est%C3%A1ndars-daprenentatge-4)
+    - [BLOC 6. INTERNET, XARXES SOCIALS, HIPERCONNEXIÓ](#BLOC-6-INTERNET-XARXES-SOCIALS-HIPERCONNEXI%C3%93)
+      - [Continguts](#Continguts-5)
+      - [Criteris i estándars d'aprenentatge](#Criteris-i-est%C3%A1ndars-daprenentatge-5)
   - [TECNOLOGIA INDUSTRIAL](#TECNOLOGIA-INDUSTRIAL-1)
   - [TECNOLOGIA INDUSTRIAL II](#TECNOLOGIA-INDUSTRIAL-II-1)
   - [TECNOLOGIES DE LA INFORMACIÓ I LA COMUNICACIÓ I](#TECNOLOGIES-DE-LA-INFORMACI%C3%93-I-LA-COMUNICACI%C3%93-I-1)
+    - [BLOC 1. ÈTICA I ESTÈTICA EN LA INTERACCIÓ EN XARXA](#BLOC-1-%C3%88TICA-I-EST%C3%88TICA-EN-LA-INTERACCI%C3%93-EN-XARXA-1)
+      - [Continguts](#Continguts-6)
+      - [Criteris i estàndards d'aprenentatge](#Criteris-i-est%C3%A0ndards-daprenentatge)
+    - [BLOC 2. ARQUITECTURA D’ORDINADORS](#BLOC-2-ARQUITECTURA-DORDINADORS)
+      - [Continguts](#Continguts-7)
+      - [Criteris i estàndards d'aprenentatge](#Criteris-i-est%C3%A0ndards-daprenentatge-1)
+    - [BLOC 3. PROGRAMARI PER A SISTEMES INFORMÀTICS](#BLOC-3-PROGRAMARI-PER-A-SISTEMES-INFORM%C3%80TICS)
+      - [Continguts](#Continguts-8)
+      - [Criteris i estàndards d'aprenentatge](#Criteris-i-est%C3%A0ndards-daprenentatge-2)
+    - [BLOC 4. XARXES D’ORDINADORS](#BLOC-4-XARXES-DORDINADORS)
+      - [Continguts](#Continguts-9)
+      - [Criteris i estàndards d'aprenentatge](#Criteris-i-est%C3%A0ndards-daprenentatge-3)
+      - [Criteris i estàndards d'aprenentatge](#Criteris-i-est%C3%A0ndards-daprenentatge-4)
+    - [BLOC 5. PROGRAMACIÓ](#BLOC-5-PROGRAMACI%C3%93)
+      - [Continguts](#Continguts-10)
+      - [Criteris d’avaluació / Estàndards d’aprenentatge avaluables](#Criteris-davaluaci%C3%B3--Est%C3%A0ndards-daprenentatge-avaluables)
   - [TECNOLOGIES DE LA INFORMACIÓ I LA COMUNICACIÓ II](#TECNOLOGIES-DE-LA-INFORMACI%C3%93-I-LA-COMUNICACI%C3%93-II-1)
+    - [BLOC 1: Programació](#BLOC-1-Programaci%C3%B3)
+      - [Continguts](#Continguts-11)
+      - [Criteris d’avaluació / Estàndards d’aprenentatge avaluables](#Criteris-davaluaci%C3%B3--Est%C3%A0ndards-daprenentatge-avaluables-1)
+    - [BLOC 2: Publicació i difusió de continguts](#BLOC-2-Publicaci%C3%B3-i-difusi%C3%B3-de-continguts)
+      - [Continguts](#Continguts-12)
+      - [Criteris d’avaluació / Estàndards d’aprenentatge avaluables](#Criteris-davaluaci%C3%B3--Est%C3%A0ndards-daprenentatge-avaluables-2)
+    - [BLOC 3. SEGURETAT](#BLOC-3-SEGURETAT)
+      - [Criteris d’avaluació / Estàndards d’aprenentatge avaluables](#Criteris-davaluaci%C3%B3--Est%C3%A0ndards-daprenentatge-avaluables-3)
 - [8. ELEMENTS TRANSVERSALS TRACTATS](#8-ELEMENTS-TRANSVERSALS-TRACTATS)
 - [9. MATERIALS I RECURSOS DIDÀCTICS QUE S'HAN D'UTILITZAR](#9-MATERIALS-I-RECURSOS-DID%C3%80CTICS-QUE-SHAN-DUTILITZAR)
   - [Tecnologies 2n d'ESO](#Tecnologies-2n-dESO)
@@ -189,24 +246,30 @@ interaccions a Internet i en la gestió de recursos i aplicacions locals.
 
 ## 2n ESO
 
-PRIMERA AVALUACIÓ
-• Tema 1: El procés tecnològic. (10 sessions)
-• Tema 2: Dibuix tècnic, vistes i perspectives (10 sessions)
-• Tema 3: Propietats dels materials (4 sessions)
-• Desenvolupament del primer projecte. (8 sessions)
-SEGONA AVALUACIÓ
-• Tema 3: Propietats dels materials (4 sessions)
-• Tema 4: Materials: Fusta, metalls i plàstics. (12 sessions)
-• Tema 5: Estructures. (8 sessions)
-• Desenvolupament del segon projecte. (10 sessions)
-TERCERA AVALUACIÓ
-• Tema 6: Màquines simples. (6 sessions)
-• Tema 7: Energia i electricitat. (8 sessions)
-• Desenvolupament del projecte final. (12 sessions)
+1a Avaluació | Unitat | Duració
+-- | -- | --
+UD 1 | El procés tecnològic | 10 sessions
+UD 2 | Dibuix tècnic, vistes i perspectives | 10 sessions
+UD 3 | Propietats dels materials | 4 sessions
+Projecte | Desenvolupament del primer projecte. | 8 sessions
+
+2a Avaluació | Unitat | Duració
+-- | -- | --
+UD 3 | Propietats dels materials | 4 sessions
+UD 4 | Materials: Fusta, metalls i plàstics | 12 sessions
+UD 5 | Estructures | 8 sessions
+Projecte | Desenvolupament del segon projecte | 10 sessions
+
+3a Avaluació | Unitat | Duració
+-- | -- | --
+UD 6 | Màquines simples | 6 sessions
+UD 7 | Energia i electricitat. | 8 sessions
+Projecte | Desenvolupament del projecte final | 12 sessions
 
 ## 3r ESO
 
 PRIMERA AVALUACIÓ
+
 1.- Electricitat
 1.1- Circuit elèctric: Magnituds elèctriques, simbologia i tipus de circuits (en sèrie, en paral·lel i mixt).
 1.2.- Llei d’Ohm. Descripció de components i muntatge de circuits elèctrics senzills.
@@ -214,19 +277,23 @@ PRIMERA AVALUACIÓ
 1.4.- Introducció a l’electrònica bàsica: components i muntatges bàsics.
 1.5.- Valoració de les aplicacions de l’electricitat i l’electrònica a la vida quotidiana.
 1.6.- Simuladors elèctrics Segona avaluació
+
 SEGONA AVALUACIÓ
+
 2.- Energies
 2.1.- Definicio. Tipus. Transformació
 2.2- Fonts d'energía i classificació
 2.3.- Descripció i tipus de centrals. Anàlisi de les repercussions mediambientals
 3.- Ofimàtica: Presentacions
 4.-Disseny gràfic i impressió 3D
+
 TERCERA AVALUACIÓ
+
 5.- Màquines i mecanismes
 5.1- Repàs de màquines simples
 5.2.- Mecanismes de transmissió i transformació de moviment
 6.- Ofimàtica: Full de càlcul
-El tema de procés tecnològic es farà durant tot el curs treballat en petits projectes al taller
+El UD de procés tecnològic es farà durant tot el curs treballat en petits projectes al taller
 
 ## 4t ESO
 
@@ -255,36 +322,193 @@ DISSENY GRÀFIC I IMPRESSIÓ 3D
 
 ELECTRÒNICA
 
-Electrònica analògica. Components bàsics.
-Anàlisi, muntatge i simbologia de circuits electrònics senzills.
-Electrònica digital.
-Aplicació de l’àlgebra de Boole a problemes tecnològics bàsics. Portes lògiques.
+- Electrònica analògica. Components bàsics.
+- Anàlisi, muntatge i simbologia de circuits electrònics senzills.
+- Electrònica digital.
+- Aplicació de l’àlgebra de Boole a problemes tecnològics bàsics. Portes lògiques.
 
 **3a AVALUACIÓ**
+
 CONTROL I ROBÒTICA
-Sistemes automàtics. Components característics de dispositius de control.
-Disseny i construcció de robots senzills. Robòtica amb LEGO
-L’ordinador com a element de programació i control. Llenguatges bàsics de programació. Scratch i App inventor.
+
+- Sistemes automàtics. Components característics de dispositius de control.
+- Disseny i construcció de robots senzills. Robòtica amb LEGO
+- L’ordinador com a element de programació i control. Llenguatges bàsics de programació. Scratch i App inventor.
 
 ## TIC 4t ESO
 
-1a AVALUACIÓ
+1a Avaluació | Unitat | Duració
+-- | -- | --
+UD1 | Sistemes operativos | 10 sesiones
+UD2 | Redes y su seguridad | 12 sesiones?
+UD3 | Presentación de contenidos
+2a Avaluació | Unitat | Duració
+-- | -- | --
+UD4 | Fotografía digital
+UD5 | Publicación web
+UD6 | Internet y redes sociales
+UD7 | Audio y video digital
+UD8 | Comercio electrónico y fraude en la red
+UD9 | Un mundo de descargas
+
+
+# UD 1 Sistemas operativos
+
+Sesiones: 10
+
+Contenidos | Actividades | Sesiones
+-- | -- | --
+Presentación de la asignatura | Creación de grupos y del blog de grupo | 1,2 y 3
+Sistema operativos (Sesión teórica) | Clasificación y funciones. S.O. más habituales. |	1
+Historia de los sistemas operativos (1,9) |
+Evolución de los microprocesadores | Buscar información SO y procesador en Mi PC. Comprobar programas accesorios. 
+Gestor de arranque | 1
+Práctica Windows XP | Explorador. Carpetas. Eliminación de archivos. Atajos de teclado.	| 
+GNU/Linux (Sesión teórica) | Características. Windows vs Linux. distribuciones. Software libre.	| 1
+Práctica GNU/Linux | Elementos principales. Apariencia. Instalación de aplicaciones. OpenOffice.	| 1
+Almacenamiento de información. | Discos duros. Estructura física y lógica.  Particiones	| 1
+Examen teórico | Sistemas operativos, Linux, almacenamiento información	| 1
+
+# UD2 Redes y su seguridad
+
+Contenidos | Actividades | Sesiones
+-- | -- | --
+Red informática | Clasificación y topologías de red | 1
+Dispositivos físicos. | Tarjetas, cables, switch, router, etc	| 1
+Redes inalámbricas | | 1
+Práctica compra de dispositivos | | 1
+Práctica carteles red del colegio | | 1
+Wifi | Tarea WiFi | 1
+Seguridad informática | Amenazas. Seguridad activa y pasiva. Backups
+Seguridad informática | Antivirus, cortafuegos. SPAM | 1
+Tarea privacidad historial + herramientas de seguridad	| | 2
+Almacenamiento en la nube | Respaldo de información (backup) mediante almacenamiento en la nube (con Dropbox)	| 1
+Examen teórico | | 1
+
+# UD3 Presentación de contenidos
+
+Contenidos | Actividades | Sesiones
+-- | -- | --
+Prácticas básicas (4 en total) con powerpoint (tablas, diagramas, estilos)
+Terminar prácticas powerpoint.
+Práctica de grupo: Pensar y definir la estructura de la presentación, tema, etc.
+Práctica de grupo: buscar contenido, imágenes, etc.
+Práctica de grupo
+Efectos. Añadir video
+Publicación en Google docs y blog
+Práctica de grupo
+Exposiciones orales
+Cada día presentan de 3 a 4 grupos. Defensa oral,reflexión y valoración por parte de los grupos.
+Corrección de diapositivas. Rellenar formulario de reflexión. Tarea tipos de archivos en presentaciones
+
+# Fotografía digital
+
+Contenidos | Actividades | Sesiones
+-- | -- | --
+Cámaras y escáner | Características
+Otros dispositivos | móviles, webcams, cámaras de video.
+Soportes de  almacenamiento | Tarjetas. Almacenamiento en la nube
+Transferir fotografías a dispositivos | Cable, lector de tarjetas, infrarrojos, bluetooth. NFC.
+Características de la imagen | Profundidad, resolución, tamaño. Relación tamaño y peso. Formatos
+Tratamiento de la imagen | Brillo y contraste, curvas, colorear, umbral
+Trabajo con capas | | 1
+Gráficos vectoriales | | 1
+Práctica gráficos vectoriales. Inkscape | | 1
+Editores online | |
+Códigos QR | Práctica creación de código QR y lectura con móvil | 1
+
+# UD4 - Publicación web
+
+Contenidos | Actividades | Sesiones
+-- | -- | --
+World Wide Web | Terminología básica.
+Funcionamiento básico. Sesión teórica con proyector	| 1
+Software Kompozer | El lenguaje HTML | 1
+Prácticas guiadas con HTML | | 4
+Accesibilidad web | | 1
+
+# Internet y redes sociales
+
+Contenidos | Actividades | Sesiones
+-- | -- | --
+Internet | Posibilidades. Breve historia de Internet | 1
+Funcionamiento | IP, TCP, UDP. Puertos del ordenador | 1
+Internet en España y en el mundo. EGM | |
+Comunidades virtuales | Mundos virtuales. Chats y mensajería. | 1
+Foros. Blogs.Wikis | | 1
+Redes sociales | Facebook, tuenti, twitter | 1
+Redes de trabajo | Slack, Github, Google drive. Trabajo con documentos compartidos | 1
+Mensajería instantánea | Whatsapp, telegram | 1
+Servicios en Internet | Búsqueda de empleo, formación a distancia, compras | 1
+Community manager | Cómo harías de community manager del IES? |  1
+
+
+# Audio y video digital
+
+Contenidos | Actividades | Sesiones
+-- | -- | --
+Captura del sonido. | | 1
+Características del sonido digital | | 1
+Redes de intercambio de archivos. | | 1
+Formatos principales de audio. | | 1
+Video digital. Proporcionalidad. Resolución. Flujo de bits. FPS. | | 1
+Tipos de archivos de video. Codecs. DIVX | | 1
+Práctica: Explicación, planificación y búsqueda de ideas. | | 1
+Práctica: Grabación. | | 1
+Práctica: Transferencia de videos. Edición | | 1
+Práctica: Edición | | 1
+Práctica: Publicación en youtube y actualización del blog | | 1
+Redes de intercambio | | 1
+Examen | | 1
+
+# Comercio electrónico y fraude en la red
+
+Contenidos | Actividades | Sesiones
+-- | -- | --
+Comercio electrónico | Compra por Internet.Tipos de comercio. Tiendas online. Formas de pago. | 1
+Fraude en la red | Tipos de fraude.| 1
+Medidas de protección | Encriptación, claves seguras https://haveibeenpwned.com/| 1
+Firma digital | certificados personales. DNIe (DNI electrónico) | 1
+Distribución de software | Propiedad, tipos de licencias | 1
+Software libre | Creative commons  | 1
+Informática distribuida |
+Práctica proteger y comprimir archivos |
+Práctica por determinar |
+Examen |
+
+# Un mundo de descargas
+
+Contenidos | Actividades | Sesiones
+-- | -- | --
+Acceso a servicios de ocio | TV, música. Spotify. Netflix. HBO | 1
+Compartir videos en Internet | Youtube, twitch | 1 
+Descarga directa de contenidos | | 1
+Gestores de descarga | | 1
+Disco duro en Internet  | Dropbox, onedrive | 1
+Redes P2P | Ares, Bittorrent, emule... | 1
+Examen | | 1
+
+
+--- BORRAR
+
+
+**1a AVALUACIÓ**
 
 ORDINADORS, SISTEMES OPERATIUS I XARXES
 
-Elements bàsics que conformen un ordinador.
-Conceptes de programari i maquinari.
-Emmagatzematge d’informació.
-Connexions sense fil i intercanvis d’informació entre dispositius mòbils.
+- Elements bàsics que conformen un ordinador.
+- Conceptes de programari i maquinari.
+- Emmagatzematge d’informació.
+- Connexions sense fil i intercanvis d’informació entre dispositius mòbils.
 
 ORGANITZACIÓ, DISSENY I PRODUCCIÓ D’INFORMACIÓ DIGITAL
 
-Disseny de presentacions.
-Full de càlcul
-Base de dades
-Disseny 3D. Impressió digital
+- Disseny de presentacions.
+- Full de càlcul
+- Base de dades
+- Disseny 3D. Impressió digital
 
-2a AVALUACIÓ
+**2a AVALUACIÓ**
 
 ORGANITZACIÓ, DISSENY I PRODUCCIÓ D’INFORMACIÓ DIGITAL
 
@@ -294,8 +518,7 @@ ORGANITZACIÓ, DISSENY I PRODUCCIÓ D’INFORMACIÓ DIGITAL
 - Edició i muntatge d’àudio i vídeo per crear continguts multimèdia.
 - Audacity
 
-
-3a AVALUACIÓ
+**3a AVALUACIÓ**
 
 ÈTICA I ESTÈTICA A LA XARXA I SEGURETAT INFORMÀTICA
 
@@ -314,27 +537,32 @@ PUBLICACIÓ I DIFUSIÓ DE CONTINGUTS
 
 ## TECNOLOGIA INDUSTRIAL I
 
-Primera avaluació
-Energia
-Fonts d’energia no renovables
-Fonts d’energia renovables
-Consum i estalvi energètic
+**Primera avaluació**
 
-Segona avaluació
-Estructura dels materials
-Tipus de materials
-Màquines: Components mecànics
-Circuits elèctrics
-Tercera avaluació
-Circuits pneumàtics i hidràulics
-Procediments de fabricació
-Productes tecnològics: Disseny, producció i comercialització
+- Energia
+- Fonts d’energia no renovables
+- Fonts d’energia renovables
+- Consum i estalvi energètic
+
+**Segona avaluació**
+
+- Estructura dels materials
+- Tipus de materials
+- Màquines: Components mecànics
+- Circuits elèctrics
+
+**Tercera avaluació**
+
+- Circuits pneumàtics i hidràulics
+- Procediments de fabricació
+- Productes tecnològics: Disseny, producció i comercialització
 
 ## TECNOLOGIA INDUSTRIAL II
 
 **1a AVALUACIÓ**
 
 MATERIALS
+
 Estructura dels materials
 Propietats dels materials. Assajos
 Aplicacions dels materials segons les seves característiques
@@ -342,9 +570,10 @@ Modificació de les propietats dels materials
 Recerca per Internet de materials no convencionals
 
 PRINCIPIS DE MÀQUINES
-Programari de disseny assistit per ordinador (CAD) per dibuixar màquines.
-Funcionament i característiques de màquines mitjançant plànols.
-Parts i funcionament de motors tèrmics i elèctrics.
+
+- Programari de disseny assistit per ordinador (CAD) per dibuixar màquines.
+- Funcionament i característiques de màquines mitjançant plànols.
+- Parts i funcionament de motors tèrmics i elèctrics.
 
 **2a AVALUACIÓ**
 
@@ -356,16 +585,16 @@ PRINCIPIS DE MÀQUINES
 
 SISTEMES AUTOMÀTICS
 
-- Elements de comandament, control i potència d’un sistema.
+- Elements de comandament, control i potència d’un sisUD.
 - Diferenciació entre control de llaç obert o tancat.
 - Disseny i representació de sistemes de control per a una aplicació concreta.
 - Anàlisi del funcionament de sistemes automàtics mitjançant simuladors. - Interpretació dels senyals d’entrada i sortida de
-- cada bloc de l’esquema d’un sistema automàtic.
+- cada bloc de l’esquema d’un sisUD automàtic.
 - Disseny de sistemes de control per a aplicacions concretes amb blocs genèrics. - Funcions de cada bloc.
 
-3a AVALUACIÓ
+**3a AVALUACIÓ**
 
-**CIRCUITS I SISTEMES LÒGICS**
+CIRCUITS I SISTEMES LÒGICS
 
 - Disseny de circuits combinacionals amb portes lògiques.
 - Taules de veritat i funcions lògiques.
@@ -373,7 +602,7 @@ SISTEMES AUTOMÀTICS
 - Distinció entre circuits combinacionals i seqüencials.
 - Funcionament de sistemes lògics seqüencials senzills a partir de les seves taules de veritat i cronogrames.
 
-**CONTROL I PROGRAMACIÓ DE SISTEMES AUTOMÀTICS**
+CONTROL I PROGRAMACIÓ DE SISTEMES AUTOMÀTICS
 
 - Anàlisi i construcció de cronogrames de circuits seqüencials.
 - Disseny de circuits seqüencials senzills.
@@ -382,9 +611,22 @@ SISTEMES AUTOMÀTICS
 
 ## TECNOLOGIES DE LA INFORMACIÓ I LA COMUNICACIÓ I
 
-1a avaluació
+1a avaluació | Unitat | Sessions
+-- | -- | --
+UD 1 | Nuevas tecnologías de la información y la comunicación en la sociedad
+UD 2 | Hardware. Componentes físicos
+UD 3 | Software. Interfaz con el usuario
+UD 4 | Redes de comunicaciones
+UD 5 | Procesamiento de textos, autoedición y presentaciones
+UD 6 | Edición y diseño asistido por ordenador
+UD 7 | Hojas de cálculo
+UD 8 | Bases de datos
+UD 9 | Programació web
 
-- LA SOCIETAT DE LA INFORMACIÓ I L’ORDINADOR
+**1a avaluació**
+
+LA SOCIETAT DE LA INFORMACIÓ I L’ORDINADOR
+  
 - 1.- Concepte de Tecnologies de la Informació i Comunicació (TIC).
 - 2.- L'ús de les TIC. Societat de la informació i Societat del coneixement.
 - 3.- Característiques de les TIC.
@@ -394,34 +636,44 @@ SISTEMES AUTOMÀTICS
 - 7.- Internet. Tendències de futur. Noves professions derivades de l’ús dels ordinadors.
 
 ARQUITECTURA D’ORDINADORS
-1.- Components del maquinari d’un ordinador.
-2.- Memòries: tipus i característiques.
-3.- Dispositius d’emmagatzematge.
-4.- Principals components perifèrics d’un ordinador.
-5.- Programari.
-6.- Sistemes operatius i aplicacions d’escriptori.
-PROGRAMARI PER A SISTEMES INFORMÀTICS
-1.- Aplicacions d’escriptori o web.
-2.- Paquet ofimàtics:
-2.1- Repàs processador de textos i presentacions.
-2.2- Full de càlcul.
-2a avaluació
-PROGRAMARI PER A SISTEMES INFORMÀTICS
-2.- Paquet ofimàtics:
-2.3.- Bases de dades.
-3.- Aplicacions de disseny gràfic 2D i 3D. Impressió digital
-3a avaluació
-XARXES D’ORDINADORS
-1.- Xarxes. Tipologies. Tipus. Model OSI.
-2.- Xarxes sense fil (Wi-Fi).
 
-3.- Dispositius de connexió a una LAN. Característiques i funcions.
-4.- Interconnexió de xarxes LAN-WAN.
+- 1.- Components del maquinari d’un ordinador.
+- 2.- Memòries: tipus i característiques.
+- 3.- Dispositius d’emmagatzematge.
+- 4.- Principals components perifèrics d’un ordinador.
+- 5.- Programari.
+- 6.- Sistemes operatius i aplicacions d’escriptori.
+
+PROGRAMARI PER A SISTEMES INFORMÀTICS
+
+- 1.- Aplicacions d’escriptori o web.
+- 2.- Paquet ofimàtics:
+- 2.1- Repàs processador de textos i presentacions.
+- 2.2- Full de càlcul.
+
+**2a avaluació**
+
+PROGRAMARI PER A SISTEMES INFORMÀTICS
+
+- 2.- Paquet ofimàtics:
+- 2.3.- Bases de dades.
+- 3.- Aplicacions de disseny gràfic 2D i 3D. Impressió digital
+
+**3a avaluació**
+
+XARXES D’ORDINADORS
+
+- 1.- Xarxes. Tipologies. Tipus. Model OSI.
+- 2.- Xarxes sense fil (Wi-Fi).
+- 3.- Dispositius de connexió a una LAN. Característiques i funcions.
+- 4.- Interconnexió de xarxes LAN-WAN.
+
 PROGRAMACIÓ
-1.- Llenguatges de programació.
-2.- Algorísmia i codificació.
-3.- Estructures de control. Diagrames de flux.
-4.- Codificació de programes senzills amb un llenguatge d’alt nivell.
+
+- 1.- Llenguatges de programació.
+- 2.- Algorísmia i codificació.
+- 3.- Estructures de control. Diagrames de flux.
+- 4.- Codificació de programes senzills amb un llenguatge d’alt nivell.
 
 ## TECNOLOGIES DE LA INFORMACIÓ I LA COMUNICACIÓ II
 
@@ -461,6 +713,7 @@ procedimental i perquè els mètodes es produeixin és necessari que els alumnes
 
 La metodologia a seguir serà fonamentalment activa; per tant, es programarà unes classes en les que predomini l’activitat dels alumnes,
 sense proposar que "tot surti a la perfecció, sense possibilitats d’errors".
+
 Recordarem en tot moment que la missió no és ensenyar continguts de l’àrea, sinó educar mitjançant i per la tecnologia, col·laborant per
 induir a l’alumne, per la vivència de les facetes manipuladores, imaginatives, creadores, dels grups i d’expressió. Per tant el professors
 motivarà les situacions de l’aprenentatge.
@@ -471,26 +724,31 @@ solucions als problemes plantejats.
 
 Si en el transcurs de la classe un o diversos grups no resolen determinats problemes, se’ls proporcionarà la informació precisa, però no
 se’ls resoldrà el problema.
+
 La introducció de nous continguts o procediments es farà al llarg del desenvolupament de la unitat didàctica de manera que dita
 informació li serveixi per resoldre un problema determinat i l’alumne la pugui analitzar en aquell moment.
+
 Al llarg de la unitat didàctica es proposaran dues o més activitats, buscant resultats de caràcter convergent per buscar un o diversos dels
 aprenentatges (continguts) plantejats.
+
 Els alumnes han d’assimilar els problemes amb el temps, no forçar-los. Cada vegada que ens avancem als alumnes, els traiem la seva
 capacitat de descobrir. A més si els presentem una solució com a vàlida no es molestaran en buscar noves solucions ni qüestionar-se la
 vàlua o millora de la solució.
-Per aquesta raó, es necessari que quan es presenten operadors, eines, models o d’altres recursos amb la finalitat d’aportar unes
-tècniques de contingut, de procediment o d’actituds, aportem distintes alternatives, deixant sempre a l’alumne l’opció i dificultat d’elegir.
+
+Per aquesta raó, es necessari que quan es presenten operadors, eines, models o d’altres recursos amb la finalitat d’aportar unes tècniques de contingut, de procediment o d’actituds, aportem distintes alternatives, deixant sempre a l’alumne l’opció i dificultat d’elegir.
+
 Deixarem que l’alumne experimenti amb diverses possibilitats fins arribar a trobar, descobrir o crear les seves pròpies solucions.
+
+## Agrupaments
+
 La matèria de tecnologia comprèn diferents tipus d’activitats. Per tant, en l’organització dels alumnes és possible fer, a més del grup
 classe, dos tipus d’agrupaments:
-— Individual . Cada alumne està distribuït individualment a l’aula taller per treballar la part en què es desenvolupen els continguts. Per
+
+- Individual . Cada alumne està distribuït individualment a l’aula taller per treballar la part en què es desenvolupen els continguts. Per
 treballar les tecnologies de la informació i la comunicació cada alumne fa feina en un ordinador de forma individual per practicar les
 nocions apreses en cadascun dels blocs.
-— Grupal . A l’aula taller s’hi ha d’aplicar la metodologia de treball cooperatiu per dur a terme projectes, en què els alumnes estan
-58
+- Grupal . A l’aula taller s’hi ha d’aplicar la metodologia de treball cooperatiu per dur a terme projectes, en què els alumnes estan distribuïts en petits grups heterogenis de diferents nivells curriculars i diferents tipus d’habilitats, i són els encarregats de dissenyar la seva pròpia planificació i seguiment de l’activitat.
 
-distribuïts en petits grups heterogenis de diferents nivells curriculars i diferents tipus d’habilitats, i són els encarregats de dissenyar la
-seva pròpia planificació i seguiment de l’activitat.
 Activitats del Professor
 Organització de la classe.
 Explicacions i propostes de treballs.
@@ -513,34 +771,44 @@ Presentació del quadern de classe.
 
 # 4. DISTRIBUCIÓ ESPAI-TEMPS
 
-La distribució del temps ha d’anar en funció de la importància de les activitats proposades, de les necessitats del grup i de la resposta
-dels alumnes, sempre respectant els diferents ritmes d’aprenentatge.
-Els grups de segon d'ESO tenen tres hores a la setmana. Una d'aquestes hora està desdoblada i per tant s'aprofitarà per fer activitats
-més pràctiques de taller, projectes i informàtica. Les altres dues hores es faran al taller.
-Els grups de tercer d'ESO només tenen dues hores a la setmana. Una d'aquestes hores està desdoblada i per tant s'aprofitarà per fer
-activitats més pràctiques de taller i projectes. L'altra hora es farà a l'aula d'informàtica.
+La distribució del temps ha d’anar en funció de:
 
-El grup de quart d'ESO té tres hores a la setmana. Una d'aquestes hora està desdoblada i per tant s'aprofitarà per fer activitats més
-pràctiques de taller i projectes. Les altres dues hores es faran o bé al taller o a l'aula d'informàtica.
-El grup d' informàtica de quart d'ESO té tres hores a la Biblioteca del centre, ja que és l'aula d'informàtica amb més ordinadors.
-El grup de tecnologia industrial I disposa de 2 llocs per fer feina, l'aula d'informàtica de tecnologia i auna aula de les quals disposem
-durant dos dies setmanals.
-El grup de tecnologia industrial II emprarà una aula d'informàtica dues hores a la setmana i les altres dues es faran a l'aula del grup.
-Les classes de TIC I i TIC II es faran totes a la Biblioteca.
+- La importància de les activitats proposades
+- Les necessitats del grup i de la resposta dels alumnes
+- Sempre respectant els diferents ritmes d’aprenentatge.
+
+Distribució:
+
+Grup | hores | espais
+-- | -- | --
+Tecnologia 2n d'ESO | 3h (2+1) | Una d'aquestes hora està desdoblada i per tant s'aprofitarà per fer activitats més pràctiques de taller, projectes i informàtica. Les altres dues hores es faran al taller.
+Tecnologia 3r d'ESO | 2h (1+1)| Una d'aquestes hores està desdoblada i per tant s'aprofitarà per fer activitats més pràctiques de taller i projectes. L'altra hora es farà a l'aula d'informàtica.
+Tecnologia 4t d'ESO | 3h (2+1)| Una d'aquestes hora està desdoblada i per tant s'aprofitarà per fer activitats més pràctiques de taller i projectes. Les altres dues hores es faran o bé al taller o a l'aula d'informàtica.
+Informàtica 4t d'ESO | 3h | A la Biblioteca del centre, ja que és l'aula d'informàtica amb més ordinadors.
+Tecnologia industrial I | 3h | Disposa de 2 llocs per fer feina, l'aula d'informàtica de tecnologia i auna aula de les quals disposem durant dos dies setmanals.
+Tecnologia industrial II | 4h | Aula d'informàtica dues hores a la setmana i les altres dues es faran a l'aula del grup.
+TIC I i TIC II | 3 i 4h | Es faran totes a la Biblioteca.
 
 # 5. ACTIVITATS D'AMPLIACIÓ I DE REFORÇ
 
-a) Alumnes amb necessitats educatives especials
+## Alumnes amb necessitats educatives especials
+
 Es faran adaptacions significatives a tots aquells alumnes que ho necessitin, seguint sempre els consells del Departament d'orientació.
-b) Alumnes amb necessitats d'aprenentatge
-Es faran adaptacions no significatives a tots aquells alumnes que ho necessitin, seguint sempre els consells del Departament
-d'orientació.
-c) Alumnes amb altes capacitats
-Es fomentarà l'aprenentatge d'aquells alumnes que superin el nivell del seu grup, estimulant-los la curiositat i la capacitat d'observació i
-autoaprenentatge.
-d)Alumnes d'inscripció tardana
+
+## Alumnes amb necessitats d'aprenentatge
+
+Es faran adaptacions no significatives a tots aquells alumnes que ho necessitin, seguint sempre els consells del Departament d'orientació.
+
+## Alumnes amb altes capacitats
+
+Es fomentarà l'aprenentatge d'aquells alumnes que superin el nivell del seu grup, estimulant-los la curiositat i la capacitat d'observació i autoaprenentatge.
+
+## Alumnes d'inscripció tardana
+
 Se'ls oferirà un suport extra per suplir les mancances de coneixements derivades del fet d'arribar al centre posteriorment a la resta.
-e) Alumnes que per condicions personals o d'horari estan derivades a assumptes socials
+
+## Alumnes que per condicions personals o d'horari estan derivades a assumptes socials
+
 S'estudiarà cas per cas i es decidirà conjuntament amb el Departament d'Orientació.
 
 # 6. CRITERIS D'AVALUACIÓ I QUALIFICACIÓ
@@ -555,8 +823,7 @@ eines al taller, els informes tècnics elaborats després de cada projecte).
 
 Alguna vegada es faran rúbriques per avaluar les aptituds i actituds al taller.
 
-Els alumnes faran un diari de taller i entregaran tota la documentació que produeixin al taller; això és molt útil per avaluar el procés
-d'ensenyament-aprenentatge al taller.
+Els alumnes faran un diari de taller i entregaran tota la documentació que produeixin al taller; això és molt útil per avaluar el procés d'ensenyament-aprenentatge al taller.
 
 L'avaluació de les actituds es farà mitjançant rúbriques i l'observació diària.
 
@@ -589,7 +856,7 @@ Apartat | Percentatge
 Continguts          | 40 %
 Projectes           | 30%
 tasques i exercicis | 20% 
-actitud             |10 %
+actitud             | 10%
 
 ## Tecnologies de la informació 4t d'ESO
 
@@ -658,7 +925,7 @@ circuits elèctrics utilitzant els components adequats.
 7. Identificar i connectar els components bàsics de l’ordinador. Manejar l’entorn gràfic dels sistemes operatius com a interfície de
 comunicació amb la màquina. Emprar l’ordinador com a eina de treball per tal de comunicar, localitzar i manejar informació de diverses
 fonts. Conèixer i aplicar la terminologia i els procediments bàsics dels processadors de textos i eines de presentacions.
-Es busca valorar que l’alumnat sàpiga la funció de cada component de l’ordinador i que tengui les habilitats necessàries per administrar un sistema informàtic personal. L’alumnat s’ha de sentir segur manejant els entorns dels sistemes operatius i ha de saber
+Es busca valorar que l’alumnat sàpiga la funció de cada component de l’ordinador i que tengui les habilitats necessàries per administrar un sisUD informàtic personal. L’alumnat s’ha de sentir segur manejant els entorns dels sistemes operatius i ha de saber
 personalitzar-los segons les seves preferències. També es pretén avaluar la capacitat d’emmagatzemar i recuperar la informació en
 diferents suports. S’ha de comprovar el domini de les aplicacions bàsiques dels processadors de textos i les eines de presentacions.
 8. Emprar l’ordinador com a instrument eficaç per localitzar informació a Internet. Utilitzar Internet com a mitjà de comunicació i fer
@@ -710,7 +977,7 @@ BLOC 4
 estructura.
 2.1. Descriu mitjançant informació escrita i gràfica com transforma el moviment o el transmeten els diferents mecanismes.
 2.2. Calcula la relació de transmissió de diferents elements mecànics com les politges i els engranatges.
-2.3. Explica la funció dels elements que configuren una màquina o sistema des del punt de vista estructural i mecànic.
+2.3. Explica la funció dels elements que configuren una màquina o sisUD des del punt de vista estructural i mecànic.
 2.4. Simula mitjançant programari específic i mitjançant simbologia normalitzada circuits mecànics.
 
 BLOC 5
@@ -794,8 +1061,8 @@ Bloc 4. CONTROL I ROBÒTICA
 d’enllaç obert i tancat.
 2. Muntar automatismes senzills.
 2.1. Representa i munta automatismes senzills.
-3. Desenvolupar un programa per controlar un sistema automàtic o un robot de forma autònoma.
-3.1. Desenvolupa un programa per controlar un sistema automàtic o un robot que funcioni de forma autònoma en funció de la
+3. Desenvolupar un programa per controlar un sisUD automàtic o un robot de forma autònoma.
+3.1. Desenvolupa un programa per controlar un sisUD automàtic o un robot que funcioni de forma autònoma en funció de la
 realimentació que rebi de l’entorn.
 
 BLOC 5. PNEUMÀTICA I HIDRÀULICA
@@ -811,92 +1078,148 @@ BLOC 5. PNEUMÀTICA I HIDRÀULICA
 
 BLOC 6. TECNOLOGIA I SOCIETAT
 
-1. Conèixer l’evolució tecnològica al llarg de la història.
-1.1. Identifica els canvis tecnològics més importants que s’han produït al llarg de la història de la humanitat.
-2. Analitzar objectes tècnics i tecnològics mitjançant l’anàlisi d’objectes.
-2.1. Analitza objectes tècnics i la seva relació amb l’entorn, i n’interpreta la funció històrica i l’evolució tecnològica.
-3. Valorar la repercussió de la tecnologia en el dia a dia.
-3.1. Elabora judicis de valor sobre el desenvolupament tecnològic a partir de l’anàlisi d’objectes tècnics, i relaciona invents i
+- CR1. Conèixer l’evolució tecnològica al llarg de la història.
+  - 1.1. Identifica els canvis tecnològics més importants que s’han produït al llarg de la història de la humanitat.
+- CR2. Analitzar objectes tècnics i tecnològics mitjançant l’anàlisi d’objectes.
+  - 2.1. Analitza objectes tècnics i la seva relació amb l’entorn, i n’interpreta la funció històrica i l’evolució tecnològica.
+- CR3. Valorar la repercussió de la tecnologia en el dia a dia.
+  - 3.1. Elabora judicis de valor sobre el desenvolupament tecnològic a partir de l’anàlisi d’objectes tècnics, i relaciona invents i
 descobriments amb el context en què es desenvolupen.
-3.2. Interpreta els canvis tecnològics, econòmics i socials en cada període històric amb l’ajuda de documentació escrita i digital.
+  - 3.2. Interpreta els canvis tecnològics, econòmics i socials en cada període històric amb l’ajuda de documentació escrita i digital.
 
 ## TECNOLOGIES DE LA INFORMACIÓ I LA COMUNICACIÓ 4 t d'ESO
 
-BLOC 1. ÈTICA I ESTÈTICA EN LA INTERACCIÓ EN XARXA
+### BLOC 1. ÈTICA I ESTÈTICA EN LA INTERACCIÓ EN XARXA
 
-1. Adoptar conductes i hàbits que permetin la protecció de l’individu en la interacció a la xarxa.
-   1. Interactua amb hàbits adequats en entorns virtuals.
-   2. Aplica polítiques segures d’ús de contrasenyes per protegir la informació personal.
-2. Accedir a serveis d’intercanvi i publicació d’informació digital amb criteris de seguretat i ús responsable.
+#### Continguts
+
+- Contrasenyes segures.
+- Actuacions en entorns virtuals.
+- Necessitat de respectar els drets que emparen les produccions alienes.
+- Programari lliure i programari de propietat.
+- Tipus de llicencies d’ús i distribució.
+
+#### Criteris i estándars d'aprenentatge
+
+- CR1.- Adoptar conductes i hàbits que permetin la protecció de l’individu en la interacció a la xarxa.
+  - EA1.1.- Interactua amb hàbits adequats en entorns virtuals.
+  - EA1.2. Aplica polítiques segures d’ús de contrasenyes per protegir la informació personal.
+- CR2. Accedir a serveis d’intercanvi i publicació d’informació digital amb criteris de seguretat i ús responsable.
    1. Duu a terme activitats amb responsabilitat sobre conceptes com la propietat i l’intercanviï d’informació.
-3. Reconèixer i comprendre els drets dels materials allotjats al web.
+- CR3. Reconèixer i comprendre els drets dels materials allotjats al web.
    1. Consulta diferents fonts i navega coneixent la importància de la identitat digital i els tipus de frau del web.
    2. Diferencia els conceptes de material subjecte a drets d’autor i material de lliure distribució.
 
-BLOC 2. ORDINADORS, SISTEMES OPERATIUS I XARXES
+### BLOC 2. ORDINADORS, SISTEMES OPERATIUS I XARXES
 
-1. Utilitzar i configurar equips informàtics i identificar els elements que els configuren i la seva funció en el conjunt.
-1.1. Fa operacions bàsiques d’organització i emmagatzemament de la informació.
-1.2. Configura elements bàsics del sistema operatiu i accessibilitat de l’equip informàtic.
-2. Gestionar la instal·lació i l’eliminació de programari de propòsit general.
-2.1. Resol problemes vinculats als sistemes operatius i als programes i aplicacions vinculats a aquests.
-3. Emprar programari de comunicació entre equips i sistemes.
- 
-3.1. Administra l’equip amb responsabilitat i coneix aplicacions de comunicació entre dispositius.
-5. Conèixer l’arquitectura d’un ordinador, identificar-ne els components bàsics i descriure’n les característiques.
+#### Continguts
 
-4.1. Analitza i coneix diversos components físics d’un ordinador, les seves característiques tècniques i la seva connexió.
-5. Analitzar els elements i els sistemes que configuren la comunicació amb fil i sense fil.
-5.1. Descriu les diferents formes de connexió en la comunicació entre dispositius digitals.
-5.2. Analitza i coneix diversos dispositius físics i les característiques tècniques de connexió i intercanvi d’informació entre ells.
+- Elements bàsics que conformen un ordinador.
+- Conceptes de programari i maquinari.
+- Emmagatzemament d’informació.
+- Administració de programari.
+- Creació de xarxes locals: configuració de dispositius físics per interconnectar equips informàtics.
+- Creació de grups d’usuaris, adjudicació de permisos i compartició de continguts i recursos o el seu ús en les xarxes locals en els diferents sistemes operatius.
+- Connexions sense fil i intercanvis d’informació entre dispositius mòbils.
 
-BLOC 3. ORGANITZACIÓ, DISSENY I PRODUCCIÓ D’INFORMACIÓ DIGITAL
+#### Criteris i estándars d'aprenentatge
 
-1. Utilitzar aplicacions informàtiques d’escriptori per produir documents.
-1.1. Elabora i maqueta documents de text amb aplicacions informàtiques que faciliten la inclusió de taules, imatges, fórmules,
+- CR1. Utilitzar i configurar equips informàtics i identificar els elements que els configuren i la seva funció en el conjunt.
+  - EA1.1. Fa operacions bàsiques d’organització i emmagatzemament de la informació.
+  - EA1.2. Configura elements bàsics del sisUD operatiu i accessibilitat de l’equip informàtic.
+- CR2. Gestionar la instal·lació i l’eliminació de programari de propòsit general.
+  - EA2.1. Resol problemes vinculats als sistemes operatius i als programes i aplicacions vinculats a aquests.
+- CR3. Emprar programari de comunicació entre equips i sistemes.
+  - 3.1. Administra l’equip amb responsabilitat i coneix aplicacions de comunicació entre dispositius.
+- CR4. Conèixer l’arquitectura d’un ordinador, identificar-ne els components bàsics i descriure’n les característiques.
+  - 4.1. Analitza i coneix diversos components físics d’un ordinador, les seves característiques tècniques i la seva connexió.
+- CR5. Analitzar els elements i els sistemes que configuren la comunicació amb fil i sense fil.
+  - EA5.1. Descriu les diferents formes de connexió en la comunicació entre dispositius digitals.
+  - EA5.2. Analitza i coneix diversos dispositius físics i les característiques tècniques de connexió i intercanvi d’informació entre ells.
+
+## BLOC 3. ORGANITZACIÓ, DISSENY I PRODUCCIÓ D’INFORMACIÓ DIGITAL
+
+### Continguts
+
+- Processadors de textos.
+- Disseny de presentacions.
+- Fulls de càlcul.
+- Bases de dades.
+- Adquisició d’imatge fixa mitjançant perifèrics d’entrada.
+- Tractament bàsic de la imatge digital: els formats bàsics i la seva aplicació, modificació de mides de les imatges i selecció de fragments, creació de dibuixos senzills, alteració dels paràmetres de les fotografies digitals (saturació, lluminositat i brillantor).
+- Captura de so i vídeo a partir de diferents fonts. Edició i muntatge d’àudio i vídeo per crear continguts multimèdia.
+
+#### Criteris i estándars d'aprenentatge
+
+- CR1. Utilitzar aplicacions informàtiques d’escriptori per produir documents.
+  - 1.1. Elabora i maqueta documents de text amb aplicacions informàtiques que faciliten la inclusió de taules, imatges, fórmules,
 gràfics, així com altres possibilitats de disseny, i interactua amb altres característiques del programa.
-1.2. Produeix informes que requereixen l’ús de fulls de càlcul, que incloguin resultats textuals, numèrics i gràfics.
-2. Elaborar continguts d’imatge, àudio i vídeo i desenvolupar capacitats per integrar-los a diverses produccions.
-2.1. Integra elements multimèdia, imatge i text a l’elaboració de presentacions i adequa el disseny i la maquetació al missatge i al
-públic objectiu al qual va dirigit.
-2.2. Empra dispositius de captura d’imatge, àudio i vídeo i mitjançant programari específic edita la informació i crea nous materials
-en diversos formats.
+  - 1.2. Produeix informes que requereixen l’ús de fulls de càlcul, que incloguin resultats textuals, numèrics i gràfics.
+- CR2. Elaborar continguts d’imatge, àudio i vídeo i desenvolupar capacitats per integrar-los a diverses produccions.
+  - 2.1. Integra elements multimèdia, imatge i text a l’elaboració de **presentacions** i adequa el disseny i la maquetació al missatge i al públic objectiu al qual va dirigit.
+  - 2.2. Empra dispositius de captura d’imatge, àudio i vídeo i mitjançant programari específic edita la informació i crea nous materials en diversos formats.
 
-BLOC 4. SEGURETAT INFORMÀTICA
+## BLOC 4. SEGURETAT INFORMÀTICA
 
-1. Adoptar conductes de seguretat activa i passiva en la protecció de dades i en l’intercanviï d’informació.
-1.1. Coneix els riscs de seguretat i empra hàbits de protecció adequats.
-1.2. Descriu la importància de l’actualització del programari, l’ús d’antivirus i de tallafocs per garantir la seguretat.
+### Continguts
 
-BLOC 5. PUBLICACIÓ I DIFUSIÓ DE CONTINGUTS
+Seguretat a Internet. El correu massiu i la protecció davant diferents programes, documents o missatges susceptibles de causar perjudicis.
+Importància de l’adopció de mesures de seguretat activa i passiva.
 
-- 1. Utilitzar diversos dispositius d’intercanvi d’informació coneixent les característiques i la comunicació o connexió entre ells.
+#### Criteris i estándars d'aprenentatge
+
+- CR1. Adoptar conductes de seguretat activa i passiva en la protecció de dades i en l’intercanviï d’informació.
+  - 1.1. Coneix els riscs de seguretat i empra hàbits de protecció adequats.
+  - 1.2. Descriu la importància de l’actualització del programari, l’ús d’antivirus i de tallafocs per garantir la seguretat.
+
+### BLOC 5. PUBLICACIÓ I DIFUSIÓ DE CONTINGUTS
+
+### Continguts
+
+Creació i publicació en el web. Estàndards de publicació.
+Disseny de pàgines web.
+Accessibilitat de la informació.
+Les xarxes d’intercanvi com a font de recursos.
+Eines TIC.
+
+#### Criteris i estándars d'aprenentatge
+
+- CR1. Utilitzar diversos dispositius d’intercanvi d’informació coneixent les característiques i la comunicació o connexió entre ells.
   - 1.1. Duu a terme activitats que requereixen compartir recursos en xarxes locals i virtuals.
-- 2. Elaborar i publicar continguts en el web integrant informació textual, numèrica, sonora i gràfica.
+- CR2. Elaborar i publicar continguts en el web integrant informació textual, numèrica, sonora i gràfica.
   - 2.1. Integra i organitza elements textuals i gràfics en estructures hipertextuals.
   - 2.2. Dissenya pàgines web i coneix els protocols de publicació, sota estàndards adequats i respectant els drets de propietat.
-- 3. Conèixer els estàndards de publicació i emprar-los en la producció de pàgines web i eines TIC de caràcter social.
+- CR3. Conèixer els estàndards de publicació i emprar-los en la producció de pàgines web i eines TIC de caràcter social.
   - 3.1. Participa de manera col·laborativa en diverses eines TIC de caràcter social i gestiona els propis.
 
-BLOC 6. INTERNET, XARXES SOCIALS, HIPERCONNEXIÓ
+### BLOC 6. INTERNET, XARXES SOCIALS, HIPERCONNEXIÓ
 
-1. Desenvolupar hàbits en l’ús d’eines que permetin l’accessibilitat a les produccions des de diversos dispositius mòbils.
-1.1. Elabora materials per al web que permeten l’accessibilitat a la informació multiplataforma.
-1.2. Intercanvia informació en diferents plataformes en les quals estàs registrat i que ofereixen serveis de formació, lleure, etc.
+#### Continguts
+
+- La informació i la comunicació com a fonts de comprensió i transformació de l’entorn social: comunitats virtuals i globalització.
+- Accés a serveis d’administració electrònica i comerç electrònic: els intercanvis econòmics i la seguretat.
+- L’enginyeria social i la seguretat: estratègies per reconèixer el frau i desenvolupar actituds de protecció activa.
+- Adquisició d’hàbits orientats a la protecció de la intimitat i la seguretat personal en la interacció en entorns virtuals.
+- Canals de distribució dels continguts multimèdia.
+
+#### Criteris i estándars d'aprenentatge
+
+- CR1. Desenvolupar hàbits en l’ús d’eines que permetin l’accessibilitat a les produccions des de diversos dispositius mòbils.
+  - 1.1. Elabora materials per al web que permeten l’accessibilitat a la informació multiplataforma.
+  - 1.2. Intercanvia informació en diferents plataformes en les quals estàs registrat i que ofereixen serveis de formació, lleure, etc.
 
 ## TECNOLOGIA INDUSTRIAL
 
 BLOC 1
 
-1. Identificar les etapes necessàries per crear un producte tecnològic des de l’origen fins a la comercialització, descriure-les totes,
-investigar-ne la influència en la societat i proposar millores tant des del punt de vista de la utilitat com del possible impacte social.
+1. Identificar les etapes necessàries per crear un producte tecnològic des de l’origen fins a la comercialització, descriure-les totes, investigar-ne la influència en la societat i proposar millores tant des del punt de vista de la utilitat com del possible impacte social.
 1.1. Dissenya una proposta d’un nou producte prenent com a base una idea donada i explica l’objectiu de cada una de les etapes
 significatives necessàries per llançar el producte al mercat.
-2. Explicar les diferències i les similituds entre un model d’excel·lència i un sistema de gestió de qualitat, identificar els principals factors
+2. Explicar les diferències i les similituds entre un model d’excel·lència i un sisUD de gestió de qualitat, identificar els principals factors
 que hi intervenen, valorar críticament la repercussió que el fet d’implantar-lo pot tenir sobre els productes desenvolupats i exposar-ho de
 forma oral amb el suport d’una presentació.
 2.1. Elabora l’esquema d’un possible model d’excel·lència i raona la importància de cada un dels agents implicats.
-2.2. Desenvolupa l’esquema d’un sistema de gestió de qualitat i raona la importància de cada un dels agents implicats.
+2.2. Desenvolupa l’esquema d’un sisUD de gestió de qualitat i raona la importància de cada un dels agents implicats.
 
 BLOC 2
 
@@ -911,12 +1234,12 @@ relacionats amb les tecnologies de la informació i la comunicació.
 
 BLOC 3
 
-1. Analitzar els blocs constitutius de sistemes i/o màquines, interpretar la seva interrelació i descriure els principals elements que els
+- CR1. Analitzar els blocs constitutius de sistemes i/o màquines, interpretar la seva interrelació i descriure els principals elements que els
 formen emprant el vocabulari relacionat amb el
-tema.
+UD.
 1.1. Descriu la funció dels blocs que constitueixen una màquina donada, explicant de forma clara i amb el vocabulari adequat la seva
 contribució al conjunt.
-2. Verificar el funcionament de circuits electricoelectrònics, pneumàtics i hidràulics característics, interpretant-ne els esquemes, utilitzant
+- CR2. Verificar el funcionament de circuits electricoelectrònics, pneumàtics i hidràulics característics, interpretant-ne els esquemes, utilitzant
 els aparells i els equips de mesura adequats, i interpretant i valorant els resultats obtinguts basant-se en el muntatge o la simulació física
 d’aquests.
 2.1. Dissenya emprant un programa de CAD l’esquema d’un circuit pneumàtic, electricoelectrònic o hidràulic que doni resposta a una
@@ -925,13 +1248,13 @@ necessitat determinada.
 2.3. Verifica l’evolució dels senyals en circuits electricoelectrònics, pneumàtics o hidràulics i en dibuixa les formes i els valors en els
 punts característics.
 2.4. Interpreta i valora els resultats obtinguts de circuits electricoelectrònics, pneumàtics o hidràulics.
-3. Fer esquemes de circuits que donen solució a problemes tècnics mitjançant circuits electricoelectrònics, pneumàtics o hidràulics amb
+- CR3. Fer esquemes de circuits que donen solució a problemes tècnics mitjançant circuits electricoelectrònics, pneumàtics o hidràulics amb
 ajuda de programes de disseny assistit, i calcular els paràmetres característics d’aquests circuits.
 3.1. Dibuixa diagrames de blocs de màquines eina i explica la contribució de cada bloc al conjunt de la màquina.
 
 BLOC 4
 
-1. Descriure les tècniques utilitzades en els processos de fabricació tipus, així com l’impacte mediambiental que poden produir, i
+- CR1. Descriure les tècniques utilitzades en els processos de fabricació tipus, així com l’impacte mediambiental que poden produir, i
 identificar les màquines i les eines utilitzades i les condicions de seguretat pròpies de cada una, basant-se en la informació proporcionada en les pàgines web dels fabricants.
 1.1. Explica les principals tècniques emprades en el procés de fabricació d’un producte donat.
 1.2. Identifica les màquines i les eines utilitzades.
@@ -941,14 +1264,14 @@ l’espai i del de la seguretat personal.
 
 BLOC 5
 
-1. Analitzar la importància que els recursos energètics tenen en la societat actual i descriure’n les formes de producció, així com els
+- CR1. Analitzar la importància que els recursos energètics tenen en la societat actual i descriure’n les formes de producció, així com els
 punts forts i febles en el desenvolupament d’una societat sostenible.
 1.1. Descriu les diferents formes de produir energia i les relaciona amb el cost de producció, l’impacte ambiental que produeixen i la
 sostenibilitat.
 1.2. Dibuixa diagrames de blocs de diferents tipus de centrals de producció d’energia, explica cada un dels seus blocs constitutius i els
 relaciona entre si.
 1.3. Explica els avantatges que suposa des del punt de vista del consum que un edifici tengui un certificat energètic.
-2. Fer propostes de reducció de consum energètic per a habitatges o locals amb l’ajuda de programes informàtics i la informació del
+- CR2. Fer propostes de reducció de consum energètic per a habitatges o locals amb l’ajuda de programes informàtics i la informació del
 consum d’aquests.
 2.1. Calcula costs de consum energètic d’edificis d’habitatges o industrials partint de les necessitats i/o dels consums dels recursos
 utilitzats.
@@ -958,156 +1281,237 @@ utilitzats.
 
 BLOC 1
 
-1. Identificar les característiques dels materials per aplicar-los correctament en compte les seves propietats intrínseques i els factors
+- CR1. Identificar les característiques dels materials per aplicar-los correctament en compte les seves propietats intrínseques i els factors
 tècnics relacionats amb la seva estructura interna, així com la possibilitat d’emprar materials no convencionals per desenvolupar-los,
 obtenint informació per mitjà de les tecnologies de la informació i la comunicació.
 1.1. Explica com es poden modificar les propietats dels materials tenint en compte la seva estructura interna.
 
 BLOC 2
 
-1. Definir i exposar les condicions nominals d’una màquina o instal·lació a partir de les seves característiques d’ús, i presentar-les amb el
+- CR1. Definir i exposar les condicions nominals d’una màquina o instal·lació a partir de les seves característiques d’ús, i presentar-les amb el
 suport de mitjans informàtics.
-1.1. Dibuixa croquis de màquines emprant programes de disseny CAD i explica la funció de cada un en el conjunt.
-1.2. Defineix les característiques i la funció dels elements d’una màquina i interpreta plànols de màquines donades.
-2. Descriure les parts de motors tèrmics i elèctrics i analitzar-ne els principis de funcionament.
-2.1. Calcula rendiments de màquines tenint en compte les energies implicades en el funcionament.
-3. Dissenyar circuits elèctrics o pneumàtics a partir de plànols o esquemes i representar gràficament mitjançant programes de disseny la
-composició d’una màquina, un circuit o un sistema tecnològic concret.
-3.1. Munta físicament circuits simples interpretant esquemes i fa gràfics dels senyals en els punts significatius.
+  - 1.1. Dibuixa croquis de màquines emprant programes de disseny CAD i explica la funció de cada un en el conjunt.
+  - 1.2. Defineix les característiques i la funció dels elements d’una màquina i interpreta plànols de màquines donades.
+- CR2. Descriure les parts de motors tèrmics i elèctrics i analitzar-ne els principis de funcionament.
+  - 2.1. Calcula rendiments de màquines tenint en compte les energies implicades en el funcionament.
+- CR3. Dissenyar circuits elèctrics o pneumàtics a partir de plànols o esquemes i representar gràficament mitjançant programes de disseny la
+composició d’una màquina, un circuit o un sisUD tecnològic concret.
+  - 3.1. Munta físicament circuits simples interpretant esquemes i fa gràfics dels senyals en els punts significatius.
+
 BLOC 3
-1. Exposar en públic la composició d’un sistema automàtic identificant els elements de comandament, control i potència i explicant la
+
+- CR1. Exposar en públic la composició d’un sisUD automàtic identificant els elements de comandament, control i potència i explicant la
 relació entre les parts que els componen.
-1.1. Defineix les característiques i la funció dels elements d’un sistema automàtic i n’interpreta plànols/esquemes.
-1.2. Diferencia entre sistemes de control de llaç obert i tancat i en proposa exemples raonats.
-2. Verificar el funcionament de sistemes automàtics mitjançant simuladors reals o virtuals, interpretar-ne esquemes i identificar els
-senyals d’entrada/sortida a cada bloc.
-2.1. Visualitza senyals en circuits digitals mitjançant equips reals o simulats i en verifica la forma.
-2.2. Fa diagrames de flux de sistemes combinacionals i identifica les condicions d’entrada i la seva relació amb les sortides sol·licitades.
-2.3. Dissenya mitjançant blocs genèrics sistemes de control per a aplicacions concretes, descriu la funció de cada bloc en el conjunt i
+  - 1.1. Defineix les característiques i la funció dels elements d’un sisUD automàtic i n’interpreta plànols/esquemes.
+  - 1.2. Diferencia entre sistemes de control de llaç obert i tancat i en proposa exemples raonats.
+
+- CR2. Verificar el funcionament de sistemes automàtics mitjançant simuladors reals o virtuals, interpretar-ne esquemes i identificar els senyals d’entrada/sortida a cada bloc.
+  - 2.1. Visualitza senyals en circuits digitals mitjançant equips reals o simulats i en verifica la forma.
+  - 2.2. Fa diagrames de flux de sistemes combinacionals i identifica les condicions d’entrada i la seva relació amb les sortides sol·licitades.
+  - 2.3. Dissenya mitjançant blocs genèrics sistemes de control per a aplicacions concretes, descriu la funció de cada bloc en el conjunt i
 justifica la tecnologia emprada.
 
 BLOC 4
 
-1. Dissenyar, mitjançant portes lògiques, automatismes de control senzills aplicant procediments de simplificació de circuits lògics i
+- CR1. Dissenyar, mitjançant portes lògiques, automatismes de control senzills aplicant procediments de simplificació de circuits lògics i
 fer-ne la implementació.
-1.1. Dissenya circuits lògics combinacionals amb portes lògiques a partir d’especificacions concretes, aplicant tècniques de simplificació
+  - 1.1. Dissenya circuits lògics combinacionals amb portes lògiques a partir d’especificacions concretes, aplicant tècniques de simplificació
 de funcions i proposant el possible esquema del circuit.
-1.2. Dissenya circuits lògics combinacionals amb blocs integrats partint d’especificacions concretes i proposant el possible esquema del
+  - 1.2. Dissenya circuits lògics combinacionals amb blocs integrats partint d’especificacions concretes i proposant el possible esquema del
 circuit.
-2. Analitzar el funcionament de sistemes lògics seqüencials digitals descrivint les característiques i les aplicacions dels blocs constitutius.
-2.1. Explica el funcionament dels biestables i n’indica els diferents tipus i les taules de veritat associades.
-2.2. Dibuixa el cronograma d’un comptador i explica els canvis que es produeixen en els senyals.
+- CR2. Analitzar el funcionament de sistemes lògics seqüencials digitals descrivint les característiques i les aplicacions dels blocs constitutius.
+  - 2.1. Explica el funcionament dels biestables i n’indica els diferents tipus i les taules de veritat associades.
+  - 2.2. Dibuixa el cronograma d’un comptador i explica els canvis que es produeixen en els senyals.
 
 BLOC 5
 
-1. Analitzar i fer cronogrames de circuits seqüencials identificant la relació dels elements entre si i visualitzant-los gràficament mitjançant
+- CR1. Analitzar i fer cronogrames de circuits seqüencials identificant la relació dels elements entre si i visualitzant-los gràficament mitjançant
 l’equip més adequat o programes de simulació.
-1.1. Obté senyals de circuits seqüencials típics emprant programari de simulació.
-1.2. Dibuixa cronogrames de circuits seqüencials partint dels seus esquemes i de les característiques dels elements que els
+  - 1.1. Obté senyals de circuits seqüencials típics emprant programari de simulació.
+  - 1.2. Dibuixa cronogrames de circuits seqüencials partint dels seus esquemes i de les característiques dels elements que els
 constitueixen.
-2. Dissenyar circuits seqüencials senzills i analitzar les característiques dels elements que els conformen i la seva resposta en el temps.
-2.1. Dissenya circuits lògics seqüencials senzills amb biestables a partir d’especificacions concretes i elaborant l’esquema del circuit.
-3. Relacionar els tipus de microprocessadors utilitzats en ordinadors d’ús domèstic cercant la informació a Internet i descrivint-ne les
-principals prestacions.
-3.1. Identifica els principals elements que constitueixen un microprocessador tipus i el compara amb algun microprocessador comercial.
+- CR2. Dissenyar circuits seqüencials senzills i analitzar les característiques dels elements que els conformen i la seva resposta en el temps.
+  - 2.1. Dissenya circuits lògics seqüencials senzills amb biestables a partir d’especificacions concretes i elaborant l’esquema del circuit.
+- CR3. Relacionar els tipus de microprocessadors utilitzats en ordinadors d’ús domèstic cercant la informació a Internet i descrivint-ne les principals prestacions.
+  - 3.1. Identifica els principals elements que constitueixen un microprocessador tipus i el compara amb algun microprocessador comercial.
 
 ## TECNOLOGIES DE LA INFORMACIÓ I LA COMUNICACIÓ I
 
-BLOC 1. ÈTICA I ESTÈTICA EN LA INTERACCIÓ EN XARXA
-1. Adoptar conductes i hàbits que permetin la protecció de l’individu en la interacció a la xarxa.
-1.1. Interactua amb hàbits adequats en entorns virtuals.
-1.2. Aplica polítiques segures d’ús de contrasenyes per protegir la informació personal.
-2. Accedir a serveis d’intercanvi i publicació d’informació digital amb criteris de seguretat i ús responsable.
-2.1. Duu a terme activitats amb responsabilitat sobre conceptes com la propietat i l’intercanviï d’informació.
-3. Reconèixer i comprendre els drets dels materials allotjats al web.
-3.1. Consulta diferents fonts i navega coneixent la importància de la identitat digital i els tipus de frau del web.
-3.2. Diferencia els conceptes de material subjecte a drets d’autor i material de lliure distribució.
-BLOC 2. ORDINADORS, SISTEMES OPERATIUS I XARXES
-1. Utilitzar i configurar equips informàtics i identificar els elements que els configuren i la seva funció en el conjunt.
-1.1. Fa operacions bàsiques d’organització i emmagatzemament de la informació.
-1.2. Configura elements bàsics del sistema operatiu i accessibilitat de l’equip informàtic.
-2. Gestionar la instal·lació i l’eliminació de programari de propòsit general.
-2.1. Resol problemes vinculats als sistemes operatius i als programes i aplicacions vinculats a aquests.
-3. Emprar programari de comunicació entre equips i sistemes.
-3.1. Administra l’equip amb responsabilitat i coneix aplicacions de comunicació entre dispositius.
-4. Conèixer l’arquitectura d’un ordinador, identificar-ne els components bàsics i descriure’n les característiques.
-4.1. Analitza i coneix diversos components físics d’un ordinador, les seves característiques tècniques i la seva connexió.
-5. Analitzar els elements i els sistemes que configuren la comunicació amb fil i sense fil.
-5.1. Descriu les diferents formes de connexió en la comunicació entre dispositius digitals.
-5.2. Analitza i coneix diversos dispositius físics i les característiques tècniques de connexió i intercanvi d’informació entre ells.
-BLOC 3. ORGANITZACIÓ, DISSENY I PRODUCCIÓ D’INFORMACIÓ DIGITAL
-1. Utilitzar aplicacions informàtiques d’escriptori per produir documents.
-1.1. Elabora i maqueta documents de text amb aplicacions informàtiques que faciliten la inclusió de taules, imatges, fórmules,
-gràfics, així com altres possibilitats de disseny, i interactua amb altres característiques del programa.
-1.2. Produeix informes que requereixen l’ús de fulls de càlcul, que incloguin resultats textuals, numèrics i gràfics.
-1.3. Elabora bases de dades senzilles i utilitza la seva funcionalitat per consultar dades, organitzar la informació i generar
-documents.
-2. Elaborar continguts d’imatge, àudio i vídeo i desenvolupar capacitats per integrar-los a diverses produccions.
-2.1. Integra elements multimèdia, imatge i text a l’elaboració de presentacions i adequa el disseny i la maquetació al missatge
-i al públic objectiu al qual va dirigit.
-2.2. Empra dispositius de captura d’imatge, àudio i vídeo i mitjançant programari específic edita la informació i crea nous
-materials en diversos formats.
-BLOC 4. SEGURETAT INFORMÀTICA
-1. Adoptar conductes de seguretat activa i passiva en la protecció de dades i en l’intercanviï d’informació.
-1.1. Coneix els riscs de seguretat i empra hàbits de protecció adequats.
-1.2. Descriu la importància de l’actualització del programari, l’ús d’antivirus i de tallafocs per garantir la seguretat.
-BLOC 5. PUBLICACIÓ I DIFUSIÓ DE CONTINGUTS
-1. Utilitzar diversos dispositius d’intercanvi d’informació coneixent les característiques i la comunicació o connexió entre ells.
-1.1. Duu a terme activitats que requereixen compartir recursos en xarxes locals i virtuals.
-2. Elaborar i publicar continguts en el web integrant informació textual, numèrica, sonora i gràfica.
-2.1. Integra i organitza elements textuals i gràfics en estructures hipertextuals.
-2.2. Dissenya pàgines web i coneix els protocols de publicació, sota estàndards adequats i respectant els drets de propietat.
-3. Conèixer els estàndards de publicació i emprar-los en la producció de pàgines web i eines TIC de caràcter social.
-3.1. Participa de manera col·laborativa en diverses eines TIC de caràcter social i gestiona els propis.
+### BLOC 1. ÈTICA I ESTÈTICA EN LA INTERACCIÓ EN XARXA
+
+#### Continguts
+
+- El processament de dades i la informàtica.
+- Evolució històrica de la informàtica.
+- La societat de la informació. Tendències de futur.
+- Noves professions derivades de l’ús dels ordinadors
+
+#### Criteris i estàndards d'aprenentatge
+
+1. Analitzar i valorar les influències de les tecnologies de la informació i la comunicació en la transformació de la societat actual, tant en els àmbits d’adquisició del coneixement com en els de producció.
+1.1. Descriu les diferències entre el que es considera societat de la informació i societat del coneixement.
+1.2. Explica els nous sectors econòmics que han aparegut com a conseqüència de la generalització de les tecnologies de la informació i la comunicació
+
+### BLOC 2. ARQUITECTURA D’ORDINADORS
+
+#### Continguts
+
+- Components del maquinari d’un ordinador.
+- Memòries: tipus i característiques.
+- Dispositius d’emmagatzematge.
+- Principals components perifèrics d’un ordinador.
+- Programari. Sistemes operatius i aplicacions d’escriptori.
+
+#### Criteris i estàndards d'aprenentatge
+
+1. Configurar ordinadors i equips informàtics, identificar els subsistemes que els componen, descriure’n les característiques i relacionar cada element amb les prestacions del conjunt.
+1.1. Descriu les característiques dels subsistemes que componen un ordinador i n’identifica els principals paràmetres de funcionament.
+1.2. Elabora esquemes d’interconnexió dels blocs funcionals d’un ordinador i descriu la contribució de cada un al funcionament integral del sistema.
+1.3. Descriu dispositius d’emmagatzematge massiu utilitzats en sistemes d’ordinadors i en reconeix la importància en la custòdia de la informació.
+1.4. Descriu els tipus de memòria emprades en ordinadors i analitza els paràmetres que les defineixen i la seva aportació al rendiment del conjunt.
+2. Instal·lar i fer servir programari de propòsit general i d’aplicació i avaluar-ne les característiques i els entorns d’aplicació.
+2.1. Elabora un diagrama de l’estructura d’un sistema operatiu i relaciona cada una de les parts amb les funcions que fa.
+2.2. Instal·la sistemes operatius i programes d’aplicació per resoldre problemes en ordinadors personals seguint instruccions del fabricant
+
+### BLOC 3. PROGRAMARI PER A SISTEMES INFORMÀTICS
+
+#### Continguts
+
+- Aplicacions d’escriptori o web.
+- Processador de textos. Creació d’informes.
+- Creació de presentacions.
+- Fulls de càlcul.
+- Sistema gestor de base de dades.
+- Aplicacions de disseny gràfic 2D i 3D.
+- Aplicacions multimèdia.
+
+#### Criteris i estàndards d'aprenentatge
+
+- CR1. Utilitzar aplicacions informàtiques d’escriptori o web com a instruments de resolució de problemes específics.
+  - 1.1. Dissenya bases de dades senzilles i/o n’extreu informació fent consultes, formularis i informes.
+  - 1.2. Elabora informes de text que integrin text i imatges aplicant les possibilitats de les aplicacions i tenint en compte el destinatari.
+  - 1.3. Elabora presentacions que integrin text, imatges i elements multimèdia adequant el missatge al públic objectiu a qui està destinat.
+  - 1.4. Resol problemes que requereixin l’ús de fulls de càlcul i genera resultats textuals, numèrics i gràfics.
+  - 1.5. Dissenya elements gràfics en 2D i 3D per comunicar idees.
+  - 1.6. Fa petites pel·lícules integrant so, vídeo i imatges, emprant programes d’edició d’arxius multimèdia.
+
+### BLOC 4. XARXES D’ORDINADORS
+
+#### Continguts
+
+- Xarxes d’àrea local (LAN). Topologia d’una xarxa. Model OSI.
+- Sistema de cablatge estructurat.
+- Xarxes sense fil (Wi-Fi). Estàndard 802.11.
+- Dispositius de connexió a una LAN. Característiques i funcions.
+- Interconnexió de xarxes LAN-WAN.
+
+#### Criteris i estàndards d'aprenentatge
+
+- CR1. Adoptar conductes de seguretat activa i passiva en la protecció de dades i en l’intercanviï d’informació.
+  - 1.1. Coneix els riscs de seguretat i empra hàbits de protecció adequats.
+  - 1.2. Descriu la importància de l’actualització del programari, l’ús d’antivirus i de tallafocs per garantir la seguretat.
+
+#### Criteris i estàndards d'aprenentatge
+
+- CR1. Analitzar les principals topologies emprades en el disseny de xarxes d’ordinadors i relacionar-les amb l’àrea d’aplicació i amb les tecnologies emprades.
+  - 1.1. Dibuixa esquemes de configuració de petites xarxes locals seleccionant les tecnologies en funció de l’espai físic disponible.
+  - 1.2. Fa una anàlisi comparativa entre diferents tipus de cablatges utilitzats en xarxes de dades.
+  - 1.3. Fa una anàlisi comparativa entre tecnologia amb fil i sense fil, i indica possibles avantatges i inconvenients.
+- CR2. Analitzar la funció dels equips de connexió que permeten dur a terme configuracions de xarxes i la seva interconnexió amb xarxes d’àrea extensa.
+  - 2.1. Explica la funcionalitat dels diferents elements que permeten configurar xarxes de dades i n’indica els avantatges i els inconvenients principals.
+- CR3. Descriure els nivells del model OSI i relacionar-los amb les seves funcions en una xarxa informàtica.
+  - 3.1. Elabora un esquema de la manera com es fa la comunicació entre els nivells OSI de dos equips remots.
+
+### BLOC 5. PROGRAMACIÓ
+
+#### Continguts
+
+- Els llenguatges de programació.
+- Algorísmia i codificació.
+- Traçabilitat d’un algoritme.
+- Estructures de control. Diagrames de flux.
+- Codificació de programes senzills amb un llenguatge d’alt nivell.
+
+#### Criteris d’avaluació / Estàndards d’aprenentatge avaluables
+
+1. Aplicar algoritmes a la resolució dels problemes més freqüents que es presenten en treballar amb estructures de dades.
+1.1. Desenvolupa algoritmes que permetin resoldre problemes aritmètics senzills i elabora els diagrames de flux corresponents.
+2. Analitzar i resoldre problemes de tractament d’informació dividint-los en subproblemes i definint algoritmes que els resolen.
+2.1. Escriu programes que incloguin bucles de programació per solucionar problemes que impliqui la divisió del conjunt en parts més petites.
+3. Analitzar l’estructura de programes informàtics, identificant i relacionant els elements propis del llenguatge de programació utilitzat.
+3.1. Obté el resultat de seguir un petit programa escrit en un codi determinat, partint de determinades condicions.
+4. Conèixer i comprendre la sintaxi i la semàntica de les construccions bàsiques d’un llenguatge de programació.
+4.1. Defineix què s’entén per sintaxi d’un llenguatge de programació i proposa exemples concrets d’un llenguatge determinat.
+5. Fer petits programes d’aplicació en un llenguatge de programació determinat i aplicar-los a la solució de problemes reals.
+5.1. Fa programes d’aplicació senzills en un llenguatge determinat que solucionin problemes de la vida real.
 
 ## TECNOLOGIES DE LA INFORMACIÓ I LA COMUNICACIÓ II
 
-BLOC 1: L'era digital
-1. Adoptar conductes i hàbits que permetin la protecció de l’individu en la interacció a la xarxa.
-1.1. Interactua amb hàbits adequats en entorns virtuals.
-1.2. Aplica polítiques segures d’ús de contrasenyes per protegir la informació personal.
-2. Accedir a serveis d’intercanvi i publicació d’informació digital amb criteris de seguretat i ús responsable.
-2.1. Duu a terme activitats amb responsabilitat sobre conceptes com la propietat i l’intercanviï d’informació.
-3. Reconèixer i comprendre els drets dels materials allotjats al web.
-3.1. Consulta diferents fonts i navega coneixent la importància de la identitat digital i els tipus de frau del web.
-3.2. Diferencia els conceptes de material subjecte a drets d’autor i material de lliure distribució .
-BLOC 2: Programació
-1. Descriure les estructures d’emmagatzemament i analitzar les característiques de cada una.
-1.1. Explica les estructures d’emmagatzemament per a diferents aplicacions tenint en compte les seves característiques.
-2. Conèixer i comprendre la sintaxi i la semàntica de les construccions d’un llenguatge de programació.
-2.1. Elabora diagrames de flux de mitjana complexitat usant elements gràfics i interrelacionant-los entre si per donar resposta a
-problemes concrets.
+### BLOC 1: Programació
 
-3. Fer programes d’aplicació en un llenguatge de programació determinat i aplicarlos a la solució de problemes reals.
-3.1. Elabora programes de mitjana complexitat, defineix el fluxograma corresponent i escriu el codi corresponent.
-3.2. Descompon problemes de certa complexitat en problemes més petits susceptibles de ser programats com a parts separades.
-4. Utilitzar entorns de programació per dissenyar programes que resolguin problemes concrets.
-4.1. Elabora programes de mitjana complexitat emprant entorns de programació.
-4.2. Obté el resultat de seguir un programa escrit en un codi determinat, partint de determinades condicions.
-5. Depurar programes informàtics i optimitzant-los per aplicar-los
-5.1. Optimitza el codi d’un programa donat aplicant-hi procediments de depuració.
+#### Continguts
 
-BLOC 3: Publicació i difusió de continguts
+- Estructures d’emmagatzematge. Diferents tipus.
+- Algorísmia i codificació.
+- Estructures de control. Diagrames de flux.
+- Codificació de programes amb un llenguatge d’alt nivell.
+- Traçabilitat, depuració i optimització d’un codi de programació
 
-1. Utilitzar i descriure les característiques de les eines relacionades amb el web social identificant les funcions i les possibilitats
+#### Criteris d’avaluació / Estàndards d’aprenentatge avaluables
+
+- CR1. Descriure les estructures d’emmagatzemament i analitzar les característiques de cada una.
+  - 1.1. Explica les estructures d’emmagatzemament per a diferents aplicacions tenint en compte les seves característiques.
+- CR2. Conèixer i comprendre la sintaxi i la semàntica de les construccions d’un llenguatge de programació.
+  - 2.1. Elabora **diagrames de flux** de mitjana complexitat usant elements gràfics i interrelacionant-los entre si per donar resposta a problemes concrets.
+- CR3. Fer programes d’aplicació en un llenguatge de programació determinat i aplicarlos a la solució de problemes reals.
+  - 3.1. Elabora **programes** de mitjana complexitat, defineix el **fluxograma** corresponent i escriu el codi corresponent.
+  - 3.2. Descompon problemes de certa complexitat en problemes més petits susceptibles de ser programats com a parts separades.
+- CR4. Utilitzar entorns de programació per dissenyar programes que resolguin problemes concrets.
+  - 4.1. Elabora programes de mitjana complexitat emprant entorns de programació.
+  - 4.2. Obté el resultat de seguir un programa escrit en un codi determinat, partint de determinades condicions.
+- CR5. Depurar programes informàtics i optimitzant-los per aplicar-los
+  - 5.1. Optimitza el codi d’un programa donat aplicant-hi procediments de **depuració**.
+
+### BLOC 2: Publicació i difusió de continguts
+
+#### Continguts
+
+- Publicació i difusió de continguts. Blogs.
+- Disseny de pàgines web. El llenguatge HTML.
+- Els gestors de continguts.
+- Xarxes socials.
+- Eines web 2.0. Treball col·laboratiu
+
+#### Criteris d’avaluació / Estàndards d’aprenentatge avaluables
+
+- CR1. Utilitzar i descriure les característiques de les eines relacionades amb el web social identificant les funcions i les possibilitats
 que ofereixen les plataformes de treball col·laboratiu.
-1.1. Dissenya pàgines web i blogs amb eines específiques i analitza les característiques fonamentals relacionades amb
+  - 1.1. Dissenya pàgines web i blogs amb eines específiques i analitza les característiques fonamentals relacionades amb
 l’accessibilitat i l’ús d’aquestes i tenint en compte la funció a la qual estan destinades.
-1.2. Explica les característiques rellevants del web 2.0 i els principis en què aquest es basa.
-2. Elaborar i publicar continguts en el web integrant informació textual, gràfica i multimèdia tenint en compte a qui va dirigit i
+  - 1.2. Explica les característiques rellevants del web 2.0 i els principis en què aquest es basa.
+- CR2. Elaborar i publicar continguts en el web integrant informació textual, gràfica i multimèdia tenint en compte a qui va dirigit i
 l’objectiu que es pretén aconseguir.
-2.1. Elabora treballs emprant les possibilitats de col·laboració que permeten les tecnologies basades en el web 2.0.
-
-3. Analitzar i utilitzar les possibilitats que ens ofereixen les tecnologies basades en el web 2.0 i successius desenvolupaments
+  - 2.1. Elabora treballs emprant les possibilitats de col·laboració que permeten les tecnologies basades en el web 2.0.
+- CR3. Analitzar i utilitzar les possibilitats que ens ofereixen les tecnologies basades en el web 2.0 i successius desenvolupaments
 aplicant-les al desenvolupament de treballs col·laboratius.
-3.1. Explica les característiques rellevants del web 2.0 i els principis en què aquest es basa.
+  - 3.1. Explica les característiques rellevants del web 2.0 i els principis en què aquest es basa.
 
-BLOC 4: Seguretat Informàtica
+### BLOC 3. SEGURETAT
 
-1. Adoptar les conductes de seguretat activa i passiva que possibilitin la protecció de les dades i del propi individu en les
-interaccions a Internet i en la gestió de recursos i aplicacions locals.
-1.1. Elabora un esquema de blocs amb els elements de protecció física davant atacs externs per a una petita xarxa considerant
-tant els elements de maquinari de protecció com les eines de programari que permeten protegir la informació.
+- Introducció a la seguretat informàtica.
+- Contra què ens hem de protegir?
+- Seguretat activa i passiva.
+- Les amenaces silencioses.
+- Els programes que protegeixen el nostre ordinador
+
+#### Criteris d’avaluació / Estàndards d’aprenentatge avaluables
+
+- CR1. Adoptar les conductes de seguretat activa i passiva que possibilitin la protecció de les dades i del propi individu en les interaccions a Internet i en la gestió de recursos i aplicacions locals.
+  - 1.1. Elabora un esquema de blocs amb els elements de protecció física davant atacs externs per a una petita xarxa considerant tant els elements de maquinari de protecció com les eines de programari que permeten protegir la informació.
+- CR2. Analitzar la importància que té assegurar la informació en la societat del coneixement i valorar les repercussions de tipus econòmic, social o personal.
+  - 2.1. Selecciona elements de protecció de programari per a Internet i els relaciona amb els possibles atacs.
+  - 2.2. Elabora un esquema de blocs amb els elements de protecció física davant atacs externs per a una petita xarxa considerant els elements de maquinari de protecció.
+  - 2.3. Classifica el codi maliciós per la capacitat de propagació, descriu les característiques de cada un i indica sobre quins elements actuen.
 
 # 8. ELEMENTS TRANSVERSALS TRACTATS
 
@@ -1125,7 +1529,7 @@ tant els elements de maquinari de protecció com les eines de programari que per
 
 ## Tecnologies 2n d'ESO
 
-1. Quadern de continguts (apunts, esquemes, temari, dibuixos...)
+1. Quadern de continguts (apunts, esquemes, UDri, dibuixos...)
 2. Llibreta d’exercicis (activitats i problemes amb enunciats)
 3. Llapis, goma i bolígrafs
 4. Tisores
@@ -1151,10 +1555,10 @@ entregar tasques com per accedir als materials de l'assignatura.
 
 ## Tecnologies de la comunicació i informació I i II
 
-Els alumnes de TIC seguiran les classes i entregaran tasques: 
+Els alumnes de TIC seguiran les classes i entregaran tasques:
 
-- En les plataformes **Moodle** (un grup de TIC1 i TIC 2) 
-- A través de **Google Classroom** (l'altre grup de TIC1).
+- En les plataformes **Moodle** (un grup de TIC1 i TIC 2)
+- A través de **Google Classroom** (l'altre grup de TIC1)
 
 # 10. PROCEDIMENTS DE SUPORTS I DE RECUPERACIÓ
 
@@ -1207,7 +1611,7 @@ Durant el curs s'anirà revisant que el ritme imposat per la programació inicia
 característiques de cada grup.
 
 En cas que els alumnes tenguin dificultats per assimilar els coneixements, les activitats proposades pel professor hauran d'aprofundir
-més en cada tema. En aquest cas, s'ha de preveure la possibilitat de reduir el nombre d'unitats didàctiques de manera que la major part
+més en cada UD. En aquest cas, s'ha de preveure la possibilitat de reduir el nombre d'unitats didàctiques de manera que la major part
 dels alumnes puguin assolir un aprenentatge significatiu.
 
 D'altre banda, si la resposta dels alumnes és positiva al procés de l'ensenyament es poden proposar activitats d'aprofundiment a cada

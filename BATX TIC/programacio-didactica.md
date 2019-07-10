@@ -22,7 +22,10 @@ aspectratio:
 
 \pagebreak
 
-- [1. ADEQUACIÓ I SEQÜENCIACIÓ DELS OBJECTIUS ESPECÍFICS DE LA MATÈRIA](#1-ADEQUACI%C3%93-I-SEQ%C3%9CENCIACI%C3%93-DELS-OBJECTIUS-ESPEC%C3%8DFICS-DE-LA-MAT%C3%88RIA)
+- [1. Introducció i aspectes generals](#1-Introducci%C3%B3-i-aspectes-generals)
+  - [Membres del departament](#Membres-del-departament)
+  - [Etapes i matèries impartides pel departament](#Etapes-i-mat%C3%A8ries-impartides-pel-departament)
+- [2. ADEQUACIÓ I SEQÜENCIACIÓ DELS OBJECTIUS ESPECÍFICS DE LA MATÈRIA](#2-ADEQUACI%C3%93-I-SEQ%C3%9CENCIACI%C3%93-DELS-OBJECTIUS-ESPEC%C3%8DFICS-DE-LA-MAT%C3%88RIA)
   - [TECNOLOGIA ESO](#TECNOLOGIA-ESO)
   - [TECNOLOGIES DE LA INFORMACIÓ I LA COMUNICACIÓ de 4t](#TECNOLOGIES-DE-LA-INFORMACI%C3%93-I-LA-COMUNICACI%C3%93-de-4t)
   - [TECNOLOGIA INDUSTRIAL](#TECNOLOGIA-INDUSTRIAL)
@@ -64,7 +67,7 @@ aspectratio:
 - [7. ESTÀNDARDS D'APRENENTATGES AVALUABLES](#7-EST%C3%80NDARDS-DAPRENENTATGES-AVALUABLES)
   - [Tecnologies 2nESO](#Tecnologies-2nESO)
   - [Tecnologies 3r ESO](#Tecnologies-3r-ESO)
-  - [Tecnoogies 4t ESO](#Tecnoogies-4t-ESO)
+  - [Tecnologia 4t ESO](#Tecnologia-4t-ESO)
   - [TECNOLOGIES DE LA INFORMACIÓ I LA COMUNICACIÓ 4 t d'ESO](#TECNOLOGIES-DE-LA-INFORMACI%C3%93-I-LA-COMUNICACI%C3%93-4-t-dESO)
     - [BLOC 1. ÈTICA I ESTÈTICA EN LA INTERACCIÓ EN XARXA](#BLOC-1-%C3%88TICA-I-EST%C3%88TICA-EN-LA-INTERACCI%C3%93-EN-XARXA)
       - [Continguts](#Continguts)
@@ -84,8 +87,8 @@ aspectratio:
     - [BLOC 6. INTERNET, XARXES SOCIALS, HIPERCONNEXIÓ](#BLOC-6-INTERNET-XARXES-SOCIALS-HIPERCONNEXI%C3%93)
       - [Continguts](#Continguts-5)
       - [Criteris i estándars d'aprenentatge](#Criteris-i-est%C3%A1ndars-daprenentatge-5)
-  - [TECNOLOGIA INDUSTRIAL](#TECNOLOGIA-INDUSTRIAL-1)
-  - [TECNOLOGIA INDUSTRIAL II](#TECNOLOGIA-INDUSTRIAL-II-1)
+  - [Tecnologia industrial I](#Tecnologia-industrial-I)
+  - [Tecnologia industrial II](#Tecnologia-industrial-II)
   - [TECNOLOGIES DE LA INFORMACIÓ I LA COMUNICACIÓ I](#TECNOLOGIES-DE-LA-INFORMACI%C3%93-I-LA-COMUNICACI%C3%93-I-1)
     - [BLOC 1. ÈTICA I ESTÈTICA EN LA INTERACCIÓ EN XARXA](#BLOC-1-%C3%88TICA-I-EST%C3%88TICA-EN-LA-INTERACCI%C3%93-EN-XARXA-1)
       - [Continguts](#Continguts-6)
@@ -121,6 +124,8 @@ aspectratio:
   - [Tecnologies de la comunicació i informació I i II](#Tecnologies-de-la-comunicaci%C3%B3-i-informaci%C3%B3-I-i-II)
 - [10. PROCEDIMENTS DE SUPORTS I DE RECUPERACIÓ](#10-PROCEDIMENTS-DE-SUPORTS-I-DE-RECUPERACI%C3%93)
   - [Recuperació de matèries pendents](#Recuperaci%C3%B3-de-mat%C3%A8ries-pendents)
+    - [Alumnat de PMAR](#Alumnat-de-PMAR)
+    - [Alumnat de tecnologies](#Alumnat-de-tecnologies)
   - [Avaluació extraordinària de setembre](#Avaluaci%C3%B3-extraordin%C3%A0ria-de-setembre)
   - [Pèrdua de dret d'avaluació contínua](#P%C3%A8rdua-de-dret-davaluaci%C3%B3-cont%C3%ADnua)
 - [11. ESTRATÈGIES I PROCEDIMENTS D'AVALUACIÓ DEL PROCÉS D'ENSENYAMENT -APRENENTATGE](#11-ESTRAT%C3%88GIES-I-PROCEDIMENTS-DAVALUACI%C3%93-DEL-PROC%C3%89S-DENSENYAMENT--APRENENTATGE)
@@ -136,7 +141,33 @@ aspectratio:
 
 \pagebreak
 
-# 1. ADEQUACIÓ I SEQÜENCIACIÓ DELS OBJECTIUS ESPECÍFICS DE LA MATÈRIA
+# 1. Introducció i aspectes generals
+
+## Membres del departament
+
+El departament de tecnologia de l'IES Ramon Llull està conformat, al començament del curs 2019-2020, pels següents membres:
+
+- Daniel Moreno Rosselló
+- Alberto Soto Fernández
+
+## Etapes i matèries impartides pel departament
+
+El departament imparteix docència als 3 nivells d'estudis que ofereix el centre: ESO, batxillerat i formació professional. Els mòduls i matèries corresponents al departament són:
+
+Estudis | Nivell | Matèria o mòdul
+--- | ---| ---
+ESO | 2n | Tecnologia
+ESO | 3r | Tecnologia
+ESO | 4t | Tecnologia
+ESO | 4t | Tecnologies de la informació i comunicació 
+Batxillerat | 1r | Tecnologies de la informació i comunicació I
+Batxillerat | 1r | Tecnologia industrial I
+Batxillerat | 2n | Tecnologies de la informació i comunicació II
+Batxillerat | 2n | Tecnologia industrial II
+FP Bàsica | 1r
+FP Bàsica | 2n
+
+# 2. ADEQUACIÓ I SEQÜENCIACIÓ DELS OBJECTIUS ESPECÍFICS DE LA MATÈRIA
 
 ## TECNOLOGIA ESO
 
@@ -585,11 +616,11 @@ PRINCIPIS DE MÀQUINES
 
 SISTEMES AUTOMÀTICS
 
-- Elements de comandament, control i potència d’un sisUD.
+- Elements de comandament, control i potència d’un sistema.
 - Diferenciació entre control de llaç obert o tancat.
 - Disseny i representació de sistemes de control per a una aplicació concreta.
 - Anàlisi del funcionament de sistemes automàtics mitjançant simuladors. - Interpretació dels senyals d’entrada i sortida de
-- cada bloc de l’esquema d’un sisUD automàtic.
+- cada bloc de l’esquema d’un sistema automàtic.
 - Disseny de sistemes de control per a aplicacions concretes amb blocs genèrics. - Funcions de cada bloc.
 
 **3a AVALUACIÓ**
@@ -853,7 +884,7 @@ En les avaluacions ordinàries durant el curs es puntuaran.
 
 Apartat | Percentatge 
 -- | --
-Continguts          | 40 %
+Continguts          | 40%
 Projectes           | 30%
 tasques i exercicis | 20% 
 actitud             | 10%
@@ -925,7 +956,7 @@ circuits elèctrics utilitzant els components adequats.
 7. Identificar i connectar els components bàsics de l’ordinador. Manejar l’entorn gràfic dels sistemes operatius com a interfície de
 comunicació amb la màquina. Emprar l’ordinador com a eina de treball per tal de comunicar, localitzar i manejar informació de diverses
 fonts. Conèixer i aplicar la terminologia i els procediments bàsics dels processadors de textos i eines de presentacions.
-Es busca valorar que l’alumnat sàpiga la funció de cada component de l’ordinador i que tengui les habilitats necessàries per administrar un sisUD informàtic personal. L’alumnat s’ha de sentir segur manejant els entorns dels sistemes operatius i ha de saber
+Es busca valorar que l’alumnat sàpiga la funció de cada component de l’ordinador i que tengui les habilitats necessàries per administrar un sistema informàtic personal. L’alumnat s’ha de sentir segur manejant els entorns dels sistemes operatius i ha de saber
 personalitzar-los segons les seves preferències. També es pretén avaluar la capacitat d’emmagatzemar i recuperar la informació en
 diferents suports. S’ha de comprovar el domini de les aplicacions bàsiques dels processadors de textos i les eines de presentacions.
 8. Emprar l’ordinador com a instrument eficaç per localitzar informació a Internet. Utilitzar Internet com a mitjà de comunicació i fer
@@ -939,87 +970,81 @@ Es pretén avaluar el coneixement de les tecnologies utilitzades en els diferent
 
 BLOC 1
 
-1. Identificar i descriure les etapes necessàries per crear un producte tecnològic des de l’origen fins a la comercialització, investigar la
+- CR1. Identificar i descriure les etapes necessàries per crear un producte tecnològic des de l’origen fins a la comercialització, investigar la
 seva influència en la societat i proposar millores tant des del punt de vista de la utilitat com del possible impacte social.
-1.1. Dissenya un prototip que dóna solució a un problema tècnic mitjançant el procés de resolució de problemes tecnològics.
-2. Fer les operacions tècniques previstes en un pla de feina emprant els recursos materials i organitzatius amb criteris d’economia,
+  - 1.1. Dissenya un prototip que dóna solució a un problema tècnic mitjançant el procés de resolució de problemes tecnològics.
+- CR2. Fer les operacions tècniques previstes en un pla de feina emprant els recursos materials i organitzatius amb criteris d’economia,
 seguretat i respecte al medi ambient i valorant les condicions de l’entorn de feina.
-2.1. Elabora la documentació necessària per planificar i construir el prototip.
-3. Explicar mitjançant documentació tècnica les diferents fases d’un producte des del disseny fins a la comercialització.
-3.1. Produeix els documents necessaris relacionats amb un prototip emprant quan sigui necessari programari específic de suport.
+  - 2.1. Elabora la documentació necessària per planificar i construir el prototip.
+- CR3. Explicar mitjançant documentació tècnica les diferents fases d’un producte des del disseny fins a la comercialització.
+  - 3.1. Produeix els documents necessaris relacionats amb un prototip emprant quan sigui necessari programari específic de suport.
 
 BLOC 2
 
-1. Representar objectes mitjançant vistes i perspectives aplicant criteris de normalització i escales. Adquirir habilitat i destresa en l’ús
+- CR1. Representar objectes mitjançant vistes i perspectives aplicant criteris de normalització i escales. Adquirir habilitat i destresa en l’ús
 dels instruments de dibuix.
-1.1. Representa objectes i sistemes tècnics mitjançant vistes i perspectives i mitjançant croquis i emprant criteris normalitzats d’acotació i
+  - 1.1. Representa objectes i sistemes tècnics mitjançant vistes i perspectives i mitjançant croquis i emprant criteris normalitzats d’acotació i
 escala.
-2. Interpretar croquis i esbossos com elements d’informació de productes tecnològics.
-2.1. Interpreta croquis i esbossos com elements d’informació de productes tecnològics.
+- CR2. Interpretar croquis i esbossos com elements d’informació de productes tecnològics.
+  - 2.1. Interpreta croquis i esbossos com elements d’informació de productes tecnològics.
 
 BLOC 3
 
-1. Analitzar les propietats dels materials utilitzats en la construcció d’objectes tecnològics reconeixent-ne l’estructura interna i
-relacionant-la amb les propietats que presenten i les modificacions que es puguin produir.
-1.1. Descriu les característiques pròpies dels materials d’ús tècnic i en compara les propietats.
-1.2. Explica com es poden identificar les propietats mecàniques dels materials d’ús tècnic.
-2. Manipular i mecanitzar materials convencionals associant la documentació tècnica al procés de producció d’un objecte, respectant-ne
-les característiques i emprant tècniques i eines adequades amb especial atenció a les normes de seguretat i salut.
-2.1. Identifica i manipula les eines del taller en operacions bàsiques de conformació dels materials d’ús tècnic.
-2.2. Elabora un pla de feina al taller amb especial atenció a les normes de seguretat i salut.
+- CR1. Analitzar les propietats dels materials utilitzats en la construcció d’objectes tecnològics reconeixent-ne l’estructura interna i relacionant-la amb les propietats que presenten i les modificacions que es puguin produir.
+  - 1.1. Descriu les característiques pròpies dels materials d’ús tècnic i en compara les propietats.
+  - 1.2. Explica com es poden identificar les propietats mecàniques dels materials d’ús tècnic.
+- CR2. Manipular i mecanitzar materials convencionals associant la documentació tècnica al procés de producció d’un objecte, respectant-ne les característiques i emprant tècniques i eines adequades amb especial atenció a les normes de seguretat i salut.
+  - 2.1. Identifica i manipula les eines del taller en operacions bàsiques de conformació dels materials d’ús tècnic.
+  - 2.2. Elabora un pla de feina al taller amb especial atenció a les normes de seguretat i salut.
 
 BLOC 4
 
-1. Analitzar i descriure els esforços a què estan sotmeses les estructures experimentant en prototips.
-1.1. Descriu, basant-se en informació escrita, audiovisual o digital, les característiques pròpies que configuren les tipologies d’estructura.
-1.2. Identifica els esforços característics i la transmissió dels mateixos en els elements que configuren l’estructura.
-2. Observar i emprar operadors mecànics responsables de transformar i transmetre moviments, en màquines i sistemes, integrats a una
-estructura.
-2.1. Descriu mitjançant informació escrita i gràfica com transforma el moviment o el transmeten els diferents mecanismes.
-2.2. Calcula la relació de transmissió de diferents elements mecànics com les politges i els engranatges.
-2.3. Explica la funció dels elements que configuren una màquina o sisUD des del punt de vista estructural i mecànic.
-2.4. Simula mitjançant programari específic i mitjançant simbologia normalitzada circuits mecànics.
+- CR1. Analitzar i descriure els esforços a què estan sotmeses les estructures experimentant en prototips.
+  - 1.1. Descriu, basant-se en informació escrita, audiovisual o digital, les característiques pròpies que configuren les tipologies d’estructura.
+  - 1.2. Identifica els esforços característics i la transmissió dels mateixos en els elements que configuren l’estructura.
+- CR2. Observar i emprar operadors mecànics responsables de transformar i transmetre moviments, en màquines i sistemes, integrats a una estructura.
+  - 2.1. Descriu mitjançant informació escrita i gràfica com transforma el moviment o el transmeten els diferents mecanismes.
+  - 2.2. Calcula la relació de transmissió de diferents elements mecànics com les politges i els engranatges.
+  - 2.3. Explica la funció dels elements que configuren una màquina o sistema des del punt de vista estructural i mecànic.
+  - 2.4. Simula mitjançant programari específic i mitjançant simbologia normalitzada circuits mecànics.
 
 BLOC 5
 
-1. Relacionar els efectes de l’energia elèctrica i la seva capacitat de conversió en altres manifestacions energètiques.
-1.1. Explica els principals efectes del corrent elèctric i la seva conversió.
-2. Experimentar amb instruments de mesura i obtenir les magnituds elèctriques bàsiques.
-2.1. Utilitza les magnituds elèctriques bàsiques.
-2.2. Manipula els instruments de mesura per conèixer les magnituds elèctriques de circuits bàsics.
-3. Dissenyar i simular circuits amb simbologia adequada i muntar circuits amb operadors elementals.
-3.1. Dissenya, fent servir programari específic i simbologia adequada, circuits elèctrics bàsics i experimenta amb els elements que els
-configuren.
-3.2. Dissenya i munta circuits elèctrics bàsics emprant bombetes, brunzidors, díodes LED, motors, bateries i connectors.
+- CR1. Relacionar els efectes de l’energia elèctrica i la seva capacitat de conversió en altres manifestacions energètiques.
+  - 1.1. Explica els principals efectes del corrent elèctric i la seva conversió.
+- CR2. Experimentar amb instruments de mesura i obtenir les magnituds elèctriques bàsiques.
+  - 2.1. Utilitza les magnituds elèctriques bàsiques.
+  - 2.2. Manipula els instruments de mesura per conèixer les magnituds elèctriques de circuits bàsics.
+- CR3. Dissenyar i simular circuits amb simbologia adequada i muntar circuits amb operadors elementals.
+  - 3.1. Dissenya, fent servir programari específic i simbologia adequada, circuits elèctrics bàsics i experimenta amb els elements que els configuren.
+  - 3.2. Dissenya i munta circuits elèctrics bàsics emprant bombetes, brunzidors, díodes LED, motors, bateries i connectors.
 
 BLOC 6
 
-1. Distingir les parts operatives d’un equip informàtic i emprar correctament el programari OpenOffice.org.
-1.1. Identifica les parts d’un ordinador i és capaç de substituir i muntar peces clau.
-1.2. Instal·la i empra programari bàsic.
-1.3. Fa servir adequadament equips informàtics i dispositius electrònics.
-2. Utilitzar de forma segura sistemes d’intercanvi d’informació.
-2.1. Gestiona espais web, plataformes i altres sistemes d’intercanvi d’informació.
-2.2. Coneix les mesures de seguretat aplicables a cada situació de risc.
-3. Usar un equip informàtic per elaborar i comunicar projectes tècnics.
-3.1. Elabora projectes tècnics amb equips informàtics i és capaç de presentar-los i difondre’ls.
+- CR1. Distingir les parts operatives d’un equip informàtic i emprar correctament el programari OpenOffice.org.
+  - 1.1. Identifica les parts d’un ordinador i és capaç de substituir i muntar peces clau.
+  - 1.2. Instal·la i empra programari bàsic.
+  - 1.3. Fa servir adequadament equips informàtics i dispositius electrònics.
+- CR2. Utilitzar de forma segura sistemes d’intercanvi d’informació.
+  - 2.1. Gestiona espais web, plataformes i altres sistemes d’intercanvi d’informació.
+  - 2.2. Coneix les mesures de seguretat aplicables a cada situació de risc.
+- CR3. Usar un equip informàtic per elaborar i comunicar projectes tècnics.
+  - 3.1. Elabora projectes tècnics amb equips informàtics i és capaç de presentar-los i difondre’ls.
 
-## Tecnoogies 4t ESO
+## Tecnologia 4t ESO
 
 BLOC 1. TECNOLOGIES DE LA INFORMACIÓ I LA COMUNICACIÓ
 
-1. Analitzar i descriure els elements i els sistemes de comunicació amb fil i sense fil.
-1.1. Descriu els elements i els sistemes fonamentals que s’utilitzen en la comunicació amb fil i sense fil.
-1.2. Descriu les diferents formes de connexió emprades en la comunicació entre dispositius digitals.
-2. Accedir a serveis d’intercanvi i publicació d’informació digital amb criteris de seguretat i ús responsable.
-2.1. Localitza, intercanvia i publica informació a través d’Internet emprant serveis de localització, comunicació intergrupal i gestors
-de transmissió de so, imatge i dades.
-2.2. Coneix les mesures de seguretat aplicables a cada situació de risc.
-3. Elaborar programes informàtics senzills.
-3.1. Desenvolupa un programa informàtic senzill per resoldre problemes utilitzant un llenguatge de programació.
-4. Emprar equips informàtics.
-4.1. Usa l’ordinador com a eina d’adquisició i interpretació de dades, i com a realimentaciód’altres processos utilitzant les dades
-obtingudes.
+- CR1. Analitzar i descriure els elements i els sistemes de comunicació amb fil i sense fil.
+  - 1.1. Descriu els elements i els sistemes fonamentals que s’utilitzen en la comunicació amb fil i sense fil.
+  - 1.2. Descriu les diferents formes de connexió emprades en la comunicació entre dispositius digitals.
+- CR2. Accedir a serveis d’intercanvi i publicació d’informació digital amb criteris de seguretat i ús responsable.
+  - 2.1. Localitza, intercanvia i publica informació a través d’Internet emprant serveis de localització, comunicació intergrupal i gestors de transmissió de so, imatge i dades.
+  - 2.2. Coneix les mesures de seguretat aplicables a cada situació de risc.
+- CR3. Elaborar programes informàtics senzills.
+  - 3.1. Desenvolupa un programa informàtic senzill per resoldre problemes utilitzant un llenguatge de programació.
+- CR4. Emprar equips informàtics.
+  - 4.1. Usa l’ordinador com a eina d’adquisició i interpretació de dades, i com a realimentaciód’altres processos utilitzant les dades obtingudes.
 
 BLOC 2. INSTAL·LACIONS EN HABITATGES
 
@@ -1056,25 +1081,23 @@ BLOC 3. ELECTRÒNICA
 
 Bloc 4. CONTROL I ROBÒTICA
 
-1. Analitzar sistemes automàtics i descriure’n els components.
-1.1. Analitza el funcionament d’automatismes en diferents dispositius tècnics habituals i diferencia entre els sistemes de control
-d’enllaç obert i tancat.
-2. Muntar automatismes senzills.
-2.1. Representa i munta automatismes senzills.
-3. Desenvolupar un programa per controlar un sisUD automàtic o un robot de forma autònoma.
-3.1. Desenvolupa un programa per controlar un sisUD automàtic o un robot que funcioni de forma autònoma en funció de la
-realimentació que rebi de l’entorn.
+- CR1. Analitzar sistemes automàtics i descriure’n els components.
+  - 1.1. Analitza el funcionament d’automatismes en diferents dispositius tècnics habituals i diferencia entre els sistemes de control d’enllaç obert i tancat.
+- CR2. Muntar automatismes senzills.
+  - 2.1. Representa i munta automatismes senzills.
+- CR3. Desenvolupar un programa per controlar un sistema automàtic o un robot de forma autònoma.
+  - 3.1. Desenvolupa un programa per controlar un sistema automàtic o un robot que funcioni de forma autònoma en funció de la realimentació que rebi de l’entorn.
 
 BLOC 5. PNEUMÀTICA I HIDRÀULICA
 
-1. Conèixer les principals aplicacions de les tecnologies hidràulica i pneumàtica.
-1.1. Descriu les principals aplicacions de les tecnologies hidràulica i pneumàtica.
-2. Identificar i descriure les característiques i el funcionament d’aquests tipus de sistemes.
-2.1. Identifica i descriu les característiques i el funcionament d’aquest tipus de sistemes.
-3. Conèixer i emprar amb facilitat la simbologia necessària per representar circuits.
-3.1. Empra la simbologia i la nomenclatura per representar circuits amb la finalitat de resoldre un problema tecnològic.
-4. Experimentar amb dispositius pneumàtics i simuladors informàtics.
-4.1. Munta circuits pneumàtics i hidràulics senzills amb components reals o mitjançant simulació.
+- CR1. Conèixer les principals aplicacions de les tecnologies hidràulica i pneumàtica.
+  - 1.1. Descriu les principals aplicacions de les tecnologies hidràulica i pneumàtica.
+- CR2. Identificar i descriure les característiques i el funcionament d’aquests tipus de sistemes.
+  - 2.1. Identifica i descriu les característiques i el funcionament d’aquest tipus de sistemes.
+- CR3. Conèixer i emprar amb facilitat la simbologia necessària per representar circuits.
+  - 3.1. Empra la simbologia i la nomenclatura per representar circuits amb la finalitat de resoldre un problema tecnològic.
+- CR4. Experimentar amb dispositius pneumàtics i simuladors informàtics.
+  - 4.1. Munta circuits pneumàtics i hidràulics senzills amb components reals o mitjançant simulació.
 
 BLOC 6. TECNOLOGIA I SOCIETAT
 
@@ -1126,7 +1149,7 @@ descobriments amb el context en què es desenvolupen.
 
 - CR1. Utilitzar i configurar equips informàtics i identificar els elements que els configuren i la seva funció en el conjunt.
   - EA1.1. Fa operacions bàsiques d’organització i emmagatzemament de la informació.
-  - EA1.2. Configura elements bàsics del sisUD operatiu i accessibilitat de l’equip informàtic.
+  - EA1.2. Configura elements bàsics del sistema operatiu i accessibilitat de l’equip informàtic.
 - CR2. Gestionar la instal·lació i l’eliminació de programari de propòsit general.
   - EA2.1. Resol problemes vinculats als sistemes operatius i als programes i aplicacions vinculats a aquests.
 - CR3. Emprar programari de comunicació entre equips i sistemes.
@@ -1163,8 +1186,9 @@ gràfics, així com altres possibilitats de disseny, i interactua amb altres car
 
 ### Continguts
 
-Seguretat a Internet. El correu massiu i la protecció davant diferents programes, documents o missatges susceptibles de causar perjudicis.
-Importància de l’adopció de mesures de seguretat activa i passiva.
+- Seguretat a Internet.
+- El correu massiu i la protecció davant diferents programes, documents o missatges susceptibles de causar perjudicis.
+- Importància de l’adopció de mesures de seguretat activa i passiva.
 
 #### Criteris i estándars d'aprenentatge
 
@@ -1176,11 +1200,11 @@ Importància de l’adopció de mesures de seguretat activa i passiva.
 
 ### Continguts
 
-Creació i publicació en el web. Estàndards de publicació.
-Disseny de pàgines web.
-Accessibilitat de la informació.
-Les xarxes d’intercanvi com a font de recursos.
-Eines TIC.
+- Creació i publicació en el web. Estàndards de publicació.
+- Disseny de pàgines web.
+- Accessibilitat de la informació.
+- Les xarxes d’intercanvi com a font de recursos.
+- Eines TIC.
 
 #### Criteris i estándars d'aprenentatge
 
@@ -1208,85 +1232,73 @@ Eines TIC.
   - 1.1. Elabora materials per al web que permeten l’accessibilitat a la informació multiplataforma.
   - 1.2. Intercanvia informació en diferents plataformes en les quals estàs registrat i que ofereixen serveis de formació, lleure, etc.
 
-## TECNOLOGIA INDUSTRIAL
+## Tecnologia industrial I
 
 BLOC 1
 
-1. Identificar les etapes necessàries per crear un producte tecnològic des de l’origen fins a la comercialització, descriure-les totes, investigar-ne la influència en la societat i proposar millores tant des del punt de vista de la utilitat com del possible impacte social.
-1.1. Dissenya una proposta d’un nou producte prenent com a base una idea donada i explica l’objectiu de cada una de les etapes
-significatives necessàries per llançar el producte al mercat.
-2. Explicar les diferències i les similituds entre un model d’excel·lència i un sisUD de gestió de qualitat, identificar els principals factors
-que hi intervenen, valorar críticament la repercussió que el fet d’implantar-lo pot tenir sobre els productes desenvolupats i exposar-ho de
-forma oral amb el suport d’una presentació.
-2.1. Elabora l’esquema d’un possible model d’excel·lència i raona la importància de cada un dels agents implicats.
-2.2. Desenvolupa l’esquema d’un sisUD de gestió de qualitat i raona la importància de cada un dels agents implicats.
+- CR1. Identificar les etapes necessàries per crear un producte tecnològic des de l’origen fins a la comercialització, descriure-les totes, investigar-ne la influència en la societat i proposar millores tant des del punt de vista de la utilitat com del possible impacte social.
+  - 1.1. Dissenya una proposta d’un nou producte prenent com a base una idea donada i explica l’objectiu de cada una de les etapes significatives necessàries per llançar el producte al mercat.
+- CR2. Explicar les diferències i les similituds entre un model d’excel·lència i un sistema de gestió de qualitat, identificar els principals factors que hi intervenen, valorar críticament la repercussió que el fet d’implantar-lo pot tenir sobre els productes desenvolupats i exposar-ho de forma oral amb el suport d’una presentació.
+  - 2.1. Elabora l’esquema d’un possible model d’excel·lència i raona la importància de cada un dels agents implicats.
+  - 2.2. Desenvolupa l’esquema d’un sistema de gestió de qualitat i raona la importància de cada un dels agents implicats.
 
 BLOC 2
 
-1. Analitzar les propietats dels materials emprats en la construcció d’objectes tecnològics, reconèixer-ne l’estructura interna i
+- CR1. Analitzar les propietats dels materials emprats en la construcció d’objectes tecnològics, reconèixer-ne l’estructura interna i
 relacionar-la amb les propietats que presenten i les modificacions que es puguin produir.
-1.1. Estableix la relació que hi ha entre l’estructura interna dels materials i les seves propietats.
-1.2. Explica com es poden modificar les propietats dels materials tenint en compte la seva estructura interna.
-2. Relacionar productes tecnològics actuals/nous amb els materials que possibiliten la seva producció, associar les característiques
+  - 1.1. Estableix la relació que hi ha entre l’estructura interna dels materials i les seves propietats.
+  - 1.2. Explica com es poden modificar les propietats dels materials tenint en compte la seva estructura interna.
+- CR2. Relacionar productes tecnològics actuals/nous amb els materials que possibiliten la seva producció, associar les característiques
 d’aquests materials amb els productes fabricats, fer servir exemples concrets i analitzar l’impacte social produït als països productors.
-2.1. Descriu, basant-se en la informació que pugui proporcionar Internet, un material imprescindible per obtenir productes tecnològics
-relacionats amb les tecnologies de la informació i la comunicació.
+  - 2.1. Descriu, basant-se en la informació que pugui proporcionar Internet, un material imprescindible per obtenir productes tecnològics relacionats amb les tecnologies de la informació i la comunicació.
 
 BLOC 3
 
 - CR1. Analitzar els blocs constitutius de sistemes i/o màquines, interpretar la seva interrelació i descriure els principals elements que els
-formen emprant el vocabulari relacionat amb el
-UD.
-1.1. Descriu la funció dels blocs que constitueixen una màquina donada, explicant de forma clara i amb el vocabulari adequat la seva
+formen emprant el vocabulari relacionat amb el tema.
+  - 1.1. Descriu la funció dels blocs que constitueixen una màquina donada, explicant de forma clara i amb el vocabulari adequat la seva
 contribució al conjunt.
 - CR2. Verificar el funcionament de circuits electricoelectrònics, pneumàtics i hidràulics característics, interpretant-ne els esquemes, utilitzant
 els aparells i els equips de mesura adequats, i interpretant i valorant els resultats obtinguts basant-se en el muntatge o la simulació física
 d’aquests.
-2.1. Dissenya emprant un programa de CAD l’esquema d’un circuit pneumàtic, electricoelectrònic o hidràulic que doni resposta a una
-necessitat determinada.
-2.2. Calcula els paràmetres bàsics de funcionament d’un circuit electricoelectrònic, pneumàtic o hidràulic a partir d’un esquema donat.
-2.3. Verifica l’evolució dels senyals en circuits electricoelectrònics, pneumàtics o hidràulics i en dibuixa les formes i els valors en els
-punts característics.
-2.4. Interpreta i valora els resultats obtinguts de circuits electricoelectrònics, pneumàtics o hidràulics.
+  - 2.1. Dissenya emprant un programa de CAD l’esquema d’un circuit pneumàtic, electricoelectrònic o hidràulic que doni resposta a una necessitat determinada.
+  - 2.2. Calcula els paràmetres bàsics de funcionament d’un circuit electricoelectrònic, pneumàtic o hidràulic a partir d’un esquema donat.
+  - 2.3. Verifica l’evolució dels senyals en circuits electricoelectrònics, pneumàtics o hidràulics i en dibuixa les formes i els valors en els punts característics.
+  - 2.4. Interpreta i valora els resultats obtinguts de circuits electricoelectrònics, pneumàtics o hidràulics.
 - CR3. Fer esquemes de circuits que donen solució a problemes tècnics mitjançant circuits electricoelectrònics, pneumàtics o hidràulics amb
 ajuda de programes de disseny assistit, i calcular els paràmetres característics d’aquests circuits.
-3.1. Dibuixa diagrames de blocs de màquines eina i explica la contribució de cada bloc al conjunt de la màquina.
+  - 3.1. Dibuixa diagrames de blocs de màquines eina i explica la contribució de cada bloc al conjunt de la màquina.
 
 BLOC 4
 
-- CR1. Descriure les tècniques utilitzades en els processos de fabricació tipus, així com l’impacte mediambiental que poden produir, i
-identificar les màquines i les eines utilitzades i les condicions de seguretat pròpies de cada una, basant-se en la informació proporcionada en les pàgines web dels fabricants.
-1.1. Explica les principals tècniques emprades en el procés de fabricació d’un producte donat.
-1.2. Identifica les màquines i les eines utilitzades.
-1.3. Coneix l’impacte mediambiental que poden produir les tècniques emprades.
-1.4. Descriu les principals condicions de seguretat que s’han d’aplicar en un determinat entorn de producció des del punt de vista de
-l’espai i del de la seguretat personal.
+- CR1. Descriure les tècniques utilitzades en els processos de fabricació tipus, així com l’impacte mediambiental que poden produir, i identificar les màquines i les eines utilitzades i les condicions de seguretat pròpies de cada una, basant-se en la informació proporcionada en les pàgines web dels fabricants.
+  - 1.1. Explica les principals tècniques emprades en el procés de fabricació d’un producte donat.
+  - 1.2. Identifica les màquines i les eines utilitzades.
+  - 1.3. Coneix l’impacte mediambiental que poden produir les tècniques emprades.
+  - 1.4. Descriu les principals condicions de seguretat que s’han d’aplicar en un determinat entorn de producció des del punt de vista de l’espai i del de la seguretat personal.
 
 BLOC 5
 
 - CR1. Analitzar la importància que els recursos energètics tenen en la societat actual i descriure’n les formes de producció, així com els
 punts forts i febles en el desenvolupament d’una societat sostenible.
-1.1. Descriu les diferents formes de produir energia i les relaciona amb el cost de producció, l’impacte ambiental que produeixen i la
-sostenibilitat.
-1.2. Dibuixa diagrames de blocs de diferents tipus de centrals de producció d’energia, explica cada un dels seus blocs constitutius i els
-relaciona entre si.
-1.3. Explica els avantatges que suposa des del punt de vista del consum que un edifici tengui un certificat energètic.
+  - 1.1. Descriu les diferents formes de produir energia i les relaciona amb el cost de producció, l’impacte ambiental que produeixen i la sostenibilitat.
+  - 1.2. Dibuixa diagrames de blocs de diferents tipus de centrals de producció d’energia, explica cada un dels seus blocs constitutius i els relaciona entre si.
+  - 1.3. Explica els avantatges que suposa des del punt de vista del consum que un edifici tengui un certificat energètic.
 - CR2. Fer propostes de reducció de consum energètic per a habitatges o locals amb l’ajuda de programes informàtics i la informació del
 consum d’aquests.
-2.1. Calcula costs de consum energètic d’edificis d’habitatges o industrials partint de les necessitats i/o dels consums dels recursos
-utilitzats.
-2.2. Elabora plans de reducció de costs de consum energètic per a locals o habitatges, identificant els punts on el consum es pot reduir.
+  - 2.1. Calcula costs de consum energètic d’edificis d’habitatges o industrials partint de les necessitats i/o dels consums dels recursos utilitzats.
+  - 2.2. Elabora plans de reducció de costs de consum energètic per a locals o habitatges, identificant els punts on el consum es pot reduir.
 
-## TECNOLOGIA INDUSTRIAL II
+## Tecnologia industrial II
 
-BLOC 1
+**BLOC 1**
 
 - CR1. Identificar les característiques dels materials per aplicar-los correctament en compte les seves propietats intrínseques i els factors
 tècnics relacionats amb la seva estructura interna, així com la possibilitat d’emprar materials no convencionals per desenvolupar-los,
 obtenint informació per mitjà de les tecnologies de la informació i la comunicació.
-1.1. Explica com es poden modificar les propietats dels materials tenint en compte la seva estructura interna.
+  - 1.1. Explica com es poden modificar les propietats dels materials tenint en compte la seva estructura interna.
 
-BLOC 2
+**BLOC 2**
 
 - CR1. Definir i exposar les condicions nominals d’una màquina o instal·lació a partir de les seves característiques d’ús, i presentar-les amb el
 suport de mitjans informàtics.
@@ -1295,14 +1307,14 @@ suport de mitjans informàtics.
 - CR2. Descriure les parts de motors tèrmics i elèctrics i analitzar-ne els principis de funcionament.
   - 2.1. Calcula rendiments de màquines tenint en compte les energies implicades en el funcionament.
 - CR3. Dissenyar circuits elèctrics o pneumàtics a partir de plànols o esquemes i representar gràficament mitjançant programes de disseny la
-composició d’una màquina, un circuit o un sisUD tecnològic concret.
+composició d’una màquina, un circuit o un sistema tecnològic concret.
   - 3.1. Munta físicament circuits simples interpretant esquemes i fa gràfics dels senyals en els punts significatius.
 
 BLOC 3
 
-- CR1. Exposar en públic la composició d’un sisUD automàtic identificant els elements de comandament, control i potència i explicant la
+- CR1. Exposar en públic la composició d’un sistema automàtic identificant els elements de comandament, control i potència i explicant la
 relació entre les parts que els componen.
-  - 1.1. Defineix les característiques i la funció dels elements d’un sisUD automàtic i n’interpreta plànols/esquemes.
+  - 1.1. Defineix les característiques i la funció dels elements d’un sistema automàtic i n’interpreta plànols/esquemes.
   - 1.2. Diferencia entre sistemes de control de llaç obert i tancat i en proposa exemples raonats.
 
 - CR2. Verificar el funcionament de sistemes automàtics mitjançant simuladors reals o virtuals, interpretar-ne esquemes i identificar els senyals d’entrada/sortida a cada bloc.
@@ -1348,9 +1360,9 @@ constitueixen.
 
 #### Criteris i estàndards d'aprenentatge
 
-1. Analitzar i valorar les influències de les tecnologies de la informació i la comunicació en la transformació de la societat actual, tant en els àmbits d’adquisició del coneixement com en els de producció.
-1.1. Descriu les diferències entre el que es considera societat de la informació i societat del coneixement.
-1.2. Explica els nous sectors econòmics que han aparegut com a conseqüència de la generalització de les tecnologies de la informació i la comunicació
+- CR1. Analitzar i valorar les influències de les tecnologies de la informació i la comunicació en la transformació de la societat actual, tant en els àmbits d’adquisició del coneixement com en els de producció.
+   - 1.1. Descriu les diferències entre el que es considera societat de la informació i societat del coneixement.
+   - 1.2. Explica els nous sectors econòmics que han aparegut com a conseqüència de la generalització de les tecnologies de la informació i la comunicació
 
 ### BLOC 2. ARQUITECTURA D’ORDINADORS
 
@@ -1364,14 +1376,14 @@ constitueixen.
 
 #### Criteris i estàndards d'aprenentatge
 
-1. Configurar ordinadors i equips informàtics, identificar els subsistemes que els componen, descriure’n les característiques i relacionar cada element amb les prestacions del conjunt.
-1.1. Descriu les característiques dels subsistemes que componen un ordinador i n’identifica els principals paràmetres de funcionament.
-1.2. Elabora esquemes d’interconnexió dels blocs funcionals d’un ordinador i descriu la contribució de cada un al funcionament integral del sistema.
-1.3. Descriu dispositius d’emmagatzematge massiu utilitzats en sistemes d’ordinadors i en reconeix la importància en la custòdia de la informació.
-1.4. Descriu els tipus de memòria emprades en ordinadors i analitza els paràmetres que les defineixen i la seva aportació al rendiment del conjunt.
-2. Instal·lar i fer servir programari de propòsit general i d’aplicació i avaluar-ne les característiques i els entorns d’aplicació.
-2.1. Elabora un diagrama de l’estructura d’un sistema operatiu i relaciona cada una de les parts amb les funcions que fa.
-2.2. Instal·la sistemes operatius i programes d’aplicació per resoldre problemes en ordinadors personals seguint instruccions del fabricant
+- CR1. Configurar ordinadors i equips informàtics, identificar els subsistemes que els componen, descriure’n les característiques i relacionar cada element amb les prestacions del conjunt.
+  - 1.1. Descriu les característiques dels subsistemes que componen un ordinador i n’identifica els principals paràmetres de funcionament.
+  - 1.2. Elabora esquemes d’interconnexió dels blocs funcionals d’un ordinador i descriu la contribució de cada un al funcionament integral del sistema.
+  - 1.3. Descriu dispositius d’emmagatzematge massiu utilitzats en sistemes d’ordinadors i en reconeix la importància en la custòdia de la informació.
+  - 1.4. Descriu els tipus de memòria emprades en ordinadors i analitza els paràmetres que les defineixen i la seva aportació al rendiment del conjunt.
+- CR2. Instal·lar i fer servir programari de propòsit general i d’aplicació i avaluar-ne les característiques i els entorns d’aplicació.
+  - 2.1. Elabora un diagrama de l’estructura d’un sistema operatiu i relaciona cada una de les parts amb les funcions que fa.
+  - 2.2. Instal·la sistemes operatius i programes d’aplicació per resoldre problemes en ordinadors personals seguint instruccions del fabricant
 
 ### BLOC 3. PROGRAMARI PER A SISTEMES INFORMÀTICS
 
@@ -1434,16 +1446,16 @@ constitueixen.
 
 #### Criteris d’avaluació / Estàndards d’aprenentatge avaluables
 
-1. Aplicar algoritmes a la resolució dels problemes més freqüents que es presenten en treballar amb estructures de dades.
-1.1. Desenvolupa algoritmes que permetin resoldre problemes aritmètics senzills i elabora els diagrames de flux corresponents.
-2. Analitzar i resoldre problemes de tractament d’informació dividint-los en subproblemes i definint algoritmes que els resolen.
-2.1. Escriu programes que incloguin bucles de programació per solucionar problemes que impliqui la divisió del conjunt en parts més petites.
-3. Analitzar l’estructura de programes informàtics, identificant i relacionant els elements propis del llenguatge de programació utilitzat.
-3.1. Obté el resultat de seguir un petit programa escrit en un codi determinat, partint de determinades condicions.
-4. Conèixer i comprendre la sintaxi i la semàntica de les construccions bàsiques d’un llenguatge de programació.
-4.1. Defineix què s’entén per sintaxi d’un llenguatge de programació i proposa exemples concrets d’un llenguatge determinat.
-5. Fer petits programes d’aplicació en un llenguatge de programació determinat i aplicar-los a la solució de problemes reals.
-5.1. Fa programes d’aplicació senzills en un llenguatge determinat que solucionin problemes de la vida real.
+- CR1. Aplicar algoritmes a la resolució dels problemes més freqüents que es presenten en treballar amb estructures de dades.
+  - 1.1. Desenvolupa algoritmes que permetin resoldre problemes aritmètics senzills i elabora els diagrames de flux corresponents.
+- CR2. Analitzar i resoldre problemes de tractament d’informació dividint-los en subproblemes i definint algoritmes que els resolen.
+  - 2.1. Escriu programes que incloguin bucles de programació per solucionar problemes que impliqui la divisió del conjunt en parts més petites.
+- CR3. Analitzar l’estructura de programes informàtics, identificant i relacionant els elements propis del llenguatge de programació utilitzat.
+  - 3.1. Obté el resultat de seguir un petit programa escrit en un codi determinat, partint de determinades condicions.
+- CR4. Conèixer i comprendre la sintaxi i la semàntica de les construccions bàsiques d’un llenguatge de programació.
+  - 4.1. Defineix què s’entén per sintaxi d’un llenguatge de programació i proposa exemples concrets d’un llenguatge determinat.
+- CR5. Fer petits programes d’aplicació en un llenguatge de programació determinat i aplicar-los a la solució de problemes reals.
+  - 5.1. Fa programes d’aplicació senzills en un llenguatge determinat que solucionin problemes de la vida real.
 
 ## TECNOLOGIES DE LA INFORMACIÓ I LA COMUNICACIÓ II
 
@@ -1566,7 +1578,11 @@ Els alumnes que mostrin una especial dificultat per cursar l'assignatura rebran 
 
 ## Recuperació de matèries pendents
 
+### Alumnat de PMAR
+
 Els alumnes que cursin PMAR a 2n i a 3r d'ESO i tenguin la matèria pendent de l'any passat seran avaluats pel seu professor del Departament d'Orientació (Victor Simon)
+
+### Alumnat de tecnologies
 
 Els alumnes amb la matèria de tecnologia pendent seran avaluats amb una prova escrita referida als continguts mínims.
 
@@ -1577,7 +1593,7 @@ L'examen de recuperació de matèries pendents  es farà a finals d'abril.
 S'avaluarà de la següent forma:
 
 - Un 50% examen
-- Un 50 % les tasques
+- Un 50% les tasques
 
 Les tasques es valoraran si la nota de l'examen és superior a 3.
 
@@ -1588,7 +1604,7 @@ En l'avaluació extraordinària de setembre els alumnes hauran de lliurar les ta
 El criteri de qualificació serà:
 
 - Un 50% examen.
-- Un 50 % les tasques d'estiu.
+- Un 50% les tasques d'estiu.
 
 Per recuperar l'assignatura, la nota de l'examen ha de ser superior a 4.
 

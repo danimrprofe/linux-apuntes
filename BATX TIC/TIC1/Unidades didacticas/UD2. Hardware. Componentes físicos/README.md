@@ -2,11 +2,29 @@ L&#39;evolució del maquinari
 
 ## Codificació de la informació
 
-Codificació binària
-Sistemes de numeració
-Unitats de mesura de la informació
-Codi ASCII
-Arquitectura d&#39;ordinadors
+### Codificación binaria
+
+Este es el sistema utilizado por la electrónica, donde una serie de interruptores y transistores pueden tener dos estados: 
+tienen corriente o no la tienen. El primer caso se representa con un 1 y el segundo con un 0. 
+
+#### Sistemes de numeració
+
+#### Sistema hexadecimal
+
+Este sistema cuenta con 16 dígitos (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F) y se puede calcular la equivalencia entre el valor decimal de un hexa de forma similar a como se hace con los binarios, pero ahora la base de numeración es 16, valor que habrá que ir elevando a las sucesivas potencias.
+
+Lo que hace interesante el sistema hexadecimal es la inmediatez de transformación entre un número hexa y su equivalente binario natural. Basta con escribir las cuatro cifras binarias de cada dígito para tener la equivalencia
+
+Aplicaciones:
+
+- Direcciones MAC
+- Códigos de colores RGB
+
+#### Codi ASCII
+
+## Unitats de mesura de la informació
+
+#### Arquitectura d&#39;ordinadors
 
 ## Components maquinari de ordenadores
 

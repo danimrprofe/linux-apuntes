@@ -24,6 +24,91 @@ Aplicaciones:
 
 ## Unitats de mesura de la informació
 
+### Bit
+
+- Binary digit
+- Unidad mínima del código binario
+- Utilizado por los ordenadores para almacenar la información.
+- Cada bit sólo puede tener 2 valores 0 o 1
+- Con un número n de bits pueden representarse hasta 2n valores diferentes.
+
+### Nibble
+
+Cuatro bits forman un nibble, y pueden representar hasta 24 = 16 valores diferentes
+
+### Byte
+
+Un grupo de 8 bits és un byte. En un byte se pueden representar hasta 28 = 256 valores
+diferentes.
+
+### Kilobyte
+
+1 KB = 1024 bytes (B)
+Su símbolo es KB
+Se utiliza para almacenamiento de archivos pequeños
+Documentos de texto (1.000 caracteres)
+Imágenes en baja resolución.
+
+### Megabyte
+
+1 MB = 1024 Kilobytes (KB)
+
+Su símbolo es MB.
+
+Equivale a más de un millón de bytes
+
+Por ejemplo
+
+Imágenes en alta resolución
+
+Archivos
+
+Programas pequeños
+
+### Gigabyte
+
+1 GB = 1024 MB
+
+Equivale a mil millones de bytes.
+
+Es la unidad que más típicamente se
+maneja hoy en día.
+
+Los ordenadores más comunes proveen
+de un espacio de más de 100 GB para
+memoria secundaria (discos duros)
+
+### Terabyte
+
+Equivale a 1024 Gigabytes o 240 Bytes
+
+Su símbolo es TB
+
+Un Terabyte equivale aproximadamente a:
+
+300 horas de video
+
+3,6 millones de fotografías digitales estándar.
+
+1.000 copias de la Enciclopedia Británica
+digital.
+
+### Unidades mayores
+
+Aunque los términos más allá del terabyte no se usan
+comúnmente, ciertamente existen.
+
+- 1 petabyte = 1.024 terabytes
+- 1 exabyte = 1.024 petabytes
+- 1 zettabyte = 1.024 exabytes
+- 1 yottabyte = 1.024 zettabyte
+
+Las medidas de almacenamiento de información (en base 2) aumentan de 1024 en 1024
+
+### Conversión de unidades
+
+
+
 #### Arquitectura d&#39;ordinadors
 
 ## Components maquinari de ordenadores

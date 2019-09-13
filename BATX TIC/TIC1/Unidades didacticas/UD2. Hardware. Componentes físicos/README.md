@@ -45,9 +45,11 @@ diferentes.
 
 1 KB = 1024 bytes (B)
 Su símbolo es KB
-Se utiliza para almacenamiento de archivos pequeños
-Documentos de texto (1.000 caracteres)
-Imágenes en baja resolución.
+Se utiliza para almacenamiento de: 
+
+- Archivos pequeños
+- Documentos de texto (1.000 caracteres)
+- Imágenes en baja resolución.
 
 ### Megabyte
 
@@ -57,13 +59,11 @@ Su símbolo es MB.
 
 Equivale a más de un millón de bytes
 
-Por ejemplo
+Por ejemplo:
 
-Imágenes en alta resolución
-
-Archivos
-
-Programas pequeños
+- Imágenes en alta resolución
+- Archivos
+- Programas pequeños
 
 ### Gigabyte
 
@@ -71,27 +71,20 @@ Programas pequeños
 
 Equivale a mil millones de bytes.
 
-Es la unidad que más típicamente se
-maneja hoy en día.
+Es la unidad que más típicamente se maneja hoy en día.
 
-Los ordenadores más comunes proveen
-de un espacio de más de 100 GB para
-memoria secundaria (discos duros)
+Los ordenadores más comunes proveen de un espacio de más de 100 GB para memoria secundaria (discos duros)
 
 ### Terabyte
 
 Equivale a 1024 Gigabytes o 240 Bytes
-
 Su símbolo es TB
 
 Un Terabyte equivale aproximadamente a:
 
-300 horas de video
-
-3,6 millones de fotografías digitales estándar.
-
-1.000 copias de la Enciclopedia Británica
-digital.
+- 300 horas de video
+- 3,6 millones de fotografías digitales estándar.
+- 1.000 copias de la Enciclopedia Británica digital.
 
 ### Unidades mayores
 

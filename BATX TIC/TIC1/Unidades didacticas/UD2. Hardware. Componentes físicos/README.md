@@ -1,13 +1,23 @@
-L&#39;evolució del maquinari
-
-## Codificació de la informació
+## Codificación de la información
 
 ### Codificación binaria
 
-Este es el sistema utilizado por la electrónica, donde una serie de interruptores y transistores pueden tener dos estados: 
-tienen corriente o no la tienen. El primer caso se representa con un 1 y el segundo con un 0. 
+Este es el sistema utilizado por la electrónica, donde una serie de interruptores y transistores pueden tener dos estados:
 
-#### Sistemes de numeració
+- Tienen corriente o no la tienen.
+- El primer caso se representa con un 1 y el segundo con un 0.
+
+![](2019-09-13-18-10-25.png)
+
+Los ordenadores con un sistema binario para:
+
+- Guardar información
+- Hacer cálculos
+- Enviar y recibir información
+
+![](2019-09-13-18-08-02.png)
+
+#### Sistemas de numeración
 
 #### Sistema hexadecimal
 
@@ -22,7 +32,11 @@ Aplicaciones:
 
 #### Codi ASCII
 
-## Unitats de mesura de la informació
+## Unidades de medida de la información
+
+Entre las unidades de medición de almacenamiento, es decir, la cantidad de bits que almacenan tenemos la siguiente clasificación:
+
+![](2019-09-13-18-09-58.png)
 
 ### Bit
 
@@ -41,6 +55,8 @@ Cuatro bits forman un nibble, y pueden representar hasta 24 = 16 valores diferen
 Un grupo de 8 bits és un byte. En un byte se pueden representar hasta 28 = 256 valores
 diferentes.
 
+![](2019-09-13-18-11-18.png)
+
 ### Kilobyte
 
 1 KB = 1024 bytes (B)
@@ -50,6 +66,8 @@ Se utiliza para almacenamiento de:
 - Archivos pequeños
 - Documentos de texto (1.000 caracteres)
 - Imágenes en baja resolución.
+
+![](2019-09-13-18-11-40.png)
 
 ### Megabyte
 
@@ -65,6 +83,8 @@ Por ejemplo:
 - Archivos
 - Programas pequeños
 
+![](2019-09-13-18-11-54.png)
+
 ### Gigabyte
 
 1 GB = 1024 MB
@@ -74,6 +94,10 @@ Equivale a mil millones de bytes.
 Es la unidad que más típicamente se maneja hoy en día.
 
 Los ordenadores más comunes proveen de un espacio de más de 100 GB para memoria secundaria (discos duros)
+
+![](2019-09-13-18-12-09.png)
+![](2019-09-13-18-12-18.png)
+![](2019-09-13-18-12-23.png)
 
 ### Terabyte
 
@@ -85,6 +109,8 @@ Un Terabyte equivale aproximadamente a:
 - 300 horas de video
 - 3,6 millones de fotografías digitales estándar.
 - 1.000 copias de la Enciclopedia Británica digital.
+
+![](2019-09-13-18-12-44.png)
 
 ### Unidades mayores
 
@@ -100,114 +126,14 @@ Las medidas de almacenamiento de información (en base 2) aumentan de 1024 en 10
 
 ### Conversión de unidades
 
+Para realizar la conversión de las medidas de almacenamiento.
 
+Se multiplica o divide por 1024 cuantas veces sea necesario hasta llegar a la medida deseada.
 
-#### Arquitectura d&#39;ordinadors
+![](2019-09-13-18-13-11.png)
 
-## Components maquinari de ordenadores
+### Preguntas
 
-Unitat central
-perifèrics
-Arquitectura de Von Neumann
-Unitat aritmètic-lògica o ALU
-Unitat de control
-memòria principal
-sistema d&#39;entrada / sortida
-Busos
-
-## Tipus d'ordinadors
-
-Superordinadors
-Ordinadors de sobretaula
-Portàtils
-Tabletes
-Telèfons intel·ligents
-
-## Placa base, chipset i microprocessador
-
-La placa base
-Circuits integrats i e chipset
-El microprocessador
-
-## Memòria primària
-
-La memòria RAM
-Memòria cau
-Memòria virtual
-Memòria ROM-BIOS
-Memòria RAM-BIOS
-
-## Ports de comunicació i tarjeta d&#39;expansió
-
-Ports de comunicació
-Ports en desús
-Targetes d&#39;expansió
-
-## Perifèrics d'entrada
-
-El teclat
-El ratolí
-L'escàner
-Altres dispositius d'entrada
-
-## Perifèrics de sortida
-
-El monitor
-La impressora
-Altres dispositius de sortida
-
-## Dispositius d'emmagatzematge
-
-Discos magnètics
-Memòria flash
-Unitat d&#39;estat sòlid
-Discos òptics
-Discos magneto-òptics
-## Dispositius de comunicació
-Targeta de xarxa
-Concentrador i commutador
-Punt d&#39;accés
-Mòdem
-Router
-Dispositiu PLC
-Cablejat de xarxa
-## Dispositius amb arquitectura d'ordinador
-Sistemes de domòtica
-Navegadors GPS
-Reproductors multimèdia
-Televisió intel·ligent
-Google Glass
-Rellotges intel·ligents
-Videoconsoles
-
-
-
-
-
-
-- 1. Hardware básico de un ordenador
-- 2. Cajas y fuentes 
-- 3. Memoria del ordenador
-  - 3.1. Jerarquía de memoria
-  - 3.2. La memoria principal
-- 4. Unidad central de proceso
-  - 4.1. Registros
-  - 4.2. Unidad aritmético-lógica
-  - 4.3. Unidad de control
-  - 4.4. Microprocesadores
-- 5. Buses de comunicación
-  - 5.1. Tipos de buses de entrada/salida 
-- 6. La placa base 
-  - 6.1. Factor de forma
-  - 6.2. Chipset
-  - 6.3. Canales de memoria
-  - 6.4. BIOS
-- 7. Los periféricos
-  - 7.1. Periféricos de entrada
-  - 7.2. Periféricos de salida
-  - 7.3. Conexión de los periféricos
-  - 7.4. Dispositivos de almacenamiento
-- 8. Estado de la técnica 
-  - 8.1. Componentes
-  - 8.2. Dispositivos inteligentes (smart devices)
-  - 8.3. Periféricos
+1. Si una película ocupa 700 MB ¿cuántas películas caben en un DVD que tiene 4,7 GB de capacidad?
+2. Ordena de menor a mayor tamaño de los siguientes archivos: dibujo.bmp (1536 KB), carta.doc (1.048.576 bytes), cancion.mp3 (1,4 MB), video.avi (0,1 GB)
+3. ¿Cuántos DVD de 4,9 GB se necesitan para grabar el contenido de un disco duro de 1,5 TB?

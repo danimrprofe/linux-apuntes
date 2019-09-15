@@ -1,4 +1,0 @@
-- 1. ¿Qué es simulación?
-- 2. Simulación y modelado por ordenador
-- 3. Modelos computaciones para la creación de simuladores. Preparación de datos a tratar
-- 4. Realidad virtual y realidad aumentada

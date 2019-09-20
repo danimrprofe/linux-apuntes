@@ -6,6 +6,11 @@
 - Renombrar
 - Borrar y recuperar archivos
 - Crear, copiar, cortar, pegar carpetas
+  - Copiar con CTRL
+  - Copiar arrastrando
+- Seleccionar
+  - Todas las carpetas
+  - Algunas carpetas
 - Deshacer acciones y rehacer
 - Crear accesos directos
 - Archivos comprimidos

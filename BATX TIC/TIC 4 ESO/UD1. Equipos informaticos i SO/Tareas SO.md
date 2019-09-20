@@ -25,6 +25,7 @@
 ## Navegador
 
 - Crear tabs, cerrar tabs, modo incógnito
+- Moverse entre pestañas: CTRL + TAB
 - Pantalla completa
 - Mostrar escritorio
 

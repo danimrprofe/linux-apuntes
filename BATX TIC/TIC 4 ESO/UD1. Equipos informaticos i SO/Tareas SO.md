@@ -15,6 +15,13 @@
 - Deshacer acciones y rehacer
 - Crear accesos directos
 - Archivos comprimidos
+- Características de un archivo
+
+## SO
+
+- Buscar características del ordenador
+- Dispositivos y unidades. Características
+- SO de 64 y 32 bit
 
 ## Recursos y rendimiento
 

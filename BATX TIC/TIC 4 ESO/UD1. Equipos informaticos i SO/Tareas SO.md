@@ -5,6 +5,7 @@
 - Crear, copiar, cortar, pegar documentos
 - Renombrar
 - Borrar y recuperar archivos
+  - Papelera de reciclaje
 - Crear, copiar, cortar, pegar carpetas
   - Copiar con CTRL
   - Copiar arrastrando
@@ -33,6 +34,7 @@
 - Moverse entre pestañas: CTRL + TAB
 - Pantalla completa
 - Mostrar escritorio
+- Crear o editar marcadores
 
 ## Propiedades de pantalla
 

@@ -28,9 +28,11 @@ superfície. (g/m2) normalment 60 o 80 g/m2.
 
 - De color blanc, acabat rugós per a dibuixos a llapis i acabat llis.
 - Per a dibuixos a tinta.
-- Paper vegetal Transparent, impermeable i dur.
 
-Per calcar plànols i reproduir-los fàcilment.
+### Paper vegetal 
+
+- Transparent, impermeable i dur.
+- Per calcar plànols i reproduir-los fàcilment.
 
 ### Paper mil·limetrat 
 

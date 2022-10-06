@@ -1,5 +1,0 @@
----
-# <ansible_base_dir>/group_vars/all
-
-SSH_PORT: 22
-ADMIN_USER: adminz_rule

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Readme.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="edici%C3%B3n-de-v%C3%ADdeo">Edición de vídeo</h1>
+<h1 id="introducci%C3%B3n">Introducción</h1>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-03-31-15-21-25.png" alt=""></p>
+<p>Nuestros ojos ven en todo momento las imágenes que le llegan a través de la luz. Como es imposible grabarlo todo, para grabar vídeo se toman fotos llamadas <strong>fotogramas</strong> cada cierto tiempo y se juntan todas.</p>
+<p>La retina de nuestro ojo tiene la propiedad de retener durante unos instantes lo último que ha visto, de modo cuando vemos una secuencia de imágenes que cambia rápidamente, las imágenes se superponen en nuestra retina unas sobre otras, dando la sensación de continuidad y movimiento.</p>
+<p>Al reproducirse una detrás de la otra a mucha velocidad dan sensación de continuidad y &quot;confunden&quot; al ojo humano.</p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-03-31-15-21-16.png" alt=""></p>
+<h1 id="par%C3%A1metros-del-v%C3%ADdeo-digital">Parámetros del vídeo digital</h1>
+<p>¿Cómo medimos la calidad o el tamaño de un vídeo?</p>
+<h1 id="frames">Frames</h1>
+<p>Cada fotograma (frame) se divide en líneas horizontales y líneas verticales. Cada puntito donde se junta una línea vertical y una horizontal se llama <strong>píxel</strong> y, por tanto, un conjunto de píxels conforman un fotograma o frame.</p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-03-31-16-53-07.png" alt=""></p>
+<h1 id="proporciones-o-relaci%C3%B3n-de-aspecto">Proporciones o relación de aspecto</h1>
+<p>La relación de aspecto nos indica la proporción o relación entre anchura (x) y altura (y). Se expresa como x:y</p>
+<ul>
+<li>En la televisión tradicional esta ha sido siempre de 4:3, pues esta era la forma de las televisiones.</li>
+<li>Actualmente, debido a la alta definición se utiliza más el formato panorámico, más alargado y similar a la vista humana. El formato llamado panorámico es el de 16:9 o dieciséis novenos.</li>
+</ul>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-04-03-15-05-07.png" alt=""></p>
+<p>En caso de que el la relación de aspecto del vídeo y del móvil, televisión o dispositivo en el que lo esté viendo no coincida, se rellena con <strong>bandas negras</strong>.</p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-03-31-16-17-51.png" alt=""></p>
+<h1 id="resoluci%C3%B3n">Resolución</h1>
+<p>Define el máximo detalle que se puede obtener de la imagen y determina su calidad. El tamaño de la imagen se calcula como el producto de  píxeles horizontales y  píxeles verticales de la imagen.</p>
+<p>Estas dos imágenes tienen una resolución de 3x3 y 6x6 píxeles.</p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-03-31-15-27-43.png" alt=""></p>
+<p>Estas dos, de 10x10 y 15x15.</p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-03-31-15-27-47.png" alt=""></p>
+<p>Si tuviéramos más píxeles, como en una imagen de 1280 x 720, la calidad sería mucho mejor y tendría más definición. Por contra, ocuparía más espacio. Esta imagen tendría una resolución de 921.600‬ de píxeles. A llegar a 1.000.000, se cuentan por millones de píxeles o <strong>megapíxels</strong>.</p>
+<p>Para indicar la resolución de una imagen se utiliza habitualmente solo los <strong>píxeles de la vertical</strong> seguidos de una letra:</p>
+<ul>
+<li>P si el video es progresivo</li>
+<li>I si el video es entrelazado</li>
+</ul>
+<p>Por ejemplo, los vídeos en fullHD tienen una resolución de 1080p. Esto significa que la imagen mide 1080 píxeles en vertical y el video es del tipo progresivo.</p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-03-31-15-21-59.png" alt=""></p>
+<h1 id="fps-o-fotogramas-por-segundo">FPS o fotogramas por segundo</h1>
+<p>Los vídeos están formados por muchas fotos, una detrás de la otra. A cada una de estas fotos se le llama un <strong>fotograma</strong> (<strong>frame</strong>), y según la cantidad de fotos por segundo que tenga el vídeo, variará su calidad.</p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-03-31-15-22-37.png" alt=""></p>
+<p>La unidad utilizada es <strong>frames por segundo (fps)</strong>. A mayor tasa de frames por segundo, la imagen se verá más fluída. Si la tasa es muy baja, puede llegar a marear, además de verse mal.</p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-04-03-15-08-52.png" alt=""></p>
+<p>Habitualmente:</p>
+<ul>
+<li>Televisión: 25 fps</li>
+<li>Cine: 24 fps</li>
+<li>Dibujos animados: 15 fps</li>
+</ul>
+<p>Hoy en día se llegan a grabar vídeos de 50 o 60 FPS, un valor más elevado. El vídeo parece más <strong>real</strong>, pero a cambio los vídeos:</p>
+<ul>
+<li>Ocupan mucho más espacio.</li>
+<li>Tardan más sen subirse a Internet</li>
+</ul>
+<p>Los FPS se suelen indicar a continuación de la resolución:</p>
+<ul>
+<li>1080p60 sería un vídeo Full HD con 60 frames por segundo</li>
+<li>2160p60 sería un vídeo Full HD con 60 frames por segundo</li>
+</ul>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-03-31-16-25-59.png" alt=""></p>
+<h1 id="alta-definici%C3%B3n">Alta definición</h1>
+<p>Hoy en día la mayoría de equipos que pueden procesar y reproducir video en alta definición. Alta definición se aplica al contenido que tiene más de 720 píxeles de alto. Se etiquetan con:</p>
+<ul>
+<li><strong>HD</strong> para una calidad de 720p</li>
+<li><strong>Full HD</strong> para una calidad de 1080p</li>
+<li><strong>4K</strong> para una calidad equivalente a 4 pantallas FullHD juntas (2160p).</li>
+</ul>
+<p>Los equipos que compramos traen etiquetas en las cajas que nos indican de la calidad de vídeo que permiten visualizar o grabar.</p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-03-31-15-22-58.png" alt=""></p>
+<p>Existen calidades de vídeo por encima del FullHD, como <strong>4K</strong> o incluso <strong>8K</strong>. Como se puede apreciar, en el mismo tamaño de televisión caben más píxeles, y por tanto la definición y la calidad de la imagen es mayor.</p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-03-31-16-12-21.png" alt=""></p>
+<p>Para poder ver películas o series en 4K o superior, necesitamos:</p>
+<ul>
+<li>Tener un <strong>monitor</strong> compatible con esta tecnología. Si nuestra televisión es fullHD no podremos ver nada grabado a 4k.</li>
+<li>Que la <strong>película</strong> o la serie que veamos esté grabada a 4K. Si no lo está, se verá con menor calidad de la esperada, por mucho que la televisión sea 4K.</li>
+<li>La <strong>conexión a Internet</strong> tiene que ser suficientemente rápida para permitir recibir el contenido en 4K. Si tenemos contratado, por ejemplo, Netflix a 4K, pero nuestra conexión de internet es muy lenta, solo lo veremos en FullHD o menor.</li>
+</ul>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-03-31-16-12-16.png" alt=""></p>
+<p>Como los discos Blu-ray no tienen capacidad suficiente para guardar una película en formato 4K (es mucho más grande), se inventó el formato <strong>Blu-ray Ultra HD</strong>. Las películas grabadas en un Blu-ray convencional, solo pueden almacenar video en FullHD (1080).</p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-04-03-15-11-13.png" alt=""></p>
+<h1 id="bitrate-o-flujo-de-bits">Bitrate o flujo de bits</h1>
+<p>Juntando la resolución y los fps, tenemos la tasa de bits o bit rate. Esto significa la velocidad a la que se envía el vídeo (Mbps), y depende de su tamaño y, por tanto, de su calidad.</p>
+<p>Ejemplos:</p>
+<ul>
+<li>Un vídeo 1080p24 tiene un bitrate de 49.766.400‬ bits por segundo(aproximadamente 50 Mbps). Es decir, que si no tengo una conexión de Internet de 50 Mb o más, probablemente no lo veré bien.</li>
+<li>Un vídeo 1080p60 tiene un bitrate de 124.416.000‬  bits por segundo(aproximadamente 124 Mbps). Es decir, que si no tengo una conexión de Internet de 100 Mb o más, probablemente no lo veré bien.</li>
+</ul>
+<p>Cómo véis, la calidad de nuestra conexión a Internet es fundamental para determinar la calidad que puedo ver de vídeo en casa.</p>
+<h1 id="programas-de-edici%C3%B3n-de-v%C3%ADdeo">Programas de edición de vídeo</h1>
+<p>Existen diferentes programas y apps que permiten componer fragmentos de vídeo y a partir de ellos:</p>
+<ul>
+<li>Agregar audio, imágenes...</li>
+<li>Insertar texto</li>
+<li>Añadir efectos de vídeo y transiciones</li>
+</ul>
+<p>Ejemplos:</p>
+<ul>
+<li>Windows Movie Maker (Windows)</li>
+<li>Openshot (linux)</li>
+<li>Otros...</li>
+</ul>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-03-31-15-23-24.png" alt=""></p>
+<p>También existen programas que nos permiten capturar la pantalla de nuestro ordenador para así grabarla o compartir lo que estamos viendo o jugando como:</p>
+<ul>
+<li>Camtasia</li>
+<li>OBS</li>
+</ul>
+<p>De este modo se graban muchos de los videotutoriales y partidas de videojuegos que podemos encontrar en Internet.</p>
+<h1 id="dispositivos-de-captura">Dispositivos de captura</h1>
+<p>Para poder grabar vídeo, podemos utilizar diferentes dispositivos. La evolución en la captura de vídeo doméstico has sido la siguiente:</p>
+<ul>
+<li>Generalmente se han utilizado cámaras que grababan primero en cintas, y más adelante en mini DVDs. Las cámaras de vídeo y de fotos eran completamente independientes.</li>
+<li>Posteriormente aparecieron las <strong>webcam</strong>, que nos permitían conectarlas directamente a un ordenador y transmitir lo grabado, permitiendo las <strong>videoconferencias</strong>.</li>
+<li>Las <strong>cámaras de fotos digitales</strong> se volvieron más pequeñas y asequibles, y con el tiempo permitieron la grabación de vídeo.</li>
+<li>Por último, <strong>teléfonos móviles y tablets</strong> han ido incorporando también cámaras que permiten grabar vídeo y tomar fotos. Al tener estos dispositivos conexión a Internet integrada, el proceso de grabar y compartir las grabaciones se hace mucho más rápido.</li>
+</ul>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-03-31-15-23-49.png" alt=""></p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-03-31-15-23-53.png" alt=""></p>
+<h2 id="tarjetas-de-memoria">Tarjetas de memoria</h2>
+<p>Con la invención de las <strong>tarjetas de memoria</strong>, los vídeos se pasan a grabar en estas tarjetas. Las tarjetas se pueden intercambiar entre dispositivos, y gracias a ellas tenemos más espacio para guardar fotos o vídeos.</p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-04-06-12-04-53.png" alt=""></p>
+<h2 id="memoria-interna">Memoria interna</h2>
+<p>Los dispositivos tienen una <strong>memoria interna</strong> dentro, que no se puede extraer. Se utiliza para guardar las apps y el sistema operativo. Con el tiempo estas memorias se han hecho más grandes y, en general, ya no suele ser necesaria una tarjeta de memoria para guardar vídeo, fotos o música, sino que se guardan en la memoria interna del dispositivo.</p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-04-06-12-05-44.png" alt=""></p>
+<h2 id="servicios-en-la-nube">Servicios en la nube</h2>
+<p>Tanto las tarjetas como la memoria interna necesitaban de una conexión a un ordenador o portátil para poder editar el vídeo, así como guardarlo o subirlo a internet y compartirlo, generalmente mediante un cable tipo USB o firewire.</p>
+<p>Hoy en día las <strong>conexiones de datos</strong> han aumentado de velocidad y las tecnologías inalámbricas o Bluetooth han permitido la conexión sin cable. Esto, junto a que las compañías ofrecen servicios de <strong>almacenamiento en la nube</strong> y las redes sociales, han permitido que el vídeo ya no sea necesario  enviarlo a otro dispositivo, sino que lo podemos grabar, editar y subir a Internet directamente.</p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-04-06-12-07-03.png" alt=""></p>
+<p>Existen también plataformas de vídeo online, como <strong>Youtube</strong> o <strong>Twitch</strong> que permiten crear canales, suscribirse a ellos, y comentar, pareciéndose cada vez más a una red social propiamente dicha.</p>
+<p>Estas plataformas han ido evolucionando y permiten también editar el contenido desde la propia página web, o por ejemplo la <strong>transmisión en directo</strong>.</p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-04-06-12-08-53.png" alt=""></p>
+<h1 id="formatos-de-v%C3%ADdeo">Formatos de vídeo</h1>
+<p>Muchas veces el problema con todas estas opciones y formatos es la <strong>compatibilidad</strong>. Un dispositivo es compatible con un tipo de vídeo si es capaz de reproducirlo sin problemas. Cada dispositivo graba en un formato diferente y podemos tener problemas a la hora de reproducirlos.</p>
+<p>Tipos de archivos de vídeo:</p>
+<table>
+<thead>
+<tr>
+<th>Extensión</th>
+<th>Formato de vídeo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AVI</td>
+<td>Formato más extendido. Utilizado inicialmente en Windows</td>
+</tr>
+<tr>
+<td>MOV</td>
+<td>De Apple. Necesita reproductor específico</td>
+</tr>
+<tr>
+<td>WMV</td>
+<td>Formato de microsoft. Permite añadir protección de copyright.Ofrece soporte para la gestión digital de derechos, evitando que los usuarios puedan copiar la información, interesante para los vendedores de audio y vídeo digitales en línea.</td>
+</tr>
+<tr>
+<td>MPG</td>
+<td>Compatibilidad mundial, compresión de audio y vídeo con poca perdida de calidad hace posible la fácil descarga de estos archivos en una web.</td>
+</tr>
+<tr>
+<td>MKV</td>
+<td>Muy utilizado en películas y series. Se utiliza este formato porque permite almacenar muchos datos en el mismo archivo. Por ejemplo, incluir pistas de audio en varios idiomas.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="tecnolog%C3%ADa-3d">Tecnología 3D</h1>
+<h2 id="funcionamiento">Funcionamiento</h2>
+<p>La tecnología 3D está basada en diferencia de percepción de los dos ojos. En el mundo real detectamos la profundidad de las cosas porque la luz llega un poco diferente a cada uno de nuestros dos ojos. Si no te lo crees, cierra primero solo un ojo, luego solo el otro, y verás que lo que ves es diferente. Eso hace que veamos &quot;en 3D&quot;.</p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-04-06-11-55-35.png" alt=""></p>
+<p>Al mirar una pantalla, todo lo que aparece en ella está a la misma distancia de nosotros, por lo que esta distancia se tiene que simular. Para ello se colorea el vídeo con colores azules y rojos.</p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-03-31-15-24-50.png" alt=""></p>
+<p>Por supuesto, para simular esto necesitamos unas gafas. Al colocarnos unas gafas 3D, cada ojo recibe una imagen ligeramente diferente, por el filtrado de cada lente. Esto es lo que produce la sensación de profundidad.</p>
+<p><img src="file:///c:/Users/dnick/Documents/github/apuntes-infote/TIC09 - Video digital/img/2020-03-31-15-24-43.png" alt=""></p>
+<h1 id="videoconferencia">Videoconferencia</h1>
+<p>Hoy en dia existen múltiples herramientas para videoconferencia, que nos permiten hacer videollamadas entre 2 o más personas, como:</p>
+<ul>
+<li>Facetime (productos Apple)</li>
+<li>Whatsapp</li>
+<li>Google Hangouts</li>
+</ul>
+<p>Otras herramientas me permiten también compartir una pantalla, chatear al mismo tiempo o enviar documentos.</p>
+
+</body>
+</html>

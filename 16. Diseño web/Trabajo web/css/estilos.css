@@ -1,0 +1,23 @@
+body {
+  font-family: 'Roboto';font-size: 14px;
+  margin: 20px;
+  background-color: #369;
+}
+#indice_derecha{
+  float:left;
+  width:500px;
+  margin-left:5px;
+  border: 1px solid white;
+  background-color:white;
+  padding:20px;
+}
+
+h1{
+  color:white;
+}
+
+#indice_left{
+  float:left;
+  padding:20px;
+  background-color: #69c;
+}

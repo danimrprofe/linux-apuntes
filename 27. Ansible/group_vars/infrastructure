@@ -1,0 +1,5 @@
+---
+# <ansible_base_dir>/group_vars/infrastructure
+
+ADMIN_LDAP_GROUP: admin
+SERVER: ldap.domain.com

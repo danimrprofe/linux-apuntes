@@ -1,18 +1,20 @@
 
 - [Tipos de relaciones de confianza](#tipos-de-relaciones-de-confianza)
-  - [Método de creación.](#m%C3%A9todo-de-creaci%C3%B3n)
-  - [Dirección.](#direcci%C3%B3n)
+  - [Método de creación.](#método-de-creación)
+  - [Dirección.](#dirección)
   - [Transitividad.](#transitividad)
 - [Crear relaciones de confianza](#crear-relaciones-de-confianza)
   - [Paso 1](#paso-1)
-  - [Paso 2: Comprobación de puertos](#paso-2-comprobaci%C3%B3n-de-puertos)
+  - [Paso 2: Comprobación de puertos](#paso-2-comprobación-de-puertos)
   - [Paso 3: Crear un reenviador condicional](#paso-3-crear-un-reenviador-condicional)
 
 ## Relaciones de confianza
 
+```
 Una relación de confianza es una relación establecida entre dos dominios. Permite a los usuarios de un dominio ser reconocidos por los controladores de Dominio de otro dominio.
+```
 
-Estas relaciones permiten 
+Estas relaciones permiten: 
 * A los usuarios acceder a los recursos de otro dominio
 * A los administradores definir los permisos y derechos de usuario para los usuarios del otro dominio.
 Permite establecer comunicación entre varios controladores de dominio, con el fin de poder administrar desde un solo punto de la red a todos los usuarios y recursos que tengas.

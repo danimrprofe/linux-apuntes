@@ -8,6 +8,28 @@ Aquí aprendrem a:
 -  Crear funcions javascript senzilles
 -  Crear i utilitzar variables
 
+## Mayúsculas y minúsculas
+
+Javascript es sensible a mayúsculas y minúsculas, por lo que habrá que escribirlas tal como son.
+
+## Ejecutar javascript en un evento
+
+Al clicar en el botón, se dispara el evento onclick, que ejecuta el comando javascript. 
+
+```html
+<button onclick="window.alert('hola')">Click me</button>
+```
+
+## Guardar scripts en archivo externo
+
+Para ello debemos guardar el código en un archivo separado con extensión JS, y luego hacer referencia a él dentro del **head** de nuestro documento HTML:
+
+```html
+<script type="text/javascript" src="scripts.js"></script>
+```
+
+De esta forma podremos hacer referencia al mismo archivo desde diferentes HTML, y únicamente realizar modificaciones en el archivo javascript.
+
 ## Arrays
 
 Los arrays son conjuntos de elementos.

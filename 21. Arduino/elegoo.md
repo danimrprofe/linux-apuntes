@@ -439,7 +439,7 @@ En esta lección, usted aprenderá cómo programar el tablero de regulador UNO R
 
 Componente necesario:
 
-> * (1) x Elegoo Uno R3 
+> [x] (1) x Elegoo Uno R3 
 
 <img width="400" src="media/image38.jpeg" id="image38">
 

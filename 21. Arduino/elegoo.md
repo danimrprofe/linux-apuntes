@@ -3,11 +3,11 @@
     - [Introducción](#introducción)
     - [Instalación de Arduino (Mac OS X)](#instalación-de-arduino-mac-os-x)
     - [Instalación de Arduino (Linux)](#instalación-de-arduino-linux)
-  - [Lección 1 Añadir **librería**s y Monitor serie abierta](#lección-1-añadir-**librería**s-y-monitor-serie-abierta)
-    - [Instalación de **librería**s adicionales de Arduino](#instalación-de-**librería**s-adicionales-de-arduino)
+  - [Lección 1 Añadir **librería**s y Monitor serie abierta](#lección-1-añadir-librerías-y-monitor-serie-abierta)
+    - [Instalación de **librería**s adicionales de Arduino](#instalación-de-librerías-adicionales-de-arduino)
     - [¿Qué son las librerías?](#qué-son-las-librerías)
     - [Cómo instalar una libreria](#cómo-instalar-una-libreria)
-    - [Importar una **librería** de .zip](#importar-una-**librería**-de-zip)
+    - [Importar una **librería** de .zip](#importar-una-librería-de-zip)
     - [Manual de instalación](#manual-de-instalación)
     - [Arduino serie Monitor (Windows, Mac, Linux)](#arduino-serie-monitor-windows-mac-linux)
     - [Configuración](#configuración)
@@ -29,6 +29,7 @@
   - [Lección 4 RGB LED](#lección-4-rgb-led)
     - [Resumen](#resumen-2)
     - [RGB](#rgb)
+    - [Color](#color)
     - [Teoría (PWM)](#teoría-pwm)
     - [Conexión](#conexión-1)
     - [Esquema](#esquema-1)
@@ -46,129 +47,131 @@
     - [Zumbador](#zumbador)
     - [Conexión](#conexión-3)
     - [Esquema](#esquema-3)
+    - [Diagrama de conexiones](#diagrama-de-conexiones)
     - [Código](#código-2)
-    - [Resumen](#resumen-5)
   - [Lección 7 Zumbador Pasivo](#lección-7-zumbador-pasivo)
-    - [Resumen](#resumen-6)
+    - [Resumen](#resumen-5)
+- [Componentes necesarios](#componentes-necesarios)
     - [Zumbador pasivo](#zumbador-pasivo)
     - [Conexión](#conexión-4)
     - [Esquema](#esquema-4)
+    - [Diagrama de conexiones](#diagrama-de-conexiones-1)
     - [Código](#código-3)
   - [Lección 8 Interruptor de bola de inclinación](#lección-8-interruptor-de-bola-de-inclinación)
-    - [Resumen](#resumen-7)
+    - [Resumen](#resumen-6)
     - [Sensor de inclinación](#sensor-de-inclinación)
     - [Conexión](#conexión-5)
     - [Esquema](#esquema-5)
+    - [Diagrama de conexiones](#diagrama-de-conexiones-2)
     - [Código](#código-4)
   - [Lección 9 Servo](#lección-9-servo)
-    - [Resumen](#resumen-8)
+    - [Resumen](#resumen-7)
     - [Servomotor SG90](#servomotor-sg90)
     - [Conexión](#conexión-6)
     - [Esquema](#esquema-6)
     - [Diagrama de cableado](#diagrama-de-cableado-3)
     - [Código](#código-5)
   - [Lección 10 Módulo Sensor ultrasónico](#lección-10-módulo-sensor-ultrasónico)
-    - [Resumen](#resumen-9)
+    - [Resumen](#resumen-8)
+    - [Componentes necesarios](#componentes-necesarios-1)
     - [Sensor de ultrasonidos](#sensor-de-ultrasonidos)
     - [Conexión](#conexión-7)
     - [Esquema](#esquema-7)
     - [Diagrama de cableado](#diagrama-de-cableado-4)
     - [Código](#código-6)
   - [Lección 11 Sensor de humedad y temperatura DHT11](#lección-11-sensor-de-humedad-y-temperatura-dht11)
-    - [Resumen](#resumen-10)
+    - [Resumen](#resumen-9)
     - [Sensor de temperatura y humedad](#sensor-de-temperatura-y-humedad)
     - [Conexión](#conexión-8)
     - [Esquema](#esquema-8)
     - [Diagrama de cableado](#diagrama-de-cableado-5)
     - [Código](#código-7)
   - [Lección 12 Módulo Joystick analógico](#lección-12-módulo-joystick-analógico)
-    - [Resumen](#resumen-11)
+    - [Resumen](#resumen-10)
     - [Palanca de mando](#palanca-de-mando)
     - [Conexión](#conexión-9)
     - [Esquema](#esquema-9)
     - [Diagrama de cableado](#diagrama-de-cableado-6)
     - [Código](#código-8)
   - [Lección 13 Módulo de receptor IR](#lección-13-módulo-de-receptor-ir)
-    - [Resumen](#resumen-12)
-    - [Componentes necesarios](#componentes-necesarios)
+    - [Resumen](#resumen-11)
+    - [Componentes necesarios](#componentes-necesarios-2)
     - [Sensor receptor de infrarrojos](#sensor-receptor-de-infrarrojos)
     - [Conexión](#conexión-10)
     - [Esquema](#esquema-10)
     - [Diagrama de cableado](#diagrama-de-cableado-7)
     - [Código](#código-9)
-  - [Lección 14 Panalla LCD](#lección-14-panalla-lcd)
-    - [Resumen](#resumen-13)
-    - [Componentes necesarios](#componentes-necesarios-1)
+  - [Lección 14 Pantalla LCD](#lección-14-pantalla-lcd)
+    - [Resumen](#resumen-12)
+    - [Componentes necesarios](#componentes-necesarios-3)
     - [LCD1602](#lcd1602)
     - [Conexión](#conexión-11)
     - [Esquema](#esquema-11)
     - [Diagrama de cableado](#diagrama-de-cableado-8)
     - [Codigo](#codigo)
-    - [](#imagen-de-ejemplo)
-  - [Lección 15 Termómetro](#lección-15-termómetro)
-    - [Resumen](#resumen-14)
-    - [Componentes necesarios](#componentes-necesarios-2)
+  - [Lección 15: Termómetro](#lección-15-termómetro)
+    - [Resumen](#resumen-13)
+    - [Componentes necesarios](#componentes-necesarios-4)
     - [Termistor](#termistor)
     - [Conexión](#conexión-12)
     - [Esquema](#esquema-12)
     - [Diagrama de cableado](#diagrama-de-cableado-9)
     - [Código](#código-10)
-    - [](#imagen-de-ejemplo-1)
-    - [Lección 16 Ocho LED con 74HC595](#lección-16-ocho-led-con-74hc595)
-    - [Resumen](#resumen-15)
+  - [Lección 16 Ocho LED con 74HC595](#lección-16-ocho-led-con-74hc595)
+    - [Resumen](#resumen-14)
     - [74HC595 Registro de desplazamiento](#74hc595-registro-de-desplazamiento)
     - [Conexión](#conexión-13)
     - [Esquema](#esquema-13)
     - [Diagrama de cableado](#diagrama-de-cableado-10)
     - [Código](#código-11)
-    - [](#imagen-de-ejemplo-2)
   - [Lección 17 El monitor Serial](#lección-17-el-monitor-serial)
-    - [Resumen](#resumen-16)
+    - [Resumen](#resumen-15)
     - [Código](#código-12)
   - [Lección 18 Fotocélula](#lección-18-fotocélula)
-    - [Resumen](#resumen-17)
-    - [Componentes necesarios:](#componentes-necesarios-3)
+    - [Resumen](#resumen-16)
+    - [Componentes necesarios:](#componentes-necesarios-5)
   - [Fotocélula](#fotocélula)
     - [Conexión](#conexión-14)
     - [Esquema](#esquema-14)
     - [Diagrama de cableado](#diagrama-de-cableado-11)
     - [Código](#código-13)
-    - [](#imagen-de-ejemplo-3)
   - [Lección 19 74HC595 y display Segmentado](#lección-19-74hc595-y-display-segmentado)
-    - [Resumen](#resumen-18)
-    - [Componentes necesarios](#componentes-necesarios-4)
+    - [Resumen](#resumen-17)
+    - [Componentes necesarios](#componentes-necesarios-6)
     - [Display de siete segmentos](#display-de-siete-segmentos)
     - [Conexión](#conexión-15)
     - [Esquema](#esquema-15)
     - [Diagrama de cableado](#diagrama-de-cableado-12)
     - [Código](#código-14)
-    - [](#imagen-de-ejemplo-4)
+    - [](#)
   - [Lección 20 Display de 7 segmentos de cuatro dígitos](#lección-20-display-de-7-segmentos-de-cuatro-dígitos)
-    - [Resumen](#resumen-19)
-    - [Componentes necesarios](#componentes-necesarios-5)
+    - [Resumen](#resumen-18)
+    - [Componentes necesarios](#componentes-necesarios-7)
     - [Muestra de 4 dígitos de 7 segmentos](#muestra-de-4-dígitos-de-7-segmentos)
     - [Esquema](#esquema-16)
     - [Diagrama de cableado](#diagrama-de-cableado-13)
     - [Código](#código-15)
-    - [Resumen](#resumen-20)
-    - [Componentes necesarios](#componentes-necesarios-6)
+  - [Lección 21 Motor de corriente continua](#lección-21-motor-de-corriente-continua)
+    - [Resumen](#resumen-19)
+    - [Componentes necesarios](#componentes-necesarios-8)
     - [Fuente de alimentación de la placa](#fuente-de-alimentación-de-la-placa)
+    - [L293D](#l293d)
     - [Diagrama de bloques](#diagrama-de-bloques)
     - [Conexión](#conexión-16)
     - [Esquema](#esquema-17)
     - [Diagrama de cableado](#diagrama-de-cableado-14)
     - [Código](#código-16)
   - [Lección 22 Relé](#lección-22-relé)
-    - [Resumen](#resumen-21)
-    - [Componentes necesarios](#componentes-necesarios-7)
+    - [Resumen](#resumen-20)
+    - [Componentes necesarios](#componentes-necesarios-9)
     - [Relé](#relé)
     - [Conexión](#conexión-17)
     - [Esquema](#esquema-18)
     - [Diagrama de cableado](#diagrama-de-cableado-15)
     - [Código](#código-17)
   - [Lección 23 Motor paso a paso](#lección-23-motor-paso-a-paso)
-    - [Resumen](#resumen-22)
-    - [Componentes necesarios](#componentes-necesarios-8)
+    - [Resumen](#resumen-21)
+    - [Componentes necesarios](#componentes-necesarios-10)
     - [Motor paso a paso](#motor-paso-a-paso)
     - [Esquema de circuitos](#esquema-de-circuitos)
     - [ULN2003 Placa conductora](#uln2003-placa-conductora)
@@ -177,8 +180,8 @@
     - [Diagrama de cableado](#diagrama-de-cableado-16)
     - [Código](#código-18)
     - [Lección 24 Control Motor paso a paso con mando a distancia](#lección-24-control-motor-paso-a-paso-con-mando-a-distancia)
-    - [Resumen](#resumen-23)
-    - [Componentes necesarios](#componentes-necesarios-9)
+    - [Resumen](#resumen-22)
+    - [Componentes necesarios](#componentes-necesarios-11)
     - [Conexión](#conexión-19)
     - [Esquema](#esquema-20)
     - [Diagrama de cableado](#diagrama-de-cableado-17)
@@ -192,8 +195,7 @@
 
 ### Introducción 
 
-
-Entorno de desarrollo integrado (IDE) de Arduino es el software de la plataforma Arduino. En esta lección, usted aprenderá cómo configurar tu ordenador para usar Arduino y cómo establecer sobre las lecciones que siguen.
+El **Entorno de desarrollo integrado (IDE) de Arduino** es el software de la plataforma Arduino. En esta lección, usted aprenderá cómo configurar tu ordenador para usar Arduino y cómo establecer sobre las lecciones que siguen.
 
 El software de Arduino que se utilizarán para programar tu Arduino está disponible para Windows, Mac y Linux. El proceso de instalación es diferente para las tres plataformas y lamentablemente hay una cierta cantidad de trabajo manual para instalar el software.
 
@@ -205,8 +207,6 @@ La versión disponible en este sitio web es generalmente la última versión y l
 
 Paso 2 : Descargar el desarrollo software que es compatible con el sistema operativo del ordenador. Windows tomar como un ejemplo aquí
 
-9/165
-
 <img width="400" src="media/image7.jpeg" id="image7">
 
 Haga click en Windows Installer.
@@ -217,7 +217,6 @@ Haga click en DESCARGAR (JUST DOWNLOAD).
 
 También está disponible en el material que nos proporciona la versión 1.8.0, y las versiones de nuestros materiales son las últimas versiones cuando se hizo este manual.
 
-10 / 165
 
 <img width="400" src="media/image9.jpeg" id="image9">
 
@@ -229,7 +228,6 @@ Instalar Arduino con el exe. Paquete de instalación.
 
 Haga click en I Agree to see de esta ventana
 
-11 / 165
 
 <img width="400" src="media/image11.jpeg" id="image11">
 
@@ -241,15 +239,11 @@ Puede pulsar examinar... elegir una ruta de instalación o directamente en el di
 
 <img width="400" src="media/image13.jpeg" id="image13">
 
-12 / 165
-
-Haga Click en Install para comenzar la instalacion
+Haga Click en Install para comenzar la instalación
 
 <img width="400" src="media/image14.jpeg" id="image14">
 
-Por último, aparece la siguiente ventana, haga clic en Installa para finalizar la instalación.
-
-.
+Por último, aparece la siguiente ventana, haga clic en Install para finalizar la instalación.
 
 <img width="400" src="media/image15.jpeg" id="image15">
 
@@ -269,11 +263,7 @@ Descomprime el archivo zip descargado, haga doble clic para abrir el programa y 
 
 <img width="400" src="media/image18.jpeg" id="image18">
 
-14 / 165
-
 <img width="400" src="media/image19.png" id="image19">
-
-15 / 165
 
 <img width="400" src="media/image20.jpeg" id="image20">
 
@@ -287,13 +277,8 @@ El major método de instalación de los controladores USB debe hacerse desde el 
 
 En 'Otros dispositivos', debería ver un icono de 'dispositivo desconocido' con un triangulo amarillo de advertencia junto a él. Se trata de tu Arduino.
 
-16 / 165
-
-.
-
 <img width="400" src="media/image21.png" id="image21">
 
-17 / 165
 
 Haga clic derecho sobre el dispositivo y seleccione la opción del menú superior (Update Driver Software...). Pedirá a 'Buscar automáticamente software de controlador actualizado' o "Examinar mi PC para el software de controlador". Seleccione la opción Buscar en este ordenador en la ruta del CD , por ejemplo en D:\arduino1.8.0\drivers.
 
@@ -302,8 +287,6 @@ Haga clic derecho sobre el dispositivo y seleccione la opción del menú superio
 Haga clic en 'Siguiente' y puede obtener una advertencia de seguridad, si es así, permitir que el software a instalar. Una vez instalado el software, usted recibirá un mensaje de confirmación.
 
 <img width="400" src="media/image23.jpeg" id="image23">
-
-18 / 165
 
 Los usuarios de Windows pueden omitir las instrucciones de instalación, para sistemas Mac y Linux y saltar a la lección 1.
 
@@ -333,7 +316,7 @@ Una vez que esté instalado con el software de Arduino y utilizando las funcione
 
 ### ¿Qué son las librerías? 
 
-Las **librerías** son una colección de funciones que hacen que sea fácil para usted conectar a un  sensor, pantalla, módulo, etcetera. Por ejemplo, la librería **LiquidCrystal** incorporada facilita  hablar con pantallas LCD de caracteres. 
+Las **librerías** son una colección de funciones que hacen que sea fácil para usted conectar a un  sensor, pantalla, módulo, etcétera. Por ejemplo, la librería **LiquidCrystal** incorporada facilita  hablar con pantallas LCD de caracteres. 
 
 Hay cientos de librerías adicionales disponibles en Internet. Para utilizar las **librería**s adicionales, es necesario instalarlas primero. 
 
@@ -362,9 +345,9 @@ Ahora ya puede encontrar la nueva **librería** disponible en el menú de **libr
 
 ### Importar una **librería** de .zip 
 
-Las **librería**s se distribuyen a menudo como un archivo ZIP o una carpeta. El nombre de la carpeta es el nombre de la **librería**. Dentro de la carpeta será un archivo .cpp, un archivo .h y a menudo un fichero llamado keywords.txt, carpeta de ejemplos y otros archivos requeridos por la **librería**. A partir de la versión 1.0.5, puede instalar **librería**s de partido 3 º en el IDE. Descomprime la librería descargada y dejarlo como está.
+Las **librería**s se distribuyen a menudo como un archivo ZIP o una carpeta. El nombre de la carpeta es el nombre de la **librería**. Dentro de la carpeta será un archivo .cpp, un archivo .h y a menudo un fichero llamado **keywords.txt**, carpeta de ejemplos y otros archivos requeridos por la **librería**. A partir de la versión 1.0.5, puede instalar **librería**s de partido 3 º en el IDE. Descomprime la librería descargada y dejarlo como está.
 
-En el IDE de Arduino, desplácese a Sketch > Biblioteca incluyen. En la parte superior de la lista desplegable, seleccione la opción "agregar. Biblioteca ZIP''.
+En el IDE de Arduino, desplácese a **Sketch > Biblioteca** incluyen. En la parte superior de la lista desplegable, seleccione la opción "agregar. Biblioteca ZIP''.
 
 <img width="400" src="media/image30.jpeg" id="image30">
 
@@ -382,7 +365,7 @@ Nota: la **librería** estará disponible para utilizar en los dibujos, pero los
 
 Para instalar la **librería**, primero salga de la aplicación de Arduino. Luego descomprima el archivo ZIP que contiene la **librería**. Por ejemplo, para instalar una librería llamada "ArduinoParty", descomprime ArduinoParty.zip. Debería contener una carpeta calledArduinoParty, con archivos como ArduinoParty.cpp y ArduinoParty.h dentro. (Si los archivos .cpp y .h no en una carpeta, debe crear uno. En este caso, usted sería hacer una carpeta llamada "ArduinoParty" y copiar todos los archivos que estaban en el archivo ZIP, como ArduinoParty.cpp y ArduinoParty.h.)
 
-Arrastre la carpeta de ArduinoParty en esta carpeta (la carpeta de **librería**s). Bajo Windows, lo probable es que se llamará "My Documents\Arduino\libraries". Para usuarios de Mac, lo probable es que se llamará "Bibliotecas de Arduino de documentos". En Linux, será la carpeta "libraries" en su sketchbook.
+Arrastre la carpeta de ArduinoParty en esta carpeta (la carpeta de **librería**s). Bajo Windows, lo probable es que se llamará "My Documents\Arduino\libraries". Para usuarios de Mac, lo probable es que se llamará "Bibliotecas de Arduino de documentos". En Linux, será la carpeta "libraries" en su programabook.
 
 La carpeta de la **librería** Arduino debe ahora este aspecto (en Windows):
 
@@ -415,15 +398,13 @@ Monitor de serie viene con cualquier versión del IDE Arduino. Para abrirlo, sim
 
 clic en el icono Serial Monitor.
 
-.
+
 
 <img width="400" src="media/image33.jpeg" id="image33">
 
 Seleccionar cuál de los puertos a abrir en el Monitor Serial es lo mismo que seleccionar un puerto para cargar código de Arduino. Vaya a herramientas -> Serial Port y seleccione el puerto correcto.
 
 Consejos: Elegir el mismo puerto COM que tienes en el administrador de dispositivos.
-
-26 / 165
 
 <img width="400" src="media/image34.jpeg" id="image34">
 
@@ -434,9 +415,7 @@ Una vez abierto, debería ver algo como esto:
 
 ### Configuración 
 
-
 El Monitor Serial ha limitado opciones, pero lo suficiente para manejar la mayoría de sus  necesidades de comunicación serial. El primer ajuste que se puede modificar es la velocidad  en baudios. Haga clic en la velocidad en baudios tasa lista desplegable para seleccionar la  velocidad correcta. (9600 baudios) 
-)  
 
 <img width="400" src="media/image36.jpeg" id="image36">
 
@@ -460,9 +439,7 @@ En esta lección, usted aprenderá cómo programar el tablero de regulador UNO R
 
 Componente necesario:
 
-```
-(1) x Elegoo Uno R3 
-```
+> * (1) x Elegoo Uno R3 
 
 <img width="400" src="media/image38.jpeg" id="image38">
 
@@ -470,7 +447,7 @@ Componente necesario:
 
 La placa de UNO R3 tiene unas filas de conectores a ambos lados que se utilizan para  conectar varios dispositivos electrónicos y plug-in **shields** que amplían su capacidad. También tiene un LED luminoso podemos controlar. Este  LED está construido sobre el UNO R3 y se refiere a menudo como la 'L' LED.
 
-Este LED parpadea cuando se conecta a un enchufe del USB. Esto es porque las placas se envían generalmente con el sketch de 'Blink' pre-instalado.  
+Este LED parpadea cuando se conecta a un enchufe del USB. Esto es porque las placas se envían generalmente con el programa de 'Blink' pre-instalado.  
 
 En esta lección, vamos a reprogramar el tablero UNO R3 con nuestro propio directorio de Blink y luego cambiar la tasa a la que parpadea.  
 
@@ -478,7 +455,7 @@ En la lección 0, configurar el IDE de Arduino y aseguró que podría encontrar 
 
 El IDE de Arduino incluye una gran colección de dibujos de ejemplo, se puede cargar y usar.  Esto incluye un directorio de ejemplo para hacer el parpadeo del LED de 'L'.  
 
-Cargar el sketch de 'Blink' que encontrarás en el sistema de menús del IDE bajo archivo >  ejemplos > 01 conceptos básicos 
+Cargar el programa de 'Blink' que encontrarás en el sistema de menús del IDE bajo archivo >  ejemplos > 01 conceptos básicos 
 
 <img width="400" src="media/image39.jpeg" id="image39">
 
@@ -487,7 +464,7 @@ Cuando se abre la ventana de dibujo, agrandarla para que puedan ver el dibujo co
 <img width="400" src="media/image40.jpeg" id="image40">
 
 Los dibujos de ejemplo incluidos con el IDE de Arduino son de 'sólo lectura'. Es decir, puedes subir a una Junta de UNO R3, pero si cambia, no se puede guardar como el archivo  mismo.  
-Puesto que vamos a cambiar este sketch, lo primero que tienes que hacer es guardar su propia copia.  
+Puesto que vamos a cambiar este programa, lo primero que tienes que hacer es guardar su propia copia.  
 
 En el menú archivo en el IDE de Arduino, seleccione `Guardar como.` y guarde el dibujo con  el nombre 'MyBlink' 
 
@@ -495,7 +472,7 @@ En el menú archivo en el IDE de Arduino, seleccione `Guardar como.` y guarde el
 
 <img width="400" src="media/image42.jpeg" id="image42">
 
-Ha guardado su copia de 'Blink' en su sketchbook. Esto significa que si alguna vez quiere encontrar otra vez, puede simplemente abrir usando el archivo > opción de menú de Sketchbook.
+Ha guardado su copia de 'Blink' en su programabook. Esto significa que si alguna vez quiere encontrar otra vez, puede simplemente abrir usando el archivo > opción de menú de Sketchbook.
 
 <img width="400" src="media/image43.jpeg" id="image43">
 
@@ -504,17 +481,16 @@ Conecte la placa de Arduino al ordenador con el cable USB y compruebe que la **B
 
 <img width="400" src="media/image44.png" id="image44">
 
-Note: The Board Type and Serial Port here are not necessarily the same as shown in Nota:
+Nota: 
 
-El tipo de tarjeta y puerto Serial aquí no son necesariamente la misma que se muestra en la imagen. Si usas 2560, entonces usted tendrá que elegir Mega 2560 como el tipo de Junta, otras opciones se pueden hacer de la misma manera. Y 
-
-El puerto serie (COM) puede ser diferente, del tipo COM3 o COM4 en su ordenador. Un puerto COM correcto se supone que es COMX (arduino XXX), que es por los criterios de  certificación. 
+- El tipo de tarjeta y puerto Serial aquí no son necesariamente la misma que se muestra en la imagen. Si usas 2560, entonces usted tendrá que elegir Mega 2560 como el tipo de Junta, otras opciones se pueden hacer de la misma manera. 
+- El puerto serie (COM) puede ser diferente, del tipo COM3 o COM4 en su ordenador. Un puerto COM correcto se supone que es COMX (arduino XXX), que es por los criterios de  certificación. 
 
 El IDE de Arduino mostrará la configuración actual en la parte inferior de la  ventana.  
 
 <img width="400" src="media/image45.jpeg" id="image45">
 
-Haga clic en el botón 'Subir'. El segundo botón de la izquierda en la barra de herramientas.
+Haga clic en el botón **subir**. El segundo botón de la izquierda en la barra de herramientas.
 
 <img width="400" src="media/image46.jpeg" id="image46">
 
@@ -522,9 +498,7 @@ Si usted mira el área de estado del IDE, verá una barra de progreso y una seri
 
 <img width="400" src="media/image47.jpeg" id="image47">
 
-A continuación, el estado cambiará a 'Subir'. En este punto, los LEDs de la Arduino deben comenzar a parpadear como se transfiere el dibujo.
-
-36 / 165
+A continuación, el estado cambiará a **subir**. En este punto, los LEDs de la Arduino deben comenzar a parpadear como se transfiere el dibujo.
 
 <img width="400" src="media/image48.jpeg" id="image48">
 
@@ -532,7 +506,7 @@ Por último, el estado cambiará a 'Done'.
 
 <img width="400" src="media/image49.jpeg" id="image49">
 
-El otro mensaje nos dice que el **sketch** está utilizando 928 bytes de 32.256 bytes  disponibles. Después de la etapa de compilación Sketch... podría obtener el siguiente mensaje de error:  
+El otro mensaje nos dice que el **programa** está utilizando 928 bytes de 32.256 bytes  disponibles. Después de la etapa de compilación Sketch... podría obtener el siguiente mensaje de error:  
 
 <img width="400" src="media/image50.jpeg" id="image50">
 
@@ -544,11 +518,11 @@ Una vez completada la carga, la Junta debe reiniciar y empiezan a parpadear.
 
 El código abierto
 
-Tenga en cuenta que una gran parte de este esquema se compone de comentarios. Estas no son instrucciones de programa real; por el contrario, sólo explican cómo funciona el programa. Están allípara su beneficio.
+Tenga en cuenta que una gran parte de este esquema se compone de comentarios. Estas no son instrucciones de programa real; por el contrario, sólo explican cómo funciona el programa. Están allí para su beneficio.
 
 ### Comentarios
 
-- Todo entre /* y */ en la parte superior del **sketch** es un Comentario de bloque; explica lo que el **sketch** es para. 
+- Todo entre /* y */ en la parte superior del **programa** es un Comentario de bloque; explica lo que el **programa** es para. 
 - Los comentarios de una sola línea comienzan con // y hasta el final de esa línea se considera un comentario.  
 
 La primera línea de código es: 
@@ -557,7 +531,7 @@ La primera línea de código es:
 int led = 13; 
 ```
 
-Creamos una variable con un nombre y guardamos el número de pin al que el LED está  conectado a. A continuación, tenemos la función de 'configuración'. Otra vez, como dice el comentario, este se ejecuta cuando se presiona el botón de reset. También se ejecuta cada vez que la  Junta se reinicia por alguna razón, como poder primero se aplica a él, o después de un  **sketch** se ha subido  
+Creamos una variable con un nombre y guardamos el número de pin al que el LED está  conectado a. A continuación, tenemos la función de 'configuración'. Otra vez, como dice el comentario, este se ejecuta cuando se presiona el botón de reset. También se ejecuta cada vez que la  Junta se reinicia por alguna razón, como poder primero se aplica a él, o después de un  **programa** se ha subido  
 
 ```arduino
 void setup() { 
@@ -566,8 +540,7 @@ pinMode(led, OUTPUT);
 } 
 ```
 
-
-Cada sketch Arduino debe tener una función de **setup** (configuración), y las instrucciones que contendrá se insertan entre las llaves { y }.  
+Cada programa Arduino debe tener una función de **setup** (configuración), y las instrucciones que contendrá se insertan entre las llaves { y }.  
 
 En este caso, es un comando, que, como dice el comentario dice la placa Arduino que vamos  a utilizar el pin LED como salida.  
 
@@ -575,8 +548,10 @@ También es obligatorio para un boceto tener una función de **loop**. A diferen
 
 ```arduino
 void loop() { 
-digitalWrite(led, HIGH); // Encienda el LED (alto es el nivel de voltaje)  delay(1000); // Espere un segundo 
-digitalWrite(led, LOW); // Apagar el LED por lo que la tensión baja  delay(1000); // Espere un segundo 
+digitalWrite(led, HIGH); // Encienda el LED (alto es el nivel de voltaje)  
+delay(1000); // Espere un segundo 
+digitalWrite(led, LOW); // Apagar el LED por lo que la tensión baja  
+delay(1000); // Espere un segundo 
 } 
 ```
 Dentro de la función **loop**, los comandos en primer lugar activar el pin del LED (alto), girar a 'retraso' de 1000 milisegundos (1 segundo), entonces el pin LED apagado y pausa para  otro segundo.  
@@ -587,14 +562,14 @@ Ahora vas a que el LED parpadee más rápido. Como puede haber adivinado, la cla
 
 <img width="400" src="media/image51.jpeg" id="image51">
 
-Este período de retardo en milisegundos, asíque si desea que el LED parpadee dos veces tan rápidamente, cambiar el valor de 1000 a 500. Esto entonces pausa durante medio segundo cada retraso en lugar de un segundo entero.
+Este período de retardo en milisegundos, así que si desea que el LED parpadee dos veces tan rápidamente, cambiar el valor de 1000 a 500. Esto entonces pausa durante medio segundo cada retraso en lugar de un segundo entero.
 
-Sube otra vez el **sketch** y verás que el LED comienza a parpadear más rápidamente.
-
-Lección 3 LED
+Sube otra vez el **programa** y verás que el LED comienza a parpadear más rápidamente.
 
 ## Lección 3 LED 
+
 ### Resumen 
+
 En esta lección, usted aprenderá cómo cambiar el brillo de un LED usando diferentes valores  de resistencia.  
 Componente necesario: 
 ```
@@ -639,8 +614,7 @@ Como su nombre lo indica, resistencias de resisten el flujo de electricidad. Cua
 
 Pero primero, más sobre resistencias...
 
-La unidad de resistencia se denomina Ohm, que se abrevia generalmente a Ω la letra griega Omega. Porque un Ohm es un valor bajo de resistencia (no resiste mucho a todos), incluye los valores de resistencias en kΩ (1.000 Ω) y MΩ (1.000.000 Ω). Éstos se llaman kilo-ohms y mega-ohmios.
-
+La unidad de resistencia se denomina Ohm, que se abrevia generalmente a Ω la letra griega Omega. Porque un Ohm es un valor bajo de resistencia (no resiste mucho a todos), incluye los valores de resistencias en kΩ (1.000 Ω) y MΩ (1.000.000 Ω). Éstos se llaman kiloohmios y megaohmios.
 
 En esta lección, vamos a utilizar tres valores diferentes de resistencia: 
 
@@ -659,15 +633,11 @@ A diferencia de los LEDs, resistencias no tienen un cable positivo y negativo. S
 
 Si encuentra este método de enfoque demasiado complicada, puedes leer la bandera de anillo de color en nuestras resistencias directamente para determinar su valor de resistencia. O puede usar un multímetro digital en lugar de otro.
 
-43 / 165
-
 ### Conexión
 
 ### Esquema
 
 <img width="400" src="media/image56.jpeg" id="image56">
-
-44 / 165
 
 ### Diagrama de Cableado
 
@@ -687,10 +657,6 @@ Probablemente desee volver a colocar el resistor 220Ω.
 
 No importa qué lado del LED que ponemos la resistencia, siempre y cuando está allí en algún lugar
 
-
-
-46 / 165
-
 ## Lección 4 RGB LED 
 
 ### Resumen 
@@ -705,20 +671,23 @@ Existen 2 versiones:
 Ánodo común utiliza 5V en el pin común, mientras que el cátodo común se conecta  a tierra.  
 Como con cualquier LED, tenemos que conectar algunas resistencias en línea (3 total)  así que podemos limitar la corriente absorbida.  
 
-En nuestro **sketch**, se comienzan con el LED en el estado de color rojo, entonces  se descolora a verde, luego se descolora azul y finalmente hacia el color rojo.  Haciendo esto que nos pasará por la mayor parte del color que se puede lograr.  
+En nuestro **programa**, se comienzan con el LED en el estado de color rojo, entonces  se descolora a verde, luego se descolora azul y finalmente hacia el color rojo.  Haciendo esto que nos pasará por la mayor parte del color que se puede lograr.  
 
 Componente necesario: 
 
-- (1) x Elegoo Uno R3 
-- (1) protoboard de 830 puntos de amarre x  
-- M M de x (4) cables (cables de puente de macho a macho)  
-- (1) x RGB LED  
-- (3) resistencias de 220 ohmios x 
+> * (1) x Elegoo Uno R3 
+> * (1) protoboard de 830 puntos de amarre x  
+> * M M de x (4) cables (cables de puente de macho a macho)  
+> * (1) x RGB LED  
+> * (3) resistencias de 220 ohmios x 
 
 ### RGB
+
 A primera vista, LEDs RGB (rojo, verde y azul) sólo parecen regular LED. Sin embargo, dentro del paquete del LED generalmente, hay realmente tres LEDs, uno rojo, uno verde y sí, uno azul. Controlando el brillo de cada uno de los LEDs individuales, usted puede mezclar prácticamente cualquier color que desee.
 
-Mezclamos colores del mismo modo que sería mezclar pintura en una paleta - ajustando el brillo de cada uno de los tres LEDs. La manera dura para hacer esto sería usar valor diferentes resistencias (o resistencias variables) como hicimos con el en la lección 2, pero eso es un mucho trabajo! Afortunadamente para nosotros, Kit UNO R3 tiene una función analogWrite que puede utilizar con pines marcados con un ~ a la salida de una cantidad variable de energía los LEDs apropiados.
+Mezclamos colores del mismo modo que sería mezclar pintura en una paleta - ajustando el brillo de cada uno de los tres LEDs. La manera dura para hacer esto sería usar valor diferentes resistencias (o resistencias variables) como hicimos con el en la lección 2, pero eso es un mucho trabajo! 
+
+Afortunadamente para nosotros, Kit UNO R3 tiene una función **analogWrite** que puede utilizar con pines marcados con un ~ a la salida de una cantidad variable de energía los LEDs apropiados.
 
 El LED RGB tiene cuatro conductores. Hay un cable a la conexión positiva de cada uno de los LEDs individuales dentro del paquete y un patilla única que está conectado a los tres lados negativos de los LEDs.
 
@@ -731,8 +700,7 @@ La común conexión negativa del paquete LED es el segundo pasador de la parte p
 
 Cada LED dentro del paquete requiere su propio resistor de 220Ω para prevenir demasiada corriente que fluye a través de él. Los tres conductores del positivo de los LEDs (uno rojo, uno verde y uno azul) están conectados a los pines de salida UNO con estas resistencias.
 
-
-Color:
+### Color
 
 La razón por la que usted puede mezclar cualquier color usted tiene gusto variando las cantidades de rojo, verde y azul de la luz es que el ojo tiene tres tipos de receptor de luz (rojo, verde y azul). Su ojo y el cerebro procesan las cantidades de rojo, verde y azul y conviertan en un color del espectro.
 
@@ -750,7 +718,7 @@ El color **Negro** no es tanto un color como una ausencia de luz. Por lo tanto, 
 ### Teoría (PWM) 
 
 
-Modulación de ancho de pulso (PWM) es una técnica para el control de potencia. También utilizamos aquí para controlar el brillo de cada uno de los LEDs. El siguiente diagrama muestra que la señal de uno de lo PWM pins en la UNO.  
+Modulación de ancho de pulso (PWM) es una técnica para el control de potencia. También utilizamos aquí para controlar el brillo de cada uno de los LEDs. El siguiente diagrama muestra que la señal de uno de lo PWM pines en la UNO.  
 
 <img width="400" src="media/image62.jpeg" id="image62">
 
@@ -781,10 +749,7 @@ Los LED se encenderán y apagarán en esos periodos, pero nosotros percibiremos 
 ### Código
 
 ```arduino
-//www.elegoo.com
-//2016.12.8
-
-// Define Pins
+// Define pines
 #define BLUE 3
 #define GREEN 5
 #define RED 6
@@ -857,7 +822,7 @@ blueValue -= 1;
 redValue += 1;
 // The following was reversed, counting in the wrong directions
 // analogWrite(BLUE, 255 - blueValue);
-// analogWrite(RED, 255 - redValue);
+// analogWrite(RED, 255 - redValue);1
 analogWrite(BLUE, blueValue);
 analogWrite(RED, redValue);
 delay(delayTime);
@@ -872,7 +837,7 @@ After wiring, please open the Sketch in folder path: Tutorial > English > code >
 
 See Lesson 2 for details about program uploading if there are any errors.
 
-The sketch starts by specifying which pins are going to be used for each of the colors:
+The programa starts by specifying which pins are going to be used for each of the colors:
 
 ```arduino
 // Define Pins 
@@ -895,7 +860,7 @@ digitalWrite(BLUE, LOW);
 }
 ```
 
-Antes de echar un vistazo a la función 'loop', veamos la última función en el proyecto.  
+Antes de echar un vistazo a la **función loop**, veamos la última función en el proyecto.  
 Las variables de definición:
 
 ```arduino
@@ -906,7 +871,7 @@ blueValue = 0;
 
 Esta función tiene tres argumentos, uno para el brillo de los LEDs rojos, verdes y azules. En cada caso de que el número será en el rango 0 a 255, donde 0 significa apagado y 255 significa brillo máximo. La función entonces llama 'analogWrite' para ajustar el brillo de cada LED.
 
-Si nos fijamos en la función 'loop' se puede ver que ajuste la cantidad de luz roja, verde y azul que queremos mostrar y luego una pausa por un segundo antes de pasar al siguiente color.
+Si nos fijamos en la **función loop** se puede ver que ajuste la cantidad de luz roja, verde y azul que queremos mostrar y luego una pausa por un segundo antes de pasar al siguiente color.
 
 ```arduino
 #define delayTime 10 // fading time between colors  
@@ -948,13 +913,10 @@ En realidad, hay realmente dos conexiones eléctricas. Dentro del paquete de int
 
 <img width="400" src="media/image68.jpeg" id="image68">
 
-57 / 165
 
 ### Diagrama de cableado
 
 <img width="400" src="media/image69.jpeg" id="image69">
-
-58 / 165
 
 Aunque los cuerpos de los interruptores son cuadrados, los pasadores sobresalen de los lados opuestos del interruptor. Esto significa que los pines sólo estarán lo suficientemente separados cuando se colocan correctamente en la placa de pruebas. Recuerde que el LED tiene que tener el cable negativo más corto a la izquierda.
 
@@ -977,7 +939,7 @@ El modo pin de INPUT_PULLUP significa que el pin debe ser utilizado como una ent
 
 Por esta razón los interruptores están conectados a tierra. Cuando un interruptor se presiona, se conecta la clavija de entrada a la tierra, para que ya no es alta.
 
-Puesto que la entrada es normalmente alta y va sólo baja cuando se pulsa el botón, la lógica es un poco boca abajo. Nosotros nos encargaremos de esto en la función 'loop'
+Puesto que la entrada es normalmente alta y va sólo baja cuando se pulsa el botón, la lógica es un poco boca abajo. Nosotros nos encargaremos de esto en la **función loop**
 
 ```arduino
 void loop() 
@@ -993,7 +955,7 @@ if (digitalRead(buttonBpin) == LOW)
 } 
 ```
 
-En la función 'loop' hay dos declaraciones de 'si'. Uno para cada botón. Cada uno hace un 'digitalRead' en la entrada adecuada.
+En la **función loop** hay dos declaraciones de 'si'. Uno para cada botón. Cada uno hace un 'digitalRead' en la entrada adecuada.
 
 Recuerde que si se presiona el botón, la entrada correspondiente será baja, si el botón A es bajo, entonces un 'digitalWrite' en el ledPin enciende.
 
@@ -1028,8 +990,6 @@ La diferencia entre los dos es que un **zumbador activo** tiene una fuente oscil
 ### Esquema
 
 <img width="400" src="media/image72.jpeg" id="image72">
-
-62 / 165
 
 ### Diagrama de conexiones
 
@@ -1149,8 +1109,6 @@ Aunque no es tan preciso ni flexible como un acelerómetro completo, los interru
 ### Esquema
 
 <img width="400" src="media/image80.jpeg" id="image80">
-
-70 / 165
 
 ### Diagrama de conexiones
 
@@ -1422,14 +1380,10 @@ Las conexiones son: clave, Y, X, voltaje y tierra.
 
 ### Código
 
-Después de efectuar el cableado, por favor, abra el programa en la carpeta de código-
+Después de efectuar el cableado, por favor, abra el programa en la carpeta de código-Lección 13 módulo de Joystick analógico y haga clic en cargar para cargar el programa.
 
-Lección 13 módulo de Joystick analógico y haga clic en cargar para cargar el programa.
-
-Ver Lección 2 para más detalles sobre el programa cargar si hay algún error.
-
-Palancas de mando análogas son básicamente los potenciómetros para que regresan valores analógicos.
-
+Ver Lección 2 para más detalles sobre el programa cargar si hay algún error. 
+Palancas de mando análogas son básicamente los potenciómetros para que regresan valores analógicos. 
 Cuando el joystick se encuentra en la posición de reposo o medio, debe devolver un valor de aproximadamente 512.
 
 <img width="400" src="media/image101.jpeg" id="image101">
@@ -1614,7 +1568,7 @@ El primero establece la posición del cursor (donde aparecerá el siguiente text
 
 La segunda línea muestra el número de milisegundos desde que se restableció el Arduino.
 
-## Lección 15 Termómetro
+## Lección 15: Termómetro
 
 ### Resumen
 
@@ -1622,27 +1576,26 @@ En esta lección, utilizará una pantalla LCD para mostrar la temperatura.
 
 ### Componentes necesarios
 
-x Elegoo Uno R3
-
-x LCD1602 Módulo
-
-x resistencia de ohmio 10 k
-
-x termistor
-
-x potenciómetro
-
-x 830 tie puntos Breadboard
-
-x M M cables (cables de puente de macho a macho)
-
-Introducción del componente
+> *  Elegoo Uno R3
+> * LCD1602 Módulo
+> * x resistencia de ohmio 10 k
+> * x termistor
+> * x potenciómetro> * 
+> * x 830 tie puntos Breadboard
+> * x M M cables (cables de puente de macho a macho)
 
 ### Termistor
 
-Un termistor es un resistor térmico - un resistor que cambia su resistencia con la temperatura. Técnicamente, los resistores son termistores - sus cambios de resistencia con temperatura - pero el cambio es generalmente muy pequeño y difícil de medir. Los termistores están hechos para que la resistencia cambia drásticamente con la temperatura para que pueda ser 100 ohmios o más del cambio por grado!
+Un **termistor** es un resistor térmico - un resistor que cambia su resistencia con la temperatura. Técnicamente, los resistores son termistores - sus cambios de resistencia con temperatura - pero el cambio es generalmente muy pequeño y difícil de medir. 
 
-Hay dos clases de termistores, NTC (coeficiente de temperatura negativo) y PTC (coeficiente positivo de temperatura). En general, usted verá sensores NTC para medir la temperatura. PTC es de uso frecuente como fusibles Reseteables - un aumento de temperatura aumenta la resistencia que significa que conforme pasa más corriente a través de ellos, se calientan y 'estrangular detrás' la corriente, muy útil para la protección de circuitos.
+Los termistores están hechos para que la resistencia cambia drásticamente con la temperatura para que pueda ser 100 ohmios o más del cambio por grado!
+
+Hay dos clases de termistores: 
+
+> * NTC (coeficiente de temperatura negativo)
+> *  PTC (coeficiente positivo de temperatura). 
+
+En general, usted verá sensores NTC para medir la temperatura. PTC es de uso frecuente como fusibles Reseteables - un aumento de temperatura aumenta la resistencia que significa que conforme pasa más corriente a través de ellos, se calientan y 'estrangular detrás' la corriente, muy útil para la protección de circuitos.
 
 ### Conexión
 
@@ -1654,7 +1607,7 @@ Hay dos clases de termistores, NTC (coeficiente de temperatura negativo) y PTC (
 
 <img width="400" src="media/image114.jpeg" id="image114">
 
-El diseño de la placa se basa en el diseño de la lección 22, asíque simplificará las cosas si hay esto en la protoboard.
+El diseño de la placa se basa en el diseño de la **lección 22**, asíque simplificará las cosas si hay esto en la protoboard.
 
 Hay unos cables de puente cerca de la olla que se han movido ligeramente en este diseño.
 
@@ -1676,7 +1629,7 @@ LiquidCrystal lcd (7, 8, 9, 10, 11, 12);
 
 Esto facilita las cosas si decides cambiar que utilizas los pernos.
 
-En la función 'loop' ahora hay dos cosas interesantes sucediendo. En primer lugar tenemos que convertir la analógica del sensor de temperatura una temperatura real, y en segundo lugar tenemos que encontrar la manera a los mismos.
+En la **función loop** ahora hay dos cosas interesantes sucediendo. En primer lugar tenemos que convertir la analógica del sensor de temperatura una temperatura real, y en segundo lugar tenemos que encontrar la manera a los mismos.
 
 En primer lugar, echemos un vistazo a cálculo de la temperatura.
 
@@ -1705,7 +1658,7 @@ El comentario bastante extraño sirve para recordarles de las 16 columnas de la 
 
 Para rellenar los espacios en blanco, establecer la posición del cursor por donde la lectura debe aparecer y luego imprimirlo.
 
-### Lección 16 Ocho LED con 74HC595
+## Lección 16 Ocho LED con 74HC595
 
 ### Resumen
 
@@ -1751,9 +1704,11 @@ El chip también tiene un pin de salida activado (OE), que se utiliza para activ
 
 Ya que tenemos ocho LEDs y ocho resistencias para conectar, hay realmente muy pocas conexiones a realizar.
 
-Es probablemente más fácil poner el chip 74HC595 en primer lugar, como casi todo lo demás se conecta a él. Ponerlo de modo que la muesca en forma de U poco hacia la parte superior de la placa. Pin 1 del chip es a la izquierda de esta muesca.
+Es probablemente más fácil poner el chip 74HC595 en primer lugar, como casi todo lo demás se conecta a él. Ponerlo de modo que la muesca en forma de U poco hacia la parte superior de la placa. 
 
-Digital 12 del UNO va al pin #14 del registro de desplazamiento Digital 11 del UNO va al pin #12 del registro de desplazamiento
+Pin 1 del chip es a la izquierda de esta muesca.
+Digital 12 del UNO va al pin #14 del registro de desplazamiento 
+Digital 11 del UNO va al pin #12 del registro de desplazamiento
 
 9 digital a partir de la UNO va al pin #11 del registro de desplazamiento
 
@@ -1794,7 +1749,7 @@ pinMode (clockPin, salida);
 }
 ```
 
-La función 'loop' inicialmente apaga todos los LEDs, al darle a los variable 'leds' el valor 0. A continuación, llama 'updateShiftRegister' que enviará el patrón de 'leds' para el registro de desplazamiento para que el LED se apague. Se tratará con 'updateShiftRegister' funcionamiento más adelante.
+La **función loop** inicialmente apaga todos los LEDs, al darle a los variable 'leds' el valor 0. A continuación, llama 'updateShiftRegister' que enviará el patrón de 'leds' para el registro de desplazamiento para que el LED se apague. Se tratará con 'updateShiftRegister' funcionamiento más adelante.
 
 La función loop hace una pausa de medio segundo y entonces empieza a contar de 0 a 7 usando el bucle 'for' y la variable 'i'. Cada vez utiliza la función de Arduino 'verdadera' para establecer el bit que controla ese LED en la variable 'leds'. A continuación también llama 'updateShiftRegister' para que los leds actualizar para reflejar lo que está en la variable 'leds'.
 
@@ -1878,9 +1833,7 @@ En la función de **setup**, hay tres nuevas líneas al final:
 
 ```
 void setup()
-
 {
-
 pinMode (latchPin, salida);
 pinMode (dataPin, salida);
 pinMode (clockPin, salida);
@@ -1992,21 +1945,14 @@ La fotocélula es en la parte inferior de la placa, donde estaba el bote por enc
 
 <img width="400" src="media/image124.jpeg" id="image124">
 
-(1) x Elegoo Uno R3
-
-x 830 tie puntos breadboard
-
-x leds
-
-x resistencias de 220 ohmios
-
-x resistencia de 1 k ohm
-
-(1) x IC74hc595
-
-(1) x fotoresistor (fotocélula)
-
-(16) x M M cables (cables de puente de macho a macho)
+- [x] Elegoo Uno R3
+- [x]830 tie puntos breadboard
+- [x]leds
+- [x]resistencias de 220 ohmios
+- [x]resistencia de 1 k ohm
+- [x] (1) x IC74hc595
+- [x] (1) x fotoresistor (fotocélula)
+- [x] (16) x M M cables (cables de puente de macho a macho)
 
 ## Fotocélula
 
@@ -2528,31 +2474,21 @@ Después de efectuar el cableado, por favor, abra el programa en el código de c
 
 138 / 165
 
-Lección 21 Motor de corriente continua
+## Lección 21 Motor de corriente continua
 
 ### Resumen
 
-En esta lección, aprenderá a controlar un pequeño motor DC (corriente continua) usando un R3 de
-
-UNO y un transistor.
-
-.
+En esta lección, aprenderá a controlar un pequeño motor DC (corriente continua) usando un R3 de UNO y un transistor.
 
 ### Componentes necesarios
 
-(1) x Elegoo Uno R3
-
-x 830 tie-punto breadboard
-
-x L293D IC
-
-(1) x Aspa de ventilador y motor de3-6v
-
-x M- M cables (cables de puente de macho a macho)
-
-x Módulo de alimentación
-
-x 9V1A adaptador corriente
+- (1) x Elegoo Uno R3
+- x 830 tie-punto breadboard
+- x L293D IC
+- (1) x Aspa de ventilador y motor de3-6v
+- x M- M cables (cables de puente de macho a macho)
+- x Módulo de alimentación
+- x 9V1A adaptador corriente
 
 <img width="400" src="media/image139.jpeg" id="image139">
 
@@ -2590,25 +2526,16 @@ Este es un chip muy útil. En realidad puede controlar dos motores independiente
 
 Especificaciones del producto:
 
-Cuenta con Unitrode L293 L293D productos y ahora de Texas Instruments
-
-Amplio rango de tensión de alimentación: 4,5 V a 36 V
-
-Alimentación de entrada lógica separada
-
-Protección interna ESD
-
-Apagado térmico
-
-Alta inmunidad de ruido entradas
-
-Funcionalmente Similar al L293 SGS y SGS L293D
-
-Salida de corriente 1 A por canal (600 mA para el L293D)
-
-Máxima salida de corriente 2 A por canal (1.2 A para L293D)
-
-Salida diodos pinza inductiva T ransient supresión (L293D)
+> * Cuenta con Unitrode L293 L293D productos y ahora de Texas Instruments
+> * Amplio rango de tensión de alimentación: 4,5 V a 36 V
+> * Alimentación de entrada lógica separada
+> * Protección interna ESD
+> * Apagado térmico
+> * Alta inmunidad de ruido entradas
+> * Funcionalmente Similar al L293 SGS y SGS L293D
+> * Salida de corriente 1 A por canal (600 mA para el L293D)
+> * Máxima salida de corriente 2 A por canal (1.2 A para L293D)
+> * Salida diodos pinza inductiva T ransient supresión (L293D)
 
 <img width="400" src="media/image143.jpeg" id="image143">
 
@@ -2810,7 +2737,6 @@ Dirección de M1 0/1 y M1 1/0 - conectar estos pines de Arduino digitales dos a 
 
 Revertir las salidas a baja y alta, y el motor girará en sentido contrario.
 
-144 / 165
 
 ### Conexión
 
@@ -2818,13 +2744,10 @@ Revertir las salidas a baja y alta, y el motor girará en sentido contrario.
 
 ### Esquema
 
-145 / 165
-
 <img width="400" src="media/image147.jpeg" id="image147">
 
 ### Diagrama de cableado
 
-146 / 165
 
 El código siguiente no utiliza una fuente de alimentación separada (es decir, una batería), sino que utiliza en su lugar la alimentación de 5v del Arduino. Tenga en cuenta que esto sería arriesgado sin que el L293D lo controlara.
 
@@ -2850,21 +2773,14 @@ En esta lección, aprenderá a utilizar un relé
 
 ### Componentes necesarios
 
-(1) x Elegoo Uno R3
-
-(1) x 830 tie-points breadboard
-
-x Ventilador de aspa y 3-6v dc motor
-
-x L293D IC
-
-x 5v Relé
-
-x Módulo de alimentación
-
-x 9V1A Adaptador
-
-x M-M cables (cables de puente de macho a macho
+> * (1) x Elegoo Uno R3
+> * (1) x 830 tie-points breadboard
+> * x Ventilador de aspa y 3-6v dc motor
+> * x L293D IC
+> * x 5v Relé
+> * x Módulo de alimentación
+> * x 9V1A Adaptador
+> * x M-M cables (cables de puente de macho a macho
 
 <img width="400" src="media/image150.jpeg" id="image150">
 
@@ -2928,29 +2844,18 @@ Un motor paso a paso es un dispositivo electromecánico que convierte pulsos el�
 
 Modelo: 28BYJ-48
 
-Tensión nominal: 5 VDC
-
-Número de fase: 4
-
-Cociente de la variación de velocidad: 1/64
-
-Ángulo de paso: 5,625 ° 64
-
-Frecuencia: 100Hz
-
-Resistencia de la C.C.: 50Ω±7 %(25 ° C)
-
-Inactivo en tracción frecuencia: > 600Hz
-
-Frecuencia ociosa de hacia fuera-tracción: > 1000Hz En tracción par > 34.3mN.m(120Hz)
-
-Posicionamiento automático par > 34.3mN.m Par de fricción: 600-1200 gf.cm
-
-Tire un par: 300 gf.cm
-
-Resistencia de aislamiento > 10MΩ(500V) Aislantes de electricidad : 600VAC/1mA/1s Grado de aislamiento : A
-
-Subida de temperatura < 40K(120Hz) Ruido < 35dB (120Hz, No carga, 10cm
+> * Tensión nominal: 5 VDC
+> * Número de fase: 4
+> * Cociente de la variación de velocidad: 1/64
+> * Ángulo de paso: 5,625 ° 64
+> * Frecuencia: 100Hz
+> * Resistencia de la C.C.: 50Ω±7 %(25 ° C)
+> * Inactivo en tracción frecuencia: > 600Hz
+> * Frecuencia ociosa de hacia fuera-tracción: > 1000Hz En tracción par > 34.3mN.m(120Hz)
+> * Posicionamiento automático par > 34.3mN.m Par de fricción: 600-1200 gf.cm
+> * Tire un par: 300 gf.cm
+> * Resistencia de aislamiento > 10MΩ(500V) Aislantes de electricidad : 600VAC/1mA/1s Grado de aislamiento : A
+> * Subida de temperatura < 40K(120Hz) Ruido < 35dB (120Hz, No carga, 10cm
 
 ### Esquema de circuitos
 
@@ -2963,19 +2868,16 @@ El motor de pasos bipolar tiene generalmente cuatro cables que salen de él. A d
 
 Descripción del producto
 
-o Tamaño: 42mmx30mm
+> * Tamaño: 42mmx30mm
+> * Chip de controlador de uso ULN2003, 500mA
+> * A. B. C. D LED que indica las cuatro fases las condiciones de trabajo motor paso a paso.
+> * Blanco jack es el conector estándar motor cuatro fase paso a paso.
+> * Pines de alimentación son separados
+> * Mantuvimos las clavijas del resto de la viruta del ULN2003 para sus prototipos más.
 
-o Chip de controlador de uso ULN2003, 500mA
+La forma más sencilla de conexión un paso a paso unipolar a Arduino es utilizar un desglose para chip de ULN2003A transistor array. El ULN2003A contiene siete controladores de transistor Darlington y es algo asícomo tener siete transistores TIP120 todo en un paquete. El ULN2003A puede pasar hasta 500 mA por canal y tiene una caída de tensión interna de 1V cuando en. También contiene diodos de abrazadera interna para disipar las puntas de tensión al manejar cargas inductivas. 
 
-o A. B. C. D LED que indica las cuatro fases las condiciones de trabajo motor paso a paso.
-
-o Blanco jack es el conector estándar motor cuatro fase paso a paso.
-
-o Pines de alimentación son separados
-
-o Mantuvimos las clavijas del resto de la viruta del ULN2003 para sus prototipos más.
-
-La forma más sencilla de conexión un paso a paso unipolar a Arduino es utilizar un desglose para chip de ULN2003A transistor array. El ULN2003A contiene siete controladores de transistor Darlington y es algo asícomo tener siete transistores TIP120 todo en un paquete. El ULN2003A puede pasar hasta 500 mA por canal y tiene una caída de tensión interna de 1V cuando en. También contiene diodos de abrazadera interna para disipar las puntas de tensión al manejar cargas inductivas. Para controlar el paso a paso, aplique tensión a cada una de las bobinas en una secuencia específica.
+Para controlar el paso a paso, aplicamos tensión a cada una de las bobinas en una secuencia específica.
 
 La secuencia iría así:
 
@@ -3026,25 +2928,16 @@ El sensor de infrarrojos está conectado a la ONU directamente ya que no utiliza
 
 ### Componentes necesarios
 
-(1) x Elegoo Uno R3
-
-x 830 tie-points breadboard
-
-x IR receiver module
-
-x IR remote
-
-x ULN2003 stepper motor driver module
-
-x Stepper motor
-
-x Power supply module
-
-x 9V1A Adaptador
-
-x F-M cables (cables de hembra a macho DuPont)
-
-x M-M cable (hilo puente de macho a macho)
+> * (1) x Elegoo Uno R3
+> * x 830 tie-points breadboard
+> * x IR receiver module
+> * x IR remote
+> * x ULN2003 stepper motor driver module
+> * x Stepper motor
+> * x Power supply module
+> * x 9V1A Adaptador
+> * x F-M cables (cables de hembra a macho DuPont)
+> * x M-M cable (hilo puente de macho a macho)
 
 ### Conexión
 
@@ -3072,12 +2965,7 @@ Para obtener más información sobre carga el archivo de **librería**, ver Lecc
 
 El código reconoce sólo 2 valores desde el control remoto IR: VOL + y VOL-. 
 - Presionando VOL + del control remoto el motor hará un giro completo hacia la derecha.
-- VOL- para hacer
-
-    
-    
-    
-     una rotación completa en sentido antihorario.
+- VOL- para hacer una rotación completa en sentido antihorario.
 
 
 

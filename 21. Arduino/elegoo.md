@@ -3,11 +3,11 @@
     - [Introducción](#introducción)
     - [Instalación de Arduino (Mac OS X)](#instalación-de-arduino-mac-os-x)
     - [Instalación de Arduino (Linux)](#instalación-de-arduino-linux)
-  - [Lección 1 Añadir bibliotecas y Monitor serie abierta](#lección-1-añadir-bibliotecas-y-monitor-serie-abierta)
-    - [Instalación de bibliotecas adicionales de Arduino](#instalación-de-bibliotecas-adicionales-de-arduino)
+  - [Lección 1 Añadir **librería**s y Monitor serie abierta](#lección-1-añadir-**librería**s-y-monitor-serie-abierta)
+    - [Instalación de **librería**s adicionales de Arduino](#instalación-de-**librería**s-adicionales-de-arduino)
     - [¿Qué son las librerías?](#qué-son-las-librerías)
     - [Cómo instalar una libreria](#cómo-instalar-una-libreria)
-    - [Importar una biblioteca de .zip](#importar-una-biblioteca-de-zip)
+    - [Importar una **librería** de .zip](#importar-una-**librería**-de-zip)
     - [Manual de instalación](#manual-de-instalación)
     - [Arduino serie Monitor (Windows, Mac, Linux)](#arduino-serie-monitor-windows-mac-linux)
     - [Configuración](#configuración)
@@ -104,7 +104,7 @@
     - [Esquema](#esquema-11)
     - [Diagrama de cableado](#diagrama-de-cableado-8)
     - [Codigo](#codigo)
-    - [Imagen de ejemplo](#imagen-de-ejemplo)
+    - [](#imagen-de-ejemplo)
   - [Lección 15 Termómetro](#lección-15-termómetro)
     - [Resumen](#resumen-14)
     - [Componentes necesarios](#componentes-necesarios-2)
@@ -113,7 +113,7 @@
     - [Esquema](#esquema-12)
     - [Diagrama de cableado](#diagrama-de-cableado-9)
     - [Código](#código-10)
-    - [Imagen de ejemplo](#imagen-de-ejemplo-1)
+    - [](#imagen-de-ejemplo-1)
     - [Lección 16 Ocho LED con 74HC595](#lección-16-ocho-led-con-74hc595)
     - [Resumen](#resumen-15)
     - [74HC595 Registro de desplazamiento](#74hc595-registro-de-desplazamiento)
@@ -121,7 +121,7 @@
     - [Esquema](#esquema-13)
     - [Diagrama de cableado](#diagrama-de-cableado-10)
     - [Código](#código-11)
-    - [Imagen de ejemplo](#imagen-de-ejemplo-2)
+    - [](#imagen-de-ejemplo-2)
   - [Lección 17 El monitor Serial](#lección-17-el-monitor-serial)
     - [Resumen](#resumen-16)
     - [Código](#código-12)
@@ -133,7 +133,7 @@
     - [Esquema](#esquema-14)
     - [Diagrama de cableado](#diagrama-de-cableado-11)
     - [Código](#código-13)
-    - [Imagen de ejemplo](#imagen-de-ejemplo-3)
+    - [](#imagen-de-ejemplo-3)
   - [Lección 19 74HC595 y display Segmentado](#lección-19-74hc595-y-display-segmentado)
     - [Resumen](#resumen-18)
     - [Componentes necesarios](#componentes-necesarios-4)
@@ -142,7 +142,7 @@
     - [Esquema](#esquema-15)
     - [Diagrama de cableado](#diagrama-de-cableado-12)
     - [Código](#código-14)
-    - [Imagen de ejemplo](#imagen-de-ejemplo-4)
+    - [](#imagen-de-ejemplo-4)
   - [Lección 20 Display de 7 segmentos de cuatro dígitos](#lección-20-display-de-7-segmentos-de-cuatro-dígitos)
     - [Resumen](#resumen-19)
     - [Componentes necesarios](#componentes-necesarios-5)
@@ -311,7 +311,7 @@ Usuarios de Mac y Linux pueden seguir leyendo esta sección
 
 ### Instalación de Arduino (Mac OS X)
 
-Descargar y descomprimir el archivo zip, haga doble clic en Arduino.app para entrar en el IDE de Arduino; el sistema le pedirá que instale la biblioteca de tiempo de ejecución de Java si no lo tienes en tu ordenador. Una vez finalizada la instalación se puede ejecutar el IDE de Arduino.
+Descargar y descomprimir el archivo zip, haga doble clic en Arduino.app para entrar en el IDE de Arduino; el sistema le pedirá que instale la **librería** de tiempo de ejecución de Java si no lo tienes en tu ordenador. Una vez finalizada la instalación se puede ejecutar el IDE de Arduino.
 
 <img width="400" src="media/image24.jpeg" id="image24">
 
@@ -325,28 +325,28 @@ Consejos: Si tienes problemas en la instalación de los controladores, consulte 
 
 <img width="400" src="media/image26.jpeg" id="image26">
 
-## Lección 1 Añadir bibliotecas y Monitor serie abierta 
+## Lección 1 Añadir **librería**s y Monitor serie abierta 
 
-### Instalación de bibliotecas adicionales de Arduino 
+### Instalación de **librería**s adicionales de Arduino 
 
-Una vez que esté instalado con el software de Arduino y utilizando las funciones integradas, puede que desee ampliar la capacidad de tu Arduino con bibliotecas adicionales.
+Una vez que esté instalado con el software de Arduino y utilizando las funciones integradas, puede que desee ampliar la capacidad de tu Arduino con **librería**s adicionales.
 
 ### ¿Qué son las librerías? 
 
 Las **librerías** son una colección de funciones que hacen que sea fácil para usted conectar a un  sensor, pantalla, módulo, etcetera. Por ejemplo, la librería **LiquidCrystal** incorporada facilita  hablar con pantallas LCD de caracteres. 
 
-Hay cientos de librerías adicionales disponibles en Internet. Para utilizar las bibliotecas adicionales, es necesario instalarlas primero. 
+Hay cientos de librerías adicionales disponibles en Internet. Para utilizar las **librería**s adicionales, es necesario instalarlas primero. 
 
 ### Cómo instalar una libreria 
 
-Mediante el administrador de la biblioteca
+Mediante el administrador de la **librería**
 
-Para instalar una nueva biblioteca en el IDE de Arduino se puede utilizar el **administrador de biblioteca** (disponible desde IDE versión 1.8.0). Abra el IDE y haga clic en el menú "Dibujo" y luego la biblioteca incluyen > Gestión de bibliotecas.  
+Para instalar una nueva **librería** en el IDE de Arduino se puede utilizar el **administrador de **librería**** (disponible desde IDE versión 1.8.0). Abra el IDE y haga clic en el menú "Dibujo" y luego la **librería** incluyen > Gestión de **librería**s.  
 
 <img width="400" src="media/image27.jpeg" id="image27">
 
 
-Entonces el director de la biblioteca se abrirá y usted encontrará una lista de bibliotecas que ya están instalado o listo para su instalación. En este ejemplo vamos a instalar la biblioteca de puente. Desplazarse por la lista para encontrarla, a continuación, seleccione la versión de la biblioteca que desea instalar. A veces sólo está disponible una versión de la biblioteca. Si no aparece el menú de selección de versión, no te preocupes: es normal.
+Entonces el director de la **librería** se abrirá y usted encontrará una lista de **librería**s que ya están instalado o listo para su instalación. En este ejemplo vamos a instalar la **librería** de puente. Desplazarse por la lista para encontrarla, a continuación, seleccione la versión de la **librería** que desea instalar. A veces sólo está disponible una versión de la **librería**. Si no aparece el menú de selección de versión, no te preocupes: es normal.
 
 Hay veces que tienes que esperar, tal como se muestra en la figura. Por favor actualice y esperar
 
@@ -354,37 +354,37 @@ Hay veces que tienes que esperar, tal como se muestra en la figura. Por favor ac
 
 
 
-Finalmente haga click en instalar y esperar a que el IDE instale la nueva biblioteca. La descarga puede tardar un tiempo dependiendo tu velocidad de conexión. Una vez haya terminado, debe aparecer una etiqueta instalada junto a la biblioteca de puente. Una vez instalada puede cerrar el administrador de la biblioteca.
+Finalmente haga click en instalar y esperar a que el IDE instale la nueva **librería**. La descarga puede tardar un tiempo dependiendo tu velocidad de conexión. Una vez haya terminado, debe aparecer una etiqueta instalada junto a la **librería** de puente. Una vez instalada puede cerrar el administrador de la **librería**.
 
 <img width="400" src="media/image29.jpeg" id="image29">
 
-Ahora ya puede encontrar la nueva biblioteca disponible en el menú de biblioteca. Si quieres añadir tu propia biblioteca vaya a abrir un nuevo tema en Github.
+Ahora ya puede encontrar la nueva **librería** disponible en el menú de **librería**. Si quieres añadir tu propia **librería** vaya a abrir un nuevo tema en Github.
 
-### Importar una biblioteca de .zip 
+### Importar una **librería** de .zip 
 
-Las bibliotecas se distribuyen a menudo como un archivo ZIP o una carpeta. El nombre de la carpeta es el nombre de la biblioteca. Dentro de la carpeta será un archivo .cpp, un archivo .h y a menudo un fichero llamado keywords.txt, carpeta de ejemplos y otros archivos requeridos por la biblioteca. A partir de la versión 1.0.5, puede instalar bibliotecas de partido 3 º en el IDE. Descomprime la librería descargada y dejarlo como está.
+Las **librería**s se distribuyen a menudo como un archivo ZIP o una carpeta. El nombre de la carpeta es el nombre de la **librería**. Dentro de la carpeta será un archivo .cpp, un archivo .h y a menudo un fichero llamado keywords.txt, carpeta de ejemplos y otros archivos requeridos por la **librería**. A partir de la versión 1.0.5, puede instalar **librería**s de partido 3 º en el IDE. Descomprime la librería descargada y dejarlo como está.
 
 En el IDE de Arduino, desplácese a Sketch > Biblioteca incluyen. En la parte superior de la lista desplegable, seleccione la opción "agregar. Biblioteca ZIP''.
 
 <img width="400" src="media/image30.jpeg" id="image30">
 
-Se le pedirá para seleccionar la biblioteca que desea añadir. Desplácese hasta la ubicación del archivo .zip y luego pincha en abrir.
+Se le pedirá para seleccionar la **librería** que desea añadir. Desplácese hasta la ubicación del archivo .zip y luego pincha en abrir.
 
 <img width="400" src="media/image31.jpeg" id="image31">
 
 <img width="400" src="media/image32.jpeg" id="image32">
 
-Volver al dibujo > menú de biblioteca de importación. Ahora debe ver la biblioteca en la parte inferior del menú desplegable. Está listo para ser utilizado en su lista. El archivo zip se ha incorporado en la carpeta de bibliotecas en el directorio de plantillas de Arduino.
+Volver al dibujo > menú de **librería** de importación. Ahora debe ver la **librería** en la parte inferior del menú desplegable. Está listo para ser utilizado en su lista. El archivo zip se ha incorporado en la carpeta de **librería**s en el directorio de plantillas de Arduino.
 
-Nota: la biblioteca estará disponible para utilizar en los dibujos, pero los ejemplos de la biblioteca no serán expuestos en el archivo > ejemplos hasta después del IDE se ha reiniciado. Los dos son los enfoques más comunes. Asimismo, pueden manejarse sistemas MAC y Linux. El manual de instalación que se introducirá por debajo como alternativa puede usarse rara vez y los usuarios que no lo necesiten pueden saltarlo
+Nota: la **librería** estará disponible para utilizar en los dibujos, pero los ejemplos de la **librería** no serán expuestos en el archivo > ejemplos hasta después del IDE se ha reiniciado. Los dos son los enfoques más comunes. Asimismo, pueden manejarse sistemas MAC y Linux. El manual de instalación que se introducirá por debajo como alternativa puede usarse rara vez y los usuarios que no lo necesiten pueden saltarlo
 
 ### Manual de instalación 
 
-Para instalar la biblioteca, primero salga de la aplicación de Arduino. Luego descomprima el archivo ZIP que contiene la biblioteca. Por ejemplo, para instalar una librería llamada "ArduinoParty", descomprime ArduinoParty.zip. Debería contener una carpeta calledArduinoParty, con archivos como ArduinoParty.cpp y ArduinoParty.h dentro. (Si los archivos .cpp y .h no en una carpeta, debe crear uno. En este caso, usted sería hacer una carpeta llamada "ArduinoParty" y copiar todos los archivos que estaban en el archivo ZIP, como ArduinoParty.cpp y ArduinoParty.h.)
+Para instalar la **librería**, primero salga de la aplicación de Arduino. Luego descomprima el archivo ZIP que contiene la **librería**. Por ejemplo, para instalar una librería llamada "ArduinoParty", descomprime ArduinoParty.zip. Debería contener una carpeta calledArduinoParty, con archivos como ArduinoParty.cpp y ArduinoParty.h dentro. (Si los archivos .cpp y .h no en una carpeta, debe crear uno. En este caso, usted sería hacer una carpeta llamada "ArduinoParty" y copiar todos los archivos que estaban en el archivo ZIP, como ArduinoParty.cpp y ArduinoParty.h.)
 
-Arrastre la carpeta de ArduinoParty en esta carpeta (la carpeta de bibliotecas). Bajo Windows, lo probable es que se llamará "My Documents\Arduino\libraries". Para usuarios de Mac, lo probable es que se llamará "Bibliotecas de Arduino de documentos". En Linux, será la carpeta "libraries" en su sketchbook.
+Arrastre la carpeta de ArduinoParty en esta carpeta (la carpeta de **librería**s). Bajo Windows, lo probable es que se llamará "My Documents\Arduino\libraries". Para usuarios de Mac, lo probable es que se llamará "Bibliotecas de Arduino de documentos". En Linux, será la carpeta "libraries" en su sketchbook.
 
-La carpeta de la biblioteca Arduino debe ahora este aspecto (en Windows):
+La carpeta de la **librería** Arduino debe ahora este aspecto (en Windows):
 
 ```
 Mi Documents\Arduino\libraries\ArduinoParty\ArduinoParty.cpp 
@@ -396,14 +396,14 @@ o como esta (en Mac y Linux):
 ```
 Documents/Arduino/libraries/ArduinoParty/ArduinoParty.cpp 
 Documents/Arduino/libraries/ArduinoParty/ArduinoParty.h  
-Documentos/Arduino/bibliotecas/ArduinoParty/ejemplos 
+Documentos/Arduino/**librería**s/ArduinoParty/ejemplos 
 ```
 
-Puede haber más archivos que solo los .cpp y .h, sólo asegúrese de que están todos allí. (La biblioteca no funcionará si pones los archivos .cpp y .h en la carpeta de bibliotecas o si está anidados en una carpeta extra. Visualizador:
+Puede haber más archivos que solo los .cpp y .h, sólo asegúrese de que están todos allí. (La **librería** no funcionará si pones los archivos .cpp y .h en la carpeta de **librería**s o si está anidados en una carpeta extra. Visualizador:
 
 Documents\Arduino\libraries\ArduinoParty.cpp y Documents\Arduino\libraries\ArduinoParty\ArduinoParty\ArduinoParty.cpp no funcionarán.)
 
-Reiniciar la aplicación Arduino. Asegúrese de que la nueva biblioteca aparece en el directorio -> elemento de menú de biblioteca de importación del software. ¡Eso es todo! ¡Ha instalado una biblioteca!
+Reiniciar la aplicación Arduino. Asegúrese de que la nueva **librería** aparece en el directorio -> elemento de menú de **librería** de importación del software. ¡Eso es todo! ¡Ha instalado una **librería**!
 
 ### Arduino serie Monitor (Windows, Mac, Linux) 
 
@@ -687,7 +687,7 @@ Probablemente desee volver a colocar el resistor 220Ω.
 
 No importa qué lado del LED que ponemos la resistencia, siempre y cuando está allí en algún lugar
 
-Imagen de ejemplo
+
 
 46 / 165
 
@@ -918,7 +918,7 @@ Trate de añadir algunos colores de los tuyos el dibujo y ver el efecto en tu LE
 <img width="400" src="media/image66.jpeg" id="image66">
 
 
-Imagen de ejemplo
+
 
 ## Lección 5 Entradas Digitales 
 ### Resumen 
@@ -1001,7 +1001,7 @@ Recuerde que si se presiona el botón, la entrada correspondiente será baja, si
 
 Del mismo modo, si se presiona el botón B, un bajo se escribe en el ledPin.
 
-Imagen de ejemplo
+
 
 ## Lección 6 Activar zumbador 
 
@@ -1031,34 +1031,36 @@ La diferencia entre los dos es que un **zumbador activo** tiene una fuente oscil
 
 62 / 165
 
-Diagrama de conexiones
+### Diagrama de conexiones
 
 <img width="400" src="media/image73.jpeg" id="image73">
-
-63 / 165
 
 ### Código
 
 Después de efectuar el cableado, abrir el programa en el código carpeta - Lección 6 haciendo sonidos y haga clic en cargar para cargar el programa. Ver Lección 2 para obtener más información sobre programa cargar si hay algún error.
 
-Imagen de ejemplo
-
 <img width="400" src="media/image74.jpeg" id="image74">
-
-64 / 165
-
-Lección 7 Zumbador Pasivo
-
-### Resumen
 
 ## Lección 7 Zumbador Pasivo 
 ### Resumen 
-En esta lección, usted aprenderá cómo utilizar una señal acústica pasiva.  El propósito del experimento es generar ocho sonidos, cada sonido dura 0,5 segundos: de Alto Do (523Hz), Re (587 hertzios), Mi (659Hz), Fa (698Hz), tan (784Hz), La (880Hz), Si (988Hz) hacer agudos (1047Hz).  
-Componente necesario: 
+En esta lección, usted aprenderá cómo utilizar una señal acústica pasiva.  El propósito del experimento es generar ocho sonidos, cada sonido dura 0,5 segundos: 
 
+- Do (523Hz)
+- Re (587Hz)
+- Mi (659Hz)
+- Fa (698Hz)
+- Sol (784Hz)
+- La (880Hz)
+- Si (988Hz) 
+- Do alto (1047Hz)
+
+# Componentes necesarios
+
+```
 (1) x Elegoo Uno R3 
 (1) zumbador pasiva de x  
 (2) x F M cables (cables de hembra a macho DuPont)  
+```
 
 ### Zumbador pasivo
 
@@ -1068,20 +1070,15 @@ El principio de funcionamiento del zumbador pasiva está utilizando PWM generar 
 
 Nosotros debemos tener cuidado de no utilizar la función de () escritura analógica Kit UNO R3 para generar un pulso el timbre, porque la salida de pulso de analógico (de escritura) se fija (500 Hz).
 
-
 ### Conexión
 
 ### Esquema
 
 <img width="400" src="media/image76.jpeg" id="image76">
 
-66 / 165
-
-Diagrama de conexiones
+### Diagrama de conexiones
 
 <img width="400" src="media/image77.jpeg" id="image77">
-
-67 / 165
 
 Cableado el zumbador conectado a la placa UNO R3, rojo (positivo) que el pin8, cable negro (negativo) a la tierra.
 
@@ -1119,21 +1116,12 @@ void loop()
 } 
 ```
 
+Después de efectuar el cableado, por favor, abra el programa en el código de carpeta lección 7 pasivo zumbador y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para obtener más información sobre programa cargar si hay algún error. 
 
-
-Después de efectuar el cableado, por favor, abra el programa en el código de carpeta
-
-lección 7 pasivo zumbador y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para obtener más información sobre programa cargar si hay algún error.
-
-Antes de ejecutar esto, asegúrese de que ha instalado la biblioteca < parcelas > o volver a instalarlo, si es necesario. De lo contrario, el código no funcionará.
-
-Para obtener más información sobre carga el archivo de biblioteca, ver Lección 1.
+Antes de ejecutar esto, asegúrese de que ha instalado la **librería** < parcelas > o volver a instalarlo, si es necesario. De lo contrario, el código no funcionará. 
+Para obtener más información sobre carga el archivo de **librería**, ver Lección 1.
 
 <img width="400" src="media/image78.jpeg" id="image78">
-
-Imagen de ejemplo
-
-68 / 165
 
 ## Lección 8 Interruptor de bola de inclinación 
 
@@ -1164,26 +1152,20 @@ Aunque no es tan preciso ni flexible como un acelerómetro completo, los interru
 
 70 / 165
 
-Diagrama de conexión
+### Diagrama de conexiones
 
 <img width="400" src="media/image81.jpeg" id="image81">
 
-71 / 165
-
 ### Código
 
-Después de efectuar el cableado, por favor, abra el programa en el código de carpeta
-
-lección 8 interruptor de la bola y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para obtener más información sobre programa cargar si hay algún error.
-
-Imagen de ejemplo
+Después de efectuar el cableado, por favor, abra el programa en el código de carpeta lección 8 interruptor de la bola y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para obtener más información sobre programa cargar si hay algún error.
 
 <img width="400" src="media/image82.jpeg" id="image82">
 
-72 / 165
-
 ## Lección 9 Servo 
+
 ### Resumen 
+
 El Servo es un tipo de motorreductor que sólo puede girar 180 grados. Se controla  mediante el envío de impulsos eléctricos de la placa de UNO R3. Estos pulsos le dice al servo qué posición se debe mover. 
 
 El Servo tiene tres cables, de que el marrón  es el cable a tierra y deben conectarse a GND puerto UNO, el rojo es el cable de corriente y debe conectarse al puerto de 5v y la naranja es el alambre de señal y debe conectarse al puerto #9.  
@@ -1209,9 +1191,7 @@ Introducción del componente
 | Dimensión:                 | 1.26 en x 1,18 en x 0,47 en (3,2 x 3 cm x 1.2 cm)              |
 | Peso:                      | 4,73 onzas (134)                                               |
 
-
 <img width="400" src="media/image83.png" id="image83">
-
 
 ### Conexión
 
@@ -1219,29 +1199,21 @@ Introducción del componente
 
 <img width="400" src="media/image84.jpeg" id="image84">
 
-74 / 165
-
 ### Diagrama de cableado
 
 <img width="400" src="media/image85.jpeg" id="image85">
 
-75 / 165
-
 ### Código
 
-Después de efectuar el cableado, por favor, abra el programa en el código de carpeta Lección 9 Servomecanismo y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para obtener más información sobre programa cargar si hay algún error.
+Después de efectuar el cableado, por favor, abra el programa en el código de carpeta Lección 9 Servomecanismo y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para obtener más información sobre programa cargar si hay algún error. 
 
 Antes de ejecutar esto, asegúrese de que ha instalado el < Servo > Biblioteca o volver a instalarlo, si es necesario. De lo contrario, el código no funciona.
 
-Para obtener más información sobre carga el archivo de biblioteca, ver Lección 1.
-
-Imagen de ejemplo
+Para obtener más información sobre carga el archivo de **librería**, ver Lección 1.
 
 <img width="400" src="media/image86.jpeg" id="image86">
 
 En la foto, el cable marrón del servo se adapta a través de los cables negros de M-M, el rojo uno se adapta a través de los cables rojos de M-M y la naranja uno se adapta a través de los cables amarillos de M-M .
-
-76 / 165
 
 ## Lección 10 Módulo Sensor ultrasónico 
 
@@ -1251,8 +1223,10 @@ En la foto, el cable marrón del servo se adapta a través de los cables negros 
 
 El **sensor ultrasónico** es ideal para todo tipo de proyectos que necesitan medidas de distancia, evitando los obstáculos como ejemplos.  
 
-El HC-SR04 es barato y fácil de usar ya que vamos a usar una biblioteca diseñada  específicamente para estos sensores.  
-Componente necesario: 
+El HC-SR04 es barato y fácil de usar ya que vamos a usar una **librería** diseñada  específicamente para estos sensores.  
+
+### Componentes necesarios
+
 ```
 (1) x Elegoo Uno R3 
 (1) x Módulo de sensor ultrasónico  
@@ -1272,9 +1246,9 @@ Distancia de prueba = (tiempo de alto nivel x velocidad del sonido (340m / s) / 
 
 El diagrama de sincronización se muestra a continuación. Sólo tiene que suministrar un pulso de 10us corto a la entrada de activación para iniciar el rango, y luego el módulo enviará una ráfaga de 8 ciclos de ultrasonido a 40 kHz y aumentar su eco. El Echo es un objeto de distancia que es el ancho de pulso y el rango en proporción. Puede calcular el rango a través del intervalo de tiempo entre la señal de disparo de envío y la señal de eco de recepción. Fórmula: us / 58 = centímetros o us / 148 = inch; O: el rango = tiempo de alto nivel * velocidad
 
-77 / 165
+(340M / S) / 2; 
 
-(340M / S) / 2; Sugerimos utilizar más de 60ms de ciclo de medición, con el fin de evitar la señal de disparo a la señal de eco.
+Sugerimos utilizar más de 60ms de ciclo de medición, con el fin de evitar la señal de disparo a la señal de eco.
 
 <img width="400" src="media/image88.jpeg" id="image88">
 
@@ -1284,25 +1258,19 @@ El diagrama de sincronización se muestra a continuación. Sólo tiene que sumin
 
 ### Esquema
 
-78 / 165
-
 ### Diagrama de cableado
 
 <img width="400" src="media/image90.jpeg" id="image90">
 
-79 / 165
-
 ### Código
 
-Uso de una biblioteca diseñada para estos sensores hará nuestro código corto y sencillo.
+Uso de una **librería** diseñada para estos sensores hará nuestro código corto y sencillo.
 
-Incluimos la biblioteca al principio de nuestro código, y luego mediante simples comandos podemos controlar el comportamiento del sensor.
+Incluimos la **librería** al principio de nuestro código, y luego mediante simples comandos podemos controlar el comportamiento del sensor.
 
 Después de efectuar el cableado, por favor, abra el programa en la carpeta de código-10 módulo de Sensor ultrasónico de lección y haga clic en cargar para cargar el programa. Ver Lección 2 para más detalles sobre el programa cargar si hay algún error. Antes de ejecutar esto, asegúrese de que ha instalado el < HC-SR04 > Biblioteca o volver a instalarlo, si es necesario. De lo contrario, el código no funciona.
 
-Para obtener más información sobre carga el archivo de biblioteca, ver Lección 1
-
-Imagen de ejemplo
+Para obtener más información sobre carga el archivo de **librería**, ver Lección 1
 
 <img width="400" src="media/image91.jpeg" id="image91">
 
@@ -1320,7 +1288,7 @@ En este tutorial vamos a aprender cómo usar un Sensor de humedad y temperatura 
 
 Es lo suficientemente exacta para la mayoría de los proyectos que necesitan hacer un seguimiento de las lecturas de humedad y temperatura.
 
-Otra vez vamos a usar una biblioteca diseñada específicamente para estos sensores que harán que nuestro código corto y fácil de escribir.
+Otra vez vamos a usar una **librería** diseñada específicamente para estos sensores que harán que nuestro código corto y fácil de escribir.
 
 Componente necesario:
 
@@ -1342,21 +1310,14 @@ Parámetros del producto
 
 Humedad relativa:
 
-Resolución: 16 bits
-
-Repetibilidad: ±1% H.R.
-
-Precisión: 25 ° C ±5% hr
-
-Intercambiabilidad: intercambiables
-
-Tiempo de respuesta: 1 / e (63%) de 25º c 6s
-
-1m / s de aire 6s
-
-Histéresis: < ± 0.3% RH
-
-Estabilidad a largo plazo: < ± 0.5% hr / año en
+- Resolución: 16 bits
+- Repetibilidad: ±1% H.R.
+- Precisión: 25 ° C ±5% hr
+- Intercambiabilidad: intercambiables
+- Tiempo de respuesta: 1 / e (63%) de 25º c 6s
+- 1m / s de aire 6s
+- Histéresis: < ± 0.3% RH
+- Estabilidad a largo plazo: < ± 0.5% hr / año en
 
 Temperatura:
 
@@ -1378,15 +1339,10 @@ Periodo de muestreo: más de 2 segundos
 
 PIN Descripción:
 
-83 /
-
-VDD alimentación 3,5~5.5V DC
-
-serie de datos, un solo bus
-
-NC, pin vacío
-
-GND tierra, la energía negative
+- VDD alimentación 3,5~5.5V DC
+- serie de datos, un solo bus
+- NC, pin vacío
+- GND tierra, la energía negative
 
 ### Conexión
 
@@ -1411,19 +1367,13 @@ Antes de ejecutar esto, asegúrese de que ha instalado el < SimpleDHT > Bibliote
 
 <img width="400" src="media/image96.jpeg" id="image96">
 
-Para obtener más información sobre el tutorial de la carga del archivo de la biblioteca, consulte la lección 1
-
-Imagen de ejemplo
-
-86 / 165
+Para obtener más información sobre el tutorial de la carga del archivo de la **librería**, consulte la lección 1
 
 A continuación hay que subir el programa, abra el monitor, donde podemos ver los datos como abajo: (muestra la temperatura del medio ambiente, podemos ver es de 22 grados)
 
 Haga clic en el Serial Monitor botón para encender el monitor serie. Se introducen los conceptos básicos sobre el monitor serial en detalles en la lección 1.
 
 <img width="400" src="media/image97.jpeg" id="image97">
-
-87 / 165
 
 ## Lección 12 Módulo Joystick analógico
 
@@ -1452,7 +1402,6 @@ Tenemos que usar pines Arduino analógicos para leer los datos de los pines X / 
 
 <img width="400" src="media/image98.jpeg" id="image98">
 
-88 / 165
 
 ### Conexión
 
@@ -1487,10 +1436,6 @@ Cuando el joystick se encuentra en la posición de reposo o medio, debe devolver
 
 El rango de valores va de 0 a 1024.
 
-Imagen de ejemplo
-
-91 / 165
-
 Abrir al monitor y puede ver los datos como soplo:
 
 Haga clic en el Serial Monitor botón para encender el monitor serie. Se introducen los conceptos básicos sobre el monitor serial en detalles en la lección 1.
@@ -1503,7 +1448,7 @@ Haga clic en el Serial Monitor botón para encender el monitor serie. Se introdu
 
 Usando un control remoto es una gran manera de tener el control inalámbrico de su proyecto.
 
-Los mandos a distancia infrarrojos son simples y fáciles de usar. En este tutorial nos conectando el receptor IR para el UNO y luego use una biblioteca que fue diseñada para este sensor en particular.
+Los mandos a distancia infrarrojos son simples y fáciles de usar. En este tutorial nos conectando el receptor IR para el UNO y luego use una **librería** que fue diseñada para este sensor en particular.
 
 En nuestro dibujo tenemos todos los códigos de IR Hexadecimal que están disponibles en este control remoto, también detectará si el código fue reconocido y también si estamos manteniendo pulsada una tecla
 
@@ -1558,17 +1503,13 @@ Después de efectuar el cableado, por favor, abra el programa en la carpeta de c
 
 Antes de ejecutar esto, asegúrese de que ha instalado el < IRremote > Biblioteca o volver a instalarlo, si es necesario. De lo contrario, el código no funciona.
 
-Para obtener más información sobre carga el archivo de biblioteca, ver Lección 1.
+Para obtener más información sobre carga el archivo de **librería**, ver Lección 1.
 
-A continuación nos trasladaremos el < RobotIRremote > fuera de la carpeta de biblioteca, para ello ya que entra en conflicto con la biblioteca va a utilizar. Sólo puede arrastrarlo dentro de la carpeta de la biblioteca una vez que haya terminado de programar el microcontrolador.
+A continuación nos trasladaremos el < RobotIRremote > fuera de la carpeta de **librería**, para ello ya que entra en conflicto con la **librería** va a utilizar. Sólo puede arrastrarlo dentro de la carpeta de la **librería** una vez que haya terminado de programar el microcontrolador.
 
 <img width="400" src="media/image107.jpeg" id="image107">
 
-Una vez que ha instalado la biblioteca, sólo seguir adelante y reiniciar su Software IDE.
-
-Imagen de ejemplo
-
-97 / 165
+Una vez que ha instalado la **librería**, sólo seguir adelante y reiniciar su Software IDE.
 
 Abrir al monitor y puede ver los datos:
 
@@ -1576,8 +1517,7 @@ Haga clic en el Serial Monitor botón para encender el monitor serie. Se introdu
 
 <img width="400" src="media/image108.jpeg" id="image108">
 
-
-## Lección 14 Panalla LCD
+## Lección 14 Pantalla LCD
 
 ### Resumen
 
@@ -1587,18 +1527,14 @@ La pantalla tiene una retroiluminación de LED y puede mostrar dos filas con has
 
 <img width="400" src="media/image109.png" id="image109">
 
-En esta lección, se ejecutará el programa de ejemplo de Arduino para la biblioteca de la LCD, pero en la siguiente lección, nos pondremos nuestra pantalla para mostrar la temperatura mediante sensores.
+En esta lección, se ejecutará el programa de ejemplo de Arduino para la **librería** de la LCD, pero en la siguiente lección, nos pondremos nuestra pantalla para mostrar la temperatura mediante sensores.
 
 ### Componentes necesarios
 
 x Elegoo Uno R3
-
 x LCD1602 módulo
-
 x Potenciómetro (10k)
-
 x 830 tie-puntos Breadboard
-
 x M-M cables (cables de puente de macho a macho)
 
 ### LCD1602
@@ -1623,13 +1559,9 @@ A y K: Que el control de la retroiluminación LED de los pernos
 
 <img width="400" src="media/image110.jpeg" id="image110">
 
-100 / 165
-
 ### Diagrama de cableado
 
 <img width="400" src="media/image111.jpeg" id="image111">
-
-101 / 165
 
 La pantalla LCD necesita seis pines de Arduino, todo listo para ser salidas digitales.
 
@@ -1641,17 +1573,17 @@ Hay un número de conexiones a realizar. Alineación de la pantalla con la parte
 
 Después de efectuar el cableado, por favor, abra el programa en el código de carpeta lección 22 LCD pantalla y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para obtener más información sobre programa cargar si hay algún error.
 
-Antes de ejecutar esto, asegúrese de que ha instalado la biblioteca < LiquidCrystal > o volver a instalarlo, si es necesario. De lo contrario, el código no funcionará.
+Antes de ejecutar esto, asegúrese de que ha instalado la **librería** < LiquidCrystal > o volver a instalarlo, si es necesario. De lo contrario, el código no funcionará.
 
-Para obtener más información sobre carga el archivo de biblioteca, ver Lección 1. Subir el código a la placa Arduino y usted debería ver el mensaje 'Hola, mundo' aparece, seguido de un número que cuenta de cero.
+Para obtener más información sobre carga el archivo de **librería**, ver Lección 1. Subir el código a la placa Arduino y usted debería ver el mensaje 'Hola, mundo' aparece, seguido de un número que cuenta de cero.
 
 Lo primero que nota en el dibujo es la línea:
 
-```
+```arduino
 #include < LiquidCrystal.h >
 ```
 
-Esto dice Arduino que queremos utilizar la biblioteca de cristal líquido.
+Esto dice Arduino que queremos utilizar la **librería** de cristal líquido.
 
 A continuación tenemos la línea que teníamos que modificar. Esto define qué pines de Arduino son para conectarse a que pines de la pantalla.
 
@@ -1667,7 +1599,7 @@ En la función de **setup**, tenemos dos comandos:
 LCD.Begin (16, 2);
 LCD.Print ("Hola, mundo!");
 ```
-La primera cuenta la biblioteca de cristal líquido cuántas columnas y filas tiene la pantalla. La segunda línea muestra el mensaje que vemos en la primera línea de la pantalla.
+La primera cuenta la **librería** de cristal líquido cuántas columnas y filas tiene la pantalla. La segunda línea muestra el mensaje que vemos en la primera línea de la pantalla.
 
 En la función de 'loop', aso tienen dos comandos:
 
@@ -1681,8 +1613,6 @@ El primero establece la posición del cursor (donde aparecerá el siguiente text
 <img width="400" src="media/image112.png" id="image112">
 
 La segunda línea muestra el número de milisegundos desde que se restableció el Arduino.
-
-### Imagen de ejemplo
 
 ## Lección 15 Termómetro
 
@@ -1734,9 +1664,9 @@ Los 10 kΩ resistencia y termistores son todas nuevas incorporaciones a la Junta
 
 Después de efectuar el cableado, por favor, abra el programa en el código de carpeta lección 23 termómetro y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para obtener más información sobre programa cargar si hay algún error.
 
-Antes de ejecutar esto, asegúrese de que ha instalado la biblioteca < LiquidCrystal > o volver a instalarlo, si es necesario. De lo contrario, el código no funcionará.
+Antes de ejecutar esto, asegúrese de que ha instalado la **librería** < LiquidCrystal > o volver a instalarlo, si es necesario. De lo contrario, el código no funcionará.
 
-Para obtener más información sobre carga el archivo de biblioteca, ver Lección 1. El cableado de esto está basado en la lección 22. Cargar para arriba en su Arduino y encontrará que calienta el sensor de temperatura al poner el dedo en él aumentará la temperatura.
+Para obtener más información sobre carga el archivo de **librería**, ver Lección 1. El cableado de esto está basado en la lección 22. Cargar para arriba en su Arduino y encontrará que calienta el sensor de temperatura al poner el dedo en él aumentará la temperatura.
 
 Es útil poner una línea de comentario sobre el comando 'lcd'.
 
@@ -1774,8 +1704,6 @@ El comentario bastante extraño sirve para recordarles de las 16 columnas de la 
 <img width="400" src="media/image115.png" id="image115">
 
 Para rellenar los espacios en blanco, establecer la posición del cursor por donde la lectura debe aparecer y luego imprimirlo.
-
-### Imagen de ejemplo
 
 ### Lección 16 Ocho LED con 74HC595
 
@@ -1816,8 +1744,6 @@ El chip también tiene un pin de salida activado (OE), que se utiliza para activ
 ### Conexión
 
 ### Esquema
-
-
 
 ### Diagrama de cableado
 
@@ -1876,25 +1802,14 @@ Hay entonces medio segundo de retraso antes de 'i' se incrementa y se ilumina el
 
 ```
 void loop()
-
 {
-
 LED = 0;
-
 updateShiftRegister();
-
 Delay(500);
-
-para (int i = 0; i < 8; i ++)
-
+for (int i = 0; i < 8; i ++)
 {
-
 bitSet(leds, i);
-
-114 / 165
-
 updateShiftRegister();
-
 Delay(500);
 
 }
@@ -1918,7 +1833,6 @@ digitalWrite (latchPin, HIGH);
 ```
 
 Si usted deseó dar vuelta a uno de los LED apagado en lugar, llamaría una función similar de Arduino (bitClear) con la variable de 'leds'. Esto ajustará ese poco de 'leds' para ser 0 y entonces sólo necesitará seguir con una llamada a 'updateShiftRegister' para actualizar la actual LED.
-### Imagen de ejemplo
 
 <img width="400" src="media/image120.jpeg" id="image120">
 
@@ -1950,8 +1864,6 @@ Trate de escribir los siguientes comandos en la parte superior del Monitor Seria
 
 Escribir x voluntad no tienen ningún efecto si los LEDs ya están todos fuera, pero al entrar en cada número, el correspondiente LED deberá encenderse y usted recibirá un mensaje de confirmación de la placa UNO. El Monitor Serial aparecerá como se muestra a continuación.
 
-118 / 165
-
 <img width="400" src="media/image123.jpeg" id="image123">
 
 Escriba x otra vez y pulse 'Enviar' para apagar todos los LEDs
@@ -1964,8 +1876,6 @@ Como era de esperar, el cableado se basa en el cableado utilizado en la lección
 
 En la función de **setup**, hay tres nuevas líneas al final:
 
-```
-```
 ```
 void setup()
 
@@ -2124,12 +2034,7 @@ Cuando la fotocélula está en una luz apagada, la resistencia es mayor que la r
 
 ### Código
 
-Después de efectuar el cableado, por favor, abra el programa en el código de carpeta
-
-```
-
-lección 26 fotocélula y haga clic en UPLOAD para ca
-```rgar el programa. Ver Lección 2 para obtener más información sobre programa cargar si hay algún error.
+Después de efectuar el cableado, por favor, abra el programa en el código de carpeta lección 26 fotocélula y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para obtener más información sobre programa cargar si hay algún error.
 
 Lo primero que note es que hemos cambiado el nombre del pin analógico a ser 'apagado' en lugar de 'potPin' ya que no tenemos una olla conectada.
 
@@ -2140,8 +2045,6 @@ int numLEDSLit = reading / 57;// all LEDs lit at 1k
 Este tiempo, dividimos la lectura cruda 57 en lugar de 114. En otras palabras, nos dividirlo por la mitad, tanto como lo hicimos con el bote para dividirlo en nueve zonas, de ningún LED encendido a ocho todas iluminada. Este factor adicional es para tener en cuenta la resistencia fija de kΩ 1. Esto significa que cuando la fotocélula tiene una resistencia de 1 kΩ (igual a la resistencia fija), la lectura cruda será 1023 / 2 = 511. Esto se proporcionan a todos los LED se enciende y luego un poco (numLEDSLit) será 8.
 
 <img width="400" src="media/image128.jpeg" id="image128">
-
-### Imagen de ejemplo
 
 ## Lección 19 74HC595 y display Segmentado
 
@@ -2576,7 +2479,7 @@ Después de efectuar el cableado, abrir el programa en el código carpeta - lecc
 
 <img width="400" src="media/image133.jpeg" id="image133">
 
-### Imagen de ejemplo
+### 
 
 ## Lección 20 Display de 7 segmentos de cuatro dígitos
 
@@ -2619,7 +2522,7 @@ Cuando se utilizan 4 dígitos de 7 segmentos, el ánodo común o pin de cátodo 
 
 Después de efectuar el cableado, por favor, abra el programa en el código de carpeta - lección 28 cuatro siete segmentos pantalla Digital y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para obtener más información sobre programa cargar si hay algún error.
 
-Imagen de ejemplo
+
 
 <img width="400" src="media/image138.jpeg" id="image138">
 
@@ -2673,21 +2576,17 @@ Configuración de voltaje de salida:
 
 La izquierda y derecha de la tensión de salida puede configurarse independientemente. Para seleccionar la tensión de salida, mover el puente a los pines correspondientes. Nota: indicador de energía LED y los carriles de la energía de protoboard no se enciende si ambos puentes están en la posición "OFF".
 
-140 / 165
-
 <img width="400" src="media/image141.jpeg" id="image141">
 
 Nota IMPORTANTE:
 
 Asegúrese de alinear el módulo correctamente en la placa de pruebas. El pin negativo (-) en el módulo se alinea con la línea azul (-) en la placa de pan y el pin positivo (+) se alinea con la línea roja (+). De no hacerlo podría resultar en que usted accidentalmente invirtiendo la energía a su Proyecto
 
-L293D
+### L293D
 
 Este es un chip muy útil. En realidad puede controlar dos motores independientemente. Estamos usando sólo la mitad del chip en esta lección, la mayoría de los pines en el lado derecho del chip son para el control de un segundo motor.
 
 <img width="400" src="media/image142.jpeg" id="image142">
-
-141 / 165
 
 Especificaciones del producto:
 
@@ -2718,8 +2617,6 @@ Descripción y pedidos de información
 El L293 y L293D son cuádruples controladores de media H de alta corriente. El L293 está diseñado para proporcionar corrientes de transmisión bidireccional de hasta 1 A con tensiones de 4,5 V a 36 V. El L293D está diseñado para proporcionar bidireccional corrientes de impulsión de hasta 600 mA en tensiones de 4,5 V a 36 V. Ambos dispositivos están diseñados para manejar cargas inductivas como relés, solenoides, dc y motores paso a paso bipolares, asícomo otras cargas de alta corriente de alta tensión en aplicaciones de suministro de positivo.
 
 Todas las entradas son TTL compatible. Cada salida es un circuito de coche completa totem-pole, con un fregadero de transistor Darlington y una fuente de pseudo-Darlington. Conductores están habilitados en pares, con conductores de 1 y 2 de 1, 2EN y drivers 3 y 4 de 3, 4EN. Cuando una entrada de enable es alta, están habilitados los controladores asociados, y sus salidas son activas y en fase con sus aportaciones. Cuando la entrada enable es baja, se deshabilitan los controladores y sus salidas son y en el estado de alta impedancia. Con las entradas de datos adecuada, cada par de conductores forma una unidad reversible completo-H (o puente) adecuada para aplicaciones de solenoide o motor.
-
-142 / 165
 
 ### Diagrama de bloques
 
@@ -2943,13 +2840,7 @@ lección 29 motores y haga clic en UPLOAD para cargar el programa. Ver Lección 
 
 Programa de carga, después de encender todos los interruptores de potencia. Ligeramente, el motor girará en sentido horario y antihorario por 5 veces. Luego, seguirá dramáticamente gire hacia la derecha. Tras una breve pausa, lo dramáticamente girará hacia la izquierda. A continuación, la tarjeta controladora enviará la señal PWM para el motor, el motor lentamente reducir su máxima RPM al mínimo y aumentar al máximo otra vez. Por último, se trata de una parada para 10s hasta que comience el siguiente ciclo.
 
-147 / 165
-
-Imagen de ejemplo
-
 <img width="400" src="media/image149.jpeg" id="image149">
-
-148 / 165
 
 ## Lección 22 Relé
 
@@ -2989,21 +2880,16 @@ Puede ser confundido acerca de cómo insertar el relé en el tablero de pan. Com
 
 <img width="400" src="media/image151.jpeg" id="image151">
 
-150 / 165
-
 <img width="400" src="media/image152.jpeg" id="image152">
 
 ### Conexión
 
 ### Esquema
 
-151 / 165
 
 <img width="400" src="media/image153.jpeg" id="image153">
 
 ### Diagrama de cableado
-
-152 / 165
 
 ### Código
 
@@ -3012,10 +2898,6 @@ Después de efectuar el cableado, por favor, abra el programa en el código de c
 Programa de carga, después de encender todos los interruptores de potencia. El relé a recoger con un sonido de timbre. Entonces, el motor girará. Después de un período de tiempo, se liberará el relé y el motor se detiene.
 
 <img width="400" src="media/image154.jpeg" id="image154">
-
-Imagen de ejemplo
-
-153 / 165
 
 ## Lección 23 Motor paso a paso
 
@@ -3035,8 +2917,6 @@ El paso a paso que estamos utilizando viene con su propio tablero de conductor, 
 - x Power supply module
 - x F-M cables (cables de hembra a macho DuPont)
 - M-M wire (hilo puente de macho a macho)
-
-
 
 <img width="400" src="media/image155.jpeg" id="image155">
 
@@ -3072,16 +2952,11 @@ Resistencia de aislamiento > 10MΩ(500V) Aislantes de electricidad : 600VAC/1mA/
 
 Subida de temperatura < 40K(120Hz) Ruido < 35dB (120Hz, No carga, 10cm
 
-155 / 165
-
 ### Esquema de circuitos
 
 <img width="400" src="media/image156.jpeg" id="image156">
 
 El motor de pasos bipolar tiene generalmente cuatro cables que salen de él. A diferencia de los motores PAP unipolares, steppers bipolares no tienen ninguna conexión común de centro. Tienen dos juegos independientes de bobinas en lugar de otro. Se pueden distinguir de steppers unipolares midiendo la resistencia entre los cables. Debe encontrar dos pares de cables de igual resistencia. Si tienes las puntas de su medidor conectado a dos cables que no están conectados (es decir, no conectada a la bobina del mismo), debería ver resistencia infinita (o sin continuidad).
-
-156 / 165
-
 ### ULN2003 Placa conductora
 
 <img width="400" src="media/image157.jpeg" id="image157">
@@ -3130,15 +3005,12 @@ Conectamos la tierra de a UNO para el motor paso a paso.
 
 Después de efectuar el cableado, por favor, abra el programa en el código de carpeta lección 31 Motor de pasos y haga clic en UPLOAD para cargar el programa. Ver Lección 2 para obtener más información sobre programa cargar si hay algún error.
 
-Antes de ejecutar esto, asegúrese de que ha instalado la biblioteca < paso a paso > o volver a instalarlo, si es necesario. De lo contrario, el código no funcionará.
+Antes de ejecutar esto, asegúrese de que ha instalado la **librería** < paso a paso > o volver a instalarlo, si es necesario. De lo contrario, el código no funcionará.
 
-Para obtener más información sobre carga el archivo de biblioteca, ver Lección 1.
+Para obtener más información sobre carga el archivo de **librería**, ver Lección 1.
 
 <img width="400" src="media/image162.jpeg" id="image162">
 
-Imagen de ejemplo
-
-161 / 165
 
 ### Lección 24 Control Motor paso a paso con mando a distancia
 
@@ -3174,21 +3046,15 @@ x F-M cables (cables de hembra a macho DuPont)
 
 x M-M cable (hilo puente de macho a macho)
 
-162 / 165
-
 ### Conexión
 
 ### Esquema
 
 <img width="400" src="media/image163.jpeg" id="image163">
 
-163 / 165
-
 ### Diagrama de cableado
 
 <img width="400" src="media/image164.jpeg" id="image164">
-
-164 / 165
 
 Estamos utilizando 4 pines para controlar el paso a paso y el 1 pin del sensor IR. Pernos 8-11 controlan el motor paso a paso y pin 12 recibe la información de IR. Conectamos los 5V y la tierra de la ONU en el sensor. Como medida de precaución, usar un protoboard alimentación potencia el motor paso a paso ya que puede utilizar más energía y no queremos dañar la fuente de alimentación de la UNO.
 
@@ -3200,14 +3066,18 @@ Antes de ejecutar esto, asegúrese de que ha instalado el < IRremote >
 
 Biblioteca de < paso a paso > o volver a instalarlo, si es necesario. De lo contrario, el código no funcionará.
 
-Para obtener más información sobre carga el archivo de biblioteca, ver Lección 1.
+Para obtener más información sobre carga el archivo de **librería**, ver Lección 1.
 
 <img width="400" src="media/image165.jpeg" id="image165">
 
 El código reconoce sólo 2 valores desde el control remoto IR: VOL + y VOL-. 
-Presionando VOL + del control remoto el motor hará un giro completo hacia la derecha.
+- Presionando VOL + del control remoto el motor hará un giro completo hacia la derecha.
+- VOL- para hacer
 
-VOL-voluntad hacer una rotación completa en sentido antihorario.
+    
+    
+    
+     una rotación completa en sentido antihorario.
 
-Imagen de ejemplo
+
 

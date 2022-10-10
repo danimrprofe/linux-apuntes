@@ -439,7 +439,7 @@ En esta lección, usted aprenderá cómo programar el tablero de regulador UNO R
 
 Componente necesario:
 
-> [x] (1) x Elegoo Uno R3 
+- [x] (1) x Arduino Uno R3 
 
 <img width="400" src="media/image38.jpeg" id="image38">
 
@@ -573,12 +573,12 @@ Sube otra vez el **programa** y verás que el LED comienza a parpadear más ráp
 En esta lección, usted aprenderá cómo cambiar el brillo de un LED usando diferentes valores  de resistencia.  
 Componente necesario: 
 ```
-(1) x Elegoo Uno R3 
-LED rojo de 5mm x (1)  
-(1) x resistencia de 220 ohmios  
-(1) x resistencia de 1 k ohm  
-(1) x resistencia de ohmio 10 k  
-(2) x M M cables (cables de puente de macho a macho)  
+- [x] (1) x Elegoo Uno R3 
+- [x] 1 LED rojo de 5 mm
+- [x] (1) x resistencia de 220 ohmios  
+- [x] (1) x resistencia de 1 k ohm  
+- [x] (1) x resistencia de ohmio 10 k  
+- [x] (2) x M M cables (cables de puente de macho a macho)  
 ```
 
 ### Protoboard
@@ -587,13 +587,15 @@ Un **protoboard** permite crear prototipos de circuitos de forma rápida, sin ne
 
 <img width="400" src="media/image52.jpeg" id="image52">
 
-Breadboards vienen en varios tamaños y configuraciones. La clase más simple es sólo una rejilla de agujeros en un bloque de plástico. En el interior son tiras de metal que proporcionan una conexión eléctrica entre los agujeros en las filas más cortas. Empujando las patillas de dos componentes diferentes de la misma fila se une a ellos juntos eléctricamente. Un canal profundo, corriendo por el centro indica que hay una rotura en las conexiones, lo que significa, puede insertar un chip con las patillas a ambos lados del canal sin conectarlos juntos. Algunos breadboards tienen dos tiras de agujeros que corre a lo largo de los bordes laterales del tablero que son separados de la red principal. Éstos tienen tiras corriendo por la longitud de la tabla dentro y proporcionan una manera para conectar una tensión común. Son generalmente en pares para + 5 voltios y tierra. Estas tiras se denominan carriles y le permiten alimentar a muchos componentes o puntos en el tablero.
+Breadboards vienen en varios tamaños y configuraciones. La clase más simple es sólo una rejilla de agujeros en un bloque de plástico. En el interior son tiras de metal que proporcionan una conexión eléctrica entre los agujeros en las filas más cortas. Empujando las patillas de dos componentes diferentes de la misma fila se une a ellos juntos eléctricamente. Un canal profundo, corriendo por el centro indica que hay una rotura en las conexiones, lo que significa, puede insertar un chip con las patillas a ambos lados del canal sin conectarlos juntos. 
+
+Algunos breadboards tienen dos tiras de agujeros que corre a lo largo de los bordes laterales del tablero que son separados de la red principal. Éstos tienen tiras corriendo por la longitud de la tabla dentro y proporcionan una manera para conectar una tensión común. Son generalmente en pares para + 5 voltios y tierra. Estas tiras se denominan carriles y le permiten alimentar a muchos componentes o puntos en el tablero.
 
 Si bien son breadboards para prototipos, tienen algunas limitaciones. Porque las conexiones son temporales y de acople, no son tan fiables como conexiones soldadas. Si tienes problemas intermitentes con un circuito, puede ser debido a una mala conexión en una protoboard.
 
 ### LED
 
-LED es un gran indicador. Utilizan muy poca electricidad durará para siempre.  En esta lección, usarás tal vez el más común de todos los LEDs: un LED de 5mm de color rojo. 5mm se refiere al diámetro del LED. Otros tamaños comunes son 3mm y 10mm.  Directamente no se puede conectar un LED a una batería o fuente de tensión porque 
+LED es un gran indicador. Utilizan muy poca electricidad durará para siempre.  En esta lección, usarás tal vez el más común de todos los LEDs: un LED de 5mm de color rojo. 5mm se refiere al diámetro del LED. Otros tamaños comunes son 3mm y 10mm.  Directamente no se puede conectar un LED a una batería o fuente de tensión porque: 
 
 1) El  LED tiene un positivo y un negativo llevar y no se encenderá si se coloca mal y debe utilizarse 
 2) Un LED con una resistencia para limitar o 'ahogar' la cantidad de corriente que fluye a través de él; ¡de lo contrario, quemará 
@@ -618,9 +620,9 @@ La unidad de resistencia se denomina Ohm, que se abrevia generalmente a Ω la le
 
 En esta lección, vamos a utilizar tres valores diferentes de resistencia: 
 
-- 220 Ω
-- 1 kΩ
-- 10 kΩ
+- [x] 220 Ω
+- [x] 1 kΩ
+- [x] 10 kΩ
 
 Estas resistencias todas se ven iguales, excepto que tienen rayas de colores diferentes en ellos. Estas rayas decirte el valor de la resistencia.
 

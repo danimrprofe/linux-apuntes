@@ -760,9 +760,9 @@ Documentos/Arduino/**librería**s/ArduinoParty/ejemplos
 <h3 id="resumen">Resumen</h3>
 <p>En esta lección, usted aprenderá cómo programar el tablero de regulador UNO R3 a parpadear el LED integrado de Arduino y cómo descargar programas pasos básicos</p>
 <p>Componente necesario:</p>
-<blockquote>
-<p><input type="checkbox" id="checkbox0" checked="true"><label for="checkbox0">(1) x Elegoo Uno R3</label></p>
-</blockquote>
+<ul>
+<li><input type="checkbox" id="checkbox0" checked="true"><label for="checkbox0">(1) x Arduino Uno R3</label></li>
+</ul>
 <img width="400" src="file:///e:/Docencia/linux-apuntes/21. Arduino/media/image38.jpeg" id="image38">
 <h3 id="placa-arduino-uno-r3">Placa Arduino UNO R3</h3>
 <p>La placa de UNO R3 tiene unas filas de conectores a ambos lados que se utilizan para  conectar varios dispositivos electrónicos y plug-in <strong>shields</strong> que amplían su capacidad. También tiene un LED luminoso podemos controlar. Este  LED está construido sobre el UNO R3 y se refiere a menudo como la 'L' LED.</p>
@@ -839,20 +839,21 @@ Puesto que vamos a cambiar este programa, lo primero que tienes que hacer es gua
 <h3 id="resumen">Resumen</h3>
 <p>En esta lección, usted aprenderá cómo cambiar el brillo de un LED usando diferentes valores  de resistencia.<br>
 Componente necesario:</p>
-<pre class="hljs"><code><div>(1) x Elegoo Uno R3 
-LED rojo de 5mm x (1)  
-(1) x resistencia de 220 ohmios  
-(1) x resistencia de 1 k ohm  
-(1) x resistencia de ohmio 10 k  
-(2) x M M cables (cables de puente de macho a macho)  
+<pre class="hljs"><code><div>- [x] (1) x Elegoo Uno R3 
+- [x] 1 LED rojo de 5 mm
+- [x] (1) x resistencia de 220 ohmios  
+- [x] (1) x resistencia de 1 k ohm  
+- [x] (1) x resistencia de ohmio 10 k  
+- [x] (2) x M M cables (cables de puente de macho a macho)  
 </div></code></pre>
 <h3 id="protoboard">Protoboard</h3>
 <p>Un <strong>protoboard</strong> permite crear prototipos de circuitos de forma rápida, sin necesidad de soldar las  conexiones. A continuación un ejemplo.</p>
 <img width="400" src="file:///e:/Docencia/linux-apuntes/21. Arduino/media/image52.jpeg" id="image52">
-<p>Breadboards vienen en varios tamaños y configuraciones. La clase más simple es sólo una rejilla de agujeros en un bloque de plástico. En el interior son tiras de metal que proporcionan una conexión eléctrica entre los agujeros en las filas más cortas. Empujando las patillas de dos componentes diferentes de la misma fila se une a ellos juntos eléctricamente. Un canal profundo, corriendo por el centro indica que hay una rotura en las conexiones, lo que significa, puede insertar un chip con las patillas a ambos lados del canal sin conectarlos juntos. Algunos breadboards tienen dos tiras de agujeros que corre a lo largo de los bordes laterales del tablero que son separados de la red principal. Éstos tienen tiras corriendo por la longitud de la tabla dentro y proporcionan una manera para conectar una tensión común. Son generalmente en pares para + 5 voltios y tierra. Estas tiras se denominan carriles y le permiten alimentar a muchos componentes o puntos en el tablero.</p>
+<p>Breadboards vienen en varios tamaños y configuraciones. La clase más simple es sólo una rejilla de agujeros en un bloque de plástico. En el interior son tiras de metal que proporcionan una conexión eléctrica entre los agujeros en las filas más cortas. Empujando las patillas de dos componentes diferentes de la misma fila se une a ellos juntos eléctricamente. Un canal profundo, corriendo por el centro indica que hay una rotura en las conexiones, lo que significa, puede insertar un chip con las patillas a ambos lados del canal sin conectarlos juntos.</p>
+<p>Algunos breadboards tienen dos tiras de agujeros que corre a lo largo de los bordes laterales del tablero que son separados de la red principal. Éstos tienen tiras corriendo por la longitud de la tabla dentro y proporcionan una manera para conectar una tensión común. Son generalmente en pares para + 5 voltios y tierra. Estas tiras se denominan carriles y le permiten alimentar a muchos componentes o puntos en el tablero.</p>
 <p>Si bien son breadboards para prototipos, tienen algunas limitaciones. Porque las conexiones son temporales y de acople, no son tan fiables como conexiones soldadas. Si tienes problemas intermitentes con un circuito, puede ser debido a una mala conexión en una protoboard.</p>
 <h3 id="led">LED</h3>
-<p>LED es un gran indicador. Utilizan muy poca electricidad durará para siempre.  En esta lección, usarás tal vez el más común de todos los LEDs: un LED de 5mm de color rojo. 5mm se refiere al diámetro del LED. Otros tamaños comunes son 3mm y 10mm.  Directamente no se puede conectar un LED a una batería o fuente de tensión porque</p>
+<p>LED es un gran indicador. Utilizan muy poca electricidad durará para siempre.  En esta lección, usarás tal vez el más común de todos los LEDs: un LED de 5mm de color rojo. 5mm se refiere al diámetro del LED. Otros tamaños comunes son 3mm y 10mm.  Directamente no se puede conectar un LED a una batería o fuente de tensión porque:</p>
 <ol>
 <li>El  LED tiene un positivo y un negativo llevar y no se encenderá si se coloca mal y debe utilizarse</li>
 <li>Un LED con una resistencia para limitar o 'ahogar' la cantidad de corriente que fluye a través de él; ¡de lo contrario, quemará</li>
@@ -868,9 +869,9 @@ LED rojo de 5mm x (1)
 <p>La unidad de resistencia se denomina Ohm, que se abrevia generalmente a Ω la letra griega Omega. Porque un Ohm es un valor bajo de resistencia (no resiste mucho a todos), incluye los valores de resistencias en kΩ (1.000 Ω) y MΩ (1.000.000 Ω). Éstos se llaman kiloohmios y megaohmios.</p>
 <p>En esta lección, vamos a utilizar tres valores diferentes de resistencia:</p>
 <ul>
-<li>220 Ω</li>
-<li>1 kΩ</li>
-<li>10 kΩ</li>
+<li><input type="checkbox" id="checkbox1" checked="true"><label for="checkbox1">220 Ω</label></li>
+<li><input type="checkbox" id="checkbox2" checked="true"><label for="checkbox2">1 kΩ</label></li>
+<li><input type="checkbox" id="checkbox3" checked="true"><label for="checkbox3">10 kΩ</label></li>
 </ul>
 <p>Estas resistencias todas se ven iguales, excepto que tienen rayas de colores diferentes en ellos. Estas rayas decirte el valor de la resistencia.</p>
 <p>El código de color resistor tiene tres franjas de colores y luego una banda de oro en un extremo.</p>
@@ -1743,14 +1744,14 @@ updateShiftRegister();
 <h3 id="componentes-necesarios">Componentes necesarios:</h3>
 <img width="400" src="file:///e:/Docencia/linux-apuntes/21. Arduino/media/image124.jpeg" id="image124">
 <ul>
-<li><input type="checkbox" id="checkbox1" checked="true"><label for="checkbox1">Elegoo Uno R3</label></li>
+<li><input type="checkbox" id="checkbox4" checked="true"><label for="checkbox4">Elegoo Uno R3</label></li>
 <li>[x]830 tie puntos breadboard</li>
 <li>[x]leds</li>
 <li>[x]resistencias de 220 ohmios</li>
 <li>[x]resistencia de 1 k ohm</li>
-<li><input type="checkbox" id="checkbox2" checked="true"><label for="checkbox2">(1) x IC74hc595</label></li>
-<li><input type="checkbox" id="checkbox3" checked="true"><label for="checkbox3">(1) x fotoresistor (fotocélula)</label></li>
-<li><input type="checkbox" id="checkbox4" checked="true"><label for="checkbox4">(16) x M M cables (cables de puente de macho a macho)</label></li>
+<li><input type="checkbox" id="checkbox5" checked="true"><label for="checkbox5">(1) x IC74hc595</label></li>
+<li><input type="checkbox" id="checkbox6" checked="true"><label for="checkbox6">(1) x fotoresistor (fotocélula)</label></li>
+<li><input type="checkbox" id="checkbox7" checked="true"><label for="checkbox7">(16) x M M cables (cables de puente de macho a macho)</label></li>
 </ul>
 <h2 id="fotoc%C3%A9lula">Fotocélula</h2>
 <p>La fotocélula utilizada es de un tipo llamado un resistor dependiente de luz, a veces llamado un LDR. Como su nombre indica, estos componentes actúan como una resistencia, excepto que la resistencia cambia en respuesta a cuanta luz está cayendo sobre ellos.</p>

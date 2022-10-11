@@ -1,6 +1,6 @@
 ## Cabecera
 
-```
+```c
 #include<FastLED.h> // header file
 
 #define NUM_LEDS 60 // number of led present in your strip
@@ -8,6 +8,18 @@
 
 CRGB leds[NUM_LEDS];
 ```
+
+## Setup
+
+```
+void setup() {
+  FastLED.addLeds<WS2812B, LED_PIN, GRB>(leds, NUM_LEDS);
+  FastLED.setBrightness(50);
+
+}
+```
+
+## Loop
 
 ```c
 
@@ -17,25 +29,41 @@ CRGB leds[NUM_LEDS];
 
 void loop() {
   leds[0] = CRGB::Green; //glow 1st led as green
+  leds[1] = CRGB::Blue; //glow 2nd led as blue
   FastLED.show(); // apply the function on led strip
   delay(30);
 }
 
-```
-void loop()
-{ leds[0] = CRGB::Blue;
+## Parpadeo (blink)
 
-FastLED.show();
-
-delay(200);
-
-leds[0] = CRGB::Black;
-
-FastLED.show();
-
-delay(200);
-
+```c
+void loop() { 
+  leds[0] = CRGB::Blue;
+  FastLED.show(); 
+  delay(200);
+  leds[0] = CRGB::Black;
+  FastLED.show();
+  delay(200);
 }
+```
+
+Para apagar la luz:
+
+```c
+leds[0] = CRGB::Black;
+```
+
+Iluminar todas las luces:
+
+```c
+fill_solid(leds, NUM_LEDS, CRGB:Red);
+```
+
+Arcoiris
+
+```c 
+
+fill_rainbow(leds, NUM_LEDS, 0,255 / NUM_LEDS);
 ```
 
 ## LED Chaser

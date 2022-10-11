@@ -1,5 +1,5 @@
-- [Elegoo Super Starter Kit para UNO](#elegoo-super-starter-kit-para-uno)
-  - [Lección 0 Instación IDE](#lección-0-instación-ide)
+- [PRÁCTICAS ARDUINO](#prácticas-arduino)
+  - [Lección 0 Instalación IDE](#lección-0-instalación-ide)
     - [Introducción](#introducción)
     - [Instalación de Arduino (Mac OS X)](#instalación-de-arduino-mac-os-x)
     - [Instalación de Arduino (Linux)](#instalación-de-arduino-linux)
@@ -189,15 +189,15 @@
 
 <img width="400" src="media/image1.jpeg" id="image1">
 
-# Elegoo Super Starter Kit para UNO
+# PRÁCTICAS ARDUINO
 
-## Lección 0 Instación IDE 
+## Lección 0 Instalación IDE 
 
 ### Introducción 
 
 El **Entorno de desarrollo integrado (IDE) de Arduino** es el software de la plataforma Arduino. En esta lección, usted aprenderá cómo configurar tu ordenador para usar Arduino y cómo establecer sobre las lecciones que siguen.
 
-El software de Arduino que se utilizarán para programar tu Arduino está disponible para Windows, Mac y Linux. El proceso de instalación es diferente para las tres plataformas y lamentablemente hay una cierta cantidad de trabajo manual para instalar el software.
+El programari Arduino que s’utilitzarà per programar el vostre Arduino està disponible per a Windows, Mac i Linux.El procés d’instal·lació és diferent per a les tres plataformes i, per desgràcia, hi ha una certa quantitat de treballs manuals per instal·lar el programari.
 
 Paso 1: Ir a https://www.arduino.cc/en/Main/Software y a continuación de la página.
 
@@ -308,19 +308,19 @@ Consejos: Si tienes problemas en la instalación de los controladores, consulte 
 
 <img width="400" src="media/image26.jpeg" id="image26">
 
-## Lección 1 Añadir **librería**s y Monitor serie abierta 
+## Lección 1 Añadir **librerías** y Monitor serie abierta 
 
-### Instalación de **librería**s adicionales de Arduino 
+### Instalación de **librerías** adicionales de Arduino 
 
 Una vez que esté instalado con el software de Arduino y utilizando las funciones integradas, puede que desee ampliar la capacidad de tu Arduino con **librería**s adicionales.
 
 ### ¿Qué son las librerías? 
 
-Las **librerías** son una colección de funciones que hacen que sea fácil para usted conectar a un  sensor, pantalla, módulo, etcétera. Por ejemplo, la librería **LiquidCrystal** incorporada facilita  hablar con pantallas LCD de caracteres. 
+Las **librerías** son una colección de funciones que hacen que sea nos facilitan conectar con un  sensor, pantalla, módulo, etcétera. Por ejemplo, la librería **LiquidCrystal** incorporada facilita  hablar con pantallas LCD de caracteres. 
 
-Hay cientos de librerías adicionales disponibles en Internet. Para utilizar las **librería**s adicionales, es necesario instalarlas primero. 
+Hay cientos de librerías adicionales disponibles en Internet. Para utilizar las **librerías** adicionales, es necesario instalarlas primero. 
 
-### Cómo instalar una libreria 
+### Cómo instalar una librería 
 
 Mediante el administrador de la **librería**
 
@@ -329,7 +329,7 @@ Para instalar una nueva **librería** en el IDE de Arduino se puede utilizar el 
 <img width="400" src="media/image27.jpeg" id="image27">
 
 
-Entonces el director de la **librería** se abrirá y usted encontrará una lista de **librería**s que ya están instalado o listo para su instalación. En este ejemplo vamos a instalar la **librería** de puente. Desplazarse por la lista para encontrarla, a continuación, seleccione la versión de la **librería** que desea instalar. A veces sólo está disponible una versión de la **librería**. Si no aparece el menú de selección de versión, no te preocupes: es normal.
+Encontraremos una lista de **librerías** que ya están instaladas o disponibles para su instalación. En este ejemplo vamos a instalar la **librería** de puente. Desplazarse por la lista para encontrarla, a continuación, seleccione la versión de la **librería** que desea instalar. A veces sólo está disponible una versión de la **librería**. Si no aparece el menú de selección de versión, no te preocupes: es normal.
 
 Hay veces que tienes que esperar, tal como se muestra en la figura. Por favor actualice y esperar
 
@@ -363,9 +363,9 @@ Nota: la **librería** estará disponible para utilizar en los dibujos, pero los
 
 ### Manual de instalación 
 
-Para instalar la **librería**, primero salga de la aplicación de Arduino. Luego descomprima el archivo ZIP que contiene la **librería**. Por ejemplo, para instalar una librería llamada "ArduinoParty", descomprime ArduinoParty.zip. Debería contener una carpeta calledArduinoParty, con archivos como ArduinoParty.cpp y ArduinoParty.h dentro. (Si los archivos .cpp y .h no en una carpeta, debe crear uno. En este caso, usted sería hacer una carpeta llamada "ArduinoParty" y copiar todos los archivos que estaban en el archivo ZIP, como ArduinoParty.cpp y ArduinoParty.h.)
+Para instalar la **librería**, primero salga de la aplicación de Arduino. Luego descomprima el archivo ZIP que contiene la **librería**. Por ejemplo, para instalar una librería llamada "ArduinoParty", descomprime ArduinoParty.zip. Debería contener una carpeta llamada **ArduinoParty**, con archivos como ArduinoParty.cpp y ArduinoParty.h dentro. (Si los archivos .cpp y .h no en una carpeta, debe crear uno. En este caso, usted sería hacer una carpeta llamada "ArduinoParty" y copiar todos los archivos que estaban en el archivo ZIP, como ArduinoParty.cpp y ArduinoParty.h.)
 
-Arrastre la carpeta de ArduinoParty en esta carpeta (la carpeta de **librería**s). Bajo Windows, lo probable es que se llamará "My Documents\Arduino\libraries". Para usuarios de Mac, lo probable es que se llamará "Bibliotecas de Arduino de documentos". En Linux, será la carpeta "libraries" en su programabook.
+Arrastre la carpeta de ArduinoParty en esta carpeta (la carpeta de **librerías**). Bajo Windows, lo probable es que se llamará "My Documents\Arduino\libraries". Para usuarios de Mac, lo probable es que se llamará "Bibliotecas de Arduino de documentos". En Linux, será la carpeta "libraries" en su programabook.
 
 La carpeta de la **librería** Arduino debe ahora este aspecto (en Windows):
 

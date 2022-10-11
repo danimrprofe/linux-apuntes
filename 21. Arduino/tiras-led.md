@@ -68,73 +68,46 @@ fill_rainbow(leds, NUM_LEDS, 0,255 / NUM_LEDS);
 
 ## LED Chaser
 
-```
+```c
 // chase forward
-
 void loop()
-
 {
-
-for(int dot = 0;dot < NUM_LEDS; dot++)
-
-{ leds[dot] = CRGB::Red;
-
-FastLED.show();
-
-leds[dot] = CRGB::Black;
-
-delay(300);
-
-}
-
+  for(int dot = 0;dot < NUM_LEDS; dot++) { 
+    leds[dot] = CRGB::Red;
+    FastLED.show();
+    leds[dot] = CRGB::Black;
+    delay(300);
+  }
 }
 
 // chase backward
 
 void loop()
-{ for(int dot=NUM_LEDS ; dot >=0 ; dot--)
-
-{ leds[dot] = CRGB::Red;
-
-FastLED.show();
-
-leds[dot] = CRGB::Black;
-
-delay(300);
-
-}
-
+{ 
+  for(int dot=NUM_LEDS ; dot >=0 ; dot--) {
+    leds[dot] = CRGB::Red;
+    FastLED.show();
+    leds[dot] = CRGB::Black;
+    delay(300);
+  }
 }
 
 // chase both
 
-void loop()
-{ for(int dot=(NUM_LEDS-1) ; dot >=0 ; dot--)
+void loop() { 
+  for(int dot=(NUM_LEDS-1) ; dot >=0 ; dot--) {
+    leds[dot] = CRGB::Green;
+    FastLED.show();
+    leds[dot] = CRGB::Black;
+    delay(300);
+  }
 
-{
-
-leds[dot] = CRGB::Green;
-
-FastLED.show();
-
-leds[dot] = CRGB::Black;
-
-delay(300);
-
-}
-
-for(int dot = 0;dot < NUM_LEDS; dot++)
-
-{ leds[dot] = CRGB::Red;
-
-FastLED.show();
-
-leds[dot] = CRGB::Black;
-
-delay(300);
-
-}
-
+  for(int dot = 0;dot < NUM_LEDS; dot++) { 
+    leds[dot] = CRGB::Red;
+    FastLED.show();
+    leds[dot] = CRGB::Black;
+    delay(300);
+  }
 }
 ```
 

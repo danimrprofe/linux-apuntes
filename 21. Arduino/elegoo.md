@@ -3,10 +3,10 @@
     - [Introducción](#introducción)
     - [Instalación de Arduino (Mac OS X)](#instalación-de-arduino-mac-os-x)
     - [Instalación de Arduino (Linux)](#instalación-de-arduino-linux)
-  - [Lección 1 Añadir **librería**s y Monitor serie abierta](#lección-1-añadir-librerías-y-monitor-serie-abierta)
-    - [Instalación de **librería**s adicionales de Arduino](#instalación-de-librerías-adicionales-de-arduino)
+  - [Lección 1 Añadir **librerías** y Monitor serie abierta](#lección-1-añadir-librerías-y-monitor-serie-abierta)
+    - [Instalación de **librerías** adicionales de Arduino](#instalación-de-librerías-adicionales-de-arduino)
     - [¿Qué son las librerías?](#qué-son-las-librerías)
-    - [Cómo instalar una libreria](#cómo-instalar-una-libreria)
+    - [Cómo instalar una librería](#cómo-instalar-una-librería)
     - [Importar una **librería** de .zip](#importar-una-librería-de-zip)
     - [Manual de instalación](#manual-de-instalación)
     - [Arduino serie Monitor (Windows, Mac, Linux)](#arduino-serie-monitor-windows-mac-linux)
@@ -1487,11 +1487,11 @@ En esta lección, se ejecutará el programa de ejemplo de Arduino para la **libr
 
 ### Componentes necesarios
 
-x Elegoo Uno R3
-x LCD1602 módulo
-x Potenciómetro (10k)
-x 830 tie-puntos Breadboard
-x M-M cables (cables de puente de macho a macho)
+* > Elegoo Uno R3
+* > LCD1602 módulo
+* > Potenciómetro (10k)
+* > 830 tie-puntos Breadboard
+* > M-M cables (cables de puente de macho a macho)
 
 ### LCD1602
 
@@ -1578,7 +1578,7 @@ En esta lección, utilizará una pantalla LCD para mostrar la temperatura.
 
 ### Componentes necesarios
 
-> *  Elegoo Uno R3
+> * Elegoo Uno R3
 > * LCD1602 Módulo
 > * x resistencia de ohmio 10 k
 > * x termistor
@@ -1674,19 +1674,16 @@ Este chip hace un poco más lento para los LEDs (sólo se puede cambiar el LED u
 
 Componente necesario:
 
-- (1) x Elegoo Uno R3
-- x 830 puntos tie breadboard
-- x leds
-- x resistencias de 220 ohmios
-- x IC x 74hc595
-- x M M cables (cables de puente de macho a macho)
-
+> * (1) x Elegoo Uno R3
+> * 830 puntos tie breadboard
+> * leds
+> * resistencias de 220 ohmios
+> * IC x 74hc595
+> * M M cables (cables de puente de macho a macho)
 
 ### 74HC595 Registro de desplazamiento
 
 El registro de desplazamiento es un tipo de chip que tiene lo que puede considerarse como posiciones de memoria ocho, cada uno de ellos puede ser un 1 o un 0. Para definir cada uno de estos valores encendido o apagado, alimentamos en los datos mediante los pines del chip 'Datos' y 'El reloj'.
-
-
 
 <img width="400" src="media/image117.jpeg" id="image117">
 
@@ -1706,7 +1703,7 @@ El chip también tiene un pin de salida activado (OE), que se utiliza para activ
 
 Ya que tenemos ocho LEDs y ocho resistencias para conectar, hay realmente muy pocas conexiones a realizar.
 
-Es probablemente más fácil poner el chip 74HC595 en primer lugar, como casi todo lo demás se conecta a él. Ponerlo de modo que la muesca en forma de U poco hacia la parte superior de la placa. 
+Es probablemente más fácil poner el **chip 74HC595** en primer lugar, como casi todo lo demás se conecta a él. Ponerlo de modo que la muesca en forma de U poco hacia la parte superior de la placa. 
 
 Pin 1 del chip es a la izquierda de esta muesca.
 Digital 12 del UNO va al pin #14 del registro de desplazamiento 

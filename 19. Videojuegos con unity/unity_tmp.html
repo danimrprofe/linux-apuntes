@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>unity.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="juegos-con-unity">Juegos con Unity</h1>
+<p><img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/img/2022-10-13-00-34-17.png" alt=""></p>
+<p>Estos días estamos dedicando las sesiones a trabajar el desarrollo de videojuegos. Para ello utilizamos el motor Unity, que nos permite crear proyectos 2D y 3D.</p>
+<p>Hemos seguido los tutoriales del usuario Luiscanary, para poder desarrollar los proyectos de Pong y un juego de plataformas 2D. A través de estos proyectos hemos aprendido a:</p>
+<ul>
+<li>Crear objetos de sprite 2D y colocarlos en escena</li>
+<li>Programar scripts que, asignados a los objetos, controlen su comportamiento</li>
+<li>Utilizar controles de teclado para mover los objetos</li>
+<li>Asignar componentes rigidbody para agregar respuesta a físicas en nuestros sprites</li>
+<li>Agregar colliders a los objetos para controlar las colisiones entre ellos y modificar el comportamiento del juego.</li>
+</ul>
+<h2 id="crear-un-proyecto">Crear un proyecto</h2>
+<p>Le damos a lo que tenemos por aquí y vamos a seleccionar lo importante es el template 2d que básicamente vamos a hacer el juego en 2d</p>
+<img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image1.png" id="image1">
+<p>El proyecto el nombre pues le ponéis el que queráis yo los voy a poner por tutorial de hecho ya lo tengo creado así que no me dejaba ponerle el mismo nombre y seleccionar pues una localización y cuando lo tenga listo pues le das a create</p>
+<h2 id="cambiar-layout-de-ventanas">Cambiar layout de ventanas</h2>
+<p>Vamos a cambiar el <strong>layout</strong> así a mí así no me gusta trabajar tengo una distribución de ventanas que ya esté acostumbrado y que siempre pues es la que me pongo para cambiar esto lo que podéis hacer es iraquí arriba y seleccionar puede ser que vosotros se os adapte más a vuestra forma de trabajar y si bien ha visto ha bajado nunca pues yo que se lo recomiendo que voy a utilizar es la de <strong>2 by 3</strong>.</p>
+<img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image2.png" id="image2">
+<h2 id="crear-pelota">Crear pelota</h2>
+<p>Dentro de nuestra ventana lo que vamos a hacer es clic derecho y darle a judíos el spritesquare y como veis pues directamente seme pone pues un cuadrado que es el quevamos a utilizar para la bola para losjugadores para las paredes para todoporque vamos a poder pues escalarlo enlos diferentes ejes y pues nos va aayudar a crear por como comentó el juegoen sí vamos a necesitar ni bajarnosninguna se ni nada va a ser todochocaron aquí en juniti así que buenogenera seguido un primer momento vamos acrear las paredes de arriba y de abajoentonces para ello vamos a laescala y vamos a colocarla en el eje x alo que sería un valor de 18 en este casoahoravamos a colocarlo en la posición 0 y 0en el eje x y y ahora lo que vamos ahacer es subirlo hacia arriba para ellolo que podéis hacer es pulsar w cuandotengáis este objeto seleccionado yentonces pues podréis moverlo en ese ejeen específico pues lo selección eyeshacia arribacomo veis aquí está pasando al mismo unacosa y es que mi ventana de came se estáescalando con lo grande que sea porejemplo si yo hago esto más pequeño másgrande como veis la escala se va un pocoa cuenca entonces</p>
+<h2 id="cambiar-resoluci%C3%B3n">Cambiar resolución</h2>
+<p>Para evitar esto vamos a hacer vamos a poner una resolución que es la típica que se utiliza en pantallas que es la 16:9 que está se adapta muy bien pues ahora que es 1080 720 dos cada4 acá en ese caso que es la resolución este vertical y horizontal porque mantiene un aspecto de relación que cuadra en ese sentido entonces cuando como veis si yo creo a 18 y pongo esto en la posición de y a 4.5 queda perfectoahí en su posición de hecho es lo quevoy a hacer es ponerlo a 5 ya poner un poco más arriba a mí me gusta más que se vea pero que tampoco me ocupe pues media pantalla esa pared perfecto</p>
+<p>Ahora lo que vamos a hacer es en vez de crear otro objeto nuevo es duplicar este que tenemos y ponerlo pues abajo del todo para ello pues lo que podéis hacer es control de o clic derecho duplicate se duplicará y ahora lo único que tenemos que hacer es en vez de ir arrastrando lo va a estar en la posición contraria a 5 en este caso pues sería menos 5 a esta</p>
+<h2 id="paredes-de-los-lados">Paredes de los lados</h2>
+<p>Ya tengo los dos colocados perfectamente ahora vamosa crear las paredes de los datos para ello pues igual voy a este objeto voy a duplicarlo y ahora lo que pasa esque mi escala en el eje x no va a ser sino que va a ser en el eje y entonces en este caso puedo dejar la escala en el eje x a1 y la escala en el eje y a 10 así pues me quedara más o menos de una manera decente para moveros dentro de la escena si pasáis lo que sería la rueda del ratón en el medio pues lo podéis hacer una especie de paneo también bueno comentaros que si a lo mejor no sabe mucho de unity tampoco estudian en este tutorial yendo muy lentamente en ese sentido así que pues tengo una serie específico de juniti desde principio que os dejaré bleeckere en la descripción y una tarjetita pues si queréis empezar por ahí comentó que este tutorial pues no va a ser muy complicado así que si os vais que podéis ir tranquilamente con el tutorial pues ánimo a heidi y a tope vale hemos creado esta pared</p>
+<p>Ahora lo que quedaría es ponerlo a la derecha y ala izquierda entonces en este caso lo que vamos a hacer es poner en la posición de y a 0 y aquí vamos a modificar la posición en el eje x en este caso la podemos poner por ejemplo en ocho y más o menos vemos que se queda cerca de lo que sería pero estas paredes no se tienen que ver tienen que estar por la parte de fuera</p>
+<p>Vamos a colocar pues por ejemplo ahí lo quesería pues yo creo que el nueve y medio va bien estas paredes van a ser diferentes a esta nueva entre colisión en el hecho de que no van a hacer que rebote la pelota sino que cuando colisionan con esta pared va a ser como la portería de un jugador o del otro y entonces pues se añadirá un punto cuando colisiones perfecto ahora entonces con esto que tenemos aquí podemos duplicarlo y ponerlo en el lado contrario que simplemente poniéndole un negativo en el9 menos 5 o sea en el 9,5 pues se pondrá justo en el otro lado</p>
+<h2 id="nombrando-los-objetos">Nombrando los objetos</h2>
+<p>Ahora importante nombrar las cosas porque vamos a empezara tener aquí 80 objetos y nos vamos a saber que es ninguno y luego la hora de programar pues vamos a tener un quebradero de cabeza</p>
+<p>Para ordenar esto un poco vamos a seleccionar esta pared y hacéis doble clic o con <strong>F2</strong> podéis nombrar lo íbamos a llamarle en <strong>goal1</strong> porque va a ser la portería en la que tiene que colar el jugador 1 que va a estar a nuestra izquierda esto es pues si simplemente ha venido a organizarse que tengo para luego programar pero bueno pues sólo podéis nombrar como queráis como si queréis llamar de portería del número 1 o algo del estilo o portería del 2 pero luego acordaros de que hay que hacer pues seleccionar esa portería para que cuando cual el otro se suma un punto no sé qué bueno abriremos viendo tranquilamente así que no creo que preocupéis entonces</p>
+<p>Este otro lado de la izquierda pues sería <strong>goal2</strong> adiós con lage mayúscula perfecto porque íbamos a pasar a hacerla línea del centro un poco para que sepamos cuál es el centro todo lo que puedes hacer es duplicar un gol que tenéis vosotros aquí colocado en la posición 0 0 y ahora es reducir un poco la escala en el eje x podéis reducir la escala también pulsando la r teniendo seleccionado huevas y entonces sancionando vuestro jugador y pulsando deseos pondrá aquí lo que sería el ritmo de escala que es lo que tenéis aquí arriba mismo de movimiento rotación escala y luego otro raro que tienen por aquí que es de escala rotación movimiento todo y vamos para ir a colom seleccionar es el de rotación y vamos a reducir esto como es si yo cojo lo quees el eje rojo y lo reduzco o el aumento pues ese aumento se reduce y se ve reflejado en la escala aquí en x vamos a colocarlo a 0 con 2 creo yo creo que ahí va guay</p>
+<h2 id="creando-los-jugadores">Creando los jugadores</h2>
+<p>Vamos a crear los players entonces vamos a hacer control de sobre ese amigo aquí de la derecha lo voy a arrastrar a esta posición que de hecho lo vamos a poner en la posición 8 y ahora hay que reducir la escala. Así imaginaros que vuestro player es así de grande en 3 cuando venga la bola va a rebotar sí o sí qué gracia tiene estejuego por ninguna</p>
+<h3 id="crear-jugador-2">Crear jugador 2</h3>
+<p>Vamos a reducirlo unpoco a lo que sería en el eje y a 2.5 luego pues podemos modificar elmovimiento de la velocidad de la bolapodemos modificar muchas cosas pues paraque se adapte a lo que cada uno puesesté buscando en este caso como está ala derecha pues lo llamaremos player2.</p>
+<h3 id="crear-jugador-1">Crear jugador 1</h3>
+<p>Ahora Ctrl+D y duplicamos y lo llevamos a la posición contraria que sería -8 y le llamamos player1 para tenerlo ahí bien diferenciado.</p>
+<p>Ahora lo único que ayudaría sería pues nuestra pelota del medio así que podemos hacer directamente clic derecho dentro de nuestro unit y su día dietsprite square y si la colocamos en el 0,0.</p>
+<p>Para poder diferenciar lo mejor vamos a cambiarle el color y esto lo podéis hacer con todos los objetos en verdad que tengáis en la escena como veis son de tipo sprite renderer por tanto si lo seleccionas podéis modificar aquí el color con lo que tenéis a la derecha.</p>
+<p>Yo lo puedo poner pues este color amarillento a la pelota y sin soluciones cualquier otro por ejemplo podéis solucionar asaco y mirar puedo modificar pues todo el mapa en sí de hecho lo vamos a hacer voy a seleccionar el goal escuela y demás y lo vamos a poner en un tono rojizo</p>
+<p>Ahora podéis seleccionar vuestro player2 le ponéis otro color. Voy a ponerle un tono verdoso lo mejor paraje verde parece que es como otro no puedo colocar creo que voy a dejar blanco me está gustando más blanco lo voy a dejarblanco los dos pero bueno:</p>
+<h2 id="colisiones">Colisiones</h2>
+<p>Ahora mismo estos objetos que tenemos aquí simplemente tienen una posición en nuestro mundo y un componente para visualizarlos. Vamos a agregarles colliders a nuestros objetos. Los colliders son  componentes que se añaden a estos objetos</p>
+<p>Para que tengan colisiones vamos a seleccionarlos todos. Podéis seleccionar el primer elemento y con shift pulsado seleccionamos el último y se seleccionarán todos los que tengáis pues desde el primero hasta el último básicamente</p>
+<p>Si que no queréis que alguno por ejemplo en mi caso no que recoger la línea del centro porque no quiero que tenga esa colisión porque imagino que tenemos la bola aquí y conexiones con el centro y puesto que no tendría sentido básicamente porque a lo mejor si vengo desde aquí y colisionó colisión colisión y comisionó mi player uno va a ganar otro rato porque no puede pasar para allá entonces lo que sí vamos a hacer es nombrarlo para que sepamos qué es el centro que en este caso por estirando cuenta que es el goal 2 llamamos centro y a este es al que no tenemos que añadirle colisión.</p>
+<p>Seleccionamos todos los demás objetos, añadir componente y añadimos un <strong>box collider 2d</strong> que sé que tenemos por aquí así pues ya tendrán colisiones.</p>
+<h2 id="rigid-bodies">Rigid bodies</h2>
+<p>Ahora tenemos que tener otra cosa que son rigid bodies para nuestros players y para nuestra pelota que se encargará del tema de física para el movimiento.</p>
+<p>Vamos a seleccionar nuestro player y nuestra bola que de hecho la bola vamos a renombrar la vamos a poner la bola seleccionamos todos en el componente rigidbody 2D y ahí le añadimos.</p>
+<p>Si dejamos esto así tal cual cuando yo le diera el play vais a ver qué pasa como veis mis elementos se han caído.  Tienen física funcionan pero tienen gravedad y eso pues no lo queremos.</p>
+<p>Lo que tenemos que hacer es dentro de nuestro componente <strong>rigidbody</strong>  donde pone <strong>gravity</strong> es que a uno vamos a ponerlo a 0 y así ya no se caerán.</p>
+<p>Recolocar la línea del centro por debajo de la pelota</p>
+<p>Otra cosa que modificando que a lo mejor les ocurre es que la línea del centro se está dibujando por encima de nuestra pelota yeso pues la verdad que no queda muy buena lo mejor sí a lo mejor lo queréis vale pues lo dejáis lo dejáis así si os gusta pues lo dejáis pero si no lo que podéis hacer es se detiene al puesto al bola yen el elemento sprite renderer en el orden y léger le podéis poner un box por ejemplo</p>
+<p>Esto sirve para diferenciar la altura a la que se dibujan las diferentes elementos dentro de nuestra pantalla porque ahora mismo son todo imágenes entonces para saber diferenciar cuál está por delante de una de otra utilizamos el orden y léger. En este caso pondré puesto un 2 ya se dibuja por encima así que así no habrá problema.</p>
+<h2 id="movimiento-de-personajes">Movimiento de personajes</h2>
+<p>Ahora vamos a pasar directamente a lo que sería el tema de los movimientos de nuestros personajes. Vamos a hacerlo con:</p>
+<ul>
+<li>Teclas W y S para el jugador 1 (izquierda)</li>
+<li>Teclas flecha de arriba y hacia abajo para el jugador 2 (derecha)</li>
+</ul>
+<p>De este modo, podremos jugar dos jugadores en el mismo teclado.</p>
+<h2 id="redefinir-controles">Redefinir controles</h2>
+<p>Tenemos que definir pues esos controles y para ello nos vamos a ir a edit &gt; project settings y donde tenemos input manager tenemos declarado varias cosillas que si no lo vais a expandir el axis y estos son como short cuts o controles que tiene definido djinnit y para diferentes teclas de nuestro teclado en este caso tenemos horizontal que se encarga de saber cuándo estamos pulsando a la izquierda o derecha de las flechas o el add de nuestro teclado que son las típicas teclas que se utilizan para jugar wsb y las flechas de abajo a la derecha entonces pues con esto sabrá cuando llamemos a la horizontal pues si estamos yendo hacia la izquierda o hacia la derecha pasó lo mismo con arriba o abajo pero en este caso tendríamos el ws y la flecha de arriba y hacia abajo entonces tenemos el vertical y tendremos que crear el vertical 2 que es para nuestro jugador 2 y tenemos que diferenciar pues que uno utilice el ws y el otro utilice la flecha hacia arriba y hacia abajo espero que me haya explicado lo mismo escribano con el culo pero bueno podéis seguir tranquilamente con el vídeo y pues si no queda claro pues lo vamos a ir viendo y seguramente que se entienda entonces seguramente a vosotros os haga aquí down y up y w no y yo salgo aquí s&amp;w y esto es porque el vertical ya pilla directamente tanto la parte izquierda de teclado como la de la derecha pero aquí lo tenemos que diferenciar entonces lo vais a hacer esdel vertical vais a borrar el sw que tenemos aquí y lo que vamos a hacer es duplicarlo para tener un vertical 2 para nuestro jugador 2 en cáceres clic derecho duplicate a ride element y se duplicará que vendrá por aquí otra como vertical y entonces le vamos a hacer este más blog vertical 2y entonces ahora aquí lo que faltaría es cambiarle los controles si ni si el playero uno juega con la flecha de arriba y hacia abajo nosotros con el jugador 2 jugaremos con la s w entonces en negativo button tenéis que poner ese y en positivo ton tenía que poner w ycon eso cuando pasemos al código será muchísimo más sencillo porque además sólo tendremos que hacer un script para los dos players</p>
+<h2 id="script-de-programaci%C3%B3n">Script de programación</h2>
+<p>Vamos a organizar esto un poquillo y dentro de nuestra carpeta assets vamos á hacer clic derecho y folder que vamos a llamar scripts y así tendremos guardados todos nuestros programas en esta carpeta.</p>
+<p>Ahora vamos a pasar a crear nuestro script vamos aquí a entrar a la carpeta que acabamos de crear y vamos a hacer clic derecho create C# script. A este script le vamos a llamar players. Podríamos abrirlo y vamos a utilizar el programa visual studio.</p>
+<h2 id="plataformas-2d">Plataformas 2D</h2>
+<p>Importar package de asset store (pixel adventure 1)</p>
+<p>Crear tilemap</p>
+<p>Crear paleta y pintar la escena</p>
+<p>Asignar collider al tilemap</p>
+<p>Asignar rigidbody al personaje</p>
+<p>Crear movimiento lateral del personaje</p>
+<img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image3.png" id="image3">
+<p>Colocar collider al personaje y modificarlo</p>
+<img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image4.png" id="image4">
+<p>Crear salto del personaje</p>
+<p>Necesitaremos un script que compruebe que el personaje está tocando suelo:</p>
+<img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image5.png" id="image5">
+<p>En el script de movimiento del personaje, comprobaremos que pulsamos espacio y, además, que estamos tocando suelo:</p>
+<img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image6.png" id="image6">
+<p>Cambiar material del tilemap para reducir rozamiento y evitar flotar</p>
+<img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image7.png" id="image7">
+<p>Crearemos un material para el mapa, que tendrá 0 fricción, por lo que el personaje se moverá con más suavidad y evitaremos que se enganche a él.</p>
+<img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image8.png" id="image8">
+<p>Mejorar el salto (betterjump)</p>
+<p>Nos tocará crear un boolean para activar un salto mejorado, que dependerá del tiempo de pulsación de la tecla, pudiendo saltar más o menos.</p>
+<p>Recolección de fruta con animación</p>
+<p>Habrá que crear un script que detecte la colisión de la manzana con el player, se va a llamar FruitCollected, y posteriormente destruir el objeto manzana. Este script se lo asignaremos luego a todas las frutas.</p>
+<img src="file:///e:/Docencia/linux-apuntes/19. Videojuegos con unity/media/image9.png" id="image9">
+
+</body>
+</html>

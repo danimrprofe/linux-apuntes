@@ -1,13 +1,19 @@
-BIOMASA
+# BIOMASA
+
 Es el conjunto de materia orgánica de origen animal o vegetal procedente de la transformación de los restos de seres vivos. Las plantas captan la energía solar y la transforman en energía química de la biomasa  (fotosíntesis) que utilizan para sus funciones vitales y crecimiento. Esta energía almacenada se libera por combustión.
+
 Se puede conseguir:
-●	Por cultivos agrícolas, de rápido crecimiento y alto contenido energético (Ej. Maíz, cardos, remolacha y cereales)
-●	Aprovechando residuos
-○	Domésticos (papel, cartón, restos de alimentos y aguas residuales)
-○	Agrícolas (paja, malas hierbas) 
-○	Ganaderos (excrementos de animales), 
-○	Forestales (ramas, hojas, etc.)
-○	De la industria alimentaria (orujo de la oliva y  uva, cáscara de almendra, restos de frutas, etc.) 
+
+- Por cultivos agrícolas, de rápido crecimiento y alto contenido energético (Ej. Maíz, cardos, remolacha y cereales)
+- Aprovechando residuos
+
+Los residuos pueden ser:
+
+- Domésticos (papel, cartón, restos de alimentos y aguas residuales)
+- Agrícolas (paja, malas hierbas) 
+- Ganaderos (excrementos de animales), 
+- Forestales (ramas, hojas, etc.)
+- De la industria alimentaria (orujo de la oliva y  uva, cáscara de almendra, restos de frutas, etc.) 
  
 ![](img/2022-10-12-16-34-05.png)
 
